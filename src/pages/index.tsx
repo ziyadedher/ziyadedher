@@ -1,4 +1,6 @@
-import Link from "../logic/link";
+import Link from "next/link";
+
+import Anchor from "../logic/anchor";
 
 import type { NextPage } from "next";
 
