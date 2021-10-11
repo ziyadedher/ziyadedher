@@ -6,105 +6,1135 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="container flex flex-row justify-center items-center mx-auto h-screen"
+        class="container flex flex-col justify-center items-center mx-auto"
       >
-        <div
-          class="text-center"
+        <header
+          class="flex flex-col py-12 text-center"
         >
-          <h1
-            class="text-6xl text-gray-700"
+          <div
+            class="text-2xl font-light uppercase hover:opacity-70 transition-all"
           >
-            Hello, world!
-          </h1>
-          <h2
-            class="pt-4"
+            <a
+              href="/"
+            >
+              Ziyad Edher
+            </a>
+          </div>
+          <div
+            class="flex flex-row pt-2 space-x-2"
           >
-            This is
-             
             <span
-              class="text-blue-500 hover:text-blue-700"
+              class="hover:opacity-50 transition-all"
             >
               <a
                 href="https://twitter.com/ziyadedher"
                 rel="noreferrer"
                 target="_blank"
               >
-                @ziyadedher
+                <svg
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 256 256"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="256"
+                    width="256"
+                  />
+                  <path
+                    d="M128,88.00288a40.00668,40.00668,0,0,1,76.67148-16.00327L240,72l-32.26239,32.2625A128.00746,128.00746,0,0,1,80,224c-32,0-40-12-40-12s32-12,48-36c0,0-64-32-48-120,0,0,40,40,87.9862,48Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                </svg>
               </a>
             </span>
-            ’s webapp template.
-          </h2>
-          <h3
-            class="pt-3"
-          >
-            Check this template out on
-             
             <span
-              class="text-blue-500 hover:text-blue-700"
+              class="hover:opacity-50 transition-all"
             >
               <a
-                href="https://github.com/ziyadedher/webdev-template"
+                href="https://linkedin.com/in/ziyad-edher"
                 rel="noreferrer"
                 target="_blank"
               >
-                GitHub
+                <svg
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 256 256"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="256"
+                    width="256"
+                  />
+                  <rect
+                    fill="none"
+                    height="184"
+                    rx="8"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    width="184"
+                    x="36"
+                    y="36"
+                  />
+                  <line
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    x1="120"
+                    x2="120"
+                    y1="112.00094"
+                    y2="176.00094"
+                  />
+                  <line
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    x1="88"
+                    x2="88"
+                    y1="112.00094"
+                    y2="176.00094"
+                  />
+                  <path
+                    d="M120,140.00094a28,28,0,1,1,56,0v36"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <circle
+                    cx="88"
+                    cy="79.99998"
+                    r="10"
+                  />
+                </svg>
               </a>
             </span>
-            !
-          </h3>
-        </div>
+            <span
+              class="hover:opacity-50 transition-all"
+            >
+              <a
+                href="https://github.com/ziyadedher"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 256 256"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="256"
+                    width="256"
+                  />
+                  <path
+                    d="M84,240a24,24,0,0,0,24-24V168"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <path
+                    d="M172,240a24,24,0,0,1-24-24V168"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <path
+                    d="M152,168h16a24,24,0,0,1,24,24v8a24,24,0,0,0,24,24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <path
+                    d="M104,168H88a24,24,0,0,0-24,24v8a24,24,0,0,1-24,24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <path
+                    d="M111.825,63.99934A51.9599,51.9599,0,0,0,68,40a51.90058,51.90058,0,0,0-3.48841,44.7036A49.25789,49.25789,0,0,0,56,112v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.25769,49.25769,0,0,0-8.5116-27.29639A51.90061,51.90061,0,0,0,188,40a51.95992,51.95992,0,0,0-43.82535,23.99983Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                </svg>
+              </a>
+            </span>
+            <span
+              class="hover:opacity-50 transition-all"
+            >
+              <a
+                href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 256 256"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="256"
+                    width="256"
+                  />
+                  <circle
+                    cx="128"
+                    cy="128"
+                    fill="none"
+                    r="96"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <g>
+                    <path
+                      d="M179.1333,108.32931a112.19069,112.19069,0,0,0-102.3584.04859"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    />
+                    <path
+                      d="M164.29541,136.71457a79.94058,79.94058,0,0,0-72.68359.04736"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    />
+                    <path
+                      d="M149.47217,165.07248a47.97816,47.97816,0,0,0-43.03662.04736"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="12"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </span>
+            <span
+              class="hover:opacity-50 transition-all"
+            >
+              <a
+                href="https://facebook.com/ziyadedher"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 256 256"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="256"
+                    width="256"
+                  />
+                  <circle
+                    cx="128"
+                    cy="128"
+                    fill="none"
+                    r="96"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <path
+                    d="M168,88.00094H152a24,24,0,0,0-24,24v112"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <line
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    x1="96"
+                    x2="160"
+                    y1="144.00094"
+                    y2="144.00094"
+                  />
+                </svg>
+              </a>
+            </span>
+            <span
+              class="hover:opacity-50 transition-all"
+            >
+              <a
+                href="https://instagram.com/ziyadedher"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <svg
+                  fill="currentColor"
+                  height="24"
+                  viewBox="0 0 256 256"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    fill="none"
+                    height="256"
+                    width="256"
+                  />
+                  <circle
+                    cx="128"
+                    cy="128"
+                    fill="none"
+                    r="40"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <rect
+                    fill="none"
+                    height="184"
+                    rx="48"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                    width="184"
+                    x="36"
+                    y="36"
+                  />
+                  <circle
+                    cx="180"
+                    cy="75.99998"
+                    r="10"
+                  />
+                </svg>
+              </a>
+            </span>
+          </div>
+        </header>
+        <main
+          class="flex flex-row py-8 space-x-8 w-full max-w-5xl"
+        >
+          <div
+            class="flex flex-col flex-1 text-sm font-light prose"
+          >
+            <p
+              class="text-3xl"
+            >
+              yo
+            </p>
+            <p>
+              My name is Ziyad Edher (زياد إضهير), I'm a software engineer and I like breaking things.
+            </p>
+            <p>
+              Right now, I'm doing security work at
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://asana.com?noredirect"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Asana
+                </a>
+              </span>
+              . My LinkedIn is
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://linkedin.com/in/ziyadedher"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  here
+                </a>
+              </span>
+              .
+            </p>
+            <p>
+              I went to the
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://www.utoronto.ca/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  University of Toronto
+                </a>
+              </span>
+               
+              and graduated in June 2021 from a computer science program focusing on artificial intelligence and computation theory.
+            </p>
+            <p>
+              I love entrepreneurship, music (check out my
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Spotify
+                </a>
+              </span>
+              ), good software engineering, cryptocurrencies, and doing stuff in nature. Hit me up if you wanna talk about that stuff or anything else, it's not like I have anything better to do.
+            </p>
+            <p>
+              Some maybe cool things I did in the past:
+              <ul>
+                <li>
+                  Building ML and data infrastructure at
+                   
+                  <span
+                    class="underline hover:opacity-70 transition-all not-prose"
+                  >
+                    <a
+                      href="https://www.citadelsecurities.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Citadel Securities
+                    </a>
+                  </span>
+                  .
+                </li>
+                <li>
+                  Designing software that protects
+                   
+                  <span
+                    class="underline hover:opacity-70 transition-all not-prose"
+                  >
+                    <a
+                      href="https://asana.com?noredirect"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Asana
+                    </a>
+                  </span>
+                   
+                  users against scammers and bots.
+                </li>
+                <li>
+                  Interning at
+                   
+                  <span
+                    class="underline hover:opacity-70 transition-all not-prose"
+                  >
+                    <a
+                      href="https://google.com"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      Google
+                    </a>
+                  </span>
+                   
+                  (twice) working on
+                   
+                  <span
+                    class="underline hover:opacity-70 transition-all not-prose"
+                  >
+                    <a
+                      href="https://fi.google.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      communications
+                    </a>
+                  </span>
+                   
+                  and
+                   
+                  <span
+                    class="underline hover:opacity-70 transition-all not-prose"
+                  >
+                    <a
+                      href="https://cloud.google.com/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      security
+                    </a>
+                  </span>
+                  .
+                </li>
+                <li>
+                  Teaching cars how to drive at
+                   
+                  <span
+                    class="underline hover:opacity-70 transition-all not-prose"
+                  >
+                    <a
+                      href="https://www.autodrive.utoronto.ca/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      aUToronto
+                    </a>
+                  </span>
+                  .
+                </li>
+              </ul>
+            </p>
+            <p>
+              There used to be more content here but I got bored of keeping it up to date so go
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://twitter.com/ziyadedher"
+                >
+                  follow me on Twitter
+                </a>
+              </span>
+               
+              or something instead.
+            </p>
+          </div>
+          <div
+            class="flex flex-col flex-none max-w-md"
+          >
+            <div
+              style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+            >
+              <div
+                style="box-sizing: border-box; display: block; max-width: 100%;"
+              >
+                <img
+                  alt=""
+                  aria-hidden="true"
+                  src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAyNCIgaGVpZ2h0PSI0MDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                  style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+                />
+              </div>
+              <img
+                alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
+                class="rounded-3xl shadow-inner"
+                data-nimg="intrinsic"
+                decoding="async"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              />
+              <noscript />
+            </div>
+          </div>
+        </main>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="container flex flex-row justify-center items-center mx-auto h-screen"
+      class="container flex flex-col justify-center items-center mx-auto"
     >
-      <div
-        class="text-center"
+      <header
+        class="flex flex-col py-12 text-center"
       >
-        <h1
-          class="text-6xl text-gray-700"
+        <div
+          class="text-2xl font-light uppercase hover:opacity-70 transition-all"
         >
-          Hello, world!
-        </h1>
-        <h2
-          class="pt-4"
+          <a
+            href="/"
+          >
+            Ziyad Edher
+          </a>
+        </div>
+        <div
+          class="flex flex-row pt-2 space-x-2"
         >
-          This is
-           
           <span
-            class="text-blue-500 hover:text-blue-700"
+            class="hover:opacity-50 transition-all"
           >
             <a
               href="https://twitter.com/ziyadedher"
               rel="noreferrer"
               target="_blank"
             >
-              @ziyadedher
+              <svg
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 256 256"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="256"
+                  width="256"
+                />
+                <path
+                  d="M128,88.00288a40.00668,40.00668,0,0,1,76.67148-16.00327L240,72l-32.26239,32.2625A128.00746,128.00746,0,0,1,80,224c-32,0-40-12-40-12s32-12,48-36c0,0-64-32-48-120,0,0,40,40,87.9862,48Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+              </svg>
             </a>
           </span>
-          ’s webapp template.
-        </h2>
-        <h3
-          class="pt-3"
-        >
-          Check this template out on
-           
           <span
-            class="text-blue-500 hover:text-blue-700"
+            class="hover:opacity-50 transition-all"
           >
             <a
-              href="https://github.com/ziyadedher/webdev-template"
+              href="https://linkedin.com/in/ziyad-edher"
               rel="noreferrer"
               target="_blank"
             >
-              GitHub
+              <svg
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 256 256"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="256"
+                  width="256"
+                />
+                <rect
+                  fill="none"
+                  height="184"
+                  rx="8"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                  width="184"
+                  x="36"
+                  y="36"
+                />
+                <line
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                  x1="120"
+                  x2="120"
+                  y1="112.00094"
+                  y2="176.00094"
+                />
+                <line
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                  x1="88"
+                  x2="88"
+                  y1="112.00094"
+                  y2="176.00094"
+                />
+                <path
+                  d="M120,140.00094a28,28,0,1,1,56,0v36"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <circle
+                  cx="88"
+                  cy="79.99998"
+                  r="10"
+                />
+              </svg>
             </a>
           </span>
-          !
-        </h3>
-      </div>
+          <span
+            class="hover:opacity-50 transition-all"
+          >
+            <a
+              href="https://github.com/ziyadedher"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 256 256"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="256"
+                  width="256"
+                />
+                <path
+                  d="M84,240a24,24,0,0,0,24-24V168"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <path
+                  d="M172,240a24,24,0,0,1-24-24V168"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <path
+                  d="M152,168h16a24,24,0,0,1,24,24v8a24,24,0,0,0,24,24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <path
+                  d="M104,168H88a24,24,0,0,0-24,24v8a24,24,0,0,1-24,24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <path
+                  d="M111.825,63.99934A51.9599,51.9599,0,0,0,68,40a51.90058,51.90058,0,0,0-3.48841,44.7036A49.25789,49.25789,0,0,0,56,112v8a48,48,0,0,0,48,48h48a48,48,0,0,0,48-48v-8a49.25769,49.25769,0,0,0-8.5116-27.29639A51.90061,51.90061,0,0,0,188,40a51.95992,51.95992,0,0,0-43.82535,23.99983Z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+              </svg>
+            </a>
+          </span>
+          <span
+            class="hover:opacity-50 transition-all"
+          >
+            <a
+              href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 256 256"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="256"
+                  width="256"
+                />
+                <circle
+                  cx="128"
+                  cy="128"
+                  fill="none"
+                  r="96"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <g>
+                  <path
+                    d="M179.1333,108.32931a112.19069,112.19069,0,0,0-102.3584.04859"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <path
+                    d="M164.29541,136.71457a79.94058,79.94058,0,0,0-72.68359.04736"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                  <path
+                    d="M149.47217,165.07248a47.97816,47.97816,0,0,0-43.03662.04736"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="12"
+                  />
+                </g>
+              </svg>
+            </a>
+          </span>
+          <span
+            class="hover:opacity-50 transition-all"
+          >
+            <a
+              href="https://facebook.com/ziyadedher"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 256 256"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="256"
+                  width="256"
+                />
+                <circle
+                  cx="128"
+                  cy="128"
+                  fill="none"
+                  r="96"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <path
+                  d="M168,88.00094H152a24,24,0,0,0-24,24v112"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <line
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                  x1="96"
+                  x2="160"
+                  y1="144.00094"
+                  y2="144.00094"
+                />
+              </svg>
+            </a>
+          </span>
+          <span
+            class="hover:opacity-50 transition-all"
+          >
+            <a
+              href="https://instagram.com/ziyadedher"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 256 256"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="256"
+                  width="256"
+                />
+                <circle
+                  cx="128"
+                  cy="128"
+                  fill="none"
+                  r="40"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <rect
+                  fill="none"
+                  height="184"
+                  rx="48"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                  width="184"
+                  x="36"
+                  y="36"
+                />
+                <circle
+                  cx="180"
+                  cy="75.99998"
+                  r="10"
+                />
+              </svg>
+            </a>
+          </span>
+        </div>
+      </header>
+      <main
+        class="flex flex-row py-8 space-x-8 w-full max-w-5xl"
+      >
+        <div
+          class="flex flex-col flex-1 text-sm font-light prose"
+        >
+          <p
+            class="text-3xl"
+          >
+            yo
+          </p>
+          <p>
+            My name is Ziyad Edher (زياد إضهير), I'm a software engineer and I like breaking things.
+          </p>
+          <p>
+            Right now, I'm doing security work at
+             
+            <span
+              class="underline hover:opacity-70 transition-all not-prose"
+            >
+              <a
+                href="https://asana.com?noredirect"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Asana
+              </a>
+            </span>
+            . My LinkedIn is
+             
+            <span
+              class="underline hover:opacity-70 transition-all not-prose"
+            >
+              <a
+                href="https://linkedin.com/in/ziyadedher"
+                rel="noreferrer"
+                target="_blank"
+              >
+                here
+              </a>
+            </span>
+            .
+          </p>
+          <p>
+            I went to the
+             
+            <span
+              class="underline hover:opacity-70 transition-all not-prose"
+            >
+              <a
+                href="https://www.utoronto.ca/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                University of Toronto
+              </a>
+            </span>
+             
+            and graduated in June 2021 from a computer science program focusing on artificial intelligence and computation theory.
+          </p>
+          <p>
+            I love entrepreneurship, music (check out my
+             
+            <span
+              class="underline hover:opacity-70 transition-all not-prose"
+            >
+              <a
+                href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Spotify
+              </a>
+            </span>
+            ), good software engineering, cryptocurrencies, and doing stuff in nature. Hit me up if you wanna talk about that stuff or anything else, it's not like I have anything better to do.
+          </p>
+          <p>
+            Some maybe cool things I did in the past:
+            <ul>
+              <li>
+                Building ML and data infrastructure at
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://www.citadelsecurities.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Citadel Securities
+                  </a>
+                </span>
+                .
+              </li>
+              <li>
+                Designing software that protects
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://asana.com?noredirect"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Asana
+                  </a>
+                </span>
+                 
+                users against scammers and bots.
+              </li>
+              <li>
+                Interning at
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://google.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Google
+                  </a>
+                </span>
+                 
+                (twice) working on
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://fi.google.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    communications
+                  </a>
+                </span>
+                 
+                and
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://cloud.google.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    security
+                  </a>
+                </span>
+                .
+              </li>
+              <li>
+                Teaching cars how to drive at
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://www.autodrive.utoronto.ca/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    aUToronto
+                  </a>
+                </span>
+                .
+              </li>
+            </ul>
+          </p>
+          <p>
+            There used to be more content here but I got bored of keeping it up to date so go
+             
+            <span
+              class="underline hover:opacity-70 transition-all not-prose"
+            >
+              <a
+                href="https://twitter.com/ziyadedher"
+              >
+                follow me on Twitter
+              </a>
+            </span>
+             
+            or something instead.
+          </p>
+        </div>
+        <div
+          class="flex flex-col flex-none max-w-md"
+        >
+          <div
+            style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
+          >
+            <div
+              style="box-sizing: border-box; display: block; max-width: 100%;"
+            >
+              <img
+                alt=""
+                aria-hidden="true"
+                src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAyNCIgaGVpZ2h0PSI0MDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIvPg=="
+                style="max-width: 100%; display: block; margin: 0px; padding: 0px;"
+              />
+            </div>
+            <img
+              alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
+              class="rounded-3xl shadow-inner"
+              data-nimg="intrinsic"
+              decoding="async"
+              src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+            />
+            <noscript />
+          </div>
+        </div>
+      </main>
     </div>
   </div>,
   "debug": [Function],
