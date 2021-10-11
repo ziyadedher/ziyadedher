@@ -1,3 +1,4 @@
+// eslint-disable-next-line @typescript-eslint/no-shadow -- Next.js Image
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -80,7 +81,7 @@ const Index: NextPage = () => (
       </div>
     </header>
 
-    <main className="flex flex-row py-8 space-x-8 w-full max-w-5xl">
+    <main className="flex flex-row justify-center py-8 space-x-8 w-full max-w-5xl">
       <div className="flex flex-col flex-1 text-sm font-light prose">
         <p className="text-3xl">yo</p>
         <p>
@@ -168,7 +169,7 @@ const Index: NextPage = () => (
           or something instead.
         </p>
       </div>
-      <div className="flex flex-col flex-none max-w-md">
+      <div className="hidden xl:flex flex-none max-w-md">
         <Image
           src="https://storage.googleapis.com/ziyadedher/ziyadedher.heic"
           alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
