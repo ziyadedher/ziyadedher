@@ -1,0 +1,14 @@
+name: ESLint
+
+on: push
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install dependencies
+        run: yarn install
+      - name: Run ESLint
+        run: yarn lint
