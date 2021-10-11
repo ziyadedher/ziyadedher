@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`link default render matches snapshot 1`] = `
+exports[`anchor default render matches snapshot 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

@@ -6,7 +6,7 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import Link from "../../src/logic/link";
+import Anchor from "../../src/logic/anchor";
 
 const EXAMPLE_LINK = "https://example.org/";
 const EXAMPLE_TEXT = "Hello, world!";
@@ -16,15 +16,15 @@ const EXAMPLE_TEXT = "Hello, world!";
  * In this case we can't do that since JSDOM doesn't support navigation.
  * https://github.com/jsdom/jsdom/issues/2112
  */
-describe("link", () => {
+describe("anchor", () => {
   test("default render matches snapshot", () => {
-    const tree = render(<Link href={EXAMPLE_LINK}>{EXAMPLE_TEXT}</Link>);
+    const tree = render(<Anchor href={EXAMPLE_LINK}>{EXAMPLE_TEXT}</Anchor>);
     expect(tree).toMatchSnapshot();
   });
 
   describe("href", () => {
     test("should be reflected in anchor tag", async () => {
-      const tree = render(<Link href={EXAMPLE_LINK} />);
+      const tree = render(<Anchor href={EXAMPLE_LINK} />);
       const anchorElement = (await tree.findByRole(
         "link"
       )) as HTMLAnchorElement;
@@ -35,7 +35,7 @@ describe("link", () => {
   describe("opening in new tab", () => {
     test("not should open in new tab means no target", async () => {
       const tree = render(
-        <Link href={EXAMPLE_LINK} shouldOpenInNewPage={false} />
+        <Anchor href={EXAMPLE_LINK} shouldOpenInNewPage={false} />
       );
       const anchorElement = (await tree.findByRole(
         "link"
@@ -44,7 +44,7 @@ describe("link", () => {
     });
 
     test("should open in new tab means target and rel", async () => {
-      const tree = render(<Link href={EXAMPLE_LINK} shouldOpenInNewPage />);
+      const tree = render(<Anchor href={EXAMPLE_LINK} shouldOpenInNewPage />);
       const anchorElement = (await tree.findByRole(
         "link"
       )) as HTMLAnchorElement;
@@ -55,7 +55,7 @@ describe("link", () => {
 
   describe("children", () => {
     test("should be forwarded to anchor tag", async () => {
-      const tree = render(<Link href={EXAMPLE_LINK}>{EXAMPLE_TEXT}</Link>);
+      const tree = render(<Anchor href={EXAMPLE_LINK}>{EXAMPLE_TEXT}</Anchor>);
       const paragraphElement = (await tree.findByText(
         EXAMPLE_TEXT
       )) as HTMLParagraphElement;
