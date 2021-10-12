@@ -133,43 +133,43 @@ const Index: NextPage = () => (
           </p>
           <p className="mb-1">Some maybe cool things I did in the past:</p>
           <ul className="mt-0">
-              <li>
-                Building ML and data infrastructure at{" "}
-                <TextLink href="https://www.citadelsecurities.com/" isExternal>
-                  Citadel Securities
-                </TextLink>
-                .
-              </li>
-              <li>
-                Designing software that protects{" "}
-                <TextLink href="https://asana.com?noredirect" isExternal>
-                  Asana
-                </TextLink>{" "}
-                users against scammers and bots.
-              </li>
-              <li>
-                Interning at{" "}
-                <TextLink href="https://google.com" isExternal>
-                  Google
-                </TextLink>{" "}
-                (twice) working on{" "}
-                <TextLink href="https://fi.google.com/" isExternal>
-                  communications
-                </TextLink>{" "}
-                and{" "}
-                <TextLink href="https://cloud.google.com/" isExternal>
-                  security
-                </TextLink>
-                .
-              </li>
-              <li>
-                Teaching cars how to drive at{" "}
-                <TextLink href="https://www.autodrive.utoronto.ca/" isExternal>
-                  aUToronto
-                </TextLink>
-                .
-              </li>
-            </ul>
+            <li>
+              Building ML and data infrastructure at{" "}
+              <TextLink href="https://www.citadelsecurities.com/" isExternal>
+                Citadel Securities
+              </TextLink>
+              .
+            </li>
+            <li>
+              Designing software that protects{" "}
+              <TextLink href="https://asana.com?noredirect" isExternal>
+                Asana
+              </TextLink>{" "}
+              users against scammers and bots.
+            </li>
+            <li>
+              Interning at{" "}
+              <TextLink href="https://google.com" isExternal>
+                Google
+              </TextLink>{" "}
+              (twice) working on{" "}
+              <TextLink href="https://fi.google.com/" isExternal>
+                communications
+              </TextLink>{" "}
+              and{" "}
+              <TextLink href="https://cloud.google.com/" isExternal>
+                security
+              </TextLink>
+              .
+            </li>
+            <li>
+              Teaching cars how to drive at{" "}
+              <TextLink href="https://www.autodrive.utoronto.ca/" isExternal>
+                aUToronto
+              </TextLink>
+              .
+            </li>
+          </ul>
           <p>
             There used to be more content here but I got bored of keeping it up
             to date so go{" "}
