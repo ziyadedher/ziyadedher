@@ -62,6 +62,7 @@ const Index: NextPage = () => (
         content="Ziyad Edher is a software engineer interested in AI/ML, entrepreneurship, security, and infrastructure."
       />
     </Head>
+
     <div className="container flex flex-col justify-center items-center mx-auto">
       <header className="flex flex-col py-12 text-center">
         <div className="text-2xl font-light uppercase hover:opacity-70 transition-all">
@@ -130,9 +131,8 @@ const Index: NextPage = () => (
             nature. Hit me up if you wanna talk about that stuff or anything
             else, it&apos;s not like I have anything better to do.
           </p>
-          <p>
-            Some maybe cool things I did in the past:
-            <ul>
+          <p className="mb-1">Some maybe cool things I did in the past:</p>
+          <ul className="mt-0">
               <li>
                 Building ML and data infrastructure at{" "}
                 <TextLink href="https://www.citadelsecurities.com/" isExternal>
@@ -170,7 +170,6 @@ const Index: NextPage = () => (
                 .
               </li>
             </ul>
-          </p>
           <p>
             There used to be more content here but I got bored of keeping it up
             to date so go{" "}
