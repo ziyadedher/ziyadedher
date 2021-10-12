@@ -1,23 +1,29 @@
-import React from "react";
+import React, { forwardRef } from "react";
 
-interface LinkProps {
+interface AnchorProps {
   readonly href?: string;
   readonly shouldOpenInNewPage?: boolean;
   readonly children?: React.ReactNode;
+  readonly onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }
 
-const Anchor: React.FunctionComponent<LinkProps> = ({
-  href,
-  shouldOpenInNewPage = false,
-  children,
-}: LinkProps) => (
-  <a
-    href={href}
-    // eslint-disable-next-line react/jsx-props-no-spreading -- unforunately, there's no cleaner way to do this that I can think of.
-    {...(shouldOpenInNewPage ? { target: "_blank", rel: "noreferrer" } : {})}
-  >
-    {children}
-  </a>
+const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
+  (
+    { href, shouldOpenInNewPage = false, children, onClick }: AnchorProps,
+    ref
+  ) => (
+    <a
+      ref={ref}
+      // eslint-disable-next-line react/jsx-handler-names -- we need to forward the onClick as-is here.
+      onClick={onClick}
+      href={href}
+      // eslint-disable-next-line react/jsx-props-no-spreading -- unforunately, there's no cleaner way to do this that I can think of.
+      {...(shouldOpenInNewPage ? { target: "_blank", rel: "noreferrer" } : {})}
+    >
+      {children}
+    </a>
+  )
 );
+Anchor.displayName = "Anchor";
 
 export default Anchor;
