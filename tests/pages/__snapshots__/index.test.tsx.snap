@@ -426,104 +426,108 @@ Object {
               </span>
               ), good software engineering, cryptocurrencies, and doing stuff in nature. Hit me up if you wanna talk about that stuff or anything else, it's not like I have anything better to do.
             </p>
-            <p>
+            <p
+              class="mb-1"
+            >
               Some maybe cool things I did in the past:
-              <ul>
-                <li>
-                  Building ML and data infrastructure at
-                   
-                  <span
-                    class="underline hover:opacity-70 transition-all not-prose"
-                  >
-                    <a
-                      href="https://www.citadelsecurities.com/"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      Citadel Securities
-                    </a>
-                  </span>
-                  .
-                </li>
-                <li>
-                  Designing software that protects
-                   
-                  <span
-                    class="underline hover:opacity-70 transition-all not-prose"
-                  >
-                    <a
-                      href="https://asana.com?noredirect"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      Asana
-                    </a>
-                  </span>
-                   
-                  users against scammers and bots.
-                </li>
-                <li>
-                  Interning at
-                   
-                  <span
-                    class="underline hover:opacity-70 transition-all not-prose"
-                  >
-                    <a
-                      href="https://google.com"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      Google
-                    </a>
-                  </span>
-                   
-                  (twice) working on
-                   
-                  <span
-                    class="underline hover:opacity-70 transition-all not-prose"
-                  >
-                    <a
-                      href="https://fi.google.com/"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      communications
-                    </a>
-                  </span>
-                   
-                  and
-                   
-                  <span
-                    class="underline hover:opacity-70 transition-all not-prose"
-                  >
-                    <a
-                      href="https://cloud.google.com/"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      security
-                    </a>
-                  </span>
-                  .
-                </li>
-                <li>
-                  Teaching cars how to drive at
-                   
-                  <span
-                    class="underline hover:opacity-70 transition-all not-prose"
-                  >
-                    <a
-                      href="https://www.autodrive.utoronto.ca/"
-                      rel="noreferrer"
-                      target="_blank"
-                    >
-                      aUToronto
-                    </a>
-                  </span>
-                  .
-                </li>
-              </ul>
             </p>
+            <ul
+              class="mt-0"
+            >
+              <li>
+                Building ML and data infrastructure at
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://www.citadelsecurities.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Citadel Securities
+                  </a>
+                </span>
+                .
+              </li>
+              <li>
+                Designing software that protects
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://asana.com?noredirect"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Asana
+                  </a>
+                </span>
+                 
+                users against scammers and bots.
+              </li>
+              <li>
+                Interning at
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://google.com"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    Google
+                  </a>
+                </span>
+                 
+                (twice) working on
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://fi.google.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    communications
+                  </a>
+                </span>
+                 
+                and
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://cloud.google.com/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    security
+                  </a>
+                </span>
+                .
+              </li>
+              <li>
+                Teaching cars how to drive at
+                 
+                <span
+                  class="underline hover:opacity-70 transition-all not-prose"
+                >
+                  <a
+                    href="https://www.autodrive.utoronto.ca/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    aUToronto
+                  </a>
+                </span>
+                .
+              </li>
+            </ul>
             <p>
               There used to be more content here but I got bored of keeping it up to date so go
                
@@ -993,104 +997,108 @@ Object {
             </span>
             ), good software engineering, cryptocurrencies, and doing stuff in nature. Hit me up if you wanna talk about that stuff or anything else, it's not like I have anything better to do.
           </p>
-          <p>
+          <p
+            class="mb-1"
+          >
             Some maybe cool things I did in the past:
-            <ul>
-              <li>
-                Building ML and data infrastructure at
-                 
-                <span
-                  class="underline hover:opacity-70 transition-all not-prose"
-                >
-                  <a
-                    href="https://www.citadelsecurities.com/"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Citadel Securities
-                  </a>
-                </span>
-                .
-              </li>
-              <li>
-                Designing software that protects
-                 
-                <span
-                  class="underline hover:opacity-70 transition-all not-prose"
-                >
-                  <a
-                    href="https://asana.com?noredirect"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Asana
-                  </a>
-                </span>
-                 
-                users against scammers and bots.
-              </li>
-              <li>
-                Interning at
-                 
-                <span
-                  class="underline hover:opacity-70 transition-all not-prose"
-                >
-                  <a
-                    href="https://google.com"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    Google
-                  </a>
-                </span>
-                 
-                (twice) working on
-                 
-                <span
-                  class="underline hover:opacity-70 transition-all not-prose"
-                >
-                  <a
-                    href="https://fi.google.com/"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    communications
-                  </a>
-                </span>
-                 
-                and
-                 
-                <span
-                  class="underline hover:opacity-70 transition-all not-prose"
-                >
-                  <a
-                    href="https://cloud.google.com/"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    security
-                  </a>
-                </span>
-                .
-              </li>
-              <li>
-                Teaching cars how to drive at
-                 
-                <span
-                  class="underline hover:opacity-70 transition-all not-prose"
-                >
-                  <a
-                    href="https://www.autodrive.utoronto.ca/"
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    aUToronto
-                  </a>
-                </span>
-                .
-              </li>
-            </ul>
           </p>
+          <ul
+            class="mt-0"
+          >
+            <li>
+              Building ML and data infrastructure at
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://www.citadelsecurities.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Citadel Securities
+                </a>
+              </span>
+              .
+            </li>
+            <li>
+              Designing software that protects
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://asana.com?noredirect"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Asana
+                </a>
+              </span>
+               
+              users against scammers and bots.
+            </li>
+            <li>
+              Interning at
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://google.com"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Google
+                </a>
+              </span>
+               
+              (twice) working on
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://fi.google.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  communications
+                </a>
+              </span>
+               
+              and
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://cloud.google.com/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  security
+                </a>
+              </span>
+              .
+            </li>
+            <li>
+              Teaching cars how to drive at
+               
+              <span
+                class="underline hover:opacity-70 transition-all not-prose"
+              >
+                <a
+                  href="https://www.autodrive.utoronto.ca/"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  aUToronto
+                </a>
+              </span>
+              .
+            </li>
+          </ul>
           <p>
             There used to be more content here but I got bored of keeping it up to date so go
              
