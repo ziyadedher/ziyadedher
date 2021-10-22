@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@babel/core", "npm:7.15.8"],
             ["@headlessui/react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.4.1"],
-            ["@heroicons/react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.0.4"],
+            ["@heroicons/react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.0.5"],
             ["@mdx-js/react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.6.22"],
             ["@next/eslint-plugin-next", "npm:11.1.2"],
             ["@storybook/addon-actions", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:6.3.12"],
@@ -4494,17 +4494,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@heroicons/react", [
-        ["npm:1.0.4", {
-          "packageLocation": "./.yarn/cache/@heroicons-react-npm-1.0.4-bc088baa83-08f2853a49.zip/node_modules/@heroicons/react/",
+        ["npm:1.0.5", {
+          "packageLocation": "./.yarn/cache/@heroicons-react-npm-1.0.5-c693e41c9d-12114af19c.zip/node_modules/@heroicons/react/",
           "packageDependencies": [
-            ["@heroicons/react", "npm:1.0.4"]
+            ["@heroicons/react", "npm:1.0.5"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.0.4", {
-          "packageLocation": "./.yarn/__virtual__/@heroicons-react-virtual-53b8499649/0/cache/@heroicons-react-npm-1.0.4-bc088baa83-08f2853a49.zip/node_modules/@heroicons/react/",
+        ["virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.0.5", {
+          "packageLocation": "./.yarn/__virtual__/@heroicons-react-virtual-9a93f0742a/0/cache/@heroicons-react-npm-1.0.5-c693e41c9d-12114af19c.zip/node_modules/@heroicons/react/",
           "packageDependencies": [
-            ["@heroicons/react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.0.4"],
+            ["@heroicons/react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.0.5"],
             ["@types/react", "npm:17.0.31"],
             ["react", "npm:17.0.2"]
           ],
@@ -24352,7 +24352,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["webdev-template", "workspace:."],
             ["@babel/core", "npm:7.15.8"],
             ["@headlessui/react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.4.1"],
-            ["@heroicons/react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.0.4"],
+            ["@heroicons/react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.0.5"],
             ["@mdx-js/react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.6.22"],
             ["@next/eslint-plugin-next", "npm:11.1.2"],
             ["@storybook/addon-actions", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:6.3.12"],
