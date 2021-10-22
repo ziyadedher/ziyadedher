@@ -1798,12 +1798,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@heroicons/react@npm:1.0.4":
-  version: 1.0.4
-  resolution: "@heroicons/react@npm:1.0.4"
+"@heroicons/react@npm:1.0.5":
+  version: 1.0.5
+  resolution: "@heroicons/react@npm:1.0.5"
   peerDependencies:
     react: ">= 16"
-  checksum: 08f2853a49e51f274f22e8e1bb4e7d8a49456b7eb770447da66fd06ac05bf821ddf5d93170088d61ec44ae66cfbdc877c287861d5a3d22aad1785659502e3a71
+  checksum: 12114af19c17f69140cc7338e4cd12fe38098ad3ed79f02762106160655cde3ebdba58a2b26f1067f720786187364fd9465bc72f02aad85b0ead8172d76aa51d
   languageName: node
   linkType: hard
 
@@ -17764,7 +17764,7 @@ typescript@^4.4.2:
   dependencies:
     "@babel/core": 7.15.8
     "@headlessui/react": 1.4.1
-    "@heroicons/react": 1.0.4
+    "@heroicons/react": 1.0.5
     "@mdx-js/react": 1.6.22
     "@next/eslint-plugin-next": 11.1.2
     "@storybook/addon-actions": 6.3.12
