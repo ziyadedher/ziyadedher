@@ -107,7 +107,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
       </header>
 
       <main className="flex flex-row justify-center py-8 space-x-8 w-full max-w-5xl">
-        <div className="flex flex-col flex-1 mx-6 text-sm font-light prose xl:mx-0">
+        <div className="flex flex-col flex-1 mx-6 xl:mx-0 text-sm font-light prose">
           <p className="text-3xl">yo</p>
           <p>
             My name is Ziyad Edher (زياد إضهير), I&apos;m a software engineer
