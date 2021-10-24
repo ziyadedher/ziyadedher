@@ -545,7 +545,7 @@ Object {
             </p>
           </div>
           <div
-            class="hidden xl:flex flex-none max-w-md"
+            class="hidden xl:flex overflow-hidden flex-none max-w-md rounded-3xl shadow-inner"
           >
             <div
               style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
@@ -562,11 +562,10 @@ Object {
               </div>
               <img
                 alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
-                class="rounded-3xl shadow-inner"
                 data-nimg="intrinsic"
                 decoding="async"
                 src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+                style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; filter: blur(20px); background-size: cover; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=); background-position: 0% 0%;"
               />
               <noscript />
             </div>
@@ -1116,7 +1115,7 @@ Object {
           </p>
         </div>
         <div
-          class="hidden xl:flex flex-none max-w-md"
+          class="hidden xl:flex overflow-hidden flex-none max-w-md rounded-3xl shadow-inner"
         >
           <div
             style="display: inline-block; max-width: 100%; overflow: hidden; position: relative; box-sizing: border-box; margin: 0px;"
@@ -1133,11 +1132,10 @@ Object {
             </div>
             <img
               alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
-              class="rounded-3xl shadow-inner"
               data-nimg="intrinsic"
               decoding="async"
               src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;"
+              style="position: absolute; top: 0px; left: 0px; bottom: 0px; right: 0px; box-sizing: border-box; padding: 0px; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%; filter: blur(20px); background-size: cover; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=); background-position: 0% 0%;"
             />
             <noscript />
           </div>
@@ -1196,5 +1194,20 @@ Object {
   "queryByTitle": [Function],
   "rerender": [Function],
   "unmount": [Function],
+}
+`;
+
+exports[`index static props acquireable 1`] = `
+Object {
+  "props": Object {
+    "imageBlur": Object {
+      "ziyadedher": Object {
+        "data": "data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAEAAMDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAf/xAAeEAACAgICAwAAAAAAAAAAAAABAgADBAUGEiExgf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oADAMBAAIRAxEAPwCa38v3+NfZXXts4jsWZmyHJZm8sxJPskk/YiIChkf/2Q==",
+        "height": 4032,
+        "url": "https://storage.googleapis.com/ziyadedher/ziyadedher.jpg",
+        "width": 3024,
+      },
+    },
+  },
 }
 `;

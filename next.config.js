@@ -1,7 +1,11 @@
-/** @type {import('next').NextConfig} */
-module.exports = {
-  reactStrictMode: true,
-  images: {
-    domains: ["storage.googleapis.com"],
-  },
-};
+const { withPlaiceholder } = require("@plaiceholder/next");
+
+module.exports = withPlaiceholder(
+  /** @type {import('next').NextConfig} */
+  {
+    reactStrictMode: true,
+    images: {
+      domains: ["storage.googleapis.com"],
+    },
+  }
+);
