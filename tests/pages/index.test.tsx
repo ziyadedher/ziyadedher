@@ -4,7 +4,7 @@
 
 import { render } from "@testing-library/react";
 
-import Index, { getStaticProps, DEFAULT_STATIC_PROPS } from "../../src/pages";
+import Index, { DEFAULT_STATIC_PROPS, getStaticProps } from "../../src/pages";
 
 describe("index static props", () => {
   test("acquireable", async () => {
