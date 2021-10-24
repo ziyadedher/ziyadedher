@@ -192,7 +192,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             or something instead.
           </p>
         </div>
-        <div className="hidden xl:flex flex-none max-w-md overflow-hidden rounded-3xl shadow-inner">
+        <div className="hidden xl:flex overflow-hidden flex-none max-w-md rounded-3xl shadow-inner">
           <Image
             alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
             src={imageBlur.ziyadedher.url}
@@ -224,6 +224,17 @@ export const getStaticProps: GetStaticProps<IndexProps> = async () => {
       },
     },
   };
+};
+
+export const DEFAULT_STATIC_PROPS: IndexProps = {
+  imageBlur: {
+    ziyadedher: {
+      url: "https://storage.googleapis.com/ziyadedher/ziyadedher.jpg",
+      width: 3024,
+      height: 4032,
+      data: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=",
+    },
+  },
 };
 
 export default Index;
