@@ -10,11 +10,12 @@ import {
   SpotifyLogo,
   TwitterLogo,
 } from "phosphor-react";
+import { getPlaiceholder } from "plaiceholder";
 import React from "react";
 
 import Anchor from "../logic/anchor";
 
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 
 interface SocialIconProps {
   readonly href: string;
@@ -51,7 +52,19 @@ const TextLink: React.FunctionComponent<TextLinkProps> = ({
   </span>
 );
 
-const Index: NextPage = () => (
+interface ImageBlur {
+  readonly url: string;
+  readonly width: number;
+  readonly height: number;
+  readonly data: string;
+}
+interface IndexProps {
+  readonly imageBlur: {
+    readonly ziyadedher: ImageBlur;
+  };
+}
+
+const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
   <>
     <Head>
       <html lang="en" />
@@ -179,19 +192,49 @@ const Index: NextPage = () => (
             or something instead.
           </p>
         </div>
-        <div className="hidden xl:flex flex-none max-w-md">
+        <div className="hidden xl:flex overflow-hidden flex-none max-w-md rounded-3xl shadow-inner">
           <Image
-            src="https://storage.googleapis.com/ziyadedher/ziyadedher.heic"
             alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
-            width={3024}
-            height={4032}
-            // eslint-disable-next-line react/forbid-component-props -- Next.js doesn't let us style outside.
-            className="rounded-3xl shadow-inner"
+            src={imageBlur.ziyadedher.url}
+            width={imageBlur.ziyadedher.width}
+            height={imageBlur.ziyadedher.height}
+            placeholder="blur"
+            blurDataURL={imageBlur.ziyadedher.data}
           />
         </div>
       </main>
     </div>
   </>
 );
+
+export const getStaticProps: GetStaticProps<IndexProps> = async () => {
+  const ziyadedherPlaiceholder = await getPlaiceholder(
+    "https://storage.googleapis.com/ziyadedher/ziyadedher.jpg"
+  );
+
+  return {
+    props: {
+      imageBlur: {
+        ziyadedher: {
+          url: ziyadedherPlaiceholder.img.src,
+          width: ziyadedherPlaiceholder.img.width,
+          height: ziyadedherPlaiceholder.img.height,
+          data: ziyadedherPlaiceholder.base64,
+        },
+      },
+    },
+  };
+};
+
+export const DEFAULT_STATIC_PROPS: IndexProps = {
+  imageBlur: {
+    ziyadedher: {
+      url: "https://storage.googleapis.com/ziyadedher/ziyadedher.jpg",
+      width: 3024,
+      height: 4032,
+      data: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=",
+    },
+  },
+};
 
 export default Index;
