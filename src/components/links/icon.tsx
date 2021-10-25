@@ -3,7 +3,7 @@ import React from "react";
 
 import Anchor from "../../logic/anchor";
 
-export interface IconLinkProps {
+interface IconLinkProps {
   readonly href: string;
   readonly isExternal?: boolean;
   readonly children: React.ReactNode;
