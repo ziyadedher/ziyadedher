@@ -11,46 +11,12 @@ import {
   TwitterLogo,
 } from "phosphor-react";
 import { getPlaiceholder } from "plaiceholder";
-import React from "react";
 
+import IconLink from "../components/links/icon";
+import TextLink from "../components/links/text";
 import Anchor from "../logic/anchor";
 
 import type { GetStaticProps, NextPage } from "next";
-
-interface SocialIconProps {
-  readonly href: string;
-  readonly children: React.ReactNode;
-}
-
-const SocialIcon: React.FunctionComponent<SocialIconProps> = ({
-  href,
-  children,
-}: SocialIconProps) => (
-  <span className="hover:opacity-50 transition-all">
-    <Link href={href} passHref>
-      <Anchor shouldOpenInNewPage>{children}</Anchor>
-    </Link>
-  </span>
-);
-
-interface TextLinkProps {
-  readonly href: string;
-  readonly isExternal?: boolean;
-  readonly children: React.ReactNode;
-}
-
-const TextLink: React.FunctionComponent<TextLinkProps> = ({
-  href,
-  isExternal = false,
-  children,
-}: TextLinkProps) => (
-  // eslint-disable-next-line tailwindcss/no-custom-classname -- no-prose is in alpha.
-  <span className="underline hover:opacity-70 transition-all not-prose">
-    <Link href={href} passHref>
-      <Anchor shouldOpenInNewPage={isExternal}>{children}</Anchor>
-    </Link>
-  </span>
-);
 
 interface ImageBlur {
   readonly url: string;
@@ -85,24 +51,27 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
         </div>
 
         <div className="flex flex-row pt-2 space-x-2">
-          <SocialIcon href="https://twitter.com/ziyadedher">
+          <IconLink href="https://twitter.com/ziyadedher" isExternal>
             <TwitterLogo size={24} weight="light" />
-          </SocialIcon>
-          <SocialIcon href="https://linkedin.com/in/ziyad-edher">
+          </IconLink>
+          <IconLink href="https://linkedin.com/in/ziyad-edher" isExternal>
             <LinkedinLogo size={24} weight="light" />
-          </SocialIcon>
-          <SocialIcon href="https://github.com/ziyadedher">
+          </IconLink>
+          <IconLink href="https://github.com/ziyadedher" isExternal>
             <GithubLogo size={24} weight="light" />
-          </SocialIcon>
-          <SocialIcon href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr">
+          </IconLink>
+          <IconLink
+            href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
+            isExternal
+          >
             <SpotifyLogo size={24} weight="light" />
-          </SocialIcon>
-          <SocialIcon href="https://facebook.com/ziyadedher">
+          </IconLink>
+          <IconLink href="https://facebook.com/ziyadedher" isExternal>
             <FacebookLogo size={24} weight="light" />
-          </SocialIcon>
-          <SocialIcon href="https://instagram.com/ziyadedher">
+          </IconLink>
+          <IconLink href="https://instagram.com/ziyadedher" isExternal>
             <InstagramLogo size={24} weight="light" />
-          </SocialIcon>
+          </IconLink>
         </div>
       </header>
 
