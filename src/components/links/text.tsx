@@ -3,7 +3,7 @@ import React from "react";
 
 import Anchor from "../../logic/anchor";
 
-interface TextLinkProps {
+export interface TextLinkProps {
   readonly href: string;
   readonly isExternal?: boolean;
   readonly children: React.ReactNode;
