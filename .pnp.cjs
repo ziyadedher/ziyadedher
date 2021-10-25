@@ -54,7 +54,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel__core", "npm:7.1.16"],
             ["@types/eslint", "npm:7.28.2"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/mdx-js__react", "npm:1.5.4"],
+            ["@types/mdx-js__react", "npm:1.5.5"],
             ["@types/node", "npm:16.10.1"],
             ["@types/prettier", "npm:2.4.1"],
             ["@types/react", "npm:17.0.32"],
@@ -7520,10 +7520,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/mdx-js__react", [
-        ["npm:1.5.4", {
-          "packageLocation": "./.yarn/cache/@types-mdx-js__react-npm-1.5.4-04f546c36e-b06ec66dc9.zip/node_modules/@types/mdx-js__react/",
+        ["npm:1.5.5", {
+          "packageLocation": "./.yarn/cache/@types-mdx-js__react-npm-1.5.5-4006dcef70-91229e9e4d.zip/node_modules/@types/mdx-js__react/",
           "packageDependencies": [
-            ["@types/mdx-js__react", "npm:1.5.4"],
+            ["@types/mdx-js__react", "npm:1.5.5"],
             ["@types/react", "npm:17.0.32"]
           ],
           "linkType": "HARD",
@@ -23973,7 +23973,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel__core", "npm:7.1.16"],
             ["@types/eslint", "npm:7.28.2"],
             ["@types/jest", "npm:27.0.2"],
-            ["@types/mdx-js__react", "npm:1.5.4"],
+            ["@types/mdx-js__react", "npm:1.5.5"],
             ["@types/node", "npm:16.10.1"],
             ["@types/prettier", "npm:2.4.1"],
             ["@types/react", "npm:17.0.32"],
