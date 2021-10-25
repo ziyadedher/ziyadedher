@@ -4,7 +4,7 @@ import Anchor from "../../logic/anchor";
 
 interface IconLinkProps {
   readonly href: string;
-  readonly isExternal: boolean;
+  readonly isExternal?: boolean;
   readonly children: React.ReactNode;
 }
 
