@@ -13,11 +13,11 @@ import {
 import { getPlaiceholder } from "plaiceholder";
 import React from "react";
 
+import IconLink from "../components/links/icon";
+import TextLink from "../components/links/text";
 import Anchor from "../logic/anchor";
 
 import type { GetStaticProps, NextPage } from "next";
-import IconLink from "../components/links/icon";
-import TextLink from "../components/links/text";
 
 interface ImageBlur {
   readonly url: string;
