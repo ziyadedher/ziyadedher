@@ -11,7 +11,6 @@ import {
   TwitterLogo,
 } from "phosphor-react";
 import { getPlaiceholder } from "plaiceholder";
-import React from "react";
 
 import IconLink from "../components/links/icon";
 import TextLink from "../components/links/text";
