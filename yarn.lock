@@ -3812,10 +3812,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.10.1":
-  version: 16.10.1
-  resolution: "@types/node@npm:16.10.1"
-  checksum: 84d7f082e9421fdf1f08dbe00b66848897b2675eacc94a4fa445c4d34cef57c901ecd3276d03ebe110607a848d3df0ab33816aeff51a234e036111dd8ef1422f
+"@types/node@npm:16.11.6":
+  version: 16.11.6
+  resolution: "@types/node@npm:16.11.6"
+  checksum: 6e19634766ff589d3d2f361c2196b671f8f133cdadc5ad347a621c360d8994b6c4fbccfb2ad9c60c588c593831a96497c9c6b77d2b7e91be723384b94f6368e7
   languageName: node
   linkType: hard
 
@@ -17526,7 +17526,7 @@ typescript@4.4.4:
     "@types/eslint": 7.28.2
     "@types/jest": 27.0.2
     "@types/mdx-js__react": 1.5.5
-    "@types/node": 16.10.1
+    "@types/node": 16.11.6
     "@types/prettier": 2.4.1
     "@types/react": 17.0.33
     "@types/sharp": 0.29.2
