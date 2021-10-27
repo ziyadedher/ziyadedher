@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@headlessui/react": "1.4.1",
-    "@plaiceholder/next": "2.1.0",
+    "@plaiceholder/next": "2.2.0",
     "next": "11.1.2",
     "plaiceholder": "2.0.1",
     "react": "17.0.2",
