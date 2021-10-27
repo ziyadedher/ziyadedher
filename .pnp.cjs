@@ -66,7 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ziyadedher/eslint-config", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.0.0"],
             ["autoprefixer", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:10.3.7"],
             ["babel-loader", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:8.2.3"],
-            ["chromatic", "npm:6.0.4"],
+            ["chromatic", "npm:6.0.5"],
             ["codecov", "npm:3.8.3"],
             ["eslint", "npm:8.1.0"],
             ["eslint-import-resolver-node", "npm:0.3.6"],
@@ -10740,10 +10740,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["chromatic", [
-        ["npm:6.0.4", {
-          "packageLocation": "./.yarn/cache/chromatic-npm-6.0.4-138ff17d66-5f59af0908.zip/node_modules/chromatic/",
+        ["npm:6.0.5", {
+          "packageLocation": "./.yarn/cache/chromatic-npm-6.0.5-d3e5287ad7-eb9a40f75d.zip/node_modules/chromatic/",
           "packageDependencies": [
-            ["chromatic", "npm:6.0.4"]
+            ["chromatic", "npm:6.0.5"]
           ],
           "linkType": "HARD",
         }]
@@ -24149,7 +24149,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ziyadedher/eslint-config", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.0.0"],
             ["autoprefixer", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:10.3.7"],
             ["babel-loader", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:8.2.3"],
-            ["chromatic", "npm:6.0.4"],
+            ["chromatic", "npm:6.0.5"],
             ["codecov", "npm:3.8.3"],
             ["eslint", "npm:8.1.0"],
             ["eslint-import-resolver-node", "npm:0.3.6"],
