@@ -55,7 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:7.28.2"],
             ["@types/jest", "npm:27.0.2"],
             ["@types/mdx-js__react", "npm:1.5.5"],
-            ["@types/node", "npm:16.10.1"],
+            ["@types/node", "npm:16.11.6"],
             ["@types/prettier", "npm:2.4.1"],
             ["@types/react", "npm:17.0.33"],
             ["@types/sharp", "npm:0.29.2"],
@@ -7563,17 +7563,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:16.10.1", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.10.1-60de6357e2-84d7f082e9.zip/node_modules/@types/node/",
-          "packageDependencies": [
-            ["@types/node", "npm:16.10.1"]
-          ],
-          "linkType": "HARD",
-        }],
         ["npm:16.11.4", {
           "packageLocation": "./.yarn/cache/@types-node-npm-16.11.4-f4c998d94a-96e08c0f8b.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:16.11.4"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:16.11.6", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.6-3a38cc239a-6e19634766.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:16.11.6"]
           ],
           "linkType": "HARD",
         }]
@@ -23984,7 +23984,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:7.28.2"],
             ["@types/jest", "npm:27.0.2"],
             ["@types/mdx-js__react", "npm:1.5.5"],
-            ["@types/node", "npm:16.10.1"],
+            ["@types/node", "npm:16.11.6"],
             ["@types/prettier", "npm:2.4.1"],
             ["@types/react", "npm:17.0.33"],
             ["@types/sharp", "npm:0.29.2"],
