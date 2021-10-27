@@ -83,7 +83,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:11.1.2"],
             ["node-notifier", "npm:10.0.0"],
             ["phosphor-react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.3.1"],
-            ["plaiceholder", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.0.1"],
+            ["plaiceholder", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.2.0"],
             ["postcss", "npm:8.3.11"],
             ["prettier", "npm:2.4.1"],
             ["react", "npm:17.0.2"],
@@ -9882,10 +9882,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["blurhash", [
-        ["npm:1.1.3", {
-          "packageLocation": "./.yarn/cache/blurhash-npm-1.1.3-969531ae2e-3c2b60ef58.zip/node_modules/blurhash/",
+        ["npm:1.1.4", {
+          "packageLocation": "./.yarn/cache/blurhash-npm-1.1.4-9288dbbfe0-99a521ff35.zip/node_modules/blurhash/",
           "packageDependencies": [
-            ["blurhash", "npm:1.1.3"]
+            ["blurhash", "npm:1.1.4"]
           ],
           "linkType": "HARD",
         }]
@@ -18236,6 +18236,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:2.6.2", {
+          "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.2-2820154539-de367eae1d.zip/node_modules/node-fetch/",
+          "packageDependencies": [
+            ["node-fetch", "npm:2.6.2"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.6.5", {
           "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.5-77aced0674-4e83db4507.zip/node_modules/node-fetch/",
           "packageDependencies": [
@@ -19281,22 +19288,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["plaiceholder", [
-        ["npm:2.0.1", {
-          "packageLocation": "./.yarn/cache/plaiceholder-npm-2.0.1-b670e12633-c1b641d739.zip/node_modules/plaiceholder/",
+        ["npm:2.2.0", {
+          "packageLocation": "./.yarn/cache/plaiceholder-npm-2.2.0-0bb6261dbf-0a6bf76a93.zip/node_modules/plaiceholder/",
           "packageDependencies": [
-            ["plaiceholder", "npm:2.0.1"]
+            ["plaiceholder", "npm:2.2.0"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.0.1", {
-          "packageLocation": "./.yarn/__virtual__/plaiceholder-virtual-9fd4f8a341/0/cache/plaiceholder-npm-2.0.1-b670e12633-c1b641d739.zip/node_modules/plaiceholder/",
+        ["virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.2.0", {
+          "packageLocation": "./.yarn/__virtual__/plaiceholder-virtual-b372db713f/0/cache/plaiceholder-npm-2.2.0-0bb6261dbf-0a6bf76a93.zip/node_modules/plaiceholder/",
           "packageDependencies": [
-            ["plaiceholder", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.0.1"],
+            ["plaiceholder", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.2.0"],
             ["@types/sharp", "npm:0.29.2"],
-            ["blurhash", "npm:1.1.3"],
+            ["blurhash", "npm:1.1.4"],
             ["image-size", "npm:1.0.0"],
             ["node-cache", "npm:5.1.2"],
-            ["node-fetch", "npm:2.6.1"],
+            ["node-fetch", "npm:2.6.2"],
             ["sharp", "npm:0.29.2"]
           ],
           "packagePeers": [
@@ -24012,7 +24019,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:11.1.2"],
             ["node-notifier", "npm:10.0.0"],
             ["phosphor-react", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:1.3.1"],
-            ["plaiceholder", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.0.1"],
+            ["plaiceholder", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.2.0"],
             ["postcss", "npm:8.3.11"],
             ["prettier", "npm:2.4.1"],
             ["react", "npm:17.0.2"],
