@@ -52,7 +52,7 @@
     "@ziyadedher/eslint-config": "2.0.0",
     "autoprefixer": "10.3.7",
     "babel-loader": "8.2.3",
-    "chromatic": "6.0.4",
+    "chromatic": "6.0.5",
     "codecov": "3.8.3",
     "eslint": "8.1.0",
     "eslint-import-resolver-node": "0.3.6",
