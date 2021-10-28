@@ -27,6 +27,7 @@ Object {
               class="hover:opacity-50 transition-all"
             >
               <a
+                aria-label="Twitter"
                 href="https://twitter.com/ziyadedher"
                 rel="noreferrer"
                 target="_blank"
@@ -58,6 +59,7 @@ Object {
               class="hover:opacity-50 transition-all"
             >
               <a
+                aria-label="LinkedIn"
                 href="https://linkedin.com/in/ziyad-edher"
                 rel="noreferrer"
                 target="_blank"
@@ -128,6 +130,7 @@ Object {
               class="hover:opacity-50 transition-all"
             >
               <a
+                aria-label="GitHub"
                 href="https://github.com/ziyadedher"
                 rel="noreferrer"
                 target="_blank"
@@ -191,6 +194,7 @@ Object {
               class="hover:opacity-50 transition-all"
             >
               <a
+                aria-label="Spotify"
                 href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
                 rel="noreferrer"
                 target="_blank"
@@ -250,6 +254,7 @@ Object {
               class="hover:opacity-50 transition-all"
             >
               <a
+                aria-label="Facebook"
                 href="https://facebook.com/ziyadedher"
                 rel="noreferrer"
                 target="_blank"
@@ -302,6 +307,7 @@ Object {
               class="hover:opacity-50 transition-all"
             >
               <a
+                aria-label="Instagram"
                 href="https://instagram.com/ziyadedher"
                 rel="noreferrer"
                 target="_blank"
@@ -597,6 +603,7 @@ Object {
             class="hover:opacity-50 transition-all"
           >
             <a
+              aria-label="Twitter"
               href="https://twitter.com/ziyadedher"
               rel="noreferrer"
               target="_blank"
@@ -628,6 +635,7 @@ Object {
             class="hover:opacity-50 transition-all"
           >
             <a
+              aria-label="LinkedIn"
               href="https://linkedin.com/in/ziyad-edher"
               rel="noreferrer"
               target="_blank"
@@ -698,6 +706,7 @@ Object {
             class="hover:opacity-50 transition-all"
           >
             <a
+              aria-label="GitHub"
               href="https://github.com/ziyadedher"
               rel="noreferrer"
               target="_blank"
@@ -761,6 +770,7 @@ Object {
             class="hover:opacity-50 transition-all"
           >
             <a
+              aria-label="Spotify"
               href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
               rel="noreferrer"
               target="_blank"
@@ -820,6 +830,7 @@ Object {
             class="hover:opacity-50 transition-all"
           >
             <a
+              aria-label="Facebook"
               href="https://facebook.com/ziyadedher"
               rel="noreferrer"
               target="_blank"
@@ -872,6 +883,7 @@ Object {
             class="hover:opacity-50 transition-all"
           >
             <a
+              aria-label="Instagram"
               href="https://instagram.com/ziyadedher"
               rel="noreferrer"
               target="_blank"

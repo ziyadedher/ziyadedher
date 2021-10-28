@@ -12,7 +12,7 @@ import IconLink from "../../../src/components/links/icon";
 describe("icon link", () => {
   test("renders link child", () => {
     const tree = render(
-      <IconLink href="https://example.com">
+      <IconLink href="https://example.com" label="example">
         <PhosphorLogo data-testid="logo" size={24} weight="light" />
       </IconLink>
     );
@@ -21,7 +21,7 @@ describe("icon link", () => {
 
   test("has correct href", () => {
     const tree = render(
-      <IconLink href="https://example.com">
+      <IconLink href="https://example.com" label="example">
         <PhosphorLogo data-testid="logo" size={24} weight="light" />
       </IconLink>
     );
@@ -31,10 +31,22 @@ describe("icon link", () => {
     );
   });
 
+  test("has correct label", () => {
+    const tree = render(
+      <IconLink href="https://example.com" label="example">
+        <PhosphorLogo data-testid="logo" size={24} weight="light" />
+      </IconLink>
+    );
+    expect(tree.getByTestId("logo").parentElement).toHaveAttribute(
+      "aria-label",
+      "example"
+    );
+  });
+
   describe("external", () => {
     test("does not set target when not external", () => {
       const tree = render(
-        <IconLink href="https://example.com" isExternal={false}>
+        <IconLink href="https://example.com" label="example" isExternal={false}>
           <PhosphorLogo data-testid="logo" size={24} weight="light" />
         </IconLink>
       );
@@ -45,7 +57,7 @@ describe("icon link", () => {
 
     test("sets target to blank when external", () => {
       const tree = render(
-        <IconLink href="https://example.com" isExternal>
+        <IconLink href="https://example.com" label="example" isExternal>
           <PhosphorLogo data-testid="logo" size={24} weight="light" />
         </IconLink>
       );

@@ -49,25 +49,46 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
         </div>
 
         <div className="flex flex-row pt-2 space-x-2">
-          <IconLink href="https://twitter.com/ziyadedher" isExternal>
+          <IconLink
+            href="https://twitter.com/ziyadedher"
+            label="Twitter"
+            isExternal
+          >
             <TwitterLogo size={24} weight="light" />
           </IconLink>
-          <IconLink href="https://linkedin.com/in/ziyad-edher" isExternal>
+          <IconLink
+            href="https://linkedin.com/in/ziyad-edher"
+            label="LinkedIn"
+            isExternal
+          >
             <LinkedinLogo size={24} weight="light" />
           </IconLink>
-          <IconLink href="https://github.com/ziyadedher" isExternal>
+          <IconLink
+            href="https://github.com/ziyadedher"
+            label="GitHub"
+            isExternal
+          >
             <GithubLogo size={24} weight="light" />
           </IconLink>
           <IconLink
             href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
+            label="Spotify"
             isExternal
           >
             <SpotifyLogo size={24} weight="light" />
           </IconLink>
-          <IconLink href="https://facebook.com/ziyadedher" isExternal>
+          <IconLink
+            href="https://facebook.com/ziyadedher"
+            label="Facebook"
+            isExternal
+          >
             <FacebookLogo size={24} weight="light" />
           </IconLink>
-          <IconLink href="https://instagram.com/ziyadedher" isExternal>
+          <IconLink
+            href="https://instagram.com/ziyadedher"
+            label="Instagram"
+            isExternal
+          >
             <InstagramLogo size={24} weight="light" />
           </IconLink>
         </div>
