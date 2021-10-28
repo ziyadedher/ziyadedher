@@ -6,6 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <a
+        aria-label="example"
         href="https://example.org/"
       >
         Hello, world!
@@ -14,6 +15,7 @@ Object {
   </body>,
   "container": <div>
     <a
+      aria-label="example"
       href="https://example.org/"
     >
       Hello, world!

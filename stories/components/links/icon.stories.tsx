@@ -63,25 +63,28 @@ const Icon: React.FunctionComponent<IconProps> = ({
 
 interface IconLinkTemplateProps extends IconProps {
   readonly href: string;
+  readonly label: string;
   readonly isExternal: boolean;
 }
 
-const TextLinkTemplate: Story<IconLinkTemplateProps> = ({
+const IconLinkTemplate: Story<IconLinkTemplateProps> = ({
   href,
+  label,
   isExternal,
   iconName,
   iconWeight,
   iconSize,
 }: IconLinkTemplateProps) => (
-  <IconLink href={href} isExternal={isExternal}>
+  <IconLink href={href} label={label} isExternal={isExternal}>
     <Icon iconName={iconName} iconWeight={iconWeight} iconSize={iconSize} />
   </IconLink>
 );
 
 // eslint-disable-next-line import/exports-last -- Storybook pattern.
-export const IconLinkSocial = TextLinkTemplate.bind({});
+export const IconLinkSocial = IconLinkTemplate.bind({});
 IconLinkSocial.args = {
   href: "https://example.org",
+  label: "example",
   isExternal: true,
   iconName: IconName.PHOSPHOR,
   iconWeight: "light",
