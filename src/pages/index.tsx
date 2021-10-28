@@ -107,7 +107,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
               Asana
             </TextLink>
             . Check out my{" "}
-            <TextLink href="https://linkedin.com/in/ziyadedher" isExternal>
+            <TextLink href="https://linkedin.com/in/ziyad-edher" isExternal>
               LinkedIn
             </TextLink>{" "}
             if you&apos;re into that.
