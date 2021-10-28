@@ -106,11 +106,11 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             <TextLink href="https://asana.com?noredirect" isExternal>
               Asana
             </TextLink>
-            . My LinkedIn is{" "}
+            . Check out my{" "}
             <TextLink href="https://linkedin.com/in/ziyadedher" isExternal>
-              here
+              LinkedIn
             </TextLink>
-            .
+            if you&apos;re into that.
           </p>
           <p>
             I went to the{" "}
