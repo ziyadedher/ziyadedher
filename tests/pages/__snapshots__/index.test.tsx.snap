@@ -384,7 +384,7 @@ Object {
                   Asana
                 </a>
               </span>
-              . My LinkedIn is
+              . Check out my
                
               <span
                 class="underline hover:opacity-70 transition-all not-prose"
@@ -394,10 +394,10 @@ Object {
                   rel="noreferrer"
                   target="_blank"
                 >
-                  here
+                  LinkedIn
                 </a>
               </span>
-              .
+              if you're into that.
             </p>
             <p>
               I went to the
@@ -960,7 +960,7 @@ Object {
                 Asana
               </a>
             </span>
-            . My LinkedIn is
+            . Check out my
              
             <span
               class="underline hover:opacity-70 transition-all not-prose"
@@ -970,10 +970,10 @@ Object {
                 rel="noreferrer"
                 target="_blank"
               >
-                here
+                LinkedIn
               </a>
             </span>
-            .
+            if you're into that.
           </p>
           <p>
             I went to the
