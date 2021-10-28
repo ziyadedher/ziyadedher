@@ -109,7 +109,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             . Check out my{" "}
             <TextLink href="https://linkedin.com/in/ziyadedher" isExternal>
               LinkedIn
-            </TextLink>
+            </TextLink>{" "}
             if you&apos;re into that.
           </p>
           <p>
