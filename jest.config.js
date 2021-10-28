@@ -6,7 +6,11 @@ module.exports = {
   clearMocks: true,
   collectCoverage: true,
   collectCoverageFrom: ["src/**/*.{ts,tsx}"],
-  coveragePathIgnorePatterns: ["/node_modules/", "src/pages/_app.tsx"],
+  coveragePathIgnorePatterns: [
+    "/node_modules/",
+    "src/pages/_app.tsx",
+    "src/pages/_document.tsx",
+  ],
   coverageProvider: "v8",
   // coverageThreshold: undefined,
 

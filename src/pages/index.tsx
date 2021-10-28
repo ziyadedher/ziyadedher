@@ -33,8 +33,6 @@ interface IndexProps {
 const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
   <>
     <Head>
-      <html lang="en" />
-      <meta charSet="utf-8" />
       <title>Ziyad Edher | Software Engineer</title>
       <meta
         name="description"
