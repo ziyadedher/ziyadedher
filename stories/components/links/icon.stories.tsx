@@ -80,8 +80,7 @@ const IconLinkTemplate: Story<IconLinkTemplateProps> = ({
   </IconLink>
 );
 
-// eslint-disable-next-line import/exports-last -- Storybook pattern.
-export const IconLinkSocial = IconLinkTemplate.bind({});
+const IconLinkSocial = IconLinkTemplate.bind({});
 IconLinkSocial.args = {
   href: "https://example.org",
   label: "example",
@@ -91,4 +90,5 @@ IconLinkSocial.args = {
   iconSize: 48,
 };
 
+export { IconLinkSocial };
 export default META;
