@@ -10,23 +10,18 @@ import {
   SpotifyLogo,
   TwitterLogo,
 } from "phosphor-react";
-import { getPlaiceholder } from "plaiceholder";
 
 import IconLink from "../components/links/icon";
 import TextLink from "../components/links/text";
 import Anchor from "../logic/anchor";
+import { getImageWithBlur } from "../logic/image_with_blur";
 
+import type { ImageWithBlur } from "../logic/image_with_blur";
 import type { GetStaticProps, NextPage } from "next";
 
-interface ImageBlur {
-  readonly url: string;
-  readonly width: number;
-  readonly height: number;
-  readonly data: string;
-}
 interface IndexProps {
   readonly imageBlur: {
-    readonly ziyadedher: ImageBlur;
+    readonly ziyadedher: ImageWithBlur;
   };
 }
 
@@ -187,7 +182,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             width={imageBlur.ziyadedher.width}
             height={imageBlur.ziyadedher.height}
             placeholder="blur"
-            blurDataURL={imageBlur.ziyadedher.data}
+            blurDataURL={imageBlur.ziyadedher.blurData}
           />
         </div>
       </main>
@@ -195,34 +190,31 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
   </>
 );
 
-export const getStaticProps: GetStaticProps<IndexProps> = async () => {
-  const ziyadedherPlaiceholder = await getPlaiceholder(
+const getStaticProps: GetStaticProps<IndexProps> = async () => {
+  const ziyadedherImageWithBlur = await getImageWithBlur(
     "https://storage.googleapis.com/ziyadedher/ziyadedher.jpg"
   );
 
   return {
     props: {
       imageBlur: {
-        ziyadedher: {
-          url: ziyadedherPlaiceholder.img.src,
-          width: ziyadedherPlaiceholder.img.width,
-          height: ziyadedherPlaiceholder.img.height,
-          data: ziyadedherPlaiceholder.base64,
-        },
+        ziyadedher: ziyadedherImageWithBlur,
       },
     },
   };
 };
 
-export const DEFAULT_STATIC_PROPS: IndexProps = {
+const DEFAULT_STATIC_PROPS: IndexProps = {
   imageBlur: {
     ziyadedher: {
       url: "https://storage.googleapis.com/ziyadedher/ziyadedher.jpg",
       width: 3024,
       height: 4032,
-      data: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=",
+      blurData:
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=",
     },
   },
 };
 
+export { DEFAULT_STATIC_PROPS, getStaticProps };
 export default Index;
