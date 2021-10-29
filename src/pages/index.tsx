@@ -16,8 +16,8 @@ import TextLink from "../components/links/text";
 import Anchor from "../logic/anchor";
 import { getImageWithBlur } from "../logic/image_with_blur";
 
-import type { GetStaticProps, NextPage } from "next";
 import type { ImageWithBlur } from "../logic/image_with_blur";
+import type { GetStaticProps, NextPage } from "next";
 
 interface IndexProps {
   readonly imageBlur: {
