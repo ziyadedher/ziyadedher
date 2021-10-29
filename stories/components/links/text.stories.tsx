@@ -23,12 +23,12 @@ const TextLinkTemplate: Story<TextLinkTemplateProps> = ({
   </TextLink>
 );
 
-// eslint-disable-next-line import/exports-last -- Storybook pattern.
-export const TextLinkExternal = TextLinkTemplate.bind({});
+const TextLinkExternal = TextLinkTemplate.bind({});
 TextLinkExternal.args = {
   href: "https://example.org",
   isExternal: true,
   text: "example.org",
 };
 
+export { TextLinkExternal };
 export default META;
