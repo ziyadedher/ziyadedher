@@ -3952,6 +3952,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/gtag.js@npm:^0.0.7":
+  version: 0.0.7
+  resolution: "@types/gtag.js@npm:0.0.7"
+  checksum: 056b15ac63429993a0a43ef85c950e5fcf413d5ca104bd8b25c24625fe61e5b2af4a61eaa2be53e31f29e1ef4f9e953830ddd98693e885f531ab70482863419c
+  languageName: node
+  linkType: hard
+
 "@types/hast@npm:^2.0.0":
   version: 2.3.4
   resolution: "@types/hast@npm:2.3.4"
@@ -18008,6 +18015,7 @@ typescript@4.4.4:
     "@testing-library/react-hooks": 7.0.2
     "@types/babel__core": 7.1.16
     "@types/eslint": 7.28.2
+    "@types/gtag.js": ^0.0.7
     "@types/jest": 27.0.2
     "@types/mdx-js__react": 1.5.5
     "@types/node": 16.11.6
