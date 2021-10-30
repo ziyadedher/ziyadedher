@@ -81,6 +81,7 @@ const IconLinkTemplate: Story<IconLinkTemplateProps> = ({
 );
 
 const IconLinkSocial = IconLinkTemplate.bind({});
+IconLinkSocial.storyName = "Icon";
 IconLinkSocial.args = {
   href: "https://example.org",
   label: "example",

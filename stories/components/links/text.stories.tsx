@@ -24,6 +24,7 @@ const TextLinkTemplate: Story<TextLinkTemplateProps> = ({
 );
 
 const TextLinkExternal = TextLinkTemplate.bind({});
+TextLinkExternal.storyName = "Text";
 TextLinkExternal.args = {
   href: "https://example.org",
   isExternal: true,
