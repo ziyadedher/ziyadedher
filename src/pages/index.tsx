@@ -24,11 +24,6 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
         name="description"
         content="Ziyad Edher is a software engineer interested in AI/ML, entrepreneurship, security, and infrastructure."
       />
-      {/**
-       * #NoIndexByDefault
-       * This ensures that the home page is indexed properly by search engines for SEO.
-       */}
-      <meta name="robots" content="all" key="robots" />
     </Head>
 
     <PageContainer>
