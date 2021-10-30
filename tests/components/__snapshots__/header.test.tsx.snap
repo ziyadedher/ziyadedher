@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="flex flex-col py-12 text-center"
+        class="flex flex-col py-12 text-center items-center"
       >
         <div
           class="text-2xl font-light uppercase hover:opacity-70 transition-all"
@@ -357,7 +357,7 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="flex flex-col py-12 text-center"
+      class="flex flex-col py-12 text-center items-center"
     >
       <div
         class="text-2xl font-light uppercase hover:opacity-70 transition-all"
