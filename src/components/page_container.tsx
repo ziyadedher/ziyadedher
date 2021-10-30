@@ -7,7 +7,7 @@ interface PageContainerProps {
 const PageContainer: React.FunctionComponent<PageContainerProps> = ({
   children,
 }: PageContainerProps) => (
-  <div className="container flex flex-col justify-center items-center mx-auto">
+  <div className="container flex flex-col items-center mx-auto min-h-full">
     {children}
   </div>
 );
