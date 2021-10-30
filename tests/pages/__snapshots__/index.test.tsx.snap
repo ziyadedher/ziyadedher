@@ -9,7 +9,7 @@ Object {
         class="container flex flex-col justify-center items-center mx-auto"
       >
         <header
-          class="flex flex-col py-12 text-center items-center"
+          class="flex flex-col items-center py-12 text-center"
         >
           <div
             class="text-2xl font-light uppercase hover:opacity-70 transition-all"
@@ -586,7 +586,7 @@ Object {
       class="container flex flex-col justify-center items-center mx-auto"
     >
       <header
-        class="flex flex-col py-12 text-center items-center"
+        class="flex flex-col items-center py-12 text-center"
       >
         <div
           class="text-2xl font-light uppercase hover:opacity-70 transition-all"

@@ -14,7 +14,7 @@ import Anchor from "../logic/anchor";
 import IconLink from "./links/icon";
 
 const Header: React.FunctionComponent = () => (
-  <header className="flex flex-col py-12 text-center items-center">
+  <header className="flex flex-col items-center py-12 text-center">
     <div className="text-2xl font-light uppercase hover:opacity-70 transition-all">
       <Link href="/" passHref>
         <Anchor>Ziyad Edher</Anchor>
