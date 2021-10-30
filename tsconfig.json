@@ -18,7 +18,8 @@
     "module": "esnext",
     "noEmit": true,
     "target": "es5",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "incremental": true
   },
   "include": ["next-env.d.ts", ".eslintrc.js", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
