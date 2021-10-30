@@ -2,12 +2,13 @@ import Head from "next/head";
 // eslint-disable-next-line @typescript-eslint/no-shadow -- Next.js Image
 import Image from "next/image";
 
+import Header from "../components/header";
 import TextLink from "../components/links/text";
+import PageContainer from "../components/page_container";
 import { getImageWithBlur } from "../logic/image_with_blur";
 
 import type { ImageWithBlur } from "../logic/image_with_blur";
 import type { GetStaticProps, NextPage } from "next";
-import Header from "../components/header";
 
 interface IndexProps {
   readonly imageBlur: {
@@ -30,7 +31,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
       <meta name="robots" content="all" key="robots" />
     </Head>
 
-    <div className="container flex flex-col justify-center items-center mx-auto">
+    <PageContainer>
       <Header />
 
       <main className="flex flex-row justify-center py-8 space-x-8 w-full max-w-5xl">
@@ -130,7 +131,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
           />
         </div>
       </main>
-    </div>
+    </PageContainer>
   </>
 );
 
