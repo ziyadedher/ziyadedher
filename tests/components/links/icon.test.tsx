@@ -11,33 +11,33 @@ import IconLink from "../../../src/components/links/icon";
 
 describe("icon link", () => {
   test("renders link child", () => {
-    const tree = render(
+    const result = render(
       <IconLink href="https://example.com" label="example">
         <PhosphorLogo data-testid="logo" size={24} weight="light" />
       </IconLink>
     );
-    expect(tree.getByTestId("logo")).toBeInTheDocument();
+    expect(result.getByTestId("logo")).toBeInTheDocument();
   });
 
   test("has correct href", () => {
-    const tree = render(
+    const result = render(
       <IconLink href="https://example.com" label="example">
         <PhosphorLogo data-testid="logo" size={24} weight="light" />
       </IconLink>
     );
-    expect(tree.getByTestId("logo").parentElement).toHaveAttribute(
+    expect(result.getByTestId("logo").parentElement).toHaveAttribute(
       "href",
       "https://example.com"
     );
   });
 
   test("has correct label", () => {
-    const tree = render(
+    const result = render(
       <IconLink href="https://example.com" label="example">
         <PhosphorLogo data-testid="logo" size={24} weight="light" />
       </IconLink>
     );
-    expect(tree.getByTestId("logo").parentElement).toHaveAttribute(
+    expect(result.getByTestId("logo").parentElement).toHaveAttribute(
       "aria-label",
       "example"
     );
@@ -45,25 +45,27 @@ describe("icon link", () => {
 
   describe("external", () => {
     test("does not set target when not external", () => {
-      const tree = render(
+      const result = render(
         <IconLink href="https://example.com" label="example" isExternal={false}>
           <PhosphorLogo data-testid="logo" size={24} weight="light" />
         </IconLink>
       );
-      expect(tree.getByTestId("logo").parentElement).not.toHaveAttribute(
+      expect(result.getByTestId("logo").parentElement).not.toHaveAttribute(
         "target"
       );
     });
 
     test("sets target to blank when external", () => {
-      const tree = render(
+      const result = render(
         <IconLink href="https://example.com" label="example" isExternal>
           <PhosphorLogo data-testid="logo" size={24} weight="light" />
         </IconLink>
       );
-      expect(tree.getByTestId("logo").parentElement).toHaveAttribute("target");
+      expect(result.getByTestId("logo").parentElement).toHaveAttribute(
+        "target"
+      );
       expect(
-        tree.getByTestId("logo").parentElement?.getAttribute("target")
+        result.getByTestId("logo").parentElement?.getAttribute("target")
       ).toBe("_blank");
     });
   });

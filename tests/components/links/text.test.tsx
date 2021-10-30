@@ -10,17 +10,17 @@ import TextLink from "../../../src/components/links/text";
 
 describe("text link", () => {
   test("renders link text", () => {
-    const tree = render(
+    const result = render(
       <TextLink href="https://example.com">Example</TextLink>
     );
-    expect(tree.getByText("Example")).toBeInTheDocument();
+    expect(result.getByText("Example")).toBeInTheDocument();
   });
 
   test("has correct href", () => {
-    const tree = render(
+    const result = render(
       <TextLink href="https://example.com">Example</TextLink>
     );
-    expect(tree.getByText("Example")).toHaveAttribute(
+    expect(result.getByText("Example")).toHaveAttribute(
       "href",
       "https://example.com"
     );
@@ -28,22 +28,22 @@ describe("text link", () => {
 
   describe("external", () => {
     test("does not set target when not external", () => {
-      const tree = render(
+      const result = render(
         <TextLink href="https://example.com" isExternal={false}>
           Example
         </TextLink>
       );
-      expect(tree.getByText("Example")).not.toHaveAttribute("target");
+      expect(result.getByText("Example")).not.toHaveAttribute("target");
     });
 
     test("sets target to blank when external", () => {
-      const tree = render(
+      const result = render(
         <TextLink href="https://example.com" isExternal>
           Example
         </TextLink>
       );
-      expect(tree.getByText("Example")).toHaveAttribute("target");
-      expect(tree.getByText("Example").getAttribute("target")).toBe("_blank");
+      expect(result.getByText("Example")).toHaveAttribute("target");
+      expect(result.getByText("Example").getAttribute("target")).toBe("_blank");
     });
   });
 });
