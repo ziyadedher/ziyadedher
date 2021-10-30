@@ -11,12 +11,6 @@ const Document: React.FunctionComponent = () => (
         type="image/png"
         href="https://storage.googleapis.com/ziyadedher/brain.png"
       />
-      {/**
-       * ##NoIndexByDefault
-       * By default, don't index any pages in search engines.
-       * This is re-enabled explicitly for some pages, noteably the home page.
-       */}
-      <meta name="robots" content="noindex" key="robots" />
     </Head>
     <body>
       <Main />
