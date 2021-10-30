@@ -40,7 +40,7 @@ const Header: React.FunctionComponent = () => (
         <GithubLogo size={24} weight="light" />
       </IconLink>
       <IconLink
-        href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
+        href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvr"
         label="Spotify"
         isExternal
       >
@@ -54,7 +54,7 @@ const Header: React.FunctionComponent = () => (
         <FacebookLogo size={24} weight="light" />
       </IconLink>
       <IconLink
-        href="https://instagram.com/ziyadedher"
+        href="https://instagram.com/ziyad.edher"
         label="Instagram"
         isExternal
       >
