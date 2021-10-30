@@ -7,11 +7,13 @@ import {
   SpotifyLogo,
   TwitterLogo,
 } from "phosphor-react";
+import React from "react";
 
-import IconLink from "../components/links/icon";
 import Anchor from "../logic/anchor";
 
-const Header = () => (
+import IconLink from "./links/icon";
+
+const Header: React.FunctionComponent = () => (
   <header className="flex flex-col py-12 text-center">
     <div className="text-2xl font-light uppercase hover:opacity-70 transition-all">
       <Link href="/" passHref>
