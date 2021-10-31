@@ -10,6 +10,7 @@ const ALPHABET =
 interface AnimatedHackerTextProps {
   readonly text: string;
   readonly delay?: number;
+  readonly tickDelay?: number;
 }
 
 const generateHackerText = (text: string): string =>
@@ -21,8 +22,8 @@ const generateHackerText = (text: string): string =>
 const AnimatedHackerText: React.FunctionComponent<AnimatedHackerTextProps> = ({
   text,
   delay = 500,
+  tickDelay = 10,
 }: AnimatedHackerTextProps) => {
-  window.performance.now();
   const [currentText, setCurrentText] = useState("");
 
   useEffect(() => {
@@ -35,12 +36,12 @@ const AnimatedHackerText: React.FunctionComponent<AnimatedHackerTextProps> = ({
         setCurrentText(text);
         clearInterval(interval);
       }
-    }, 10);
+    }, tickDelay);
 
     return (): void => {
       clearInterval(interval);
     };
-  }, [text, delay]);
+  }, [text, delay, tickDelay]);
 
   return <span>{currentText}</span>;
 };

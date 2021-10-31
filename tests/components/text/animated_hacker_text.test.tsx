@@ -22,20 +22,20 @@ describe("animated hacker text", () => {
       .mockReturnValue(0);
 
     const result = render(
-      <AnimatedHackerText text="long-hacker-text" delay={500} />
+      <AnimatedHackerText text="long-hacker-text" delay={500} tickDelay={10} />
     );
-
-    act(() => {
-      jest.advanceTimersByTime(100);
-    });
-    expect(mockPerformanceNow).toHaveBeenCalledWith();
     expect(result.queryByText("long-hacker-text")).not.toBeInTheDocument();
 
-    mockPerformanceNow.mockReturnValue(1000);
+    mockPerformanceNow.mockReturnValue(400);
     act(() => {
-      jest.advanceTimersByTime(400);
+      jest.advanceTimersToNextTimer();
     });
-    expect(mockPerformanceNow).toHaveBeenCalledWith();
+    expect(result.queryByText("long-hacker-text")).not.toBeInTheDocument();
+
+    mockPerformanceNow.mockReturnValue(500);
+    act(() => {
+      jest.advanceTimersToNextTimer();
+    });
     expect(result.getByText("long-hacker-text")).toBeInTheDocument();
   });
 });
