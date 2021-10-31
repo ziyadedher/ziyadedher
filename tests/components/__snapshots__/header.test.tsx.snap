@@ -6,12 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="flex flex-col items-center py-12 text-center"
+        class="flex flex-col items-center text-center"
       >
         <div
           class="text-2xl font-light uppercase hover:opacity-70 transition-all"
         >
           <a
+            class="group"
             href="/"
           >
             Ziyad Edher
@@ -25,6 +26,7 @@ Object {
           >
             <a
               aria-label="Twitter"
+              class="group"
               href="https://twitter.com/ziyadedher"
               rel="noreferrer"
               target="_blank"
@@ -57,6 +59,7 @@ Object {
           >
             <a
               aria-label="LinkedIn"
+              class="group"
               href="https://linkedin.com/in/ziyad-edher"
               rel="noreferrer"
               target="_blank"
@@ -128,6 +131,7 @@ Object {
           >
             <a
               aria-label="GitHub"
+              class="group"
               href="https://github.com/ziyadedher"
               rel="noreferrer"
               target="_blank"
@@ -192,6 +196,7 @@ Object {
           >
             <a
               aria-label="Spotify"
+              class="group"
               href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvr"
               rel="noreferrer"
               target="_blank"
@@ -252,6 +257,7 @@ Object {
           >
             <a
               aria-label="Facebook"
+              class="group"
               href="https://facebook.com/ziyadedher"
               rel="noreferrer"
               target="_blank"
@@ -305,6 +311,7 @@ Object {
           >
             <a
               aria-label="Instagram"
+              class="group"
               href="https://instagram.com/ziyad.edher"
               rel="noreferrer"
               target="_blank"
@@ -357,12 +364,13 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="flex flex-col items-center py-12 text-center"
+      class="flex flex-col items-center text-center"
     >
       <div
         class="text-2xl font-light uppercase hover:opacity-70 transition-all"
       >
         <a
+          class="group"
           href="/"
         >
           Ziyad Edher
@@ -376,6 +384,7 @@ Object {
         >
           <a
             aria-label="Twitter"
+            class="group"
             href="https://twitter.com/ziyadedher"
             rel="noreferrer"
             target="_blank"
@@ -408,6 +417,7 @@ Object {
         >
           <a
             aria-label="LinkedIn"
+            class="group"
             href="https://linkedin.com/in/ziyad-edher"
             rel="noreferrer"
             target="_blank"
@@ -479,6 +489,7 @@ Object {
         >
           <a
             aria-label="GitHub"
+            class="group"
             href="https://github.com/ziyadedher"
             rel="noreferrer"
             target="_blank"
@@ -543,6 +554,7 @@ Object {
         >
           <a
             aria-label="Spotify"
+            class="group"
             href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvr"
             rel="noreferrer"
             target="_blank"
@@ -603,6 +615,7 @@ Object {
         >
           <a
             aria-label="Facebook"
+            class="group"
             href="https://facebook.com/ziyadedher"
             rel="noreferrer"
             target="_blank"
@@ -656,6 +669,7 @@ Object {
         >
           <a
             aria-label="Instagram"
+            class="group"
             href="https://instagram.com/ziyad.edher"
             rel="noreferrer"
             target="_blank"
