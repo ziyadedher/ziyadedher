@@ -3,6 +3,7 @@ import Head from "next/head";
 import Header from "../../components/header";
 import Navbar, { NavbarPage } from "../../components/navbar";
 import PageContainer from "../../components/page_container";
+import AnimatedHackerText from "../../components/text/animated_hacker_text";
 
 import type { NextPage } from "next";
 
@@ -23,7 +24,9 @@ const Index: NextPage = () => (
           <Navbar currentPage={NavbarPage.HACKS} />
         </div>
 
-        <p className="font-mono text-sm">It&apos;s time to hack. 😎</p>
+        <p className="font-mono text-sm">
+          <AnimatedHackerText text="It's time to hack." />
+        </p>
       </PageContainer>
     </div>
   </>
