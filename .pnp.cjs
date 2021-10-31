@@ -90,6 +90,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.3.11"],
             ["prettier", "npm:2.4.1"],
             ["react", "npm:17.0.2"],
+            ["react-console-emulator", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:5.0.1"],
             ["react-dom", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:17.0.2"],
             ["sharp", "npm:0.29.2"],
             ["tailwindcss", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.2.19"],
@@ -11202,6 +11203,13 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["clone", [
+        ["npm:1.0.4", {
+          "packageLocation": "./.yarn/cache/clone-npm-1.0.4-a610fcbcf9-d06418b733.zip/node_modules/clone/",
+          "packageDependencies": [
+            ["clone", "npm:1.0.4"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:2.1.2", {
           "packageLocation": "./.yarn/cache/clone-npm-2.1.2-1d491c6629-aaf106e9bc.zip/node_modules/clone/",
           "packageDependencies": [
@@ -12224,6 +12232,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/deepmerge-npm-4.2.2-112165ced2-a8c43a1ed8.zip/node_modules/deepmerge/",
           "packageDependencies": [
             ["deepmerge", "npm:4.2.2"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["defaults", [
+        ["npm:1.0.3", {
+          "packageLocation": "./.yarn/cache/defaults-npm-1.0.3-e829107b9e-96e2112da6.zip/node_modules/defaults/",
+          "packageDependencies": [
+            ["defaults", "npm:1.0.3"],
+            ["clone", "npm:1.0.4"]
           ],
           "linkType": "HARD",
         }]
@@ -20645,6 +20663,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["react-console-emulator", [
+        ["npm:5.0.1", {
+          "packageLocation": "./.yarn/cache/react-console-emulator-npm-5.0.1-7189cd8a80-9e03a9e756.zip/node_modules/react-console-emulator/",
+          "packageDependencies": [
+            ["react-console-emulator", "npm:5.0.1"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:5.0.1", {
+          "packageLocation": "./.yarn/__virtual__/react-console-emulator-virtual-e3f883b8ff/0/cache/react-console-emulator-npm-5.0.1-7189cd8a80-9e03a9e756.zip/node_modules/react-console-emulator/",
+          "packageDependencies": [
+            ["react-console-emulator", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:5.0.1"],
+            ["@types/react", "npm:17.0.33"],
+            ["@types/react-dom", "npm:17.0.10"],
+            ["defaults", "npm:1.0.3"],
+            ["prop-types", "npm:15.7.2"],
+            ["react", "npm:17.0.2"],
+            ["react-dom", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:17.0.2"],
+            ["react-fast-compare", "npm:3.2.0"],
+            ["react-inner-html", "npm:1.0.1"],
+            ["react-innertext", "virtual:e3f883b8ffac69ac1ab1ff0f2b02dfe04410ca2c97535d0e4ce13f81a90d0033ad77e416d81a614a7ba1ad98c512713c3c3cbc16f2e2eaddf73cb8c42b9465ed#npm:1.1.5"]
+          ],
+          "packagePeers": [
+            "@types/react-dom",
+            "@types/react",
+            "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["react-dev-utils", [
         ["npm:11.0.4", {
           "packageLocation": "./.yarn/cache/react-dev-utils-npm-11.0.4-3a3d727f29-b41c95010a.zip/node_modules/react-dev-utils/",
@@ -20868,6 +20917,37 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/react-dom",
             "@types/react",
             "react-dom",
+            "react"
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["react-inner-html", [
+        ["npm:1.0.1", {
+          "packageLocation": "./.yarn/cache/react-inner-html-npm-1.0.1-bc890f051a-0a30dfee90.zip/node_modules/react-inner-html/",
+          "packageDependencies": [
+            ["react-inner-html", "npm:1.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["react-innertext", [
+        ["npm:1.1.5", {
+          "packageLocation": "./.yarn/cache/react-innertext-npm-1.1.5-50613b71c6-01c9c8a5a4.zip/node_modules/react-innertext/",
+          "packageDependencies": [
+            ["react-innertext", "npm:1.1.5"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:e3f883b8ffac69ac1ab1ff0f2b02dfe04410ca2c97535d0e4ce13f81a90d0033ad77e416d81a614a7ba1ad98c512713c3c3cbc16f2e2eaddf73cb8c42b9465ed#npm:1.1.5", {
+          "packageLocation": "./.yarn/__virtual__/react-innertext-virtual-c3bd958c34/0/cache/react-innertext-npm-1.1.5-50613b71c6-01c9c8a5a4.zip/node_modules/react-innertext/",
+          "packageDependencies": [
+            ["react-innertext", "virtual:e3f883b8ffac69ac1ab1ff0f2b02dfe04410ca2c97535d0e4ce13f81a90d0033ad77e416d81a614a7ba1ad98c512713c3c3cbc16f2e2eaddf73cb8c42b9465ed#npm:1.1.5"],
+            ["@types/react", "npm:17.0.33"],
+            ["react", "npm:17.0.2"]
+          ],
+          "packagePeers": [
+            "@types/react",
             "react"
           ],
           "linkType": "HARD",
@@ -24550,6 +24630,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss", "npm:8.3.11"],
             ["prettier", "npm:2.4.1"],
             ["react", "npm:17.0.2"],
+            ["react-console-emulator", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:5.0.1"],
             ["react-dom", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:17.0.2"],
             ["sharp", "npm:0.29.2"],
             ["tailwindcss", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:2.2.19"],

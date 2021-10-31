@@ -6774,6 +6774,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"clone@npm:^1.0.2":
+  version: 1.0.4
+  resolution: "clone@npm:1.0.4"
+  checksum: d06418b7335897209e77bdd430d04f882189582e67bd1f75a04565f3f07f5b3f119a9d670c943b6697d0afb100f03b866b3b8a1f91d4d02d72c4ecf2bb64b5dd
+  languageName: node
+  linkType: hard
+
 "clsx@npm:^1.1.1":
   version: 1.1.1
   resolution: "clsx@npm:1.1.1"
@@ -7563,6 +7570,15 @@ __metadata:
   version: 4.2.2
   resolution: "deepmerge@npm:4.2.2"
   checksum: a8c43a1ed8d6d1ed2b5bf569fa4c8eb9f0924034baf75d5d406e47e157a451075c4db353efea7b6bcc56ec48116a8ce72fccf867b6e078e7c561904b5897530b
+  languageName: node
+  linkType: hard
+
+"defaults@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "defaults@npm:1.0.3"
+  dependencies:
+    clone: ^1.0.2
+  checksum: 96e2112da6553d376afd5265ea7cbdb2a3b45535965d71ab8bb1da10c8126d168fdd5268799625324b368356d21ba2a7b3d4ec50961f11a47b7feb9de3d4413e
   languageName: node
   linkType: hard
 
@@ -14786,6 +14802,22 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-console-emulator@npm:^5.0.1":
+  version: 5.0.1
+  resolution: "react-console-emulator@npm:5.0.1"
+  dependencies:
+    defaults: ^1.0.3
+    prop-types: ^15.7.2
+    react-fast-compare: ^3.2.0
+    react-inner-html: ^1.0.1
+    react-innertext: ^1.1.5
+  peerDependencies:
+    react: ^16.3.0
+    react-dom: ^16.3.0
+  checksum: 9e03a9e756dac1e731bd219ae4b3059db85d6dc573e8263592d5000188886c6fbb24a7a6bb33deb82c008b1dc3720f2f1191f1931b69933d1055fcddaff54ba9
+  languageName: node
+  linkType: hard
+
 "react-dev-utils@npm:^11.0.3":
   version: 11.0.4
   resolution: "react-dev-utils@npm:11.0.4"
@@ -14925,6 +14957,23 @@ fsevents@^1.2.7:
     react: ^16.6.0 || ^17.0.0
     react-dom: ^16.6.0 || ^17.0.0
   checksum: 8db5d875bb681dabc5f277ee3b0debe96d58f4b6d33cb2e9c72a026f4fd22e44722d2a7164a21b51a4002a6cd40d716195731ba37cc1d73167adf85e56441c1c
+  languageName: node
+  linkType: hard
+
+"react-inner-html@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "react-inner-html@npm:1.0.1"
+  checksum: 0a30dfee906900de635c943ea46394cf10f03092fa9dd95f350e4db0992a948054973de2251e6e8d0ded20bc4b960f3520ead601e31405ba2e8c7ce26fa89356
+  languageName: node
+  linkType: hard
+
+"react-innertext@npm:^1.1.5":
+  version: 1.1.5
+  resolution: "react-innertext@npm:1.1.5"
+  peerDependencies:
+    "@types/react": ">=0.0.0 <=99"
+    react: ">=0.0.0 <=99"
+  checksum: 01c9c8a5a471f03965b9d69c8bee02d420fd3a607b678004f0bdee098c9bccb3e2eae8460c90b1d180d2a8d544a3ddb09b8c2a11e5aa8b3a077733e2d9c25c2c
   languageName: node
   linkType: hard
 
@@ -18059,6 +18108,7 @@ typescript@4.4.4:
     postcss: 8.3.11
     prettier: 2.4.1
     react: 17.0.2
+    react-console-emulator: ^5.0.1
     react-dom: 17.0.2
     sharp: 0.29.2
     tailwindcss: 2.2.19
