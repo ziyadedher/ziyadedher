@@ -20,14 +20,14 @@ const NavbarPageEntry: React.FunctionComponent<NavbarPageEntryProps> = ({
   page,
   linkName,
   linkUrl,
-  isCurrentPage = false,
+  isCurrentPage,
 }: NavbarPageEntryProps) => (
   <Link key={page} href={linkUrl} passHref>
     <Anchor>
       <span
         className={cx(
-          "uppercase font-light text-sm hover:opacity-50 transition-all",
-          isCurrentPage ? "opacity-70" : "opacity-100"
+          "uppercase font-light text-sm group-hover:opacity-50 transition-all",
+          isCurrentPage === true ? "opacity-70" : "opacity-100"
         )}
       >
         {linkName}

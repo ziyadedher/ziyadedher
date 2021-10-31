@@ -9,19 +9,21 @@ Object {
         class="flex flex-grow justify-center space-x-4 w-full"
       >
         <a
+          class="group"
           href="/"
         >
           <span
-            class="uppercase font-light text-sm hover:opacity-50 transition-all opacity-100"
+            class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-100"
           >
             Home
           </span>
         </a>
         <a
+          class="group"
           href="/hacks"
         >
           <span
-            class="uppercase font-light text-sm hover:opacity-50 transition-all opacity-70"
+            class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-70"
           >
             Hacks
           </span>
@@ -34,19 +36,21 @@ Object {
       class="flex flex-grow justify-center space-x-4 w-full"
     >
       <a
+        class="group"
         href="/"
       >
         <span
-          class="uppercase font-light text-sm hover:opacity-50 transition-all opacity-100"
+          class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-100"
         >
           Home
         </span>
       </a>
       <a
+        class="group"
         href="/hacks"
       >
         <span
-          class="uppercase font-light text-sm hover:opacity-50 transition-all opacity-70"
+          class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-70"
         >
           Hacks
         </span>
@@ -116,19 +120,21 @@ Object {
         class="flex flex-grow justify-center space-x-4 w-full"
       >
         <a
+          class="group"
           href="/"
         >
           <span
-            class="uppercase font-light text-sm hover:opacity-50 transition-all opacity-70"
+            class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-70"
           >
             Home
           </span>
         </a>
         <a
+          class="group"
           href="/hacks"
         >
           <span
-            class="uppercase font-light text-sm hover:opacity-50 transition-all opacity-100"
+            class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-100"
           >
             Hacks
           </span>
@@ -141,19 +147,21 @@ Object {
       class="flex flex-grow justify-center space-x-4 w-full"
     >
       <a
+        class="group"
         href="/"
       >
         <span
-          class="uppercase font-light text-sm hover:opacity-50 transition-all opacity-70"
+          class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-70"
         >
           Home
         </span>
       </a>
       <a
+        class="group"
         href="/hacks"
       >
         <span
-          class="uppercase font-light text-sm hover:opacity-50 transition-all opacity-100"
+          class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-100"
         >
           Hacks
         </span>
