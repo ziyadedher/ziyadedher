@@ -16,7 +16,7 @@ const Index: NextPage = () => (
       />
     </Head>
 
-    <div className="flex flex-col justify-center min-h-screen text-green-500 bg-gray-900">
+    <div className="flex flex-col min-h-screen text-green-500 bg-gray-900">
       <PageContainer>
         <div className="my-8 space-y-4">
           <Header />
