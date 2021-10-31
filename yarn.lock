@@ -1707,6 +1707,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.16.0":
+  version: 7.16.0
+  resolution: "@babel/runtime@npm:7.16.0"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: bfbca3ec52c94de262a3932473bceeead1a088b50194108fa1ff6eda447333f0f7d43fa4e9c5937c6e5d45bf838da8480905d0a227589b257c51f954ea060bac
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.12.7, @babel/template@npm:^7.15.4, @babel/template@npm:^7.3.3":
   version: 7.15.4
   resolution: "@babel/template@npm:7.15.4"
@@ -18054,6 +18063,7 @@ typescript@4.4.4:
   resolution: "webdev-template@workspace:."
   dependencies:
     "@babel/core": 7.16.0
+    "@babel/runtime": ^7.16.0
     "@headlessui/react": 1.4.1
     "@heroicons/react": 1.0.5
     "@mdx-js/react": 1.6.22
