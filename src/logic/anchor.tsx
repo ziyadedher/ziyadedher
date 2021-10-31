@@ -20,6 +20,7 @@ const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
     ref
   ) => (
     <a
+      className="group"
       ref={ref}
       // eslint-disable-next-line react/jsx-handler-names -- we need to forward the onClick as-is here.
       onClick={onClick}

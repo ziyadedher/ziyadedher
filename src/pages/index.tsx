@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import Header from "../components/header";
 import TextLink from "../components/links/text";
+import Navbar, { NavbarPage } from "../components/navbar";
 import PageContainer from "../components/page_container";
 import { getImageWithBlur } from "../logic/image_with_blur";
 
@@ -27,7 +28,10 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
     </Head>
 
     <PageContainer>
-      <Header />
+      <div className="my-8 space-y-4">
+        <Header />
+        <Navbar currentPage={NavbarPage.HOME} />
+      </div>
 
       <main className="flex flex-row justify-center py-8 space-x-8 w-full max-w-5xl">
         <div className="flex flex-col flex-1 mx-6 xl:mx-0 text-sm font-light prose">
