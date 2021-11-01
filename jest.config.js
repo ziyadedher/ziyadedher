@@ -9,7 +9,7 @@ module.exports = {
   coveragePathIgnorePatterns: [
     "/node_modules/",
     `src/pages/.*\.tsx`,
-    `src/types/.*.\.d.{ts,tsx}`,
+    `src/types/.*\.d\.{ts,tsx}`,
   ],
   coverageProvider: "v8",
   // coverageThreshold: undefined,
