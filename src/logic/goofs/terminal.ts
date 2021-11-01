@@ -3,6 +3,17 @@ enum Directory {
   HACKS = "hacks",
 }
 
+const getUrlFromDirectory = (dir: Directory): string => {
+  switch (dir) {
+    case Directory.HOME:
+      return "/";
+    case Directory.HACKS:
+      return "/hacks";
+    default:
+      return "/";
+  }
+};
+
 const cd = (goToUrl: (url: string) => void, dir?: string): string => {
   if (typeof dir === "undefined" || dir.length === 0) {
     return "no directory was given";
@@ -12,10 +23,10 @@ const cd = (goToUrl: (url: string) => void, dir?: string): string => {
 
   switch (normalizedDir) {
     case Directory.HOME:
-      goToUrl("/");
+      goToUrl(getUrlFromDirectory(Directory.HOME));
       return `changing directory to ${dir}`;
     case Directory.HACKS:
-      goToUrl("/hacks");
+      goToUrl(getUrlFromDirectory(Directory.HACKS));
       return `changing directory to ${dir}`;
     default:
       return `directory not found: ${dir}`;
@@ -29,4 +40,4 @@ const exec = (command?: string): string =>
 
 const ls = (): string => `${Directory.HOME}\n${Directory.HACKS}`;
 
-export { Directory, echo, exec, ls, cd };
+export { Directory, getUrlFromDirectory, echo, exec, ls, cd };
