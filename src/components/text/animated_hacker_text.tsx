@@ -24,7 +24,7 @@ const AnimatedHackerText: React.FunctionComponent<AnimatedHackerTextProps> = ({
   delay = 500,
   tickDelay = 10,
 }: AnimatedHackerTextProps) => {
-  const [currentText, setCurrentText] = useState("");
+  const [currentText, setCurrentText] = useState(generateHackerText(text));
 
   useEffect(() => {
     const startTime = window.performance.now();
