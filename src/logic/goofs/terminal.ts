@@ -12,7 +12,6 @@ const cd = (goToUrl: (url: string) => void, dir?: string): string => {
 
   const dirWithSlashes = `/${dir}/`;
   const normalizedDir = dirWithSlashes.replace(/\/+/gu, "/");
-
   const maybeEnumDir = asEnum(Directory, normalizedDir);
 
   if (maybeEnumDir === null) {
