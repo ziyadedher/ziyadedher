@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/unambiguous -- d.ts convention.
 declare module "react-console-emulator" {
-  import type { Component } from "react";
+  import type { FunctionComponent } from "react";
 
   interface OptionProps {
     autoFocus?: boolean;
@@ -36,7 +36,6 @@ declare module "react-console-emulator" {
     contentClassName?: string;
     inputAreaClassName?: string;
     promptLabelClassName?: string;
-    inputClassName?: string;
     inputTextClassName?: string;
     messageClassName?: string;
   }
@@ -48,7 +47,7 @@ declare module "react-console-emulator" {
       StyleProps {}
 
   // eslint-disable-next-line @typescript-eslint/naming-convention -- existing name in library.
-  const Terminal: Component<TerminalProps>;
+  const Terminal: FunctionComponent<TerminalProps>;
 
   export { TerminalProps };
   export default Terminal;
