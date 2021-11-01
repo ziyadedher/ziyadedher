@@ -20,9 +20,7 @@ const getCommands = (router: NextRouter): CommandsType => ({
   cd: {
     description: "change directory",
     usage: "cd <directory>",
-    fn: cd.bind(null, async (url: string): Promise<void> => {
-      await router.push(url);
-    }),
+    fn: cd.bind(null, async (url: string) => await router.push(url)),
   },
   echo: {
     description: "write arguments to the terminal",
