@@ -9,7 +9,7 @@ import type { TerminalProps as ConsoleEmulatorProps } from "react-console-emulat
 
 const WELCOME_MESSAGE = "Welcome, `help` to start.";
 
-const PROMPT_LABEL = "hacker@ziyadedher.com:~$";
+const PROMPT_LABEL = "hacker@ziyadedher.com:/hacks/$";
 
 const ERROR_TEXT = "command not found: [command]";
 
