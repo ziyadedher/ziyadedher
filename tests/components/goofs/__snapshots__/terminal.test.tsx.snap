@@ -29,7 +29,7 @@ Object {
               name="react-console-emulator__promptLabel"
               style="padding-top: 3px; color: rgb(238, 156, 52);"
             >
-              hacker@ziyadedher.com:~$
+              hacker@ziyadedher.com:/hacks/$
             </span>
             <input
               autocomplete="off"
@@ -67,7 +67,7 @@ Object {
             name="react-console-emulator__promptLabel"
             style="padding-top: 3px; color: rgb(238, 156, 52);"
           >
-            hacker@ziyadedher.com:~$
+            hacker@ziyadedher.com:/hacks/$
           </span>
           <input
             autocomplete="off"
