@@ -1,0 +1,134 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`terminal renders children 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="!w-full !h-full !text-sm !bg-black !rounded-xl"
+        name="react-console-emulator"
+        style="min-height: 300px; max-width: 100%; max-height: 100%; border-radius: 5px; overflow: auto; cursor: text; background-color: rgb(33, 33, 33); background-size: cover;"
+      >
+        <div
+          class="!text-green-300"
+          name="react-console-emulator__content"
+          style="padding: 20px; height: 100%; font-size: 15px; color: rgb(255, 255, 255); font-family: monospace;"
+        >
+          <div
+            style="line-height: 21px;"
+          >
+            Welcome, \`help\` to start.
+          </div>
+          <div
+            name="react-console-emulator__inputArea"
+            style="display: inline-flex; width: 100%;"
+          >
+            <span
+              class="!pr-0.5 !-mt-0.5"
+              name="react-console-emulator__promptLabel"
+              style="padding-top: 3px; color: rgb(238, 156, 52);"
+            >
+              hacker@ziyadedher.com:/hacks/$
+            </span>
+            <input
+              autocomplete="off"
+              name="react-console-emulator__input"
+              style="border: 0px; padding: 0px 0px 0px 7px; margin: 0px; flex-grow: 100; width: 100%; height: 22px; background: transparent; outline: none; font-size: 15px; color: rgb(240, 191, 129); font-family: monospace;"
+              type="text"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="!w-full !h-full !text-sm !bg-black !rounded-xl"
+      name="react-console-emulator"
+      style="min-height: 300px; max-width: 100%; max-height: 100%; border-radius: 5px; overflow: auto; cursor: text; background-color: rgb(33, 33, 33); background-size: cover;"
+    >
+      <div
+        class="!text-green-300"
+        name="react-console-emulator__content"
+        style="padding: 20px; height: 100%; font-size: 15px; color: rgb(255, 255, 255); font-family: monospace;"
+      >
+        <div
+          style="line-height: 21px;"
+        >
+          Welcome, \`help\` to start.
+        </div>
+        <div
+          name="react-console-emulator__inputArea"
+          style="display: inline-flex; width: 100%;"
+        >
+          <span
+            class="!pr-0.5 !-mt-0.5"
+            name="react-console-emulator__promptLabel"
+            style="padding-top: 3px; color: rgb(238, 156, 52);"
+          >
+            hacker@ziyadedher.com:/hacks/$
+          </span>
+          <input
+            autocomplete="off"
+            name="react-console-emulator__input"
+            style="border: 0px; padding: 0px 0px 0px 7px; margin: 0px; flex-grow: 100; width: 100%; height: 22px; background: transparent; outline: none; font-size: 15px; color: rgb(240, 191, 129); font-family: monospace;"
+            type="text"
+          />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
