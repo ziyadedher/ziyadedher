@@ -1,36 +1,26 @@
-enum Directory {
-  HOME = "home",
-  HACKS = "hacks",
-}
+import { asEnum, listEnumValues } from "../../utils/enum";
 
-const getUrlFromDirectory = (dir: Directory): string => {
-  switch (dir) {
-    case Directory.HOME:
-      return "/";
-    case Directory.HACKS:
-      return "/hacks";
-    default:
-      return "/";
-  }
-};
+enum Directory {
+  HOME = "/",
+  HACKS = "/hacks/",
+}
 
 const cd = (goToUrl: (url: string) => void, dir?: string): string => {
   if (typeof dir === "undefined" || dir.length === 0) {
     return "no directory was given";
   }
 
-  const normalizedDir = dir.endsWith("/") ? dir.slice(0, -1) : dir;
+  const dirWithSlashes = `/${dir}/`;
+  const normalizedDir = dirWithSlashes.replace(/\/+/gu, "/");
 
-  switch (normalizedDir) {
-    case Directory.HOME:
-      goToUrl(getUrlFromDirectory(Directory.HOME));
-      return `changing directory to ${dir}`;
-    case Directory.HACKS:
-      goToUrl(getUrlFromDirectory(Directory.HACKS));
-      return `changing directory to ${dir}`;
-    default:
-      return `directory not found: ${dir}`;
+  const maybeEnumDir = asEnum(Directory, normalizedDir);
+
+  if (maybeEnumDir === null) {
+    return `directory not found: ${dir}`;
   }
+
+  goToUrl(maybeEnumDir);
+  return `changing directory to ${dir}`;
 };
 
 const echo = (...args: readonly string[]): string => args.join(" ");
@@ -38,6 +28,6 @@ const echo = (...args: readonly string[]): string => args.join(" ");
 const exec = (command?: string): string =>
   (command ?? "").length === 0 ? "no command was given" : "just kidding, lmao";
 
-const ls = (): string => `${Directory.HOME}\n${Directory.HACKS}`;
+const ls = (): string => listEnumValues(Directory).join("\n");
 
-export { Directory, getUrlFromDirectory, echo, exec, ls, cd };
+export { Directory, echo, exec, ls, cd };

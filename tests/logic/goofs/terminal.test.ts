@@ -3,9 +3,9 @@ import {
   cd,
   echo,
   exec,
-  getUrlFromDirectory,
   ls,
 } from "../../../src/logic/goofs/terminal";
+import { listEnumValues } from "../../../src/utils/enum";
 
 describe("terminal", () => {
   describe("commands", () => {
@@ -36,9 +36,7 @@ describe("terminal", () => {
         const result = cd(mockGoToUrl, Directory.HOME);
 
         expect(mockGoToUrl).toHaveBeenCalledTimes(1);
-        expect(mockGoToUrl).toHaveBeenCalledWith(
-          getUrlFromDirectory(Directory.HOME)
-        );
+        expect(mockGoToUrl).toHaveBeenCalledWith(Directory.HOME);
         expect(result).toContain(Directory.HOME);
       });
 
@@ -47,9 +45,7 @@ describe("terminal", () => {
         const result = cd(mockGoToUrl, `${Directory.HOME}/`);
 
         expect(mockGoToUrl).toHaveBeenCalledTimes(1);
-        expect(mockGoToUrl).toHaveBeenCalledWith(
-          getUrlFromDirectory(Directory.HOME)
-        );
+        expect(mockGoToUrl).toHaveBeenCalledWith(Directory.HOME);
         expect(result).toContain(Directory.HOME);
       });
     });
@@ -71,12 +67,19 @@ describe("terminal", () => {
         const result = exec("");
         expect(result).toContain("no command");
       });
+
+      test("just kidding on command", () => {
+        const result = exec("ls");
+        expect(result).toContain("just kidding");
+      });
     });
 
     describe("ls", () => {
       test("lists available directories", () => {
         const result = ls();
-        expect(result).toContain(Directory.HOME);
+        listEnumValues(Directory).forEach((dir) => {
+          expect(result).toContain(dir);
+        });
       });
     });
   });
