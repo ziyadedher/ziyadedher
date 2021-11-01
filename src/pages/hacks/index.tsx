@@ -1,5 +1,6 @@
 import Head from "next/head";
 
+import Terminal from "../../components/goofs/terminal";
 import Header from "../../components/header";
 import Navbar, { NavbarPage } from "../../components/navbar";
 import PageContainer from "../../components/page_container";
@@ -24,9 +25,13 @@ const Index: NextPage = () => (
           <Navbar currentPage={NavbarPage.HACKS} />
         </div>
 
-        <p className="font-mono text-sm">
-          <AnimatedHackerText text="It's time to hack." />
+        <p className="mb-8 font-mono text-sm">
+          <AnimatedHackerText delay={1000} text="It's time to hack." />
         </p>
+
+        <div className="px-4 w-full max-w-2xl h-96">
+          <Terminal />
+        </div>
       </PageContainer>
     </div>
   </>
