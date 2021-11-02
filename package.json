@@ -49,7 +49,7 @@
     "@types/prettier": "2.4.1",
     "@types/react": "17.0.33",
     "@types/react-dom": "17.0.10",
-    "@types/sharp": "0.29.2",
+    "@types/sharp": "0.29.3",
     "@types/testing-library__jest-dom": "5.14.1",
     "@typescript-eslint/eslint-plugin": "5.3.0",
     "@typescript-eslint/parser": "5.3.0",
