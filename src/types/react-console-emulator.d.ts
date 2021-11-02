@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/unambiguous -- d.ts convention.
 declare module "react-console-emulator" {
   import type { FunctionComponent } from "react";
 
@@ -52,3 +51,5 @@ declare module "react-console-emulator" {
   export { TerminalProps };
   export default Terminal;
 }
+
+export {};
