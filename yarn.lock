@@ -18115,7 +18115,7 @@ typescript@4.4.4:
   languageName: node
   linkType: hard
 
-"vercel@npm:^23.1.2":
+"vercel@npm:23.1.2":
   version: 23.1.2
   resolution: "vercel@npm:23.1.2"
   dependencies:
@@ -18315,7 +18315,7 @@ typescript@4.4.4:
     tailwindcss: 2.2.19
     ts-jest: 27.0.7
     typescript: 4.4.4
-    vercel: ^23.1.2
+    vercel: 23.1.2
   languageName: unknown
   linkType: soft
 
