@@ -2190,7 +2190,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/env@npm:12.0.2":
+"@next/env@npm:12.0.2, @next/env@npm:^12.0.2":
   version: 12.0.2
   resolution: "@next/env@npm:12.0.2"
   checksum: c12c3ab3a304c9cf90907446c341210c2b25c5296a16aaf95c2e8ee6ab0656d59861b79baa0d0f6475c34bc77d9f3e6ed656631e35b8c8758d912c19a930ede8
@@ -18256,6 +18256,7 @@ typescript@4.4.4:
     "@headlessui/react": 1.4.1
     "@heroicons/react": 1.0.5
     "@mdx-js/react": 1.6.22
+    "@next/env": ^12.0.2
     "@next/eslint-plugin-next": 12.0.2
     "@plaiceholder/next": 2.2.0
     "@storybook/addon-actions": 6.3.12

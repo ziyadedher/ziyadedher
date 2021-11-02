@@ -1,7 +1,8 @@
 import Script from "next/script";
 import React from "react";
 
-const GA_TRACKING_ID = "G-FVDTV4JTDL";
+// eslint-disable-next-line prefer-destructuring, node/no-process-env -- can't destructure Next.js env.
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID;
 
 const GTag: React.FunctionComponent = () => (
   <>

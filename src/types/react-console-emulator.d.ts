@@ -1,4 +1,4 @@
-// eslint-disable-next-line import/unambiguous -- d.ts convention.
+// eslint-disable-next-line import/unambiguous -- .d.ts pattern.
 declare module "react-console-emulator" {
   import type { FunctionComponent } from "react";
 
