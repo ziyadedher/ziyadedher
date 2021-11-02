@@ -14,6 +14,8 @@ module.exports = {
   coverageProvider: "v8",
   // coverageThreshold: undefined,
 
+  setupFiles: ["./tests/_setup/env.ts"],
+
   // NOTE: we need this to get around some weirdness with TSX + Jest
   globals: {
     "ts-jest": {
