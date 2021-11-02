@@ -7,7 +7,7 @@ Object {
     <div />
     <script
       data-nscript="afterInteractive"
-      src="https://www.googletagmanager.com/gtag/js?id=G-FVDTV4JTDL"
+      src="https://www.googletagmanager.com/gtag/js?id=google_analytics_measurement_id"
     />
     <script
       data-nscript="afterInteractive"
@@ -17,7 +17,7 @@ Object {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-FVDTV4JTDL', {
+          gtag('config', 'google_analytics_measurement_id', {
             page_path: window.location.pathname,
           });
          
