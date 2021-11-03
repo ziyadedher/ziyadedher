@@ -55,7 +55,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react-hooks", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:7.0.2"],
             ["@types/babel__core", "npm:7.1.16"],
             ["@types/eslint", "npm:7.28.2"],
-            ["@types/gtag.js", "npm:0.0.7"],
+            ["@types/gtag.js", "npm:0.0.8"],
             ["@types/jest", "npm:27.0.2"],
             ["@types/mdx-js__react", "npm:1.5.5"],
             ["@types/node", "npm:16.11.6"],
@@ -7544,10 +7544,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@types/gtag.js", [
-        ["npm:0.0.7", {
-          "packageLocation": "./.yarn/cache/@types-gtag.js-npm-0.0.7-bfdf64bf0e-056b15ac63.zip/node_modules/@types/gtag.js/",
+        ["npm:0.0.8", {
+          "packageLocation": "./.yarn/cache/@types-gtag.js-npm-0.0.8-2cc584f787-fecb1d772a.zip/node_modules/@types/gtag.js/",
           "packageDependencies": [
-            ["@types/gtag.js", "npm:0.0.7"]
+            ["@types/gtag.js", "npm:0.0.8"]
           ],
           "linkType": "HARD",
         }]
@@ -24918,7 +24918,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react-hooks", "virtual:9ab0fb16a81540c206b78c70ccd963211ec9ff4e2a0d9cee071b24c87d6795824e7098ca3eb448b1255ec036005f865de1ee3852e4fef756e2699bfb3496b2fe#npm:7.0.2"],
             ["@types/babel__core", "npm:7.1.16"],
             ["@types/eslint", "npm:7.28.2"],
-            ["@types/gtag.js", "npm:0.0.7"],
+            ["@types/gtag.js", "npm:0.0.8"],
             ["@types/jest", "npm:27.0.2"],
             ["@types/mdx-js__react", "npm:1.5.5"],
             ["@types/node", "npm:16.11.6"],
