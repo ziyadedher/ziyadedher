@@ -136,7 +136,8 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
 
 const getStaticProps: GetStaticProps<IndexProps> = async () => {
   const ziyadedherImageWithBlur = await getImageWithBlur(
-    "https://storage.googleapis.com/ziyadedher/ziyadedher.jpg"
+    "https://storage.googleapis.com/ziyadedher/ziyadedher.jpg",
+    40
   );
 
   return {
