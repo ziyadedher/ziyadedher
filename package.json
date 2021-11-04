@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint 'src/**' 'tests/**' 'stories/**'",
-    "test": "jest",
+    "test": "jest --silent",
     "test:watch": "jest --watch --notify",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -27,6 +27,7 @@
     "@babel/core": "7.16.0",
     "@babel/runtime": "7.16.0",
     "@heroicons/react": "1.0.5",
+    "@jest/types": "^27.2.5",
     "@mdx-js/react": "1.6.22",
     "@next/env": "12.0.2",
     "@next/eslint-plugin-next": "12.0.2",
@@ -78,6 +79,7 @@
     "prettier": "2.4.1",
     "regenerator-runtime": "0.13.9",
     "ts-jest": "27.0.7",
+    "ts-node": "^10.4.0",
     "typescript": "4.4.4",
     "vercel": "23.1.2"
   }
