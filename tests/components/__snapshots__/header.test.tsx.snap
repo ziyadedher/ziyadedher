@@ -256,6 +256,64 @@ Object {
             class="hover:opacity-50 transition-all"
           >
             <a
+              aria-label="Medium"
+              class="group"
+              href="https://medium.com/@ziyad.edher"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <svg
+                fill="currentColor"
+                height="24"
+                viewBox="0 0 256 256"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  fill="none"
+                  height="256"
+                  width="256"
+                />
+                <ellipse
+                  cx="72"
+                  cy="128"
+                  fill="none"
+                  rx="56"
+                  ry="60"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <ellipse
+                  cx="184"
+                  cy="128"
+                  fill="none"
+                  rx="24"
+                  ry="55.99999"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                />
+                <line
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="12"
+                  x1="240"
+                  x2="240"
+                  y1="72.00003"
+                  y2="184.00001"
+                />
+              </svg>
+            </a>
+          </span>
+          <span
+            class="hover:opacity-50 transition-all"
+          >
+            <a
               aria-label="Facebook"
               class="group"
               href="https://facebook.com/ziyadedher"
@@ -607,6 +665,64 @@ Object {
                   stroke-width="12"
                 />
               </g>
+            </svg>
+          </a>
+        </span>
+        <span
+          class="hover:opacity-50 transition-all"
+        >
+          <a
+            aria-label="Medium"
+            class="group"
+            href="https://medium.com/@ziyad.edher"
+            rel="noreferrer"
+            target="_blank"
+          >
+            <svg
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 256 256"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                fill="none"
+                height="256"
+                width="256"
+              />
+              <ellipse
+                cx="72"
+                cy="128"
+                fill="none"
+                rx="56"
+                ry="60"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="12"
+              />
+              <ellipse
+                cx="184"
+                cy="128"
+                fill="none"
+                rx="24"
+                ry="55.99999"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="12"
+              />
+              <line
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="12"
+                x1="240"
+                x2="240"
+                y1="72.00003"
+                y2="184.00001"
+              />
             </svg>
           </a>
         </span>
