@@ -1,5 +1,6 @@
-/** @type {import('ts-jest/dist/types').InitialOptionsTsJest} */
-module.exports = {
+import type { Config } from "@jest/types";
+
+const CONFIG: Config.InitialOptions = {
   preset: "ts-jest",
   testEnvironment: "node",
 
@@ -8,18 +9,22 @@ module.exports = {
   collectCoverageFrom: ["src/**/*.{ts,tsx}"],
   coveragePathIgnorePatterns: [
     "/node_modules/",
+    // eslint-disable-next-line no-useless-escape -- this arg expects a RegExp.
     `src/pages/.*\.tsx`,
+    // eslint-disable-next-line no-useless-escape -- this arg expects a RegExp.
     `src/types/.*\.d\.ts`,
   ],
   coverageProvider: "v8",
-  // coverageThreshold: undefined,
 
-  setupFiles: ["./tests/_setup/env.ts"],
+  setupFiles: [".jest/setup_environment.ts"],
 
   // NOTE: we need this to get around some weirdness with TSX + Jest
   globals: {
     "ts-jest": {
-      tsconfig: "tsconfig.jest.json",
+      tsconfig: ".jest/tsconfig.json",
+      isolatedModules: true,
     },
   },
 };
+
+export default CONFIG;
