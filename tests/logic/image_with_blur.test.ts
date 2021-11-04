@@ -58,9 +58,10 @@ describe("image with blur", () => {
 
     test("gets called with correct arguments", async () => {
       const mockGetPlaiceholder = setupGetPlaiceholderMock();
-      await getImageWithBlur("https://example.com/image.png");
+      await getImageWithBlur("https://example.com/image.png", 16);
       expect(mockGetPlaiceholder).toHaveBeenCalledWith(
-        "https://example.com/image.png"
+        "https://example.com/image.png",
+        { size: 16 }
       );
     });
   });

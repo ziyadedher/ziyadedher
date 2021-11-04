@@ -7,8 +7,11 @@ interface ImageWithBlur {
   readonly blurData: string;
 }
 
-const getImageWithBlur = async (url: string): Promise<ImageWithBlur> => {
-  const result = await getPlaiceholder(url);
+const getImageWithBlur = async (
+  url: string,
+  blurQuality: number = 16
+): Promise<ImageWithBlur> => {
+  const result = await getPlaiceholder(url, { size: blurQuality });
   return {
     url: result.img.src,
     width: result.img.width,
