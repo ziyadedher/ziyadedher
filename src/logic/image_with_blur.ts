@@ -1,6 +1,6 @@
 import { getPlaiceholder } from "plaiceholder";
 
-type BlurQuality = 4 | 8 | 16 | 32;
+type BlurQuality = 8 | 16 | 24 | 32 | 40;
 
 interface ImageWithBlur {
   readonly url: string;
