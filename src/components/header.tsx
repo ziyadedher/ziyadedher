@@ -4,6 +4,7 @@ import {
   GithubLogo,
   InstagramLogo,
   LinkedinLogo,
+  MediumLogo,
   SpotifyLogo,
   TwitterLogo,
 } from "phosphor-react";
@@ -45,6 +46,14 @@ const Header: React.FunctionComponent = () => (
         isExternal
       >
         <SpotifyLogo size={24} weight="light" />
+      </IconLink>
+
+      <IconLink
+        href="https://medium.com/@ziyad.edher"
+        label="Medium"
+        isExternal
+      >
+        <MediumLogo size={24} weight="light" />
       </IconLink>
       <IconLink
         href="https://facebook.com/ziyadedher"
