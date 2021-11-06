@@ -2,7 +2,7 @@
 # Manual changes might be lost - proceed with caution!
 
 __metadata:
-  version: 4
+  version: 5
   cacheKey: 8
 
 "@arcanis/slice-ansi@npm:^1.0.2":
@@ -2280,77 +2280,77 @@ __metadata:
 "@next/swc-android-arm64@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-android-arm64@npm:12.0.3"
-  checksum: 615c95d182685ec47ef58c377385b7aa8b460a3a70feb89123f24d58004cc5e1f5e37befb745846c920a5b6a4d69fc05ae81547264e5e0b4b11cc08f6dd89dd4
+  conditions: os=android & cpu=arm64
   languageName: node
   linkType: hard
 
 "@next/swc-darwin-arm64@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-darwin-arm64@npm:12.0.3"
-  checksum: f6c0bfbb099d530c7eca30a865fbbf01ff7abde58d3314e33d85ab3275238f07601f30b95876f3afe059caf8ec8ba41b19b8c3e4b92a6cf3c5c2bf9d21f768ac
+  conditions: os=darwin & cpu=arm64
   languageName: node
   linkType: hard
 
 "@next/swc-darwin-x64@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-darwin-x64@npm:12.0.3"
-  checksum: 22906cd7a86becf03082042847745e1666193269b389227ed078fc315bcdbaaa9dbd0725d010c346725f3c6f8591e6474a8b152e798fbb1975b02c015c378f61
+  conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
 
 "@next/swc-linux-arm-gnueabihf@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-linux-arm-gnueabihf@npm:12.0.3"
-  checksum: 3474c5681d77710a664eddb50d06f2df00436caea28df1ffb6ab58e4d1b9683896fa35aab645bee95d92b4484bb2a45bd16ee5628f3639a1a240785a5cc7f604
+  conditions: os=linux & cpu=arm
   languageName: node
   linkType: hard
 
 "@next/swc-linux-arm64-gnu@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-linux-arm64-gnu@npm:12.0.3"
-  checksum: ede87d91e5943a92a47184bca29fd9ce97e2a25d318307a83e64f2b45adde91505cc8ef8352b91799f0126e5d8faf528eb8e4ae9efa025016613bec8bd5e4eb5
+  conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
 "@next/swc-linux-arm64-musl@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-linux-arm64-musl@npm:12.0.3"
-  checksum: f6cbe1e7dd9593d849bc279bf4239cc4705e2e833561455208df5c6011badcf9be48f21bbb04ae629c86af87d56f3d18a573a6ed3577774c8decc3e0a3b9c9c3
+  conditions: os=linux & cpu=arm64
   languageName: node
   linkType: hard
 
 "@next/swc-linux-x64-gnu@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-linux-x64-gnu@npm:12.0.3"
-  checksum: 0b0bc4b7c142f05d2db0ba97f1e3612e60c91a0e0da2ce72a6376622b91dbff99150fa0192f834abde36d462ef6e732db2145b93b380b931f9aa77ef9fbf39d1
+  conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
 "@next/swc-linux-x64-musl@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-linux-x64-musl@npm:12.0.3"
-  checksum: 6678c0a7b921a25ef2d0e11ee2317656dc56e3849bbd9f143a93b8745d483910693851a8956d4615bf1d8c355d38ed4e08a6141f577eeeb627f6ec0f20ddb757
+  conditions: os=linux & cpu=x64
   languageName: node
   linkType: hard
 
 "@next/swc-win32-arm64-msvc@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-win32-arm64-msvc@npm:12.0.3"
-  checksum: 0c2d9dddd331215fe4de34891ffd8fa072b245a65f64d770b119adaa2f5781b18a183a313acb4b2b8476f58aebf72ada9a86069e6e146af2273016ad48f711ad
+  conditions: os=win32 & cpu=arm64
   languageName: node
   linkType: hard
 
 "@next/swc-win32-ia32-msvc@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-win32-ia32-msvc@npm:12.0.3"
-  checksum: dc79d45f9ec027df828b3174a85a05d68fb6562e5407d4e4ebea9313649993d55c93451eb208f7a32623b77550a892806eef7a6c89b8a42d1347d43774863d5a
+  conditions: os=win32 & cpu=ia32
   languageName: node
   linkType: hard
 
 "@next/swc-win32-x64-msvc@npm:12.0.3":
   version: 12.0.3
   resolution: "@next/swc-win32-x64-msvc@npm:12.0.3"
-  checksum: 2c2f2540c8965dfc429b7a176328b03ee52ef5f8a08973238c55abbd50929c7745b71c4b0b9bdb2a4c54f3e877589f71e519db9c4b89e0ac2a22de7896e3272b
+  conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
 
@@ -4135,6 +4135,15 @@ __metadata:
   version: 0.1.2
   resolution: "@types/source-list-map@npm:0.1.2"
   checksum: fda8f37537aca9d3ed860d559289ab1dddb6897e642e6f53e909bbd18a7ac3129a8faa2a7d093847c91346cf09c86ef36e350c715406fba1f2271759b449adf6
+  languageName: node
+  linkType: hard
+
+"@types/source-map-support@npm:^0":
+  version: 0.5.4
+  resolution: "@types/source-map-support@npm:0.5.4"
+  dependencies:
+    source-map: ^0.6.0
+  checksum: 160ff77e8a101b18d9915cb5320fd73d484679aef8518ce007b9b5988e333631778730196c4bb15517ff881bee805663fd8640c0ce2ebfab65f061103c452369
   languageName: node
   linkType: hard
 
@@ -9322,6 +9331,7 @@ fsevents@^1.2.7:
     bindings: ^1.5.0
     nan: ^2.12.1
   checksum: ae855aa737aaa2f9167e9f70417cf6e45a5cd11918e1fee9923709a0149be52416d765433b4aeff56c789b1152e718cd1b13ddec6043b78cdda68260d86383c1
+  conditions: os=darwin
   languageName: node
   linkType: hard
 
@@ -9331,25 +9341,26 @@ fsevents@^1.2.7:
   dependencies:
     node-gyp: latest
   checksum: 97ade64e75091afee5265e6956cb72ba34db7819b4c3e94c431d4be2b19b8bb7a2d4116da417950c3425f17c8fe693d25e20212cac583ac1521ad066b77ae31f
+  conditions: os=darwin
   languageName: node
   linkType: hard
 
 "fsevents@patch:fsevents@^1.2.7#~builtin<compat/fsevents>":
   version: 1.2.13
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=1cc4b2"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.13#~builtin<compat/fsevents>::version=1.2.13&hash=18f3a7"
   dependencies:
     bindings: ^1.5.0
     nan: ^2.12.1
-  checksum: b264407498db2cfdcc2a05287334a4160c985a88e4a989e2f2f8dcc6afc8b04a4fcd82c797266442452e11c1fb07d7747d138b078fe4bb1f8f4fd2a6f2484d7e
+  conditions: os=darwin
   languageName: node
   linkType: hard
 
 "fsevents@patch:fsevents@^2.1.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.1#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=1cc4b2"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
   dependencies:
     node-gyp: latest
-  checksum: 78db9daf1f6526a49cefee3917cc988f62dc7f25b5dd80ad6de4ffc4af7f0cab7491ac737626ff53e482a111bc53aac9e411fe3602458eca36f6a003ecf69c16
+  conditions: os=darwin
   languageName: node
   linkType: hard
 
@@ -11557,7 +11568,7 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
-"jest-resolve@npm:27.3.1, jest-resolve@npm:^27.3.1":
+"jest-resolve@npm:^27.3.1":
   version: 27.3.1
   resolution: "jest-resolve@npm:27.3.1"
   dependencies:
@@ -15631,21 +15642,21 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.1#~builtin<compat/resolve>, resolve@patch:resolve@^1.12.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>":
   version: 1.20.0
-  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=00b1ff"
+  resolution: "resolve@patch:resolve@npm%3A1.20.0#~builtin<compat/resolve>::version=1.20.0&hash=07638b"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
-  checksum: bed00be983cd20a8af0e7840664f655c4b269786dbd9595c5f156cd9d8a0050e65cdbbbdafc30ee9b6245b230c78a2c8ab6447a52545b582f476c29adb188cc5
+  checksum: a0dd7d16a8e47af23afa9386df2dff10e3e0debb2c7299a42e581d9d9b04d7ad5d2c53f24f1e043f7b3c250cbdc71150063e53d0b6559683d37f790b7c8c3cd5
   languageName: node
   linkType: hard
 
 "resolve@patch:resolve@^2.0.0-next.3#~builtin<compat/resolve>":
   version: 2.0.0-next.3
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=00b1ff"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=07638b"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
-  checksum: eb88c5e53843bc022215744307a5f5664446c0fdb8f43c33456dce98d5ee6b3162d0cd0a177bb6f1c3d5c8bf01391ac7ab2de0e936e35318725fb40ba7efdaf6
+  checksum: 21684b4d99a4877337cdbd5484311c811b3e8910edb5d868eec85c6e6550b0f570d911f9a384f9e176172d6713f2715bd0b0887fa512cb8c6aeece018de6a9f8
   languageName: node
   linkType: hard
 
@@ -16287,7 +16298,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"source-map-support@npm:^0.5.16, source-map-support@npm:^0.5.17, source-map-support@npm:^0.5.6, source-map-support@npm:~0.5.12, source-map-support@npm:~0.5.20":
+"source-map-support@npm:^0.5.16, source-map-support@npm:^0.5.17, source-map-support@npm:^0.5.20, source-map-support@npm:^0.5.6, source-map-support@npm:~0.5.12, source-map-support@npm:~0.5.20":
   version: 0.5.20
   resolution: "source-map-support@npm:0.5.20"
   dependencies:
@@ -17619,21 +17630,21 @@ typescript@4.4.4:
 
 "typescript@patch:typescript@4.3.4#~builtin<compat/typescript>":
   version: 4.3.4
-  resolution: "typescript@patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=32657b"
+  resolution: "typescript@patch:typescript@npm%3A4.3.4#~builtin<compat/typescript>::version=4.3.4&hash=ddd1e8"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 6013dd3cb5e67d17e7813361e0ef6f856cf4a0c54b5f4cbc13c3fa9dc5fcfce4b53e8f5db1cb513ecfc655583e8c3321116149a0865bf07bd0f1906fef59f6a3
+  checksum: 49f3e6734d6f27c1931d3a665439350d9015b28eee87ba26ebcae0ba35fc609962ad8eb0b09f0324366497d65260c4222b8735098325bba46d508b5cab7b4640
   languageName: node
   linkType: hard
 
 "typescript@patch:typescript@4.4.4#~builtin<compat/typescript>":
   version: 4.4.4
-  resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=32657b"
+  resolution: "typescript@patch:typescript@npm%3A4.4.4#~builtin<compat/typescript>::version=4.4.4&hash=ddd1e8"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: c97c33903f1eb4f9e178649befdfc859d93157db1eccd1e521e84976ec6861db53412d8018e5e4c5d09268771c65498d42caa64bd881878346c3644f6b7cd202
+  checksum: bd629ad0da4a15d79aaad56baf3ee7d96f6a181760d430ae77f8c5325df7bffd9edee57544a3970e3651e8b796fe03a5838a7eb39c6d46cc3866c0b23d36a0dd
   languageName: node
   linkType: hard
 
@@ -18263,80 +18274,6 @@ typescript@4.4.4:
   languageName: node
   linkType: hard
 
-"webdev-template@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "webdev-template@workspace:."
-  dependencies:
-    "@babel/core": 7.16.0
-    "@babel/runtime": 7.16.0
-    "@headlessui/react": 1.4.1
-    "@heroicons/react": 1.0.5
-    "@jest/types": 27.2.5
-    "@mdx-js/react": 1.6.22
-    "@next/env": 12.0.3
-    "@next/eslint-plugin-next": 12.0.3
-    "@plaiceholder/next": 2.2.0
-    "@storybook/addon-actions": 6.3.12
-    "@storybook/addon-docs": 6.3.12
-    "@storybook/addon-essentials": 6.3.12
-    "@storybook/addon-links": 6.3.12
-    "@storybook/addon-postcss": 2.0.0
-    "@storybook/react": 6.3.12
-    "@tailwindcss/typography": 0.5.0-alpha.2
-    "@testing-library/jest-dom": 5.15.0
-    "@testing-library/react": 12.1.2
-    "@testing-library/react-hooks": 7.0.2
-    "@types/babel__core": 7.1.16
-    "@types/eslint": 7.28.2
-    "@types/gtag.js": 0.0.8
-    "@types/jest": 27.0.2
-    "@types/mdx-js__react": 1.5.5
-    "@types/node": 16.11.6
-    "@types/prettier": 2.4.1
-    "@types/react": 17.0.34
-    "@types/react-dom": 17.0.11
-    "@types/sharp": 0.29.3
-    "@types/testing-library__jest-dom": 5.14.1
-    "@typescript-eslint/eslint-plugin": 5.3.0
-    "@typescript-eslint/parser": 5.3.0
-    "@yarnpkg/sdks": 2.5.0
-    "@ziyadedher/eslint-config": 2.1.0
-    autoprefixer: 10.4.0
-    babel-loader: 8.2.3
-    chromatic: 6.0.5
-    classnames: 2.3.1
-    codecov: 3.8.3
-    eslint: 8.2.0
-    eslint-import-resolver-node: 0.3.6
-    eslint-import-resolver-typescript: 2.5.0
-    eslint-plugin-eslint-comments: 3.2.0
-    eslint-plugin-import: 2.25.2
-    eslint-plugin-jest: 25.2.3
-    eslint-plugin-jsx-a11y: 6.4.1
-    eslint-plugin-node: 11.1.0
-    eslint-plugin-react: 7.26.1
-    eslint-plugin-react-hooks: 4.2.0
-    eslint-plugin-tailwindcss: 1.17.0
-    jest: 27.3.1
-    next: 12.0.3
-    node-notifier: 10.0.0
-    phosphor-react: 1.3.1
-    plaiceholder: 2.2.0
-    postcss: 8.3.11
-    prettier: 2.4.1
-    react: 17.0.2
-    react-console-emulator: 5.0.1
-    react-dom: 17.0.2
-    regenerator-runtime: 0.13.9
-    sharp: 0.29.2
-    tailwindcss: 2.2.19
-    ts-jest: 27.0.7
-    ts-node: 10.4.0
-    typescript: 4.4.4
-    vercel: 23.1.2
-  languageName: unknown
-  linkType: soft
-
 "webidl-conversions@npm:^3.0.0":
   version: 3.0.1
   resolution: "webidl-conversions@npm:3.0.1"
@@ -18751,6 +18688,82 @@ typescript@4.4.4:
   checksum: f77b3d8d00310def622123df93d4ee654fc6a0096182af8bd60679ddcdfb3474c56c6c7190817c84a2785648cdee9d721c0154eb45698c62176c322fb46fc700
   languageName: node
   linkType: hard
+
+"ziyadedher@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "ziyadedher@workspace:."
+  dependencies:
+    "@babel/core": 7.16.0
+    "@babel/runtime": 7.16.0
+    "@headlessui/react": 1.4.1
+    "@heroicons/react": 1.0.5
+    "@jest/types": 27.2.5
+    "@mdx-js/react": 1.6.22
+    "@next/env": 12.0.3
+    "@next/eslint-plugin-next": 12.0.3
+    "@plaiceholder/next": 2.2.0
+    "@storybook/addon-actions": 6.3.12
+    "@storybook/addon-docs": 6.3.12
+    "@storybook/addon-essentials": 6.3.12
+    "@storybook/addon-links": 6.3.12
+    "@storybook/addon-postcss": 2.0.0
+    "@storybook/react": 6.3.12
+    "@tailwindcss/typography": 0.5.0-alpha.2
+    "@testing-library/jest-dom": 5.15.0
+    "@testing-library/react": 12.1.2
+    "@testing-library/react-hooks": 7.0.2
+    "@types/babel__core": 7.1.16
+    "@types/eslint": 7.28.2
+    "@types/gtag.js": 0.0.8
+    "@types/jest": 27.0.2
+    "@types/mdx-js__react": 1.5.5
+    "@types/node": 16.11.6
+    "@types/prettier": 2.4.1
+    "@types/react": 17.0.34
+    "@types/react-dom": 17.0.11
+    "@types/sharp": 0.29.3
+    "@types/source-map-support": ^0
+    "@types/testing-library__jest-dom": 5.14.1
+    "@typescript-eslint/eslint-plugin": 5.3.0
+    "@typescript-eslint/parser": 5.3.0
+    "@yarnpkg/sdks": 2.5.0
+    "@ziyadedher/eslint-config": 2.1.0
+    autoprefixer: 10.4.0
+    babel-loader: 8.2.3
+    chromatic: 6.0.5
+    classnames: 2.3.1
+    codecov: 3.8.3
+    eslint: 8.2.0
+    eslint-import-resolver-node: 0.3.6
+    eslint-import-resolver-typescript: 2.5.0
+    eslint-plugin-eslint-comments: 3.2.0
+    eslint-plugin-import: 2.25.2
+    eslint-plugin-jest: 25.2.3
+    eslint-plugin-jsx-a11y: 6.4.1
+    eslint-plugin-node: 11.1.0
+    eslint-plugin-react: 7.26.1
+    eslint-plugin-react-hooks: 4.2.0
+    eslint-plugin-tailwindcss: 1.17.0
+    jest: 27.3.1
+    next: 12.0.3
+    node-notifier: 10.0.0
+    phosphor-react: 1.3.1
+    plaiceholder: 2.2.0
+    postcss: 8.3.11
+    prettier: 2.4.1
+    react: 17.0.2
+    react-console-emulator: 5.0.1
+    react-dom: 17.0.2
+    regenerator-runtime: 0.13.9
+    sharp: 0.29.2
+    source-map-support: ^0.5.20
+    tailwindcss: 2.2.19
+    ts-jest: 27.0.7
+    ts-node: 10.4.0
+    typescript: 4.4.4
+    vercel: 23.1.2
+  languageName: unknown
+  linkType: soft
 
 "zwitch@npm:^1.0.0":
   version: 1.0.5
