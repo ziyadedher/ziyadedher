@@ -16,12 +16,12 @@ const CONFIG: Config.InitialOptions = {
   ],
   coverageProvider: "v8",
 
-  setupFiles: [".jest/setup_environment.ts"],
+  setupFiles: ["<rootDir>/.jest/setup_environment.ts"],
 
   // NOTE: we need this to get around some weirdness with TSX + Jest
   globals: {
     "ts-jest": {
-      tsconfig: ".jest/tsconfig.json",
+      tsconfig: "<rootDir>/.jest/tsconfig.json",
       isolatedModules: true,
     },
   },
