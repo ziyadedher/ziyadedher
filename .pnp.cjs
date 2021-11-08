@@ -37,7 +37,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@babel/core", "npm:7.16.0"],
             ["@babel/runtime", "npm:7.16.0"],
-            ["@headlessui/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],
+            ["@headlessui/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.2"],
             ["@heroicons/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.0.5"],
             ["@jest/types", "npm:27.2.5"],
             ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.6.22"],
@@ -4581,17 +4581,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@headlessui/react", [
-        ["npm:1.4.1", {
-          "packageLocation": "./.yarn/cache/@headlessui-react-npm-1.4.1-246a97ee13-e036941e31.zip/node_modules/@headlessui/react/",
+        ["npm:1.4.2", {
+          "packageLocation": "./.yarn/cache/@headlessui-react-npm-1.4.2-2e2d40ec29-28c3620443.zip/node_modules/@headlessui/react/",
           "packageDependencies": [
-            ["@headlessui/react", "npm:1.4.1"]
+            ["@headlessui/react", "npm:1.4.2"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1", {
-          "packageLocation": "./.yarn/__virtual__/@headlessui-react-virtual-b5ae25a717/0/cache/@headlessui-react-npm-1.4.1-246a97ee13-e036941e31.zip/node_modules/@headlessui/react/",
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.2", {
+          "packageLocation": "./.yarn/__virtual__/@headlessui-react-virtual-2df0ddbf48/0/cache/@headlessui-react-npm-1.4.2-2e2d40ec29-28c3620443.zip/node_modules/@headlessui/react/",
           "packageDependencies": [
-            ["@headlessui/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],
+            ["@headlessui/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.2"],
             ["@types/react", "npm:17.0.34"],
             ["@types/react-dom", "npm:17.0.11"],
             ["react", "npm:17.0.2"],
@@ -25342,7 +25342,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ziyadedher", "workspace:."],
             ["@babel/core", "npm:7.16.0"],
             ["@babel/runtime", "npm:7.16.0"],
-            ["@headlessui/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],
+            ["@headlessui/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.2"],
             ["@heroicons/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.0.5"],
             ["@jest/types", "npm:27.2.5"],
             ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.6.22"],
