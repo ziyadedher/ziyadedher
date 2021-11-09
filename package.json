@@ -46,7 +46,7 @@
     "@types/gtag.js": "0.0.8",
     "@types/jest": "27.0.2",
     "@types/mdx-js__react": "1.5.5",
-    "@types/node": "16.11.6",
+    "@types/node": "16.11.7",
     "@types/prettier": "2.4.1",
     "@types/react": "17.0.34",
     "@types/react-dom": "17.0.11",
