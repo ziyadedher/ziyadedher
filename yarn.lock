@@ -6519,14 +6519,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:6.0.5":
-  version: 6.0.5
-  resolution: "chromatic@npm:6.0.5"
+"chromatic@npm:6.0.6":
+  version: 6.0.6
+  resolution: "chromatic@npm:6.0.6"
   bin:
     chroma: bin/main.cjs
     chromatic: bin/main.cjs
     chromatic-cli: bin/main.cjs
-  checksum: eb9a40f75db3c8c83cbed1a322080d4b4aec09769aee6895ea525030ab398e21f85d48164db8c52b46eb426a8a9c0158a2027efab497b8c8fa81266dcb8389fd
+  checksum: 21f80732d19e8d9795f2f924ab1a908b4b1d13607dce963fbd90ddd69b8d82c03db488a7a33b49d63f5c6ac7d41b61c39e6065d48509cd35b441054d94d6bc9e
   languageName: node
   linkType: hard
 
@@ -18765,7 +18765,7 @@ __metadata:
     "@ziyadedher/eslint-config": 2.1.0
     autoprefixer: 10.4.0
     babel-loader: 8.2.3
-    chromatic: 6.0.5
+    chromatic: 6.0.6
     classnames: 2.3.1
     codecov: 3.8.3
     eslint: 8.2.0
