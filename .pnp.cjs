@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",
           "packageDependencies": [
             ["@babel/core", "npm:7.16.0"],
-            ["@babel/runtime", "npm:7.16.0"],
+            ["@babel/runtime", "npm:7.16.3"],
             ["@headlessui/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.2"],
             ["@heroicons/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.0.5"],
             ["@jest/types", "npm:27.2.5"],
@@ -4184,6 +4184,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.16.0-2f490bebb5-bfbca3ec52.zip/node_modules/@babel/runtime/",
           "packageDependencies": [
             ["@babel/runtime", "npm:7.16.0"],
+            ["regenerator-runtime", "npm:0.13.9"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:7.16.3", {
+          "packageLocation": "./.yarn/cache/@babel-runtime-npm-7.16.3-b53f079b37-ab8ac88709.zip/node_modules/@babel/runtime/",
+          "packageDependencies": [
+            ["@babel/runtime", "npm:7.16.3"],
             ["regenerator-runtime", "npm:0.13.9"]
           ],
           "linkType": "HARD",
@@ -25510,7 +25518,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["ziyadedher", "workspace:."],
             ["@babel/core", "npm:7.16.0"],
-            ["@babel/runtime", "npm:7.16.0"],
+            ["@babel/runtime", "npm:7.16.3"],
             ["@headlessui/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.2"],
             ["@heroicons/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.0.5"],
             ["@jest/types", "npm:27.2.5"],
