@@ -42,7 +42,7 @@
     "@testing-library/react": "12.1.2",
     "@testing-library/react-hooks": "7.0.2",
     "@types/babel__core": "7.1.16",
-    "@types/eslint": "7.28.2",
+    "@types/eslint": "7.29.0",
     "@types/gtag.js": "0.0.8",
     "@types/jest": "27.0.2",
     "@types/mdx-js__react": "1.5.5",
