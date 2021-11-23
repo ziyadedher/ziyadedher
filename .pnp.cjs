@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/gtag.js", "npm:0.0.8"],
             ["@types/jest", "npm:27.0.3"],
             ["@types/mdx-js__react", "npm:1.5.5"],
-            ["@types/node", "npm:16.11.9"],
+            ["@types/node", "npm:16.11.10"],
             ["@types/prettier", "npm:2.4.2"],
             ["@types/react", "npm:17.0.36"],
             ["@types/react-dom", "npm:17.0.11"],
@@ -7819,17 +7819,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
+        ["npm:16.11.10", {
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.10-6a434088fa-9c79419c5c.zip/node_modules/@types/node/",
+          "packageDependencies": [
+            ["@types/node", "npm:16.11.10"]
+          ],
+          "linkType": "HARD",
+        }],
         ["npm:16.11.7", {
           "packageLocation": "./.yarn/cache/@types-node-npm-16.11.7-1799a0a435-2706403e6e.zip/node_modules/@types/node/",
           "packageDependencies": [
             ["@types/node", "npm:16.11.7"]
-          ],
-          "linkType": "HARD",
-        }],
-        ["npm:16.11.9", {
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.9-fd7b539464-baec2e6471.zip/node_modules/@types/node/",
-          "packageDependencies": [
-            ["@types/node", "npm:16.11.9"]
           ],
           "linkType": "HARD",
         }]
@@ -24096,7 +24096,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],
             ["@tsconfig/node14", "npm:1.0.1"],
             ["@tsconfig/node16", "npm:1.0.2"],
-            ["@types/node", "npm:16.11.9"],
+            ["@types/node", "npm:16.11.10"],
             ["@types/swc__core", null],
             ["@types/swc__wasm", null],
             ["@types/typescript", null],
@@ -25655,7 +25655,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/gtag.js", "npm:0.0.8"],
             ["@types/jest", "npm:27.0.3"],
             ["@types/mdx-js__react", "npm:1.5.5"],
-            ["@types/node", "npm:16.11.9"],
+            ["@types/node", "npm:16.11.10"],
             ["@types/prettier", "npm:2.4.2"],
             ["@types/react", "npm:17.0.36"],
             ["@types/react-dom", "npm:17.0.11"],
