@@ -51,7 +51,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/addon-postcss", "npm:2.0.0"],
             ["@storybook/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.3.12"],
             ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.0-alpha.2"],
-            ["@testing-library/jest-dom", "npm:5.15.0"],
+            ["@testing-library/jest-dom", "npm:5.15.1"],
             ["@testing-library/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.2"],
             ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:7.0.2"],
             ["@types/babel__core", "npm:7.1.16"],
@@ -7357,10 +7357,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["@testing-library/jest-dom", [
-        ["npm:5.15.0", {
-          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.15.0-52dfd0c207-fb11af2462.zip/node_modules/@testing-library/jest-dom/",
+        ["npm:5.15.1", {
+          "packageLocation": "./.yarn/cache/@testing-library-jest-dom-npm-5.15.1-045ffa4e54-c9fba26f9a.zip/node_modules/@testing-library/jest-dom/",
           "packageDependencies": [
-            ["@testing-library/jest-dom", "npm:5.15.0"],
+            ["@testing-library/jest-dom", "npm:5.15.1"],
             ["@babel/runtime", "npm:7.16.3"],
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
             ["aria-query", "npm:4.2.2"],
@@ -25647,7 +25647,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/addon-postcss", "npm:2.0.0"],
             ["@storybook/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.3.12"],
             ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.0-alpha.2"],
-            ["@testing-library/jest-dom", "npm:5.15.0"],
+            ["@testing-library/jest-dom", "npm:5.15.1"],
             ["@testing-library/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.2"],
             ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:7.0.2"],
             ["@types/babel__core", "npm:7.1.16"],
