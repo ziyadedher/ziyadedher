@@ -91,7 +91,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-notifier", "npm:10.0.0"],
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],
-            ["postcss", "npm:8.4.1"],
+            ["postcss", "npm:8.4.3"],
             ["prettier", "npm:2.5.0"],
             ["react", "npm:17.0.2"],
             ["react-console-emulator", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.0.1"],
@@ -8920,7 +8920,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fraction.js", "npm:4.1.2"],
             ["normalize-range", "npm:0.1.2"],
             ["picocolors", "npm:1.0.0"],
-            ["postcss", "npm:8.4.1"],
+            ["postcss", "npm:8.4.3"],
             ["postcss-value-parser", "npm:4.1.0"]
           ],
           "packagePeers": [
@@ -19263,10 +19263,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],
           "linkType": "HARD",
         }],
-        ["npm:8.4.1", {
-          "packageLocation": "./.yarn/cache/postcss-npm-8.4.1-6c95363249-89ede712cc.zip/node_modules/postcss/",
+        ["npm:8.4.3", {
+          "packageLocation": "./.yarn/cache/postcss-npm-8.4.3-2e3b1f5b06-fbc0d43380.zip/node_modules/postcss/",
           "packageDependencies": [
-            ["postcss", "npm:8.4.1"],
+            ["postcss", "npm:8.4.3"],
             ["nanoid", "npm:3.1.30"],
             ["picocolors", "npm:1.0.0"],
             ["source-map-js", "npm:1.0.1"]
@@ -19431,7 +19431,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["postcss-nested", "virtual:185f40e50fa485a20d8107afc18e2dbfbba561c34e9fd851e7db4c7b4fac4f66930fede00adfd0f7cc407d47269cd51acad5f943449beb4b61cfaee52fb9e25f#npm:5.0.6"],
             ["@types/postcss", null],
-            ["postcss", "npm:8.4.1"],
+            ["postcss", "npm:8.4.3"],
             ["postcss-selector-parser", "npm:6.0.6"]
           ],
           "packagePeers": [
@@ -22578,7 +22578,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-emoji", "npm:1.11.0"],
             ["normalize-path", "npm:3.0.0"],
             ["object-hash", "npm:2.2.0"],
-            ["postcss", "npm:8.4.1"],
+            ["postcss", "npm:8.4.3"],
             ["postcss-js", "npm:3.0.3"],
             ["postcss-load-config", "virtual:9fa826b8677017c9b77d9a1c893ce4d139ff7f6546bce9429ecdf518880df06093c827a648f122a4c40a44a5ea55bf5b28c4fee58064b478759f6b9d7faaf6f6#npm:3.1.0"],
             ["postcss-nested", "virtual:185f40e50fa485a20d8107afc18e2dbfbba561c34e9fd851e7db4c7b4fac4f66930fede00adfd0f7cc407d47269cd51acad5f943449beb4b61cfaee52fb9e25f#npm:5.0.6"],
@@ -24822,7 +24822,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-notifier", "npm:10.0.0"],
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],
-            ["postcss", "npm:8.4.1"],
+            ["postcss", "npm:8.4.3"],
             ["prettier", "npm:2.5.0"],
             ["react", "npm:17.0.2"],
             ["react-console-emulator", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.0.1"],
