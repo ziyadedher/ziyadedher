@@ -65,7 +65,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.11"],
             ["@types/sharp", "npm:0.29.4"],
             ["@types/source-map-support", "npm:0.5.4"],
-            ["@types/testing-library__jest-dom", "npm:5.14.1"],
+            ["@types/testing-library__jest-dom", "npm:5.14.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.5.0"],
             ["@typescript-eslint/parser", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.5.0"],
             ["@yarnpkg/sdks", "npm:2.5.0"],
@@ -7185,6 +7185,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.1-f3ff511550-77fe7ad3a9.zip/node_modules/@types/testing-library__jest-dom/",
           "packageDependencies": [
             ["@types/testing-library__jest-dom", "npm:5.14.1"],
+            ["@types/jest", "npm:27.0.2"]
+          ],
+          "linkType": "HARD",
+        }],
+        ["npm:5.14.2", {
+          "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.2-639cce59b8-e08715a565.zip/node_modules/@types/testing-library__jest-dom/",
+          "packageDependencies": [
+            ["@types/testing-library__jest-dom", "npm:5.14.2"],
             ["@types/jest", "npm:27.0.2"]
           ],
           "linkType": "HARD",
@@ -24887,7 +24895,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:17.0.11"],
             ["@types/sharp", "npm:0.29.4"],
             ["@types/source-map-support", "npm:0.5.4"],
-            ["@types/testing-library__jest-dom", "npm:5.14.1"],
+            ["@types/testing-library__jest-dom", "npm:5.14.2"],
             ["@typescript-eslint/eslint-plugin", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.5.0"],
             ["@typescript-eslint/parser", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.5.0"],
             ["@yarnpkg/sdks", "npm:2.5.0"],
