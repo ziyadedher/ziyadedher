@@ -59,7 +59,7 @@
     "@ziyadedher/eslint-config": "2.1.0",
     "autoprefixer": "10.4.0",
     "babel-loader": "8.2.3",
-    "chromatic": "6.1.0",
+    "chromatic": "6.2.0",
     "classnames": "2.3.1",
     "codecov": "3.8.3",
     "eslint": "8.4.1",
