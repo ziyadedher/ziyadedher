@@ -26,8 +26,8 @@
     "tailwindcss": "2.2.19"
   },
   "devDependencies": {
-    "@babel/core": "7.16.0",
-    "@babel/runtime": "7.16.3",
+    "@babel/core": "7.16.5",
+    "@babel/runtime": "7.16.5",
     "@heroicons/react": "1.0.5",
     "@jest/types": "27.4.2",
     "@mdx-js/react": "1.6.22",
