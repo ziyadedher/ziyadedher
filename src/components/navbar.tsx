@@ -37,7 +37,7 @@ const NavbarPageEntry: React.FunctionComponent<NavbarPageEntryProps> = ({
 );
 
 interface NavbarProps {
-  readonly currentPage: NavbarPage;
+  readonly currentPage: NavbarPage | null;
 }
 
 const Navbar: React.FunctionComponent<NavbarProps> = ({
