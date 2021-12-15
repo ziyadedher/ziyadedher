@@ -31,6 +31,15 @@ const CONFIG = {
         },
       ],
     },
+    {
+      source: "/hacks/log4shell",
+      headers: [
+        {
+          key: "X-Robots-Tag",
+          value: "all",
+        },
+      ],
+    },
   ],
 };
 
