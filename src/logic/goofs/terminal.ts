@@ -3,6 +3,7 @@ import { asEnum, listEnumValues } from "../../utils/enum";
 enum Directory {
   HOME = "/",
   HACKS = "/hacks/",
+  LOG4SHELL = "/hacks/log4shell/",
 }
 
 const cd = (goToUrl: (url: string) => void, dir?: string): string => {
