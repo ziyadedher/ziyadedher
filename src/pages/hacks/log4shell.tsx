@@ -91,9 +91,9 @@ const Index: NextPage = () => (
           <Navbar currentPage={null} />
         </div>
 
-        <div className="flex flex-col gap-4 items-center">
+        <div className="flex flex-col gap-4 items-center mt-12">
           <h1 className="text-xl">Log4Shell Public Bug Bounty Specials</h1>
-          <p className="max-w-xl text-center text-gray-500">
+          <p className="max-w-xl text-sm text-center">
             Log4Shell (
             <Link
               href="https://nvd.nist.gov/vuln/detail/CVE-2021-44228"
@@ -106,7 +106,7 @@ const Index: NextPage = () => (
             demonstrate that they are still vulnerable to Log4Shell.
           </p>
 
-          <div className="flex flex-col my-6">
+          <div className="flex flex-col my-12">
             <div className="overflow-x-auto -my-2 -mx-8">
               <div className="inline-block py-2 px-8 min-w-full align-middle">
                 <div className="overflow-hidden rounded-lg">
