@@ -70,6 +70,18 @@ export const HIT_LIST: HitListItem[] = [
     bugBountySpecialSourceUrl:
       "https://hackerone.com/glassdoor/policy_versions?type=team&change=3662968",
   },
+  {
+    companyName: "Coinbase",
+    companyUrl: "https://www.coinbase.com",
+    companyField: "Finance - Crypto",
+    bugBountyProvider: "HackerOne",
+    bugBountyUrl: "https://hackerone.com/coinbase",
+    bugBountySpecialAmount: 30000,
+    bugBountySpecialStartDate: new Date("2021-12-15 17:50:29 UTC"),
+    bugBountySpecialEndDate: null,
+    bugBountySpecialSourceUrl:
+      "https://hackerone.com/coinbase/policy_versions?type=team&change=3663055",
+  },
 ].sort((a, b) => a.companyName.localeCompare(b.companyName));
 
 export default function handler(
