@@ -100,7 +100,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sharp", "npm:0.29.3"],
             ["source-map-support", "npm:0.5.21"],
             ["tailwindcss", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.19"],
-            ["ts-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.1.1"],
+            ["ts-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.1.2"],
             ["ts-node", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:10.4.0"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"],
             ["vercel", "npm:23.1.2"]
@@ -23169,17 +23169,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["ts-jest", [
-        ["npm:27.1.1", {
-          "packageLocation": "./.yarn/cache/ts-jest-npm-27.1.1-e3e86ec65d-3aea680833.zip/node_modules/ts-jest/",
+        ["npm:27.1.2", {
+          "packageLocation": "./.yarn/cache/ts-jest-npm-27.1.2-fe360013a6-2e7275f8a3.zip/node_modules/ts-jest/",
           "packageDependencies": [
-            ["ts-jest", "npm:27.1.1"]
+            ["ts-jest", "npm:27.1.2"]
           ],
           "linkType": "SOFT",
         }],
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.1.1", {
-          "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-4a251922e7/0/cache/ts-jest-npm-27.1.1-e3e86ec65d-3aea680833.zip/node_modules/ts-jest/",
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.1.2", {
+          "packageLocation": "./.yarn/__virtual__/ts-jest-virtual-04215dfae8/0/cache/ts-jest-npm-27.1.2-fe360013a6-2e7275f8a3.zip/node_modules/ts-jest/",
           "packageDependencies": [
-            ["ts-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.1.1"],
+            ["ts-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.1.2"],
             ["@babel/core", "npm:7.16.5"],
             ["@types/babel-jest", null],
             ["@types/babel__core", "npm:7.1.17"],
@@ -24903,7 +24903,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["sharp", "npm:0.29.3"],
             ["source-map-support", "npm:0.5.21"],
             ["tailwindcss", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.19"],
-            ["ts-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.1.1"],
+            ["ts-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.1.2"],
             ["ts-node", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:10.4.0"],
             ["typescript", "patch:typescript@npm%3A4.5.4#~builtin<compat/typescript>::version=4.5.4&hash=493e53"],
             ["vercel", "npm:23.1.2"]
