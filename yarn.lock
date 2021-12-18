@@ -3771,17 +3771,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/typography@npm:0.5.0-alpha.2":
-  version: 0.5.0-alpha.2
-  resolution: "@tailwindcss/typography@npm:0.5.0-alpha.2"
+"@tailwindcss/typography@npm:0.5.0":
+  version: 0.5.0
+  resolution: "@tailwindcss/typography@npm:0.5.0"
   dependencies:
     lodash.castarray: ^4.4.0
     lodash.isplainobject: ^4.0.6
     lodash.merge: ^4.6.2
     lodash.uniq: ^4.5.0
   peerDependencies:
-    tailwindcss: ">=3.0.0 || >= 3.0.0-alpha.1"
-  checksum: 321aed7cde0923fcfdc143607a646f80655a331d9bbc2c382d1c074db2b975cbf79bfe3922ac3037af1986b228a9144397a4c6ffb14e98f612fb6b8b64ed41a5
+    tailwindcss: "*"
+  checksum: 84986845115cd8bfc0d9df8f2a6d3e86fdba0d54e236a6150782b1340e27218610a5dbb5ab63c34cbc6f8bef4180ff0d1540808895e893b16854c2b0f83094dc
   languageName: node
   linkType: hard
 
@@ -19135,7 +19135,7 @@ __metadata:
     "@storybook/addon-links": 6.4.9
     "@storybook/addon-postcss": 2.0.0
     "@storybook/react": 6.4.9
-    "@tailwindcss/typography": 0.5.0-alpha.2
+    "@tailwindcss/typography": 0.5.0
     "@testing-library/jest-dom": 5.16.1
     "@testing-library/react": 12.1.2
     "@testing-library/react-hooks": 7.0.2
