@@ -7,9 +7,11 @@ const { withPlaiceholder } = require("@plaiceholder/next");
 /** @type {import('next').NextConfig} */
 const CONFIG = {
   reactStrictMode: true,
+  swcMinify: true,
   images: {
     domains: ["storage.googleapis.com"],
   },
+  experimental: {},
 
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type, @typescript-eslint/require-await -- exception for Next.js headers.
   headers: async () => [
