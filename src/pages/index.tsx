@@ -2,9 +2,8 @@ import Head from "next/head";
 // eslint-disable-next-line @typescript-eslint/no-shadow -- Next.js Image
 import Image from "next/image";
 
-import Header from "../components/header";
 import TextLink from "../components/links/text";
-import Navbar, { NavbarPage } from "../components/navbar";
+import { NavbarPage } from "../components/navbar";
 import PageContainer from "../components/page_container";
 import { getImageWithBlur } from "../logic/image_with_blur";
 
@@ -27,14 +26,9 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
       />
     </Head>
 
-    <PageContainer>
-      <div className="my-8 space-y-4">
-        <Header />
-        <Navbar currentPage={NavbarPage.HOME} />
-      </div>
-
-      <main className="flex flex-row justify-center py-8 space-x-8 w-full max-w-5xl">
-        <div className="flex flex-col flex-1 mx-6 xl:mx-0 text-sm font-light prose">
+    <PageContainer hasHeader hasNavbar navbarPage={NavbarPage.HOME}>
+      <div className="flex flex-row gap-8 justify-center py-8 mx-auto max-w-5xl">
+        <div className="flex flex-col flex-1 text-sm font-light prose">
           <p className="text-3xl">yo</p>
           <p>
             My name is Ziyad Edher (زياد إضهير), I&apos;m a software engineer
@@ -129,7 +123,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             blurDataURL={imageBlur.ziyadedher.blurData}
           />
         </div>
-      </main>
+      </div>
     </PageContainer>
   </>
 );
@@ -149,17 +143,5 @@ const getStaticProps: GetStaticProps<IndexProps> = async () => {
   };
 };
 
-const DEFAULT_STATIC_PROPS: IndexProps = {
-  imageBlur: {
-    ziyadedher: {
-      url: "https://storage.googleapis.com/ziyadedher/ziyadedher.jpg",
-      width: 3024,
-      height: 4032,
-      blurData:
-        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkqAcAAIUAgUW0RjgAAAAASUVORK5CYII=",
-    },
-  },
-};
-
-export { DEFAULT_STATIC_PROPS, getStaticProps };
+export { getStaticProps };
 export default Index;
