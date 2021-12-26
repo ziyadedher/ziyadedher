@@ -42,6 +42,15 @@ const CONFIG = {
         },
       ],
     },
+    {
+      source: "/hacks/darkarts",
+      headers: [
+        {
+          key: "X-Robots-Tag",
+          value: "all",
+        },
+      ],
+    },
   ],
 };
 
