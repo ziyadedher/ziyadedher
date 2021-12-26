@@ -3,9 +3,10 @@
   "private": true,
   "packageManager": "yarn@3.1.1",
   "scripts": {
-    "dev": "next dev",
+    "dev": "vercel dev",
     "build": "next build",
     "start": "next start",
+    "deploy": "vercel deploy",
     "lint": "eslint 'src/**' 'tests/**' 'stories/**'",
     "test": "jest --silent",
     "test:watch": "jest --watch --notify",
