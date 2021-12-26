@@ -4,7 +4,7 @@ const shouldUseProductionStorage = (): boolean => getNodeEnv() === "production";
 
 const getStorageURI = (filePath: string): string =>
   shouldUseProductionStorage()
-    ? `https://storage.googleapis.com/${filePath}`
+    ? `https://storage.ziyadedher.com/${filePath}`
     : `/${filePath}`;
 
 export { shouldUseProductionStorage, getStorageURI };
