@@ -1,7 +1,7 @@
 import Script from "next/script";
 import React from "react";
 
-// eslint-disable-next-line prefer-destructuring, node/no-process-env -- can't destructure Next.js env.
+// eslint-disable-next-line node/no-process-env -- need to pull Google Analytics ID from environment.
 const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID;
 
 const GTag: React.FunctionComponent = () => (
