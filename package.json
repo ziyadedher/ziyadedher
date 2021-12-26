@@ -3,7 +3,7 @@
   "private": true,
   "packageManager": "yarn@3.1.1",
   "scripts": {
-    "dev": "vercel dev",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "deploy": "vercel deploy",
