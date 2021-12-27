@@ -1,8 +1,9 @@
 import Script from "next/script";
 import React from "react";
 
-// eslint-disable-next-line node/no-process-env -- need to pull Google Analytics ID from environment.
-const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID;
+import { getGoogleAnalyticsMeasurementId } from "./env";
+
+const GA_TRACKING_ID = getGoogleAnalyticsMeasurementId();
 
 const GTag: React.FunctionComponent = () => (
   <>

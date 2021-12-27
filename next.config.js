@@ -9,7 +9,7 @@ const CONFIG = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["storage.googleapis.com", "storage.ziyadedher.com"],
+    domains: ["storage.ziyadedher.com"],
   },
   experimental: {},
 

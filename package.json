@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "deploy": "vercel deploy",
     "lint": "eslint 'src/**' 'tests/**' 'stories/**'",
     "test": "jest --silent",
     "test:watch": "jest --watch --notify",

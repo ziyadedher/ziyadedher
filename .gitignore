@@ -36,3 +36,6 @@ yarn-error.log*
 
 # node (mostly for storybook)
 node_modules
+
+# next.js public folder, this isn't used for prod, only local
+public/
