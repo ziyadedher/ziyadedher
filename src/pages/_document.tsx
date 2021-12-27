@@ -1,6 +1,8 @@
 import { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
 
+import { getStorageURI } from "../lib/storage";
+
 // eslint-disable-next-line @typescript-eslint/no-shadow -- Next.js pattern.
 const Document: React.FunctionComponent = () => (
   <Html lang="en">
@@ -9,7 +11,7 @@ const Document: React.FunctionComponent = () => (
       <link
         rel="shortcut icon"
         type="image/png"
-        href="https://storage.googleapis.com/ziyadedher/brain.png"
+        href={getStorageURI("brain.png")}
       />
     </Head>
     <body>
