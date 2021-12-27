@@ -1,3 +1,15 @@
 {
-  "extends": ["@ziyadedher"]
+  "extends": ["@ziyadedher"],
+  "rules": {
+    "prefer-destructuring": [
+      "error",
+      {
+        "array": false,
+        "object": true
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ]
+  }
 }

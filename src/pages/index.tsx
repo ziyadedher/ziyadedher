@@ -5,6 +5,7 @@ import Image from "next/image";
 import TextLink from "../components/links/text";
 import { NavbarPage } from "../components/navbar";
 import PageContainer from "../components/page_container";
+import { getStorageURI } from "../lib/storage";
 import { getImageWithBlur } from "../logic/image_with_blur";
 
 import type { ImageWithBlur } from "../logic/image_with_blur";
@@ -130,7 +131,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
 
 const getStaticProps: GetStaticProps<IndexProps> = async () => {
   const ziyadedherImageWithBlur = await getImageWithBlur(
-    "https://storage.googleapis.com/ziyadedher/ziyadedher.jpg",
+    getStorageURI("ziyadedher.jpg"),
     40
   );
 
