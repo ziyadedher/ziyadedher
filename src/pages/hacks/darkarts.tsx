@@ -122,7 +122,7 @@ const Darkarts: NextPage = () => {
     console.log(`Time taken: ${end - start} ms`);
   }, [generator]);
 
-  const handleLoadGeneratorClick: React.MouseEventHandler =
+  const handleLoadGeneratorClick: React.MouseEventHandler<HTMLButtonElement> =
     useCallback(async () => {
       setGenerator(
         await getGenerator(
