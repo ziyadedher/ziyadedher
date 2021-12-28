@@ -4,6 +4,7 @@ import { InferenceSession, env } from "onnxruntime-web";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
 import PageContainer, { PageStyle } from "../../components/page_container";
+import { getStorageURI } from "../../lib/storage";
 
 import type { NextPage } from "next";
 
@@ -13,14 +14,16 @@ interface Generator {
 
 const getGenerator = async (generatorModelPath: string): Promise<Generator> => {
   env.wasm.wasmPaths = {
-    "ort-wasm.wasm":
-      "https://storage.ziyadedher.com/darkarts/onnxruntime/ort-wasm.wasm",
-    "ort-wasm-threaded.wasm":
-      "https://storage.ziyadedher.com/darkarts/onnxruntime/ort-wasm-threaded.wasm",
-    "ort-wasm-simd.wasm":
-      "https://storage.ziyadedher.com/darkarts/onnxruntime/ort-wasm-simd.wasm",
-    "ort-wasm-simd-threaded.wasm":
-      "https://storage.ziyadedher.com/darkarts/onnxruntime/ort-wasm-simd-threaded.wasm",
+    "ort-wasm.wasm": getStorageURI("darkarts/onnxruntime/ort-wasm.wasm"),
+    "ort-wasm-threaded.wasm": getStorageURI(
+      "darkarts/onnxruntime/ort-wasm-threaded.wasm"
+    ),
+    "ort-wasm-simd.wasm": getStorageURI(
+      "darkarts/onnxruntime/ort-wasm-simd.wasm"
+    ),
+    "ort-wasm-simd-threaded.wasm": getStorageURI(
+      "darkarts/onnxruntime/ort-wasm-simd-threaded.wasm"
+    ),
   };
 
   return {
@@ -47,63 +50,53 @@ const generateImageData = async (
 
 const Darkarts: NextPage = () => {
   const [generator, setGenerator] = useState<Generator | null>(null);
-  const [shouldGenerateImage, setShouldGenerateImage] = useState(false);
   const [imageData, setImageData] = useState<ImageData | null>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
-  useEffect(() => {
-    (async (): Promise<void> => {
-      setGenerator(
-        await getGenerator(
-          "https://storage.ziyadedher.com/darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
-        )
-      );
-    })().then(
-      () => {
-        console.log("Model loaded!");
-      },
-      (e) => {
-        throw e;
-      }
-    );
-  }, []);
+  const isGeneratorAvailable = generator !== null;
 
   useEffect(() => {
-    if (canvasRef.current === null || imageData === null) {
+    const canvas = canvasRef.current;
+    if (imageData === null || canvas === null) {
       return;
     }
 
-    const ctx = canvasRef.current.getContext("2d");
-    if (ctx === null) {
+    const context = canvas.getContext("2d");
+    if (context === null) {
       throw new Error("Failed to get canvas context");
     }
-    canvasRef.current.width = imageData.width;
-    canvasRef.current.height = imageData.height;
-    ctx.putImageData(imageData, 0, 0);
+
+    canvas.width = imageData.width;
+    canvas.height = imageData.height;
+    context.putImageData(imageData, 0, 0);
   }, [imageData]);
 
-  useEffect(() => {
-    if (generator === null || !shouldGenerateImage) {
+  const generateImage = useCallback(async (): Promise<void> => {
+    if (generator === null) {
       return;
     }
-    setShouldGenerateImage(false);
+
     const start = performance.now();
-    generateImageData(generator).then(
-      (imgData) => {
-        setImageData(imgData);
-      },
-      (e) => {
-        throw e;
-      }
-    );
+    setImageData(await generateImageData(generator));
     const end = performance.now();
     console.log(`Time taken: ${end - start} ms`);
-  }, [generator, shouldGenerateImage]);
+  }, [generator]);
 
-  const handleClick: React.MouseEventHandler<HTMLButtonElement> =
-    useCallback(() => {
-      setShouldGenerateImage(true);
+  const handleLoadGeneratorClick: React.MouseEventHandler =
+    useCallback(async () => {
+      setGenerator(
+        await getGenerator(
+          getStorageURI(
+            "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
+          )
+        )
+      );
     }, []);
+
+  const handleGenerateImageClick: React.MouseEventHandler<HTMLButtonElement> =
+    useCallback(async () => {
+      await generateImage();
+    }, [generateImage]);
 
   return (
     <>
@@ -121,19 +114,31 @@ const Darkarts: NextPage = () => {
         <div className="flex flex-col items-center space-y-4">
           <button
             type="button"
-            disabled={generator === null}
-            onClick={handleClick}
+            onClick={handleLoadGeneratorClick}
             className={cx(
-              "py-2 px-4 text-gray-50 bg-gray-600 rounded-lg",
-              generator === null
-                ? "cursor-not-allowed opacity-50"
-                : "hover:bg-gray-700 active:bg-gray-800 cursor-pointer"
+              "py-2 px-4 text-gray-50 bg-gray-600 rounded-lg hover:bg-gray-700 active:bg-gray-800 cursor-pointer"
             )}
           >
-            Click me!
+            Load generator...
           </button>
 
-          <canvas ref={canvasRef} className="w-1/4" />
+          <button
+            type="button"
+            disabled={!isGeneratorAvailable}
+            onClick={handleGenerateImageClick}
+            className={cx(
+              "py-2 px-4 text-gray-50 bg-gray-600 rounded-lg",
+              isGeneratorAvailable
+                ? "hover:bg-gray-700 active:bg-gray-800 cursor-pointer"
+                : "cursor-not-allowed opacity-50"
+            )}
+          >
+            Generate image...
+          </button>
+
+          <div className="overflow-hidden w-1/3 rounded-lg">
+            <canvas ref={canvasRef} className="w-full" />
+          </div>
         </div>
       </PageContainer>
     </>

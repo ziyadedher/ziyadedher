@@ -7,7 +7,7 @@ const { withPlaiceholder } = require("@plaiceholder/next");
 /** @type {import('next').NextConfig} */
 const CONFIG = {
   reactStrictMode: true,
-  swcMinify: true,
+  swcMinify: false, // SWC minification breaks ONNX WASM
   images: {
     domains: ["storage.ziyadedher.com"],
   },
