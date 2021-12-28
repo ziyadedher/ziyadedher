@@ -19391,6 +19391,9 @@ __metadata:
     ts-node: 10.4.0
     typescript: 4.5.4
     vercel: 23.1.2
+  dependenciesMeta:
+    open@7.4.2:
+      unplugged: true
   languageName: unknown
   linkType: soft
 
