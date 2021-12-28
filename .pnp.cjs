@@ -56,6 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:7.0.2"],
             ["@types/babel__core", "npm:7.1.17"],
             ["@types/eslint", "npm:8.2.1"],
+            ["@types/events", "npm:3.0.0"],
             ["@types/gtag.js", "npm:0.0.8"],
             ["@types/jest", "npm:27.0.3"],
             ["@types/mdx-js__react", "npm:1.5.5"],
@@ -86,6 +87,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:7.27.1"],
             ["eslint-plugin-react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.3.0"],
             ["eslint-plugin-tailwindcss", "npm:1.17.2"],
+            ["events", "npm:3.3.0"],
             ["jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.4.5"],
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.0.4"],
             ["node-notifier", "npm:10.0.0"],
@@ -94,12 +96,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],
             ["postcss", "npm:8.4.5"],
             ["prettier", "npm:2.5.1"],
+            ["random-js", "npm:2.1.0"],
             ["react", "npm:17.0.2"],
             ["react-console-emulator", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.0.1"],
             ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:17.0.2"],
             ["regenerator-runtime", "npm:0.13.9"],
             ["sharp", "npm:0.29.3"],
             ["source-map-support", "npm:0.5.21"],
+            ["string_decoder", "npm:1.3.0"],
             ["tailwindcss", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:3.0.7"],
             ["ts-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.1.2"],
             ["ts-node", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:10.4.0"],
@@ -6928,6 +6932,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-estree-npm-0.0.50-b9bc3b8409-9a2b6a4a8c.zip/node_modules/@types/estree/",
           "packageDependencies": [
             ["@types/estree", "npm:0.0.50"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@types/events", [
+        ["npm:3.0.0", {
+          "packageLocation": "./.yarn/cache/@types-events-npm-3.0.0-2eee0ea973-9a424c2da2.zip/node_modules/@types/events/",
+          "packageDependencies": [
+            ["@types/events", "npm:3.0.0"]
           ],
           "linkType": "HARD",
         }]
@@ -20247,6 +20260,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["random-js", [
+        ["npm:2.1.0", {
+          "packageLocation": "./.yarn/cache/random-js-npm-2.1.0-839113aa92-cdee38c303.zip/node_modules/random-js/",
+          "packageDependencies": [
+            ["random-js", "npm:2.1.0"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["randombytes", [
         ["npm:2.1.0", {
           "packageLocation": "./.yarn/cache/randombytes-npm-2.1.0-e3da76bccf-d779499376.zip/node_modules/randombytes/",
@@ -25068,6 +25090,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:7.0.2"],
             ["@types/babel__core", "npm:7.1.17"],
             ["@types/eslint", "npm:8.2.1"],
+            ["@types/events", "npm:3.0.0"],
             ["@types/gtag.js", "npm:0.0.8"],
             ["@types/jest", "npm:27.0.3"],
             ["@types/mdx-js__react", "npm:1.5.5"],
@@ -25098,6 +25121,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:7.27.1"],
             ["eslint-plugin-react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.3.0"],
             ["eslint-plugin-tailwindcss", "npm:1.17.2"],
+            ["events", "npm:3.3.0"],
             ["jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.4.5"],
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.0.4"],
             ["node-notifier", "npm:10.0.0"],
@@ -25106,12 +25130,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],
             ["postcss", "npm:8.4.5"],
             ["prettier", "npm:2.5.1"],
+            ["random-js", "npm:2.1.0"],
             ["react", "npm:17.0.2"],
             ["react-console-emulator", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.0.1"],
             ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:17.0.2"],
             ["regenerator-runtime", "npm:0.13.9"],
             ["sharp", "npm:0.29.3"],
             ["source-map-support", "npm:0.5.21"],
+            ["string_decoder", "npm:1.3.0"],
             ["tailwindcss", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:3.0.7"],
             ["ts-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.1.2"],
             ["ts-node", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:10.4.0"],

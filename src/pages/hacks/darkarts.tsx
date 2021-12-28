@@ -1,6 +1,7 @@
 import cx from "classnames";
 import Head from "next/head";
-import { InferenceSession, env } from "onnxruntime-web";
+import { InferenceSession, Tensor, env } from "onnxruntime-web";
+import { MersenneTwister19937, Random } from "random-js";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
 import PageContainer, { PageStyle } from "../../components/page_container";
@@ -26,25 +27,64 @@ const getGenerator = async (generatorModelPath: string): Promise<Generator> => {
     ),
   };
 
+  const generator = await InferenceSession.create(generatorModelPath, {
+    executionProviders: ["wasm"],
+    graphOptimizationLevel: "all",
+  });
+
   return {
-    generator: await InferenceSession.create(generatorModelPath, {
-      executionProviders: ["wasm"],
-      graphOptimizationLevel: "all",
-    }),
+    generator,
   };
+};
+
+const randn = (rand: Random): number => {
+  let u = 0;
+  let v = 0;
+  while (u === 0) u = rand.realZeroToOneInclusive();
+  while (v === 0) v = rand.realZeroToOneInclusive();
+  return Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
 };
 
 const generateImageData = async (
   // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- ONNXRuntime API
   generator: Generator
 ): Promise<ImageData> => {
-  const rawImg = (await generator.generator.run({}))[3738];
+  const rand = new Random(MersenneTwister19937.seed(1341));
+
+  const lats = new Tensor(
+    new Float32Array(new Array(512 * 2).fill(0).map(() => randn(rand))),
+    [2, 512]
+  );
+  const latWeights = new Tensor(new Float32Array([1, 0]), [2]);
+
+  const stylemix = new Tensor(
+    new Float32Array(new Array(512).fill(0).map(() => randn(rand))),
+    [512]
+  );
+  const stylemixIdx = new Tensor(new Int32Array(new Array(14).fill(0)), [14]);
+
+  const input = {
+    0: lats,
+    1: latWeights,
+    2: stylemix,
+    3: stylemixIdx,
+  };
+
+  if (generator.generator.outputNames.length > 1) {
+    throw new Error("Generator has more than one output.");
+  }
+
+  const outputName = generator.generator.outputNames[0];
+  if (typeof outputName === "undefined") {
+    throw new Error("Generator has no outputs.");
+  }
+
+  const rawImg = (await generator.generator.run(input))[outputName];
   if (typeof rawImg === "undefined") {
     throw new Error("Failed to generate image.");
   }
 
   const img = new Uint8ClampedArray(rawImg.data as Uint8Array);
-
   return new ImageData(img, 256, 256);
 };
 
