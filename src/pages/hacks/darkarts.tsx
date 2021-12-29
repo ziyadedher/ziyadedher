@@ -119,9 +119,13 @@ const Darkarts: NextPage = () => {
     }
 
     setImageData(
-      await generateImageData(model, seed, offset, fixedSeed, fixedLayers)
+      await generateImageData(model, {
+        inputLatentsSeeds: new Array(14).fill(0),
+        intermediateLatentsDistortionSeeds: new Array(14).fill(0),
+        intermediateLatentsDistortionStrengths: new Array(14).fill(0),
+      })
     );
-  }, [model, seed, offset, fixedSeed, fixedLayers]);
+  }, [model]);
 
   const handleSeedChange: React.ChangeEventHandler<HTMLInputElement> =
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
