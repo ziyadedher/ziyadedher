@@ -52,6 +52,15 @@ const CONFIG = {
       ],
     },
   ],
+
+  // eslint-disable-next-line @typescript-eslint/explicit-function-return-type, @typescript-eslint/require-await -- exception for Next.js redirects.
+  redirects: async () => [
+    {
+      source: "/faces",
+      destination: "/hacks/darkarts",
+      permanent: true,
+    },
+  ],
 };
 
 // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment -- exception for configuration files.

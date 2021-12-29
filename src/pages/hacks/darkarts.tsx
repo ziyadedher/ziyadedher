@@ -181,8 +181,11 @@ const Darkarts: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Dark Arts | TODO</title>
-        <meta name="description" content="TODO" />
+        <title>Generate AI Faces Online | Ziyad Edher</title>
+        <meta
+          name="description"
+          content="Generate AI faces online by using a GAN (generative adversarial network) that runs in your browser."
+        />
       </Head>
 
       <PageContainer
