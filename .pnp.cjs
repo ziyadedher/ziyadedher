@@ -50,6 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/addon-links", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.4.9"],
             ["@storybook/addon-postcss", "npm:2.0.0"],
             ["@storybook/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.4.9"],
+            ["@tailwindcss/forms", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.4.0"],
             ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.0"],
             ["@testing-library/jest-dom", "npm:5.16.1"],
             ["@testing-library/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.2"],
@@ -6652,6 +6653,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [
             ["@szmarczak/http-timer", "npm:4.0.6"],
             ["defer-to-connect", "npm:2.0.1"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
+      ["@tailwindcss/forms", [
+        ["npm:0.4.0", {
+          "packageLocation": "./.yarn/cache/@tailwindcss-forms-npm-0.4.0-f188d1cada-881a80b136.zip/node_modules/@tailwindcss/forms/",
+          "packageDependencies": [
+            ["@tailwindcss/forms", "npm:0.4.0"]
+          ],
+          "linkType": "SOFT",
+        }],
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.4.0", {
+          "packageLocation": "./.yarn/__virtual__/@tailwindcss-forms-virtual-4dceefb59b/0/cache/@tailwindcss-forms-npm-0.4.0-f188d1cada-881a80b136.zip/node_modules/@tailwindcss/forms/",
+          "packageDependencies": [
+            ["@tailwindcss/forms", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.4.0"],
+            ["@types/tailwindcss", null],
+            ["mini-svg-data-uri", "npm:1.4.3"],
+            ["tailwindcss", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:3.0.7"]
+          ],
+          "packagePeers": [
+            "@types/tailwindcss",
+            "tailwindcss"
           ],
           "linkType": "HARD",
         }]
@@ -17854,6 +17878,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
+      ["mini-svg-data-uri", [
+        ["npm:1.4.3", {
+          "packageLocation": "./.yarn/cache/mini-svg-data-uri-npm-1.4.3-8ed8396a0e-bd1789c349.zip/node_modules/mini-svg-data-uri/",
+          "packageDependencies": [
+            ["mini-svg-data-uri", "npm:1.4.3"]
+          ],
+          "linkType": "HARD",
+        }]
+      ]],
       ["minimalistic-assert", [
         ["npm:1.0.1", {
           "packageLocation": "./.yarn/cache/minimalistic-assert-npm-1.0.1-dc8bb23d29-cc7974a926.zip/node_modules/minimalistic-assert/",
@@ -25084,6 +25117,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/addon-links", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.4.9"],
             ["@storybook/addon-postcss", "npm:2.0.0"],
             ["@storybook/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.4.9"],
+            ["@tailwindcss/forms", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.4.0"],
             ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.0"],
             ["@testing-library/jest-dom", "npm:5.16.1"],
             ["@testing-library/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.2"],
