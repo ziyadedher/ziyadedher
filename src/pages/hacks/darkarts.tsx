@@ -467,8 +467,8 @@ const Darkarts: NextPage = () => {
             </p>
           </div>
 
-          <div className="flex flex-col-reverse md:flex-row gap-8 justify-center items-center md:items-start w-full">
-            <div className="flex flex-col space-y-8 md:w-1/2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center md:items-start w-full">
+            <div className="flex flex-col row-span-2 space-y-8">
               <div className="flex flex-col">
                 <h2 className="text-base font-bold">Settings</h2>
                 <p className="text-sm text-justify">
@@ -549,7 +549,7 @@ const Darkarts: NextPage = () => {
               </div>
             </div>
 
-            <div className="flex flex-col flex-shrink-0 gap-y-4 md:w-1/2">
+            <div className="flex flex-col order-first md:order-none gap-y-4">
               <GeneratedImageCanvas
                 modelStatus={modelStatus}
                 imageData={imageData}
@@ -584,6 +584,9 @@ const Darkarts: NextPage = () => {
                 </button>
               </div>
               <ModelStatusText modelStatus={modelStatus} />
+            </div>
+
+            <div className="flex flex-col">
               <div className="flex flex-col gap-4 py-4 mt-4 border-t-2 border-t-gray-700">
                 <div>
                   <h4 className="text-sm font-bold">What&apos;s a seed?</h4>
