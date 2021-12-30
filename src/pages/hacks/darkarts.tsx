@@ -460,16 +460,10 @@ const Darkarts: NextPage = () => {
               See people who don&apos;t exist, through the eyes of an AI.
             </h1>
             <p className="text-base text-center">
-              Using the AI below to generate faces that have never been seen
-              before. None of these people exist. Manipulate the settings to see
-              how this AI thinks about the human face.
-            </p>
-            <p className="text-xs text-center">
-              <span className="font-bold">Here&apos;s the nerd stuff.</span>{" "}
-              This is a demo of a face generation system using a generative
-              adversarial network (referred to as GANs). The GAN used here is
-              StyleGAN2, developed by NVIDIA. The model was ported to the
-              browser using ONNX, the Open Neural Network Exchange.
+              This AI lets you generate faces that have never been seen before.
+              None of these people exist. Manipulate the settings to see how
+              this AI thinks about the human face. For really wacky results,
+              pump up the distortion.
             </p>
           </div>
 
@@ -478,8 +472,10 @@ const Darkarts: NextPage = () => {
               <div className="flex flex-col">
                 <h2 className="text-base font-bold">Settings</h2>
                 <p className="text-sm text-justify">
-                  Use these settings to manipulate the image and create a new
-                  one.
+                  Use these settings to manipulate the image and see how the AI
+                  generates new faces. Change the seed to see completely new
+                  faces, and up the distortion to see the AI forget what faces
+                  look like.
                 </p>
               </div>
 
@@ -609,20 +605,65 @@ const Darkarts: NextPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="py-4 border-t-2 border-t-gray-700">
-                <h4 className="text-sm font-bold">Check me out!</h4>
-                <p className="text-sm text-justify">
-                  I built this demo almost entirely live. Check out my{" "}
-                  <TextLink href="https://twitch.tv/ziyadedher" isExternal>
-                    Twitch channel
-                  </TextLink>
-                  . If you want to see more stuff that I build, feel free to
-                  follow me on{" "}
-                  <TextLink href="https://twitter.com/ziyadedher" isExternal>
-                    Twitter
-                  </TextLink>
-                  .
-                </p>
+              <div className="flex flex-col gap-4 py-4 border-t-2 border-t-gray-700">
+                <div>
+                  <h4 className="text-sm font-bold">
+                    Here&apos;s the nerd stuff.
+                  </h4>
+                  <p className="text-sm text-justify">
+                    This is a demo of a face generation system using a{" "}
+                    <TextLink
+                      href="https://en.wikipedia.org/wiki/Generative_adversarial_network"
+                      isExternal
+                    >
+                      generative adversarial network
+                    </TextLink>{" "}
+                    (referred to as a GAN). The GAN used here is{" "}
+                    <TextLink
+                      href="https://arxiv.org/abs/1912.04958"
+                      isExternal
+                    >
+                      StyleGAN2
+                    </TextLink>
+                    , developed by{" "}
+                    <TextLink href="https://www.nvidia.com/" isExternal>
+                      NVIDIA
+                    </TextLink>
+                    . The model was ported to the browser using{" "}
+                    <TextLink href="https://onnx.ai/" isExternal>
+                      ONNX
+                    </TextLink>
+                    , the Open Neural Network Exchange. Everything here runs
+                    locally on your browser.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold">Check me out!</h4>
+                  <p className="text-sm text-justify">
+                    I built this demo almost entirely live. Check out my{" "}
+                    <TextLink href="https://twitch.tv/ziyadedher" isExternal>
+                      Twitch channel
+                    </TextLink>
+                    . If you want to see more stuff that I build, feel free to
+                    follow me on{" "}
+                    <TextLink href="https://twitter.com/ziyadedher" isExternal>
+                      Twitter
+                    </TextLink>
+                    .
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold">
+                    Questions, concerns, or found a bug?
+                  </h4>
+                  <p className="text-sm text-justify">
+                    Please out to me on{" "}
+                    <TextLink href="https://twitter.com/ziyadedher" isExternal>
+                      Twitter
+                    </TextLink>{" "}
+                    or email me!
+                  </p>
+                </div>
               </div>
             </div>
           </div>
