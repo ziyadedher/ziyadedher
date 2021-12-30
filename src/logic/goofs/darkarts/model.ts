@@ -166,4 +166,4 @@ const generateImageData = async (
 };
 
 export { getModel, generateImageData, LayerKeys };
-export type { Model, LayerKey, LayerValues };
+export type { Model, ModelParameters, LayerKey, LayerValues };
