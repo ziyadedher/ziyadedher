@@ -75,7 +75,7 @@ const TableRow: React.FunctionComponent<TableRowProps> = ({
 const Index: NextPage = () => (
   <>
     <Head>
-      <title>Log4Shell Public Bug Bounty Specials</title>
+      <title>Log4Shell Public Bug Bounty Specials | Ziyad Edher</title>
       <meta
         name="description"
         content="List of companies with public bug bounty specials for Log4Shell (CVE-2021-44228). Log4Shell is an RCE vulnerability in the very popular Log4J logging library."
