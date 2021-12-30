@@ -3,78 +3,14 @@ import Head from "next/head";
 import { CaretRight } from "phosphor-react";
 import React, { useCallback, useEffect, useReducer, useState } from "react";
 
-import GeneratedImageCanvas, {
-  ModelStatus,
-} from "../../components/goofs/darkarts/generated_image_canvas";
+import GeneratedImage from "../../components/goofs/darkarts/generated_image";
 import RangeSliderInput from "../../components/inputs/range_slider";
 import TextLink from "../../components/links/text";
 import PageContainer, { PageStyle } from "../../components/page_container";
-import { getStorageURI } from "../../lib/storage";
-import {
-  LayerKeys,
-  generateImageData,
-  getModel,
-} from "../../logic/goofs/darkarts/model";
+import { LayerKeys } from "../../logic/goofs/darkarts/model";
 
-import type {
-  LayerKey,
-  LayerValues,
-  Model,
-} from "../../logic/goofs/darkarts/model";
+import type { LayerKey, LayerValues } from "../../logic/goofs/darkarts/model";
 import type { NextPage } from "next";
-
-interface ModelStatusTextProps {
-  readonly modelStatus: ModelStatus;
-}
-
-const ModelStatusText: React.FunctionComponent<ModelStatusTextProps> = ({
-  modelStatus,
-}: ModelStatusTextProps) => {
-  const getModelStatusText = useCallback((): string => {
-    switch (modelStatus) {
-      case ModelStatus.READY_TO_LOAD:
-        return "Click 'Load' to load the model.";
-      case ModelStatus.LOADING:
-        return "Loading...";
-      case ModelStatus.READY:
-        return "Ready! Click 'Generate' to generate an image.";
-      case ModelStatus.GENERATING:
-        return "Generating... this page may not be responsive.";
-      case ModelStatus.ERROR:
-        return "Error! :(";
-      default:
-        return "Unknown???";
-    }
-  }, [modelStatus]);
-
-  const getModelStatusClassNames = useCallback((): string => {
-    switch (modelStatus) {
-      case ModelStatus.READY_TO_LOAD:
-        return "text-gray-500";
-      case ModelStatus.LOADING:
-        return "text-yellow-500";
-      case ModelStatus.READY:
-        return "text-green-500";
-      case ModelStatus.GENERATING:
-        return "text-yellow-500";
-      case ModelStatus.ERROR:
-        return "text-red-500";
-      default:
-        return "text-red-500";
-    }
-  }, [modelStatus]);
-
-  return (
-    <p
-      className={classNames(
-        "text-center text-xs opacity-70",
-        getModelStatusClassNames()
-      )}
-    >
-      {getModelStatusText()}
-    </p>
-  );
-};
 
 interface SettingItemProps {
   readonly label: string;
@@ -243,9 +179,6 @@ const getDefaultLayerValues = <T,>(value: T): LayerValues<T> => {
 };
 
 const Darkarts: NextPage = () => {
-  const [model, setModel] = useState<Model | null>(null);
-  const [imageData, setImageData] = useState<ImageData | null>(null);
-
   const [seed, setSeed] = useState(Math.round(Math.random() * 20 - 10));
   const [distortionSeed, setDistortionSeed] = useState(
     Math.round(Math.random() * 20 - 10)
@@ -268,10 +201,6 @@ const Darkarts: NextPage = () => {
     getDefaultLayerValues(false)
   );
 
-  const [modelStatus, setModelStatus] = useState(ModelStatus.READY_TO_LOAD);
-
-  const isModelAvailable = model !== null;
-
   useEffect(() => {
     LayerKeys.forEach((key) => {
       if (!layerOverriden[key]) {
@@ -281,20 +210,6 @@ const Darkarts: NextPage = () => {
       }
     });
   }, [seed, layerOverriden, distortionSeed, distortionStrength]);
-
-  const generateImage = useCallback(async (): Promise<void> => {
-    if (model === null) {
-      return;
-    }
-
-    setImageData(
-      await generateImageData(model, {
-        inputLatentsSeeds: layerInputSeeds,
-        intermediateLatentsDistortionSeeds: layerDistortionSeeds,
-        intermediateLatentsDistortionStrengths: layerDistortionStrengths,
-      })
-    );
-  }, [model, layerInputSeeds, layerDistortionSeeds, layerDistortionStrengths]);
 
   const handleSeedChange: React.ChangeEventHandler<HTMLInputElement> =
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
@@ -313,28 +228,6 @@ const Darkarts: NextPage = () => {
     useCallback((e) => {
       setDistortionStrength(Number(e.target.value));
     }, []);
-
-  const handleLoadGeneratorClick: React.MouseEventHandler<HTMLButtonElement> =
-    useCallback(async () => {
-      setModelStatus(ModelStatus.LOADING);
-      setModel(
-        await getModel(
-          getStorageURI(
-            "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
-          )
-        )
-      );
-      setModelStatus(ModelStatus.READY);
-    }, []);
-
-  const handleGenerateImageClick: React.MouseEventHandler<HTMLButtonElement> =
-    useCallback(() => {
-      setModelStatus(ModelStatus.GENERATING);
-      setTimeout(async () => {
-        await generateImage();
-        setModelStatus(ModelStatus.READY);
-      }, 50);
-    }, [generateImage]);
 
   const getCollapsableLayerConfiguration = useCallback(
     (layerKey: LayerKey): React.ReactElement => {
@@ -550,40 +443,14 @@ const Darkarts: NextPage = () => {
             </div>
 
             <div className="flex flex-col order-first md:order-none gap-y-4">
-              <GeneratedImageCanvas
-                modelStatus={modelStatus}
-                imageData={imageData}
+              <GeneratedImage
+                modelParameters={{
+                  inputLatentsSeeds: layerInputSeeds,
+                  intermediateLatentsDistortionSeeds: layerDistortionSeeds,
+                  intermediateLatentsDistortionStrengths:
+                    layerDistortionStrengths,
+                }}
               />
-              <div className="flex flex-row space-x-4">
-                <button
-                  type="button"
-                  disabled={modelStatus !== ModelStatus.READY_TO_LOAD}
-                  onClick={handleLoadGeneratorClick}
-                  className={classNames(
-                    "py-2 px-4 bg-gray-600 rounded-lg",
-                    modelStatus === ModelStatus.READY_TO_LOAD
-                      ? "cursor-pointer hover:bg-gray-700 active:bg-gray-800"
-                      : "cursor-not-allowed opacity-50"
-                  )}
-                >
-                  Load
-                </button>
-
-                <button
-                  type="button"
-                  disabled={!isModelAvailable}
-                  onClick={handleGenerateImageClick}
-                  className={classNames(
-                    "py-2 px-4 bg-gray-600 rounded-lg flex-1",
-                    isModelAvailable
-                      ? "cursor-pointer hover:bg-gray-700 active:bg-gray-800"
-                      : "cursor-not-allowed opacity-50"
-                  )}
-                >
-                  Generate
-                </button>
-              </div>
-              <ModelStatusText modelStatus={modelStatus} />
             </div>
 
             <div className="flex flex-col">
