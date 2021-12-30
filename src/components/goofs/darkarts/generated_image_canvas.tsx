@@ -117,7 +117,7 @@ const GeneratedImageCanvas: React.FunctionComponent<
       imageData.height * 4
     );
 
-    context.font = "48px Comic Sans";
+    context.font = "32px Comic Sans";
     context.strokeStyle = "white";
     context.lineWidth = 4;
     context.strokeText("ziyadedher.com/faces", 24, 1000);
@@ -126,7 +126,7 @@ const GeneratedImageCanvas: React.FunctionComponent<
 
   return (
     <div className="overflow-hidden relative w-full rounded-lg">
-      <canvas ref={canvasRef} className="w-full" />
+      <canvas ref={canvasRef} width={1024} height={1024} className="w-full" />
       <canvas ref={otherCanvasRef} className="hidden" />
       {imageData === null ? (
         <div className="flex absolute top-0 left-0 flex-col justify-center items-center p-16 w-full h-full text-center bg-gray-800">

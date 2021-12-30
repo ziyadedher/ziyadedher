@@ -246,6 +246,10 @@ const Darkarts: NextPage = () => {
   const [imageData, setImageData] = useState<ImageData | null>(null);
 
   const [seed, setSeed] = useState(Math.round(Math.random() * 20 - 10));
+  const [distortionSeed, setDistortionSeed] = useState(
+    Math.round(Math.random() * 20 - 10)
+  );
+  const [distortionStrength, setDistortionStrength] = useState(0);
   const [layerInputSeeds, setLayerInputSeeds] = useReducer<
     LayerValuesReducer<number>
   >(layerValuesReducer, getDefaultLayerValues(0));
@@ -271,9 +275,11 @@ const Darkarts: NextPage = () => {
     LayerKeys.forEach((key) => {
       if (!layerOverriden[key]) {
         setLayerInputSeeds({ key, value: seed });
+        setLayerDistortionSeeds({ key, value: distortionSeed });
+        setLayerDistortionStrengths({ key, value: distortionStrength });
       }
     });
-  }, [seed, layerOverriden]);
+  }, [seed, layerOverriden, distortionSeed, distortionStrength]);
 
   const generateImage = useCallback(async (): Promise<void> => {
     if (model === null) {
@@ -293,6 +299,18 @@ const Darkarts: NextPage = () => {
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
     useCallback((e) => {
       setSeed(Number(e.target.value));
+    }, []);
+
+  const handleDistortionSeedChange: React.ChangeEventHandler<HTMLInputElement> =
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
+    useCallback((e) => {
+      setDistortionSeed(Number(e.target.value));
+    }, []);
+
+  const handleDistortionStrengthChange: React.ChangeEventHandler<HTMLInputElement> =
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
+    useCallback((e) => {
+      setDistortionStrength(Number(e.target.value));
     }, []);
 
   const handleLoadGeneratorClick: React.MouseEventHandler<HTMLButtonElement> =
@@ -459,15 +477,47 @@ const Darkarts: NextPage = () => {
                   These values apply to layers that are not explicitly
                   overriden. You can override layers in the section below.
                 </p>
-                <div className="flex flex-col gap-8 mt-4">
-                  <SettingItem label="seed" labelFor="seed-input" value={seed}>
+                <div className="flex flex-col gap-2 mt-4">
+                  <SettingItem
+                    label="Input Seed"
+                    labelFor="inputSeed"
+                    value={seed}
+                  >
                     <RangeSliderInput
-                      id="seed-input"
+                      id="inputSeed"
                       value={seed}
                       min={-10}
                       max={10}
                       step={0.1}
                       onChange={handleSeedChange}
+                    />
+                  </SettingItem>
+                  <SettingItem
+                    label="Distortion Seed"
+                    labelFor="distortionSeed"
+                    value={distortionSeed}
+                  >
+                    <RangeSliderInput
+                      id="distortionSeed"
+                      value={distortionSeed}
+                      min={-10}
+                      max={10}
+                      step={0.1}
+                      onChange={handleDistortionSeedChange}
+                    />
+                  </SettingItem>
+                  <SettingItem
+                    label="Distortion Strength"
+                    labelFor="distortionStrength"
+                    value={distortionStrength}
+                  >
+                    <RangeSliderInput
+                      id="distortionStrength"
+                      value={distortionStrength}
+                      min={0}
+                      max={10}
+                      step={0.1}
+                      onChange={handleDistortionStrengthChange}
                     />
                   </SettingItem>
                 </div>
