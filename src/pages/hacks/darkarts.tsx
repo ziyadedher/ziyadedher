@@ -420,8 +420,10 @@ const Darkarts: NextPage = () => {
             onChange: handleLayerDistortionStrengthChange,
           }}
           isOverriden={layerOverriden[layerKey]}
+          // eslint-disable-next-line react/jsx-no-bind -- FIXME: performance issue.
           onOverridenChange={handleLayerOverridenChange}
           isOpen={layerOpen[layerKey]}
+          // eslint-disable-next-line react/jsx-no-bind -- FIXME: performance issue.
           onOpenChange={handleLayerOpenChange}
         />
       );
@@ -551,8 +553,14 @@ const Darkarts: NextPage = () => {
               <div className="flex flex-row space-x-4">
                 <button
                   type="button"
+                  disabled={modelStatus !== ModelStatus.READY_TO_LOAD}
                   onClick={handleLoadGeneratorClick}
-                  className="py-2 px-4 text-gray-50 bg-gray-600 hover:bg-gray-700 active:bg-gray-800 rounded-lg cursor-pointer"
+                  className={classNames(
+                    "py-2 px-4 bg-gray-600 rounded-lg",
+                    modelStatus === ModelStatus.READY_TO_LOAD
+                      ? "cursor-pointer hover:bg-gray-700 active:bg-gray-800"
+                      : "cursor-not-allowed opacity-50"
+                  )}
                 >
                   Load
                 </button>
@@ -562,9 +570,9 @@ const Darkarts: NextPage = () => {
                   disabled={!isModelAvailable}
                   onClick={handleGenerateImageClick}
                   className={classNames(
-                    "py-2 px-4 text-gray-50 bg-gray-600 rounded-lg flex-1",
+                    "py-2 px-4 bg-gray-600 rounded-lg flex-1",
                     isModelAvailable
-                      ? "hover:bg-gray-700 active:bg-gray-800 cursor-pointer"
+                      ? "cursor-pointer hover:bg-gray-700 active:bg-gray-800"
                       : "cursor-not-allowed opacity-50"
                   )}
                 >
