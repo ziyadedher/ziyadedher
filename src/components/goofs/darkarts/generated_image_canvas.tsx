@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import {
   CloudArrowDown,
   Smiley,
@@ -24,6 +23,7 @@ const GeneratedImageCanvas: React.FunctionComponent<
   GeneratedImageCanvasProps
 > = ({ modelStatus, imageData }: GeneratedImageCanvasProps) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const otherCanvasRef = useRef<HTMLCanvasElement>(null);
 
   const getPlaceholderTexts = useCallback((): {
     title: string;
@@ -89,7 +89,8 @@ const GeneratedImageCanvas: React.FunctionComponent<
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    if (imageData === null || canvas === null) {
+    const otherCanvas = otherCanvasRef.current;
+    if (imageData === null || canvas === null || otherCanvas === null) {
       return;
     }
 
@@ -97,24 +98,42 @@ const GeneratedImageCanvas: React.FunctionComponent<
     if (context === null) {
       throw new Error("Failed to get canvas context");
     }
+    const otherContext = otherCanvas.getContext("2d");
+    if (otherContext === null) {
+      throw new Error("failed to get other canvas context");
+    }
 
-    canvas.width = imageData.width;
-    canvas.height = imageData.height;
-    context.putImageData(imageData, 0, 0);
+    otherCanvas.width = imageData.width;
+    otherCanvas.height = imageData.height;
+    otherContext.putImageData(imageData, 0, 0);
+
+    canvas.width = imageData.width * 4;
+    canvas.height = imageData.height * 4;
+    context.drawImage(
+      otherCanvas,
+      0,
+      0,
+      imageData.width * 4,
+      imageData.height * 4
+    );
+
+    context.font = "48px Comic Sans";
+    context.strokeStyle = "white";
+    context.lineWidth = 4;
+    context.strokeText("ziyadedher.com/faces", 24, 1000);
+    context.fillText("ziyadedher.com/faces", 24, 1000);
   }, [imageData]);
 
   return (
     <div className="overflow-hidden relative w-full rounded-lg">
-      <canvas ref={canvasRef} width={256} height={256} className="w-full" />
-      <div
-        className={classNames(
-          "flex absolute top-0 left-0 flex-col justify-center items-center p-16 w-full h-full text-center bg-gray-800",
-          imageData === null ? null : "opacity-0"
-        )}
-      >
-        {getPlaceholderIcon()}
-        {getPlaceholderText()}
-      </div>
+      <canvas ref={canvasRef} className="w-full" />
+      <canvas ref={otherCanvasRef} className="hidden" />
+      {imageData === null ? (
+        <div className="flex absolute top-0 left-0 flex-col justify-center items-center p-16 w-full h-full text-center bg-gray-800">
+          {getPlaceholderIcon()}
+          {getPlaceholderText()}
+        </div>
+      ) : null}
     </div>
   );
 };
