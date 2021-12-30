@@ -339,6 +339,7 @@ const Darkarts: NextPage = () => {
     (layerKey: LayerKey): React.ReactElement => {
       const handleLayerInputChange: React.ChangeEventHandler<
         HTMLInputElement
+        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
       > = (e): void => {
         setLayerInputSeeds({
           key: layerKey,
@@ -351,6 +352,7 @@ const Darkarts: NextPage = () => {
       };
       const handleLayerDistortionChange: React.ChangeEventHandler<
         HTMLInputElement
+        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
       > = (e): void => {
         setLayerDistortionSeeds({
           key: layerKey,
@@ -363,6 +365,7 @@ const Darkarts: NextPage = () => {
       };
       const handleLayerDistortionStrengthChange: React.ChangeEventHandler<
         HTMLInputElement
+        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
       > = (e): void => {
         setLayerDistortionStrengths({
           key: layerKey,
@@ -375,6 +378,7 @@ const Darkarts: NextPage = () => {
       };
       const handleLayerOverridenChange: React.ChangeEventHandler<
         HTMLInputElement
+        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandle
       > = (e): void => {
         setLayerOverriden({
           key: layerKey,
@@ -383,7 +387,7 @@ const Darkarts: NextPage = () => {
       };
       const handleLayerOpenChange: React.MouseEventHandler<
         HTMLButtonElement
-      > = (e): void => {
+      > = (): void => {
         setLayerOpen({
           key: layerKey,
           value: !layerOpen[layerKey],
