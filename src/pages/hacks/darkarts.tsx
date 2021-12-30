@@ -152,7 +152,7 @@ const CollapsableLayerConfiguration: React.FunctionComponent<
     <div
       className={classNames(
         "flex flex-col space-y-2 px-4 transition-all overflow-hidden",
-        isOpen ? "py-4 h-[11rem]" : "h-0"
+        isOpen ? "py-4 max-h-48" : "max-h-0"
       )}
     >
       <SettingItem
