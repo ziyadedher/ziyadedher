@@ -7,6 +7,7 @@ import GeneratedImageCanvas, {
   ModelStatus,
 } from "../../components/goofs/darkarts/generated_image_canvas";
 import RangeSliderInput from "../../components/inputs/range_slider";
+import TextLink from "../../components/links/text";
 import PageContainer, { PageStyle } from "../../components/page_container";
 import { getStorageURI } from "../../lib/storage";
 import {
@@ -440,7 +441,7 @@ const Darkarts: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Generate AI Faces Online | Ziyad Edher</title>
+        <title>Generate AI (GAN) Faces | Ziyad Edher</title>
         <meta
           name="description"
           content="Generate AI faces online by using a GAN (generative adversarial network) that runs in your browser."
@@ -454,14 +455,21 @@ const Darkarts: NextPage = () => {
         pageStyle={PageStyle.HACKER}
       >
         <div className="flex flex-col gap-16 my-8 mx-auto max-w-3xl">
-          <div>
-            <h1 className="text-3xl text-center">Face generation using GANs</h1>
+          <div className="flex flex-col gap-4">
+            <h1 className="text-3xl text-center">
+              See people who don&apos;t exist, through the eyes of an AI.
+            </h1>
             <p className="text-base text-center">
+              Using the AI below to generate faces that have never been seen
+              before. None of these people exist. Manipulate the settings to see
+              how this AI thinks about the human face.
+            </p>
+            <p className="text-xs text-center">
+              <span className="font-bold">Here&apos;s the nerd stuff.</span>{" "}
               This is a demo of a face generation system using a generative
-              adversarial network (a.k.a. GAN). The GAN used is StyleGAN2. None
-              of the images created here are real faces. They are all AI
-              generated. Play around with the model below. Note, running the
-              model may cause this page to be temporarily non-responsive.
+              adversarial network (referred to as GANs). The GAN used here is
+              StyleGAN2, developed by NVIDIA. The model was ported to the
+              browser using ONNX, the Open Neural Network Exchange.
             </p>
           </div>
 
@@ -600,6 +608,21 @@ const Darkarts: NextPage = () => {
                     the accent lighting.
                   </p>
                 </div>
+              </div>
+              <div className="py-4 border-t-2 border-t-gray-700">
+                <h4 className="text-sm font-bold">Check me out!</h4>
+                <p className="text-sm text-justify">
+                  I built this demo almost entirely live. Check out my{" "}
+                  <TextLink href="https://twitch.tv/ziyadedher" isExternal>
+                    Twitch channel
+                  </TextLink>
+                  . If you want to see more stuff that I build, feel free to
+                  follow me on{" "}
+                  <TextLink href="https://twitter.com/ziyadedher" isExternal>
+                    Twitter
+                  </TextLink>
+                  .
+                </p>
               </div>
             </div>
           </div>
