@@ -39,7 +39,8 @@ const GeneratedImageCanvas: React.FunctionComponent<
       case ModelStatus.LOADING:
         return {
           title: "Loading the model...",
-          subtitle: "Please wait while the model is feteched and loaded.",
+          subtitle:
+            "Please wait while the model is fetched and loaded. This may take a minute or two depending on your internet connection.",
         };
       case ModelStatus.READY:
         return {
