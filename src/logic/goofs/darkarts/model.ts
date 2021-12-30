@@ -5,15 +5,16 @@ import { getStorageURI } from "../../../lib/storage";
 
 const LayerKeys = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as const;
 type LayerKey = typeof LayerKeys[number];
+type LayerValues<T> = Readonly<Record<LayerKey, T>>;
 
 interface Model {
   readonly generator: InferenceSession;
 }
 
 interface ModelParameters {
-  readonly inputLatentsSeeds: readonly number[];
-  readonly intermediateLatentsDistortionSeeds: readonly number[];
-  readonly intermediateLatentsDistortionStrengths: readonly number[];
+  readonly inputLatentsSeeds: LayerValues<number>;
+  readonly intermediateLatentsDistortionSeeds: LayerValues<number>;
+  readonly intermediateLatentsDistortionStrengths: LayerValues<number>;
 }
 interface ModelInputs extends InferenceSession.OnnxValueMapType {
   readonly inputLatents: Tensor;
@@ -63,22 +64,6 @@ const generateInputs = ({
   intermediateLatentsDistortionSeeds,
   intermediateLatentsDistortionStrengths,
 }: ModelParameters): ModelInputs => {
-  if (inputLatentsSeeds.length !== 14) {
-    throw new InputError(
-      `Input latents seeds must have 14 elements, got ${inputLatentsSeeds.length}.`
-    );
-  }
-  if (intermediateLatentsDistortionSeeds.length !== 14) {
-    throw new InputError(
-      `Intermediate latents distortion seeds must have 14 elements, got ${intermediateLatentsDistortionSeeds.length}.`
-    );
-  }
-  if (intermediateLatentsDistortionStrengths.length !== 14) {
-    throw new InputError(
-      `Intermediate latents distortion strengths must have 14 elements, got ${intermediateLatentsDistortionStrengths.length}.`
-    );
-  }
-
   const inputLatents = new Tensor(new Float32Array(28 * 512), [28, 512]);
   const inputLatentsWeights = new Tensor(new Float32Array(14 * 1), [14, 1]);
   const intermediateLatentsDistortions = new Tensor(
@@ -86,8 +71,8 @@ const generateInputs = ({
     [14, 512]
   );
 
-  for (let i = 0; i < 14; i++) {
-    const seed = inputLatentsSeeds[i];
+  for (const layerKey of LayerKeys) {
+    const seed = inputLatentsSeeds[layerKey];
     if (typeof seed === "undefined") {
       throw new InputError(`Undefined value in inputLatentsSeeds array.`);
     }
@@ -99,29 +84,29 @@ const generateInputs = ({
     const rand0Values = new Float32Array(
       new Array(512).fill(0).map(() => randn(rand0))
     );
-    inputLatents.data.set(rand0Values, 2 * i * 512);
+    inputLatents.data.set(rand0Values, 2 * layerKey * 512);
 
     const intSeed1 = intSeed + 1;
     const rand1 = new Random(MersenneTwister19937.seed(intSeed1));
     const rand1Values = new Float32Array(
       new Array(512).fill(0).map(() => randn(rand1))
     );
-    inputLatents.data.set(rand1Values, (2 * i + 1) * 512);
+    inputLatents.data.set(rand1Values, (2 * layerKey + 1) * 512);
 
     const floatSeed = seed - intSeed;
     const weight = 1 - floatSeed;
-    inputLatentsWeights.data.set(new Float32Array([weight]), i);
+    inputLatentsWeights.data.set(new Float32Array([weight]), layerKey);
   }
 
-  for (let i = 0; i < 14; i++) {
-    const seed = intermediateLatentsDistortionSeeds[i];
+  for (const layerKey of LayerKeys) {
+    const seed = intermediateLatentsDistortionSeeds[layerKey];
     if (typeof seed === "undefined") {
       throw new InputError(
         `Undefined value in intermediateLatentsDistortionSeeds array.`
       );
     }
 
-    const strength = intermediateLatentsDistortionStrengths[i];
+    const strength = intermediateLatentsDistortionStrengths[layerKey];
     if (typeof strength === "undefined") {
       throw new InputError(
         `Undefined value in intermediateLatentsDistortionStrengths array.`
@@ -139,7 +124,7 @@ const generateInputs = ({
         .fill(0)
         .map(() => strength * ((randn(rand0) + randn(rand1)) / 2))
     );
-    intermediateLatentsDistortions.data.set(rand0Values, i * 512);
+    intermediateLatentsDistortions.data.set(rand0Values, layerKey * 512);
   }
 
   return {
@@ -181,4 +166,4 @@ const generateImageData = async (
 };
 
 export { getModel, generateImageData, LayerKeys };
-export type { Model, LayerKey };
+export type { Model, LayerKey, LayerValues };

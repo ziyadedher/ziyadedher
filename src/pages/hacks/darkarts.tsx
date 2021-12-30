@@ -1,6 +1,7 @@
-import cx from "classnames";
+import classNames from "classnames";
 import Head from "next/head";
-import React, { useCallback, useState } from "react";
+import { CaretRight } from "phosphor-react";
+import React, { useCallback, useEffect, useReducer, useState } from "react";
 
 import GeneratedImageCanvas, {
   ModelStatus,
@@ -14,7 +15,11 @@ import {
   getModel,
 } from "../../logic/goofs/darkarts/model";
 
-import type { LayerKey, Model } from "../../logic/goofs/darkarts/model";
+import type {
+  LayerKey,
+  LayerValues,
+  Model,
+} from "../../logic/goofs/darkarts/model";
 import type { NextPage } from "next";
 
 interface ModelStatusTextProps {
@@ -60,7 +65,7 @@ const ModelStatusText: React.FunctionComponent<ModelStatusTextProps> = ({
 
   return (
     <p
-      className={cx(
+      className={classNames(
         "text-center text-xs opacity-70",
         getModelStatusClassNames()
       )}
@@ -83,35 +88,192 @@ const SettingItem: React.FunctionComponent<SettingItemProps> = ({
   value,
   children,
 }: SettingItemProps) => (
-  <div className="flex flex-row space-x-4 w-full">
-    <label htmlFor={labelFor} className="w-24 text-sm font-bold uppercase">
+  <div className="flex flex-row items-center space-x-4 w-full">
+    <label htmlFor={labelFor} className="w-24 text-xs font-bold uppercase">
       {label}
     </label>
     <div className="inline-flex flex-1 items-center">{children}</div>
-    <label htmlFor={labelFor} className="w-8 text-sm font-bold">
+    <label htmlFor={labelFor} className="w-8 text-xs font-bold">
       {value}
     </label>
   </div>
 );
 
+interface RangeSliderInputProps {
+  readonly value: number;
+  readonly min: number;
+  readonly max: number;
+  readonly step?: number;
+  readonly onChange: React.ChangeEventHandler<HTMLInputElement>;
+}
+
+interface CollapsableLayerConfigurationProps {
+  readonly layerKey: LayerKey;
+  readonly inputSeed: RangeSliderInputProps;
+  readonly distortionSeed: RangeSliderInputProps;
+  readonly distortionStrength: RangeSliderInputProps;
+  readonly isOverriden: boolean;
+  readonly onOverridenChange: React.ChangeEventHandler<HTMLInputElement>;
+  readonly isOpen: boolean;
+  readonly onOpenChange: React.MouseEventHandler<HTMLButtonElement>;
+}
+
+const CollapsableLayerConfiguration: React.FunctionComponent<
+  CollapsableLayerConfigurationProps
+> = ({
+  layerKey,
+  inputSeed: { onChange: handleInputSeedChange, ...inputSeed },
+  distortionSeed: { onChange: handleDistortionSeedChange, ...distortionSeed },
+  distortionStrength: {
+    onChange: handleDistortionStrengthChange,
+    ...distortionStrength
+  },
+  isOverriden,
+  onOverridenChange: handleOverridenChange,
+  isOpen,
+  onOpenChange: handleOpenChange,
+}: CollapsableLayerConfigurationProps) => (
+  <div className="flex overflow-hidden flex-col bg-gray-800 rounded-lg">
+    <button
+      type="button"
+      onClick={handleOpenChange}
+      className="flex relative flex-row items-center py-2 px-4 hover:bg-gray-700 active:shadow-inner"
+    >
+      <div
+        className={classNames("transition-all", isOpen ? "rotate-90" : null)}
+      >
+        <CaretRight size={16} />
+      </div>
+      <div className="flex-1 text-sm font-bold">Layer {layerKey} Settings</div>
+      {isOverriden ? (
+        <span className="absolute right-4 w-2 h-2 bg-green-500 rounded-full" />
+      ) : null}
+    </button>
+    <div
+      className={classNames(
+        "flex flex-col space-y-2 px-4 transition-all overflow-hidden",
+        isOpen ? "py-4 h-[11rem]" : "h-0"
+      )}
+    >
+      <SettingItem
+        label="Override"
+        labelFor={`override-${layerKey}`}
+        value={isOverriden ? "Yes" : "No"}
+      >
+        <input
+          type="checkbox"
+          id={`override-${layerKey}`}
+          checked={isOverriden}
+          onChange={handleOverridenChange}
+          className="w-4 h-4 rounded-md"
+        />
+      </SettingItem>
+      <SettingItem
+        label="Layer Input Seed"
+        labelFor={`inputSeed-${layerKey}`}
+        value={inputSeed.value}
+      >
+        <RangeSliderInput
+          id={`inputSeed-${layerKey}`}
+          value={inputSeed.value}
+          min={inputSeed.min}
+          max={inputSeed.max}
+          step={inputSeed.step}
+          onChange={handleInputSeedChange}
+        />
+      </SettingItem>
+      <SettingItem
+        label="Distortion Seed"
+        labelFor={`distortionSeed-${layerKey}`}
+        value={distortionSeed.value}
+      >
+        <RangeSliderInput
+          id={`distortionSeed-${layerKey}`}
+          value={distortionSeed.value}
+          min={distortionSeed.min}
+          max={distortionSeed.max}
+          step={distortionSeed.step}
+          onChange={handleDistortionSeedChange}
+        />
+      </SettingItem>
+      <SettingItem
+        label="Distortion Strength"
+        labelFor={`distortionStrength-${layerKey}`}
+        value={distortionStrength.value}
+      >
+        <RangeSliderInput
+          id={`distortionStrength-${layerKey}`}
+          value={distortionStrength.value}
+          min={distortionStrength.min}
+          max={distortionStrength.max}
+          step={distortionStrength.step}
+          onChange={handleDistortionStrengthChange}
+        />
+      </SettingItem>
+    </div>
+  </div>
+);
+
+interface LayerValuesAction<T> {
+  readonly key: LayerKey;
+  readonly value: T;
+}
+
+type LayerValuesReducer<T> = React.Reducer<
+  LayerValues<T>,
+  LayerValuesAction<T>
+>;
+
+const layerValuesReducer = <T,>(
+  state: LayerValues<T>,
+  action: LayerValuesAction<T>
+): LayerValues<T> => {
+  const newState = { ...state };
+  newState[action.key] = action.value;
+  return newState;
+};
+
+const getDefaultLayerValues = <T,>(value: T): LayerValues<T> => {
+  let map = {};
+  LayerKeys.forEach((v) => {
+    map = { [v]: value, ...map };
+  });
+  return map as LayerValues<T>;
+};
+
 const Darkarts: NextPage = () => {
   const [model, setModel] = useState<Model | null>(null);
   const [imageData, setImageData] = useState<ImageData | null>(null);
 
-  const [seed, setSeed] = useState(Math.round(Math.random() * 200 - 100));
-  const [offset, setOffset] = useState(
-    Math.round(Math.random() * 200 - 100) / 100
-  );
-  const [fixedLayers, setFixedLayers] = useState<ReadonlySet<LayerKey>>(
-    new Set()
-  );
-  const [fixedSeed, setFixedSeed] = useState(
-    Math.round(Math.random() * 200 - 100)
+  const [seed, setSeed] = useState(Math.round(Math.random() * 20 - 10));
+  const [layerInputSeeds, setLayerInputSeeds] = useReducer<
+    LayerValuesReducer<number>
+  >(layerValuesReducer, getDefaultLayerValues(0));
+  const [layerDistortionSeeds, setLayerDistortionSeeds] = useReducer<
+    LayerValuesReducer<number>
+  >(layerValuesReducer, getDefaultLayerValues(0));
+  const [layerDistortionStrengths, setLayerDistortionStrengths] = useReducer<
+    LayerValuesReducer<number>
+  >(layerValuesReducer, getDefaultLayerValues(0));
+  const [layerOverriden, setLayerOverriden] = useReducer<
+    LayerValuesReducer<boolean>
+  >(layerValuesReducer, getDefaultLayerValues(false));
+  const [layerOpen, setLayerOpen] = useReducer<LayerValuesReducer<boolean>>(
+    layerValuesReducer,
+    getDefaultLayerValues(false)
   );
 
   const [modelStatus, setModelStatus] = useState(ModelStatus.READY_TO_LOAD);
 
   const isModelAvailable = model !== null;
+
+  useEffect(() => {
+    LayerKeys.forEach((key) => {
+      if (!layerOverriden[key]) {
+        setLayerInputSeeds({ key, value: seed });
+      }
+    });
+  }, [seed, layerOverriden]);
 
   const generateImage = useCallback(async (): Promise<void> => {
     if (model === null) {
@@ -120,44 +282,17 @@ const Darkarts: NextPage = () => {
 
     setImageData(
       await generateImageData(model, {
-        inputLatentsSeeds: new Array(14).fill(0),
-        intermediateLatentsDistortionSeeds: new Array(14).fill(0),
-        intermediateLatentsDistortionStrengths: new Array(14).fill(0),
+        inputLatentsSeeds: layerInputSeeds,
+        intermediateLatentsDistortionSeeds: layerDistortionSeeds,
+        intermediateLatentsDistortionStrengths: layerDistortionStrengths,
       })
     );
-  }, [model]);
+  }, [model, layerInputSeeds, layerDistortionSeeds, layerDistortionStrengths]);
 
   const handleSeedChange: React.ChangeEventHandler<HTMLInputElement> =
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
     useCallback((e) => {
       setSeed(Number(e.target.value));
-    }, []);
-
-  const handleOffsetChange: React.ChangeEventHandler<HTMLInputElement> =
-    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
-    useCallback((e) => {
-      setOffset(Number(e.target.value));
-    }, []);
-
-  const handleFixedLayersChange: React.ChangeEventHandler<HTMLInputElement> =
-    useCallback(
-      // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
-      (e) => {
-        const newFixedLayers = new Set(fixedLayers);
-        if (e.target.checked) {
-          newFixedLayers.add(Number(e.target.value) as LayerKey);
-        } else {
-          newFixedLayers["delete"](Number(e.target.value) as LayerKey);
-        }
-        setFixedLayers(newFixedLayers);
-      },
-      [fixedLayers]
-    );
-
-  const handleFixedSeedChange: React.ChangeEventHandler<HTMLInputElement> =
-    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
-    useCallback((e) => {
-      setFixedSeed(Number(e.target.value));
     }, []);
 
   const handleLoadGeneratorClick: React.MouseEventHandler<HTMLButtonElement> =
@@ -182,6 +317,102 @@ const Darkarts: NextPage = () => {
       }, 50);
     }, [generateImage]);
 
+  const getCollapsableLayerConfiguration = useCallback(
+    (layerKey: LayerKey): React.ReactElement => {
+      const handleLayerInputChange: React.ChangeEventHandler<
+        HTMLInputElement
+      > = (e): void => {
+        setLayerInputSeeds({
+          key: layerKey,
+          value: Number(e.target.value),
+        });
+        setLayerOverriden({
+          key: layerKey,
+          value: true,
+        });
+      };
+      const handleLayerDistortionChange: React.ChangeEventHandler<
+        HTMLInputElement
+      > = (e): void => {
+        setLayerDistortionSeeds({
+          key: layerKey,
+          value: Number(e.target.value),
+        });
+        setLayerOverriden({
+          key: layerKey,
+          value: true,
+        });
+      };
+      const handleLayerDistortionStrengthChange: React.ChangeEventHandler<
+        HTMLInputElement
+      > = (e): void => {
+        setLayerDistortionStrengths({
+          key: layerKey,
+          value: Number(e.target.value),
+        });
+        setLayerOverriden({
+          key: layerKey,
+          value: true,
+        });
+      };
+      const handleLayerOverridenChange: React.ChangeEventHandler<
+        HTMLInputElement
+      > = (e): void => {
+        setLayerOverriden({
+          key: layerKey,
+          value: e.target.checked,
+        });
+      };
+      const handleLayerOpenChange: React.MouseEventHandler<
+        HTMLButtonElement
+      > = (e): void => {
+        setLayerOpen({
+          key: layerKey,
+          value: !layerOpen[layerKey],
+        });
+      };
+
+      return (
+        <CollapsableLayerConfiguration
+          key={layerKey}
+          layerKey={layerKey}
+          inputSeed={{
+            value: layerInputSeeds[layerKey],
+            min: -10,
+            max: 10,
+            step: 0.1,
+            onChange: handleLayerInputChange,
+          }}
+          distortionSeed={{
+            value: layerDistortionSeeds[layerKey],
+            min: -10,
+            max: 10,
+            step: 0.1,
+            onChange: handleLayerDistortionChange,
+          }}
+          distortionStrength={{
+            value: layerDistortionStrengths[layerKey],
+            min: 0,
+            max: 10,
+            step: 0.1,
+            onChange: handleLayerDistortionStrengthChange,
+          }}
+          isOverriden={layerOverriden[layerKey]}
+          onOverridenChange={handleLayerOverridenChange}
+          isOpen={layerOpen[layerKey]}
+          onOpenChange={handleLayerOpenChange}
+        />
+      );
+    },
+    [
+      layerInputSeeds,
+      layerDistortionSeeds,
+      layerDistortionStrengths,
+      layerOverriden,
+      layerOpen,
+    ]
+  );
+
   return (
     <>
       <Head>
@@ -198,12 +429,10 @@ const Darkarts: NextPage = () => {
         navbarPage={null}
         pageStyle={PageStyle.HACKER}
       >
-        <div className="flex flex-col gap-16 mx-auto max-w-3xl">
+        <div className="flex flex-col gap-16 my-8 mx-auto max-w-3xl">
           <div>
-            <h1 className="text-3xl leading-8 text-center">
-              Face generation using GANs
-            </h1>
-            <p className="text-base text-justify">
+            <h1 className="text-3xl text-center">Face generation using GANs</h1>
+            <p className="text-base text-center">
               This is a demo of a face generation system using a generative
               adversarial network (a.k.a. GAN). The GAN used is StyleGAN2. None
               of the images created here are real faces. They are all AI
@@ -212,69 +441,55 @@ const Darkarts: NextPage = () => {
             </p>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-8 justify-center items-center md:items-start w-full">
-            <div className="flex flex-col space-y-4 w-1/2">
-              <div className="mb-2">
-                <h2 className="font-bold">Settings</h2>
+          <div className="flex flex-col-reverse md:flex-row gap-8 justify-center items-center md:items-start w-full">
+            <div className="flex flex-col space-y-8 md:w-1/2">
+              <div className="flex flex-col">
+                <h2 className="text-base font-bold">Settings</h2>
                 <p className="text-sm text-justify">
                   Use these settings to manipulate the image and create a new
-                  one. Hover over each setting to see what it does.
+                  one.
                 </p>
               </div>
 
-              <SettingItem label="seed" labelFor="seed-input" value={seed}>
-                <RangeSliderInput
-                  id="seed-input"
-                  value={seed}
-                  min={-100}
-                  max={100}
-                  onChange={handleSeedChange}
-                />
-              </SettingItem>
-              <SettingItem
-                label="offset"
-                labelFor="offset-input"
-                value={offset}
-              >
-                <RangeSliderInput
-                  id="offset-input"
-                  value={offset}
-                  min={-1}
-                  max={1}
-                  step={0.01}
-                  onChange={handleOffsetChange}
-                />
-              </SettingItem>
-              <SettingItem label="fixed layers">
-                <div className="grid grid-cols-7 gap-2 items-center">
-                  {LayerKeys.map((layerKey) => (
-                    <input
-                      key={layerKey}
-                      value={layerKey}
-                      checked={fixedLayers.has(layerKey)}
-                      type="checkbox"
-                      onChange={handleFixedLayersChange}
-                      className="w-4 h-4 hover:bg-gray-300 rounded cursor-pointer"
+              <div className="flex flex-col gap-1">
+                <h3 className="text-sm font-bold leading-4">
+                  All-layer Settings
+                </h3>
+                <p className="text-sm text-justify">
+                  These values apply to layers that are not explicitly
+                  overriden. You can override layers in the section below.
+                </p>
+                <div className="flex flex-col gap-8 mt-4">
+                  <SettingItem label="seed" labelFor="seed-input" value={seed}>
+                    <RangeSliderInput
+                      id="seed-input"
+                      value={seed}
+                      min={-10}
+                      max={10}
+                      step={0.1}
+                      onChange={handleSeedChange}
                     />
-                  ))}
+                  </SettingItem>
                 </div>
-              </SettingItem>
-              <SettingItem
-                label="fixed seed"
-                labelFor="fixedseed-input"
-                value={fixedSeed}
-              >
-                <RangeSliderInput
-                  id="fixedseed-input"
-                  value={fixedSeed}
-                  min={-100}
-                  max={100}
-                  onChange={handleFixedSeedChange}
-                />
-              </SettingItem>
+              </div>
+
+              <div className="flex flex-col gap-1">
+                <h3 className="text-sm font-bold">Per-layer Settings</h3>
+                <p className="text-sm text-justify">
+                  You can override specific layers in this section. By doing
+                  this you can &quot;freeze&quot; certain features while you
+                  play around with the rest. Try overriding the first three
+                  layers and then play around with the all-layers settings!
+                </p>
+                <div className="flex flex-col gap-2 mt-4">
+                  {LayerKeys.map((layerKey) =>
+                    getCollapsableLayerConfiguration(layerKey)
+                  )}
+                </div>
+              </div>
             </div>
 
-            <div className="flex flex-col flex-shrink-0 space-y-4 w-1/2">
+            <div className="flex flex-col flex-shrink-0 gap-y-4 md:w-1/2">
               <GeneratedImageCanvas
                 modelStatus={modelStatus}
                 imageData={imageData}
@@ -292,7 +507,7 @@ const Darkarts: NextPage = () => {
                   type="button"
                   disabled={!isModelAvailable}
                   onClick={handleGenerateImageClick}
-                  className={cx(
+                  className={classNames(
                     "py-2 px-4 text-gray-50 bg-gray-600 rounded-lg flex-1",
                     isModelAvailable
                       ? "hover:bg-gray-700 active:bg-gray-800 cursor-pointer"
@@ -303,6 +518,27 @@ const Darkarts: NextPage = () => {
                 </button>
               </div>
               <ModelStatusText modelStatus={modelStatus} />
+              <div className="flex flex-col gap-4 py-4 mt-4 border-t-2 border-t-gray-700">
+                <div>
+                  <h4 className="text-sm font-bold">What&apos;s a seed?</h4>
+                  <p className="text-sm text-justify">
+                    &quot;Seed&quot; refers to the random input used to generate
+                    the face; it generally has no semantic meaning but is used
+                    to make the image different.
+                  </p>
+                </div>
+                <div>
+                  <h4 className="text-sm font-bold">What&apos;s a layer?</h4>
+                  <p className="text-sm text-justify">
+                    You can think of a &quot;layer&quot; as a part of the AI
+                    responsible for generating a specific feature of the face,
+                    with lower-number layers corresponding to more general
+                    features. For example, Layer 0 might be responsible for
+                    determining the age while Layer 13 might be responsible for
+                    the accent lighting.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
