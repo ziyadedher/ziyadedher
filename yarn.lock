@@ -3744,17 +3744,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/typography@npm:0.5.0":
-  version: 0.5.0
-  resolution: "@tailwindcss/typography@npm:0.5.0"
+"@tailwindcss/typography@npm:0.5.2":
+  version: 0.5.2
+  resolution: "@tailwindcss/typography@npm:0.5.2"
   dependencies:
     lodash.castarray: ^4.4.0
     lodash.isplainobject: ^4.0.6
     lodash.merge: ^4.6.2
-    lodash.uniq: ^4.5.0
   peerDependencies:
     tailwindcss: "*"
-  checksum: 84986845115cd8bfc0d9df8f2a6d3e86fdba0d54e236a6150782b1340e27218610a5dbb5ab63c34cbc6f8bef4180ff0d1540808895e893b16854c2b0f83094dc
+  checksum: f6c27e32c9b48b0e906561d1e9dd3eec8fd5efc9792fd691269ceaa9d30d35bc715023215ec83ff8e5475c38af69e164d577672d935813b70e04b1c820b2ea8e
   languageName: node
   linkType: hard
 
@@ -12416,7 +12415,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lodash.uniq@npm:4.5.0, lodash.uniq@npm:^4.5.0":
+"lodash.uniq@npm:4.5.0":
   version: 4.5.0
   resolution: "lodash.uniq@npm:4.5.0"
   checksum: a4779b57a8d0f3c441af13d9afe7ecff22dd1b8ce1129849f71d9bbc8e8ee4e46dfb4b7c28f7ad3d67481edd6e51126e4e2a6ee276e25906d10f7140187c392d
@@ -18737,7 +18736,7 @@ __metadata:
     "@storybook/addon-postcss": 2.0.0
     "@storybook/react": 6.4.9
     "@tailwindcss/forms": ^0.4.0
-    "@tailwindcss/typography": 0.5.0
+    "@tailwindcss/typography": 0.5.2
     "@testing-library/jest-dom": 5.16.1
     "@testing-library/react": 12.1.2
     "@testing-library/react-hooks": 7.0.2
