@@ -1892,12 +1892,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@heroicons/react@npm:1.0.5":
-  version: 1.0.5
-  resolution: "@heroicons/react@npm:1.0.5"
+"@heroicons/react@npm:1.0.6":
+  version: 1.0.6
+  resolution: "@heroicons/react@npm:1.0.6"
   peerDependencies:
     react: ">= 16"
-  checksum: 12114af19c17f69140cc7338e4cd12fe38098ad3ed79f02762106160655cde3ebdba58a2b26f1067f720786187364fd9465bc72f02aad85b0ead8172d76aa51d
+  checksum: 372b1eda3ce735ef069777bc96304f70de585ebb71a6d1cedc121bb695f9bca235619112e3ee14e8779e95a03096813cbbe3b755927a54b7580d1ce084fa4096
   languageName: node
   linkType: hard
 
@@ -18723,7 +18723,7 @@ __metadata:
     "@babel/core": 7.16.5
     "@babel/runtime": 7.16.5
     "@headlessui/react": 1.4.2
-    "@heroicons/react": 1.0.5
+    "@heroicons/react": 1.0.6
     "@jest/types": 27.4.2
     "@mdx-js/react": 1.6.22
     "@next/env": 12.0.7
