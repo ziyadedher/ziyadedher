@@ -4234,7 +4234,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:17.0.11, @types/react-dom@npm:>=16.9.0":
+"@types/react-dom@npm:17.0.14":
+  version: 17.0.14
+  resolution: "@types/react-dom@npm:17.0.14"
+  dependencies:
+    "@types/react": "*"
+  checksum: b54cd0ef573236b3d87fe7493e6d1c36d8b4ca37a3b46364272a5c91ac178e3296b68ea1aeb299ce68f12ad663c5720ee890d0539b14881c6754bdcbdb0befa0
+  languageName: node
+  linkType: hard
+
+"@types/react-dom@npm:>=16.9.0":
   version: 17.0.11
   resolution: "@types/react-dom@npm:17.0.11"
   dependencies:
@@ -18762,7 +18771,7 @@ __metadata:
     "@types/node": 16.11.26
     "@types/prettier": 2.4.2
     "@types/react": 17.0.43
-    "@types/react-dom": 17.0.11
+    "@types/react-dom": 17.0.14
     "@types/sharp": 0.30.0
     "@types/source-map-support": 0.5.4
     "@types/testing-library__jest-dom": 5.14.2
