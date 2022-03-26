@@ -3999,10 +3999,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/gtag.js@npm:0.0.8":
-  version: 0.0.8
-  resolution: "@types/gtag.js@npm:0.0.8"
-  checksum: fecb1d772a0cdbf8573741ad4f8932a418bf44c3d38dec01221504e35658040fb82d6c7916577bb2cd5f3eff4a30642bda81fc35847443101eda05cf58107199
+"@types/gtag.js@npm:0.0.10":
+  version: 0.0.10
+  resolution: "@types/gtag.js@npm:0.0.10"
+  checksum: 5c18ffdc64418887763ec1a564e73c9fbf222ff3eece1fbc35a182fdd884e7884bb7708f67e6e4939f157bb9f2cb7a4aff42be7834527e35c5aac4f98783164c
   languageName: node
   linkType: hard
 
@@ -18756,7 +18756,7 @@ __metadata:
     "@types/babel__core": 7.1.19
     "@types/eslint": 8.2.1
     "@types/events": ^3
-    "@types/gtag.js": 0.0.8
+    "@types/gtag.js": 0.0.10
     "@types/jest": 27.0.3
     "@types/mdx-js__react": 1.5.5
     "@types/node": 16.11.26
