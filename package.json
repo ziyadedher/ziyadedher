@@ -69,7 +69,7 @@
     "@typescript-eslint/parser": "5.7.0",
     "@yarnpkg/sdks": "2.5.0",
     "@ziyadedher/eslint-config": "2.1.0",
-    "autoprefixer": "10.4.0",
+    "autoprefixer": "10.4.4",
     "babel-loader": "8.2.3",
     "chromatic": "6.5.3",
     "codecov": "3.8.3",
