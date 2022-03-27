@@ -91,7 +91,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["events", "npm:3.3.0"],
             ["jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.4.5"],
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.0"],
-            ["node-notifier", "npm:10.0.0"],
+            ["node-notifier", "npm:10.0.1"],
             ["onnxruntime-web", "npm:1.10.0"],
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],
@@ -3632,7 +3632,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-validate", "npm:27.4.2"],
             ["jest-watcher", "npm:27.4.2"],
             ["micromatch", "npm:4.0.4"],
-            ["node-notifier", "npm:10.0.0"],
+            ["node-notifier", "npm:10.0.1"],
             ["rimraf", "npm:3.0.2"],
             ["slash", "npm:3.0.0"],
             ["strip-ansi", "npm:6.0.1"]
@@ -3717,7 +3717,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-resolve", "npm:27.4.5"],
             ["jest-util", "npm:27.4.2"],
             ["jest-worker", "npm:27.4.5"],
-            ["node-notifier", "npm:10.0.0"],
+            ["node-notifier", "npm:10.0.1"],
             ["slash", "npm:3.0.0"],
             ["source-map", "npm:0.6.1"],
             ["string-length", "npm:4.0.2"],
@@ -15865,7 +15865,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/node-notifier", null],
             ["import-local", "npm:3.0.3"],
             ["jest-cli", "virtual:cb815d720c915c49d56858270786853ccc4943d0fe1fa1f05dbfdc4915ed1bfd755056ecdf0234b527d4d931fb0905e4d09549fb12fe1ff0a3a1d9aaa76eb306#npm:27.4.5"],
-            ["node-notifier", "npm:10.0.0"]
+            ["node-notifier", "npm:10.0.1"]
           ],
           "packagePeers": [
             "@types/node-notifier",
@@ -15937,7 +15937,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest-config", "virtual:a4574c9a079c6d01363949615be641d3a057c7d585156eab80c83ecb8ef02e9108a167ce22a707b1403be7c4033ebea8f30388ab17d6acff54b7c8ce92f4031f#npm:27.4.5"],
             ["jest-util", "npm:27.4.2"],
             ["jest-validate", "npm:27.4.2"],
-            ["node-notifier", "npm:10.0.0"],
+            ["node-notifier", "npm:10.0.1"],
             ["prompts", "npm:2.4.2"],
             ["yargs", "npm:16.2.0"]
           ],
@@ -18021,10 +18021,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]
       ]],
       ["node-notifier", [
-        ["npm:10.0.0", {
-          "packageLocation": "./.yarn/unplugged/node-notifier-npm-10.0.0-7261bb0981/node_modules/node-notifier/",
+        ["npm:10.0.1", {
+          "packageLocation": "./.yarn/unplugged/node-notifier-npm-10.0.1-7a3f9a97c4/node_modules/node-notifier/",
           "packageDependencies": [
-            ["node-notifier", "npm:10.0.0"],
+            ["node-notifier", "npm:10.0.1"],
             ["growly", "npm:1.3.0"],
             ["is-wsl", "npm:2.2.0"],
             ["semver", "npm:7.3.5"],
@@ -24518,7 +24518,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["events", "npm:3.3.0"],
             ["jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.4.5"],
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.0"],
-            ["node-notifier", "npm:10.0.0"],
+            ["node-notifier", "npm:10.0.1"],
             ["onnxruntime-web", "npm:1.10.0"],
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],
