@@ -85,7 +85,7 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "eslint-plugin-tailwindcss": "1.17.2",
     "jest": "27.4.5",
-    "node-notifier": "10.0.0",
+    "node-notifier": "10.0.1",
     "postcss": "8.4.5",
     "prettier": "2.5.1",
     "regenerator-runtime": "0.13.9",
