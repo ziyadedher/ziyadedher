@@ -2559,13 +2559,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plaiceholder/next@npm:2.2.0":
-  version: 2.2.0
-  resolution: "@plaiceholder/next@npm:2.2.0"
+"@plaiceholder/next@npm:2.3.0":
+  version: 2.3.0
+  resolution: "@plaiceholder/next@npm:2.3.0"
   peerDependencies:
     next: ">= 10.0.0"
     sharp: ">= 0.26.2"
-  checksum: 4c57276a267cee5647c11cdbf8c28eb7ea9625afe7683a29933ef11db47f8268b53afe5a2663f5230e4f3d9ac28682da9e9e61b5234a86b4e940897ab3450e91
+  checksum: 301e50b6e90a7fd13f4cc9fc43c6c1fcab63c971461a7fdcd0ab3aa09877558309ab4455f106d06dde4fdcdecb4155e769eccd95d209a4a3a2aae987a1da9cd9
   languageName: node
   linkType: hard
 
@@ -18928,7 +18928,7 @@ __metadata:
     "@mdx-js/react": 1.6.22
     "@next/env": 12.0.7
     "@next/eslint-plugin-next": 12.0.7
-    "@plaiceholder/next": 2.2.0
+    "@plaiceholder/next": 2.3.0
     "@storybook/addon-actions": 6.4.20
     "@storybook/addon-docs": 6.4.20
     "@storybook/addon-essentials": 6.4.20
