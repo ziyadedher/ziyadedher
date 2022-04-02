@@ -35,8 +35,8 @@
     "tailwindcss": "3.0.23"
   },
   "devDependencies": {
-    "@babel/core": "7.16.5",
-    "@babel/runtime": "7.16.5",
+    "@babel/core": "7.17.8",
+    "@babel/runtime": "7.17.8",
     "@heroicons/react": "1.0.6",
     "@jest/types": "27.4.2",
     "@mdx-js/react": "1.6.22",
@@ -70,7 +70,7 @@
     "@yarnpkg/sdks": "2.5.0",
     "@ziyadedher/eslint-config": "2.1.0",
     "autoprefixer": "10.4.4",
-    "babel-loader": "8.2.3",
+    "babel-loader": "8.2.4",
     "chromatic": "6.5.3",
     "codecov": "3.8.3",
     "eslint": "8.5.0",
