@@ -90,7 +90,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.4.5"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.0"],\
             ["node-notifier", "npm:10.0.1"],\
-            ["onnxruntime-web", "npm:1.10.0"],\
+            ["onnxruntime-web", "npm:1.11.0"],\
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],\
             ["postcss", "npm:8.4.12"],\
@@ -18552,24 +18552,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["onnxruntime-common", [\
-        ["npm:1.10.0", {\
-          "packageLocation": "./.yarn/cache/onnxruntime-common-npm-1.10.0-f5355cb80c-a42a51e96b.zip/node_modules/onnxruntime-common/",\
+        ["npm:1.11.0", {\
+          "packageLocation": "./.yarn/cache/onnxruntime-common-npm-1.11.0-eed8d8abcd-7b5e03fcb3.zip/node_modules/onnxruntime-common/",\
           "packageDependencies": [\
-            ["onnxruntime-common", "npm:1.10.0"]\
+            ["onnxruntime-common", "npm:1.11.0"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["onnxruntime-web", [\
-        ["npm:1.10.0", {\
-          "packageLocation": "./.yarn/cache/onnxruntime-web-npm-1.10.0-7192989b93-331b703c84.zip/node_modules/onnxruntime-web/",\
+        ["npm:1.11.0", {\
+          "packageLocation": "./.yarn/cache/onnxruntime-web-npm-1.11.0-a6a06c5230-b03ff8acb3.zip/node_modules/onnxruntime-web/",\
           "packageDependencies": [\
-            ["onnxruntime-web", "npm:1.10.0"],\
+            ["onnxruntime-web", "npm:1.11.0"],\
             ["flatbuffers", "npm:1.12.0"],\
             ["guid-typescript", "npm:1.0.9"],\
             ["long", "npm:4.0.0"],\
             ["onnx-proto", "npm:4.0.4"],\
-            ["onnxruntime-common", "npm:1.10.0"],\
+            ["onnxruntime-common", "npm:1.11.0"],\
             ["platform", "npm:1.3.6"]\
           ],\
           "linkType": "HARD"\
@@ -24616,7 +24616,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:27.4.5"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.0"],\
             ["node-notifier", "npm:10.0.1"],\
-            ["onnxruntime-web", "npm:1.10.0"],\
+            ["onnxruntime-web", "npm:1.11.0"],\
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],\
             ["postcss", "npm:8.4.12"],\
