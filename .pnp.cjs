@@ -92,7 +92,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-notifier", "npm:10.0.1"],\
             ["onnxruntime-web", "npm:1.11.0"],\
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],\
-            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],\
+            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
             ["postcss", "npm:8.4.12"],\
             ["prettier", "npm:2.5.1"],\
             ["random-js", "npm:2.1.0"],\
@@ -18072,18 +18072,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["node-fetch", [\
-        ["npm:2.6.2", {\
-          "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.2-2820154539-de367eae1d.zip/node_modules/node-fetch/",\
-          "packageDependencies": [\
-            ["node-fetch", "npm:2.6.2"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:2.6.6", {\
           "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.6-056db6b778-ee8290626b.zip/node_modules/node-fetch/",\
           "packageDependencies": [\
             ["node-fetch", "npm:2.6.6"],\
             ["whatwg-url", "npm:5.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:2.6.7", {\
+          "packageLocation": "./.yarn/cache/node-fetch-npm-2.6.7-777aa2a6df-8d816ffd1e.zip/node_modules/node-fetch/",\
+          "packageDependencies": [\
+            ["node-fetch", "npm:2.6.7"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:581d3f418a29ea0ace1ed0f58fc6e4d7ed61c6373bc3ab78a74f58385f7ccc205fca4d8de24154f476f217a0c825867119da1f3b1186b77e9d2f28ee14a646ca#npm:2.6.7", {\
+          "packageLocation": "./.yarn/__virtual__/node-fetch-virtual-b6417a6fcd/0/cache/node-fetch-npm-2.6.7-777aa2a6df-8d816ffd1e.zip/node_modules/node-fetch/",\
+          "packageDependencies": [\
+            ["node-fetch", "virtual:581d3f418a29ea0ace1ed0f58fc6e4d7ed61c6373bc3ab78a74f58385f7ccc205fca4d8de24154f476f217a0c825867119da1f3b1186b77e9d2f28ee14a646ca#npm:2.6.7"],\
+            ["@types/encoding", null],\
+            ["encoding", null],\
+            ["whatwg-url", "npm:5.0.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/encoding",\
+            "encoding"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -19140,22 +19154,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["plaiceholder", [\
-        ["npm:2.2.0", {\
-          "packageLocation": "./.yarn/cache/plaiceholder-npm-2.2.0-0bb6261dbf-0a6bf76a93.zip/node_modules/plaiceholder/",\
+        ["npm:2.3.0", {\
+          "packageLocation": "./.yarn/cache/plaiceholder-npm-2.3.0-ed45fdfb24-d039f91d2c.zip/node_modules/plaiceholder/",\
           "packageDependencies": [\
-            ["plaiceholder", "npm:2.2.0"]\
+            ["plaiceholder", "npm:2.3.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0", {\
-          "packageLocation": "./.yarn/__virtual__/plaiceholder-virtual-11933cdd41/0/cache/plaiceholder-npm-2.2.0-0bb6261dbf-0a6bf76a93.zip/node_modules/plaiceholder/",\
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0", {\
+          "packageLocation": "./.yarn/__virtual__/plaiceholder-virtual-581d3f418a/0/cache/plaiceholder-npm-2.3.0-ed45fdfb24-d039f91d2c.zip/node_modules/plaiceholder/",\
           "packageDependencies": [\
-            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],\
+            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
             ["@types/sharp", "npm:0.30.0"],\
             ["blurhash", "npm:1.1.4"],\
             ["image-size", "npm:1.0.0"],\
             ["node-cache", "npm:5.1.2"],\
-            ["node-fetch", "npm:2.6.2"],\
+            ["node-fetch", "virtual:581d3f418a29ea0ace1ed0f58fc6e4d7ed61c6373bc3ab78a74f58385f7ccc205fca4d8de24154f476f217a0c825867119da1f3b1186b77e9d2f28ee14a646ca#npm:2.6.7"],\
             ["sharp", "npm:0.30.3"]\
           ],\
           "packagePeers": [\
@@ -24618,7 +24632,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-notifier", "npm:10.0.1"],\
             ["onnxruntime-web", "npm:1.11.0"],\
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],\
-            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.2.0"],\
+            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
             ["postcss", "npm:8.4.12"],\
             ["prettier", "npm:2.5.1"],\
             ["random-js", "npm:2.1.0"],\

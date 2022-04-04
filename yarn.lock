@@ -13498,10 +13498,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-fetch@npm:2.6.2":
-  version: 2.6.2
-  resolution: "node-fetch@npm:2.6.2"
-  checksum: de367eae1dfbc0e12283c1cf92256ea7fba7eac8655e2e51ebb217727162396fc6cf24689ef9fc6accf075e3991e2ffaa061f7cfaa958215329649b2297ff06d
+"node-fetch@npm:2.6.7":
+  version: 2.6.7
+  resolution: "node-fetch@npm:2.6.7"
+  dependencies:
+    whatwg-url: ^5.0.0
+  peerDependencies:
+    encoding: ^0.1.0
+  peerDependenciesMeta:
+    encoding:
+      optional: true
+  checksum: 8d816ffd1ee22cab8301c7756ef04f3437f18dace86a1dae22cf81db8ef29c0bf6655f3215cb0cdb22b420b6fe141e64b26905e7f33f9377a7fa59135ea3e10b
   languageName: node
   linkType: hard
 
@@ -14457,17 +14464,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plaiceholder@npm:2.2.0":
-  version: 2.2.0
-  resolution: "plaiceholder@npm:2.2.0"
+"plaiceholder@npm:2.3.0":
+  version: 2.3.0
+  resolution: "plaiceholder@npm:2.3.0"
   dependencies:
     blurhash: 1.1.4
     image-size: 1.0.0
     node-cache: 5.1.2
-    node-fetch: 2.6.2
+    node-fetch: 2.6.7
   peerDependencies:
     sharp: ">= 0.26.2"
-  checksum: 0a6bf76a93a416ef057d38a1b100673a377bac05633060fe37846e5ad71b56a993d4f5264ba45ad7bcf0b09046b74c796a4c0826feff66e7bf988cbee48f1067
+  checksum: d039f91d2c117dcd93343b7bcee780c62f9ba8fa4b74143e42c58629267f9297624c91166813fcc78e26a5424b8a373701a222b5b92fab331e378f26607a6b75
   languageName: node
   linkType: hard
 
@@ -18979,7 +18986,7 @@ __metadata:
     node-notifier: 10.0.1
     onnxruntime-web: 1.11.0
     phosphor-react: 1.3.1
-    plaiceholder: 2.2.0
+    plaiceholder: 2.3.0
     postcss: 8.4.12
     prettier: 2.5.1
     random-js: ^2.1.0
