@@ -25,7 +25,7 @@ const SettingItem: React.FunctionComponent<SettingItemProps> = ({
   value,
   children,
 }: SettingItemProps) => (
-  <div className="flex flex-row items-center space-x-4 w-full">
+  <div className="flex w-full flex-row items-center space-x-4">
     <label htmlFor={labelFor} className="w-24 text-xs font-bold uppercase">
       {label}
     </label>
@@ -70,11 +70,11 @@ const CollapsableLayerConfiguration: React.FunctionComponent<
   isOpen,
   onOpenChange: handleOpenChange,
 }: CollapsableLayerConfigurationProps) => (
-  <div className="flex overflow-hidden flex-col bg-gray-800 rounded-lg">
+  <div className="flex flex-col overflow-hidden rounded-lg bg-gray-800">
     <button
       type="button"
       onClick={handleOpenChange}
-      className="flex relative flex-row items-center py-2 px-4 hover:bg-gray-700 active:shadow-inner"
+      className="relative flex flex-row items-center py-2 px-4 hover:bg-gray-700 active:shadow-inner"
     >
       <div
         className={classNames("transition-all", isOpen ? "rotate-90" : null)}
@@ -83,7 +83,7 @@ const CollapsableLayerConfiguration: React.FunctionComponent<
       </div>
       <div className="flex-1 text-sm font-bold">Layer {layerKey} Settings</div>
       {isOverriden ? (
-        <span className="absolute right-4 w-2 h-2 bg-green-500 rounded-full" />
+        <span className="absolute right-4 h-2 w-2 rounded-full bg-green-500" />
       ) : null}
     </button>
     <div
@@ -102,7 +102,7 @@ const CollapsableLayerConfiguration: React.FunctionComponent<
           id={`override-${layerKey}`}
           checked={isOverriden}
           onChange={handleOverridenChange}
-          className="w-4 h-4 rounded-md"
+          className="h-4 w-4 rounded-md"
         />
       </SettingItem>
       <SettingItem
@@ -347,12 +347,12 @@ const Darkarts: NextPage = () => {
         navbarPage={null}
         pageStyle={PageStyle.HACKER}
       >
-        <div className="flex flex-col gap-16 my-8 mx-auto max-w-3xl">
+        <div className="my-8 mx-auto flex max-w-3xl flex-col gap-16">
           <div className="flex flex-col gap-4">
-            <h1 className="text-3xl text-center">
+            <h1 className="text-center text-3xl">
               See people who don&apos;t exist, through the eyes of an AI.
             </h1>
-            <p className="text-base text-center">
+            <p className="text-center text-base">
               This AI lets you generate faces that have never been seen before.
               None of these people exist. Manipulate the settings to see how
               this AI thinks about the human face. For really wacky results,
@@ -360,11 +360,11 @@ const Darkarts: NextPage = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-center items-center md:items-start w-full">
-            <div className="flex flex-col row-span-2 space-y-8">
+          <div className="grid w-full grid-cols-1 items-center justify-center gap-8 md:grid-cols-2 md:items-start">
+            <div className="row-span-2 flex flex-col space-y-8">
               <div className="flex flex-col">
                 <h2 className="text-base font-bold">Settings</h2>
-                <p className="text-sm text-justify">
+                <p className="text-justify text-sm">
                   Use these settings to manipulate the image and see how the AI
                   generates new faces. Change the seed to see completely new
                   faces, and up the distortion to see the AI forget what faces
@@ -376,11 +376,11 @@ const Darkarts: NextPage = () => {
                 <h3 className="text-sm font-bold leading-4">
                   All-layer Settings
                 </h3>
-                <p className="text-sm text-justify">
+                <p className="text-justify text-sm">
                   These values apply to layers that are not explicitly
                   overriden. You can override layers in the section below.
                 </p>
-                <div className="flex flex-col gap-2 mt-4">
+                <div className="mt-4 flex flex-col gap-2">
                   <SettingItem
                     label="Input Seed"
                     labelFor="inputSeed"
@@ -428,13 +428,13 @@ const Darkarts: NextPage = () => {
 
               <div className="flex flex-col gap-1">
                 <h3 className="text-sm font-bold">Per-layer Settings</h3>
-                <p className="text-sm text-justify">
+                <p className="text-justify text-sm">
                   You can override specific layers in this section. By doing
                   this you can &quot;freeze&quot; certain features while you
                   play around with the rest. Try overriding the first three
                   layers and then play around with the all-layers settings!
                 </p>
-                <div className="flex flex-col gap-2 mt-4">
+                <div className="mt-4 flex flex-col gap-2">
                   {LayerKeys.map((layerKey) =>
                     getCollapsableLayerConfiguration(layerKey)
                   )}
@@ -442,7 +442,7 @@ const Darkarts: NextPage = () => {
               </div>
             </div>
 
-            <div className="flex flex-col order-first md:order-none gap-y-4">
+            <div className="order-first flex flex-col gap-y-4 md:order-none">
               <GeneratedImage
                 modelParameters={{
                   inputLatentsSeeds: layerInputSeeds,
@@ -454,10 +454,10 @@ const Darkarts: NextPage = () => {
             </div>
 
             <div className="flex flex-col">
-              <div className="flex flex-col gap-4 py-4 mt-4 border-t-2 border-t-gray-700">
+              <div className="mt-4 flex flex-col gap-4 border-t-2 border-t-gray-700 py-4">
                 <div>
                   <h4 className="text-sm font-bold">What&apos;s a seed?</h4>
-                  <p className="text-sm text-justify">
+                  <p className="text-justify text-sm">
                     &quot;Seed&quot; refers to the random input used to generate
                     the face; it generally has no semantic meaning but is used
                     to make the image different.
@@ -465,7 +465,7 @@ const Darkarts: NextPage = () => {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold">What&apos;s a layer?</h4>
-                  <p className="text-sm text-justify">
+                  <p className="text-justify text-sm">
                     You can think of a &quot;layer&quot; as a part of the AI
                     responsible for generating a specific feature of the face,
                     with lower-number layers corresponding to more general
@@ -475,12 +475,12 @@ const Darkarts: NextPage = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex flex-col gap-4 py-4 border-t-2 border-t-gray-700">
+              <div className="flex flex-col gap-4 border-t-2 border-t-gray-700 py-4">
                 <div>
                   <h4 className="text-sm font-bold">
                     Here&apos;s the nerd stuff.
                   </h4>
-                  <p className="text-sm text-justify">
+                  <p className="text-justify text-sm">
                     This is a demo of a face generation system using a{" "}
                     <TextLink
                       href="https://en.wikipedia.org/wiki/Generative_adversarial_network"
@@ -509,7 +509,7 @@ const Darkarts: NextPage = () => {
                 </div>
                 <div>
                   <h4 className="text-sm font-bold">Check me out!</h4>
-                  <p className="text-sm text-justify">
+                  <p className="text-justify text-sm">
                     I built this demo almost entirely live. Check out my{" "}
                     <TextLink href="https://twitch.tv/ziyadedher" isExternal>
                       Twitch channel
@@ -526,7 +526,7 @@ const Darkarts: NextPage = () => {
                   <h4 className="text-sm font-bold">
                     Questions, concerns, or found a bug?
                   </h4>
-                  <p className="text-sm text-justify">
+                  <p className="text-justify text-sm">
                     Please out to me on{" "}
                     <TextLink href="https://twitter.com/ziyadedher" isExternal>
                       Twitter

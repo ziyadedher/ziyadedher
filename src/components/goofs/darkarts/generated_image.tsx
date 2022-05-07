@@ -241,11 +241,11 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="overflow-hidden relative w-full rounded-lg">
+      <div className="relative w-full overflow-hidden rounded-lg">
         <canvas ref={canvasRef} width={1024} height={1024} className="w-full" />
         <canvas ref={otherCanvasRef} className="hidden" />
         {imageData === null ? (
-          <div className="flex absolute top-0 left-0 flex-col justify-center items-center p-16 w-full h-full text-center bg-gray-800">
+          <div className="absolute top-0 left-0 flex h-full w-full flex-col items-center justify-center bg-gray-800 p-16 text-center">
             {getPlaceholderIcon()}
             {getPlaceholderText()}
           </div>

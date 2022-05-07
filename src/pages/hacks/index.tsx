@@ -28,7 +28,7 @@ const Index: NextPage = () => (
           <AnimatedHackerText delay={1000} text="It's time to hack." />
         </p>
 
-        <div className="px-4 w-full max-w-2xl h-96">
+        <div className="h-96 w-full max-w-2xl px-4">
           <Terminal />
         </div>
       </div>

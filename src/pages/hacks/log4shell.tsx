@@ -18,7 +18,7 @@ const TableHeaderItem: React.FunctionComponent<TableHeaderItemProps> = ({
 }: TableHeaderItemProps) => (
   <th
     scope="col"
-    className="py-3 px-6 text-xs font-medium tracking-wider text-left uppercase"
+    className="py-3 px-6 text-left text-xs font-medium uppercase tracking-wider"
   >
     {headerName}
   </th>
@@ -31,7 +31,7 @@ interface TableRowItemProps {
 const TableRowItem: React.FunctionComponent<TableRowItemProps> = ({
   children,
 }: TableRowItemProps) => (
-  <td className="py-4 px-6 text-sm whitespace-nowrap">{children}</td>
+  <td className="whitespace-nowrap py-4 px-6 text-sm">{children}</td>
 );
 
 interface TableRowProps {
@@ -45,21 +45,21 @@ const TableRow: React.FunctionComponent<TableRowProps> = ({
 }: TableRowProps) => (
   <tr className={isOdd ? "bg-gray-900" : "bg-gray-900"}>
     <TableRowItem>
-      <span className="text-blue-600 hover:opacity-50 transition-all">
+      <span className="text-blue-600 transition-all hover:opacity-50">
         <Link href={item.companyUrl} passHref>
           <Anchor shouldOpenInNewPage>{item.companyName}</Anchor>
         </Link>
       </span>
     </TableRowItem>
     <TableRowItem>
-      <span className="text-blue-600 hover:opacity-50 transition-all">
+      <span className="text-blue-600 transition-all hover:opacity-50">
         <Link href={item.bugBountyUrl} passHref>
           <Anchor shouldOpenInNewPage>{item.bugBountyProvider}</Anchor>
         </Link>
       </span>
     </TableRowItem>
     <TableRowItem>
-      <span className="text-blue-600 hover:opacity-50 transition-all">
+      <span className="text-blue-600 transition-all hover:opacity-50">
         <Link href={item.bugBountySpecialSourceUrl} passHref>
           <Anchor>${item.bugBountySpecialAmount.toLocaleString()}</Anchor>
         </Link>
@@ -88,7 +88,7 @@ const Index: NextPage = () => (
       navbarPage={null}
       pageStyle={PageStyle.HACKER}
     >
-      <div className="flex flex-col flex-1 gap-2 items-center px-6 xl:mx-0 w-full text-sm font-light text-center">
+      <div className="flex w-full flex-1 flex-col items-center gap-2 px-6 text-center text-sm font-light xl:mx-0">
         <h1 className="text-xl">Log4Shell Public Bug Bounty Specials</h1>
         <p className="max-w-xl text-sm">
           Log4Shell (
@@ -100,7 +100,7 @@ const Index: NextPage = () => (
           demonstrate that they are still vulnerable to Log4Shell.
         </p>
 
-        <div className="flex overflow-x-auto flex-col flex-1 my-8 max-w-full text-left">
+        <div className="my-8 flex max-w-full flex-1 flex-col overflow-x-auto text-left">
           <table className="table-auto">
             <thead className="border-b border-green-500">
               <tr>
@@ -122,7 +122,7 @@ const Index: NextPage = () => (
           </table>
         </div>
 
-        <h2 className="opacity-60 hover:opacity-90 active:opacity-100 transition-all">
+        <h2 className="opacity-60 transition-all hover:opacity-90 active:opacity-100">
           <Link href="/api/hacks/log4shell" passHref>
             <Anchor shouldOpenInNewPage>
               Click here for the data in the table as JSON.

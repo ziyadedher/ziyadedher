@@ -16,7 +16,7 @@ const IconLink: React.FunctionComponent<IconLinkProps> = ({
   isExternal = false,
   children,
 }: IconLinkProps) => (
-  <span className="hover:opacity-50 transition-all">
+  <span className="transition-all hover:opacity-50">
     <Link href={href} passHref>
       <Anchor label={label} shouldOpenInNewPage={isExternal}>
         {children}

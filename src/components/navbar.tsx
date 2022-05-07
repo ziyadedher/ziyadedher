@@ -43,7 +43,7 @@ interface NavbarProps {
 const Navbar: React.FunctionComponent<NavbarProps> = ({
   currentPage,
 }: NavbarProps) => (
-  <nav className="flex flex-grow justify-center space-x-4 w-full">
+  <nav className="flex w-full grow justify-center space-x-4">
     <NavbarPageEntry
       page={NavbarPage.HOME}
       linkName="Home"
