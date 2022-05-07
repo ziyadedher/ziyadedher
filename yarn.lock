@@ -5209,9 +5209,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@ziyadedher/eslint-config@npm:3.1.0":
-  version: 3.1.0
-  resolution: "@ziyadedher/eslint-config@npm:3.1.0"
+"@ziyadedher/eslint-config@npm:3.1.1":
+  version: 3.1.1
+  resolution: "@ziyadedher/eslint-config@npm:3.1.1"
   dependencies:
     "@next/eslint-plugin-next": 12.1.6
     "@typescript-eslint/eslint-plugin": 5.22.0
@@ -5228,7 +5228,7 @@ __metadata:
     eslint-plugin-react-hooks: 4.5.0
     eslint-plugin-tailwindcss: 3.5.0
     typescript: 4.6.4
-  checksum: e2345a299d7dcd8bcb0d758a239689fa35a4520cc7c3b2006658117c88a1fab3853fce5e4ce97e59c4cb92b57bc135cc04a520894dfa5dda14bac926ee8635d6
+  checksum: 285846393ce9d258778dcd8e63fbb78ee8bb767eba8bfcdebbffe2317214401be88c525557e75bc25d3e947fe635d1ee449d63d298e19f17ee22c32930259969
   languageName: node
   linkType: hard
 
@@ -18387,7 +18387,7 @@ __metadata:
     "@typescript-eslint/eslint-plugin": 5.22.0
     "@typescript-eslint/parser": 5.22.0
     "@yarnpkg/sdks": 3.0.0-rc.4
-    "@ziyadedher/eslint-config": 3.1.0
+    "@ziyadedher/eslint-config": 3.1.1
     autoprefixer: 10.4.7
     babel-loader: 8.2.5
     chromatic: 6.5.4
