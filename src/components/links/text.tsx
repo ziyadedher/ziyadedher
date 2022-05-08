@@ -9,13 +9,14 @@ interface TextLinkProps {
   readonly children: React.ReactNode;
 }
 
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
 const TextLink: React.FunctionComponent<TextLinkProps> = ({
   href,
   isExternal = false,
   children,
-}: TextLinkProps) => (
+}) => (
   // eslint-disable-next-line tailwindcss/no-custom-classname -- not-prose is in alpha.
-  <span className="underline hover:opacity-70 transition-all not-prose">
+  <span className="not-prose underline transition-all hover:opacity-70">
     <Link href={href} passHref>
       <Anchor shouldOpenInNewPage={isExternal}>{children}</Anchor>
     </Link>

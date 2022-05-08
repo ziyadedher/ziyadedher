@@ -49,6 +49,6 @@ declare module "react-console-emulator" {
   // eslint-disable-next-line @typescript-eslint/naming-convention -- existing name in library.
   const Terminal: FunctionComponent<TerminalProps>;
 
-  export { TerminalProps };
+  export type { TerminalProps };
   export default Terminal;
 }
