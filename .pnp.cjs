@@ -59,7 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/gtag.js", "npm:0.0.10"],\
             ["@types/jest", "npm:27.4.1"],\
             ["@types/mdx-js__react", "npm:1.5.5"],\
-            ["@types/node", "npm:16.11.26"],\
+            ["@types/node", "npm:16.11.33"],\
             ["@types/prettier", "npm:2.4.4"],\
             ["@types/react", "npm:17.0.43"],\
             ["@types/react-dom", "npm:17.0.14"],\
@@ -7326,10 +7326,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:16.11.26", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.26-6163d95b7d-57757caaba.zip/node_modules/@types/node/",\
+        ["npm:16.11.33", {\
+          "packageLocation": "./.yarn/cache/@types-node-npm-16.11.33-01bfb97de4-5c86d3f1e3.zip/node_modules/@types/node/",\
           "packageDependencies": [\
-            ["@types/node", "npm:16.11.26"]\
+            ["@types/node", "npm:16.11.33"]\
           ],\
           "linkType": "HARD"\
         }],\
@@ -23268,7 +23268,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.9"],\
             ["@tsconfig/node14", "npm:1.0.1"],\
             ["@tsconfig/node16", "npm:1.0.2"],\
-            ["@types/node", "npm:16.11.26"],\
+            ["@types/node", "npm:16.11.33"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
@@ -24811,7 +24811,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/gtag.js", "npm:0.0.10"],\
             ["@types/jest", "npm:27.4.1"],\
             ["@types/mdx-js__react", "npm:1.5.5"],\
-            ["@types/node", "npm:16.11.26"],\
+            ["@types/node", "npm:16.11.33"],\
             ["@types/prettier", "npm:2.4.4"],\
             ["@types/react", "npm:17.0.43"],\
             ["@types/react-dom", "npm:17.0.14"],\
