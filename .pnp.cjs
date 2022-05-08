@@ -91,7 +91,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.4"],\
             ["node-notifier", "npm:10.0.1"],\
             ["onnxruntime-web", "npm:1.11.0"],\
-            ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],\
+            ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
             ["postcss", "npm:8.4.12"],\
             ["prettier", "npm:2.6.2"],\
@@ -19264,17 +19264,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["phosphor-react", [\
-        ["npm:1.3.1", {\
-          "packageLocation": "./.yarn/cache/phosphor-react-npm-1.3.1-070f50cad2-7b163c57c0.zip/node_modules/phosphor-react/",\
+        ["npm:1.4.1", {\
+          "packageLocation": "./.yarn/cache/phosphor-react-npm-1.4.1-a39b349d8f-94aa316eca.zip/node_modules/phosphor-react/",\
           "packageDependencies": [\
-            ["phosphor-react", "npm:1.3.1"]\
+            ["phosphor-react", "npm:1.4.1"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1", {\
-          "packageLocation": "./.yarn/__virtual__/phosphor-react-virtual-1e49aebabc/0/cache/phosphor-react-npm-1.3.1-070f50cad2-7b163c57c0.zip/node_modules/phosphor-react/",\
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1", {\
+          "packageLocation": "./.yarn/__virtual__/phosphor-react-virtual-c03a3ee3f3/0/cache/phosphor-react-npm-1.4.1-a39b349d8f-94aa316eca.zip/node_modules/phosphor-react/",\
           "packageDependencies": [\
-            ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],\
+            ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
             ["@types/react", "npm:17.0.45"],\
             ["react", "npm:17.0.2"]\
           ],\
@@ -24843,7 +24843,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.4"],\
             ["node-notifier", "npm:10.0.1"],\
             ["onnxruntime-web", "npm:1.11.0"],\
-            ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.3.1"],\
+            ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
             ["postcss", "npm:8.4.12"],\
             ["prettier", "npm:2.6.2"],\

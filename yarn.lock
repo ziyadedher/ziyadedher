@@ -14594,12 +14594,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"phosphor-react@npm:1.3.1":
-  version: 1.3.1
-  resolution: "phosphor-react@npm:1.3.1"
+"phosphor-react@npm:1.4.1":
+  version: 1.4.1
+  resolution: "phosphor-react@npm:1.4.1"
   peerDependencies:
     react: ">=16"
-  checksum: 7b163c57c0da44aaf18e8e14c3c099d6927ed06a1b9d0e9d3b55681d97abceaaf4f2592beaae9a96a68e8f6071770f57be357021554279a403322acb9306d5ce
+  checksum: 94aa316eca7bc64b09f146f7d3578d8bd66bc7dbec8f92b6407a5ab6e86a5f42ef97eeb5ec678f355037a0eaa08a9a5303f26fe5d7491f102e0af3a4686acf2d
   languageName: node
   linkType: hard
 
@@ -19209,7 +19209,7 @@ __metadata:
     next: 12.1.4
     node-notifier: 10.0.1
     onnxruntime-web: 1.11.0
-    phosphor-react: 1.3.1
+    phosphor-react: 1.4.1
     plaiceholder: 2.3.0
     postcss: 8.4.12
     prettier: 2.6.2
