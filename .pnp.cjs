@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@heroicons/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.0.6"],\
             ["@jest/types", "npm:28.1.0"],\
             ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.1"],\
+            ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.4"],\
             ["@next/env", "npm:12.1.6"],\
             ["@next/eslint-plugin-next", "npm:12.1.6"],\
             ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
@@ -3906,6 +3907,61 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@mdx-js-util-npm-1.6.22-8e56495eac-4b393907e3.zip/node_modules/@mdx-js/util/",\
           "packageDependencies": [\
             ["@mdx-js/util", "npm:1.6.22"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@monaco-editor/loader", [\
+        ["npm:1.3.1", {\
+          "packageLocation": "./.yarn/cache/@monaco-editor-loader-npm-1.3.1-2dc61e5626-4772210d4e.zip/node_modules/@monaco-editor/loader/",\
+          "packageDependencies": [\
+            ["@monaco-editor/loader", "npm:1.3.1"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:0620d34c4fd073cd9fa2f0ab9bf920b0b969d0c2d6c981a1271dcb25af9c5f60d7d473834f679a84acc3fb96e12ff8f087e8fd203e8eb59eeb84588b00e0dc11#npm:1.3.1", {\
+          "packageLocation": "./.yarn/__virtual__/@monaco-editor-loader-virtual-9592dd1735/0/cache/@monaco-editor-loader-npm-1.3.1-2dc61e5626-4772210d4e.zip/node_modules/@monaco-editor/loader/",\
+          "packageDependencies": [\
+            ["@monaco-editor/loader", "virtual:0620d34c4fd073cd9fa2f0ab9bf920b0b969d0c2d6c981a1271dcb25af9c5f60d7d473834f679a84acc3fb96e12ff8f087e8fd203e8eb59eeb84588b00e0dc11#npm:1.3.1"],\
+            ["@types/monaco-editor", null],\
+            ["monaco-editor", null],\
+            ["state-local", "npm:1.0.7"]\
+          ],\
+          "packagePeers": [\
+            "@types/monaco-editor",\
+            "monaco-editor"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@monaco-editor/react", [\
+        ["npm:4.4.4", {\
+          "packageLocation": "./.yarn/cache/@monaco-editor-react-npm-4.4.4-83523a8082-82f63dd9f5.zip/node_modules/@monaco-editor/react/",\
+          "packageDependencies": [\
+            ["@monaco-editor/react", "npm:4.4.4"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.4", {\
+          "packageLocation": "./.yarn/__virtual__/@monaco-editor-react-virtual-0620d34c4f/0/cache/@monaco-editor-react-npm-4.4.4-83523a8082-82f63dd9f5.zip/node_modules/@monaco-editor/react/",\
+          "packageDependencies": [\
+            ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.4"],\
+            ["@monaco-editor/loader", "virtual:0620d34c4fd073cd9fa2f0ab9bf920b0b969d0c2d6c981a1271dcb25af9c5f60d7d473834f679a84acc3fb96e12ff8f087e8fd203e8eb59eeb84588b00e0dc11#npm:1.3.1"],\
+            ["@types/monaco-editor", null],\
+            ["@types/react", "npm:18.0.9"],\
+            ["@types/react-dom", "npm:18.0.3"],\
+            ["monaco-editor", null],\
+            ["prop-types", "npm:15.8.1"],\
+            ["react", "npm:18.1.0"],\
+            ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:18.1.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/monaco-editor",\
+            "@types/react-dom",\
+            "@types/react",\
+            "monaco-editor",\
+            "react-dom",\
+            "react"\
           ],\
           "linkType": "HARD"\
         }]\
@@ -21384,6 +21440,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["state-local", [\
+        ["npm:1.0.7", {\
+          "packageLocation": "./.yarn/cache/state-local-npm-1.0.7-9005e49ea6-d1afcf1429.zip/node_modules/state-local/",\
+          "packageDependencies": [\
+            ["state-local", "npm:1.0.7"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["state-toggle", [\
         ["npm:1.0.3", {\
           "packageLocation": "./.yarn/cache/state-toggle-npm-1.0.3-dd096f8bd0-17398af928.zip/node_modules/state-toggle/",\
@@ -23908,6 +23973,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@heroicons/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.0.6"],\
             ["@jest/types", "npm:28.1.0"],\
             ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.1"],\
+            ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.4"],\
             ["@next/env", "npm:12.1.6"],\
             ["@next/eslint-plugin-next", "npm:12.1.6"],\
             ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\

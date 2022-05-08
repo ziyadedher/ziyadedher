@@ -18,6 +18,7 @@
   },
   "dependencies": {
     "@headlessui/react": "1.6.1",
+    "@monaco-editor/react": "^4.4.4",
     "@plaiceholder/next": "2.3.0",
     "@tailwindcss/forms": "0.5.1",
     "classnames": "2.3.1",
