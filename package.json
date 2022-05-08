@@ -19,7 +19,7 @@
   "dependencies": {
     "@headlessui/react": "1.5.0",
     "@plaiceholder/next": "2.3.0",
-    "@tailwindcss/forms": "0.5.0",
+    "@tailwindcss/forms": "0.5.1",
     "classnames": "2.3.1",
     "events": "^3.3.0",
     "next": "12.1.4",
