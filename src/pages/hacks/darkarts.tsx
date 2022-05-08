@@ -19,12 +19,13 @@ interface SettingItemProps {
   readonly children?: React.ReactNode;
 }
 
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
 const SettingItem: React.FunctionComponent<SettingItemProps> = ({
   label,
   labelFor,
   value,
   children,
-}: SettingItemProps) => (
+}) => (
   <div className="flex w-full flex-row items-center space-x-4">
     <label htmlFor={labelFor} className="w-24 text-xs font-bold uppercase">
       {label}

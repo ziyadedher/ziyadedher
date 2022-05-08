@@ -28,11 +28,10 @@ interface TableRowItemProps {
   readonly children?: React.ReactNode;
 }
 
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
 const TableRowItem: React.FunctionComponent<TableRowItemProps> = ({
   children,
-}: TableRowItemProps) => (
-  <td className="whitespace-nowrap py-4 px-6 text-sm">{children}</td>
-);
+}) => <td className="whitespace-nowrap py-4 px-6 text-sm">{children}</td>;
 
 interface TableRowProps {
   readonly item: HitListItem;

@@ -10,13 +10,15 @@ interface AnchorProps {
 
 const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
   (
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
     {
       href,
       shouldOpenInNewPage = false,
       label,
       children,
       onClick: handleClick,
-    }: AnchorProps,
+    },
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
     ref
   ) => (
     <a

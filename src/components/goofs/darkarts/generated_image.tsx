@@ -204,24 +204,37 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
   }, [imageData]);
 
   const handleLoadGeneratorClick: React.MouseEventHandler<HTMLButtonElement> =
-    useCallback(async () => {
+    useCallback(() => {
       setModelStatus(ModelStatus.LOADING);
-      setModel(
-        await getModel(
-          getStorageURI(
-            "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
-          )
+      getModel(
+        getStorageURI(
+          "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
         )
+      ).then(
+        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- includes ONNX type.
+        (loadedModel) => {
+          setModel(loadedModel);
+          setModelStatus(ModelStatus.READY);
+        },
+        (error) => {
+          throw error;
+        }
       );
-      setModelStatus(ModelStatus.READY);
     }, []);
 
   const handleGenerateImageClick: React.MouseEventHandler<HTMLButtonElement> =
     useCallback(() => {
       setModelStatus(ModelStatus.GENERATING);
-      setTimeout(async () => {
-        await generateImage();
-        setModelStatus(ModelStatus.READY);
+
+      setTimeout(() => {
+        generateImage().then(
+          () => {
+            setModelStatus(ModelStatus.READY);
+          },
+          (error) => {
+            throw error;
+          }
+        );
       }, 50);
     }, [generateImage]);
 
