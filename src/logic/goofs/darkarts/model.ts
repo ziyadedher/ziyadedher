@@ -28,13 +28,17 @@ class ModelError extends Error {}
 
 const getModel = async (modelPath: string): Promise<Model> => {
   env.wasm.wasmPaths = {
+    // eslint-disable-next-line @typescript-eslint/naming-convention -- ONNX convention
     "ort-wasm.wasm": getStorageURI("darkarts/onnxruntime/ort-wasm.wasm"),
+    // eslint-disable-next-line @typescript-eslint/naming-convention -- ONNX convention
     "ort-wasm-threaded.wasm": getStorageURI(
       "darkarts/onnxruntime/ort-wasm-threaded.wasm"
     ),
+    // eslint-disable-next-line @typescript-eslint/naming-convention -- ONNX convention
     "ort-wasm-simd.wasm": getStorageURI(
       "darkarts/onnxruntime/ort-wasm-simd.wasm"
     ),
+    // eslint-disable-next-line @typescript-eslint/naming-convention -- ONNX convention
     "ort-wasm-simd-threaded.wasm": getStorageURI(
       "darkarts/onnxruntime/ort-wasm-simd-threaded.wasm"
     ),

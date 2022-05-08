@@ -28,8 +28,8 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
     </Head>
 
     <PageContainer hasHeader hasNavbar navbarPage={NavbarPage.HOME}>
-      <div className="flex flex-row gap-8 justify-center py-8 mx-auto max-w-5xl">
-        <div className="flex flex-col flex-1 text-sm font-light prose">
+      <div className="mx-auto flex max-w-5xl flex-row justify-center gap-8 py-8">
+        <div className="prose flex flex-1 flex-col text-sm font-light">
           <p className="text-3xl">yo</p>
           <p>
             My name is Ziyad Edher (زياد إضهير), I&apos;m a software engineer
@@ -114,7 +114,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             or something instead.
           </p>
         </div>
-        <div className="hidden xl:flex overflow-hidden flex-none max-w-md rounded-3xl shadow-inner">
+        <div className="hidden max-w-md flex-none overflow-hidden rounded-3xl shadow-inner xl:flex">
           <Image
             alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
             src={imageBlur.ziyadedher.url}

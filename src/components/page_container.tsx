@@ -18,21 +18,22 @@ interface PageContainerProps {
   readonly pageStyle?: PageStyle;
 }
 
+// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
 const PageContainer: React.FunctionComponent<PageContainerProps> = ({
   children,
   hasHeader = true,
   hasNavbar = true,
   navbarPage = null,
   pageStyle = PageStyle.LIGHT,
-}: PageContainerProps) => (
+}) => (
   <div className={cx("min-h-screen", pageStyle)}>
-    <div className="container flex flex-col items-center mx-auto">
-      <div className="flex flex-col my-8 space-y-4">
+    <div className="container mx-auto flex flex-col items-center">
+      <div className="my-8 flex flex-col space-y-4">
         {hasHeader ? <Header /> : null}
         {hasNavbar ? <Navbar currentPage={navbarPage} /> : null}
       </div>
 
-      <main className="container px-6 xl:px-0 w-full">{children}</main>
+      <main className="container w-full px-6 xl:px-0">{children}</main>
     </div>
   </div>
 );

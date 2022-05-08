@@ -204,24 +204,37 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
   }, [imageData]);
 
   const handleLoadGeneratorClick: React.MouseEventHandler<HTMLButtonElement> =
-    useCallback(async () => {
+    useCallback(() => {
       setModelStatus(ModelStatus.LOADING);
-      setModel(
-        await getModel(
-          getStorageURI(
-            "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
-          )
+      getModel(
+        getStorageURI(
+          "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
         )
+      ).then(
+        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- includes ONNX type.
+        (loadedModel) => {
+          setModel(loadedModel);
+          setModelStatus(ModelStatus.READY);
+        },
+        (error) => {
+          throw error;
+        }
       );
-      setModelStatus(ModelStatus.READY);
     }, []);
 
   const handleGenerateImageClick: React.MouseEventHandler<HTMLButtonElement> =
     useCallback(() => {
       setModelStatus(ModelStatus.GENERATING);
-      setTimeout(async () => {
-        await generateImage();
-        setModelStatus(ModelStatus.READY);
+
+      setTimeout(() => {
+        generateImage().then(
+          () => {
+            setModelStatus(ModelStatus.READY);
+          },
+          (error) => {
+            throw error;
+          }
+        );
       }, 50);
     }, [generateImage]);
 
@@ -241,11 +254,11 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="overflow-hidden relative w-full rounded-lg">
+      <div className="relative w-full overflow-hidden rounded-lg">
         <canvas ref={canvasRef} width={1024} height={1024} className="w-full" />
         <canvas ref={otherCanvasRef} className="hidden" />
         {imageData === null ? (
-          <div className="flex absolute top-0 left-0 flex-col justify-center items-center p-16 w-full h-full text-center bg-gray-800">
+          <div className="absolute top-0 left-0 flex h-full w-full flex-col items-center justify-center bg-gray-800 p-16 text-center">
             {getPlaceholderIcon()}
             {getPlaceholderText()}
           </div>

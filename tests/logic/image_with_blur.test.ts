@@ -11,6 +11,7 @@ const setupGetPlaiceholderMock = (): jest.MockedFunction<
     typeof getPlaiceholder
   >;
   mockGetPlaiceholder.mockImplementation(
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- TImage
     async (url) =>
       await Promise.resolve({
         img: {

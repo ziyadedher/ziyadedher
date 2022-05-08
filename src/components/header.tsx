@@ -16,13 +16,13 @@ import IconLink from "./links/icon";
 
 const Header: React.FunctionComponent = () => (
   <header className="flex flex-col items-center text-center">
-    <div className="text-2xl font-light uppercase hover:opacity-70 transition-all">
+    <div className="text-2xl font-light uppercase transition-all hover:opacity-70">
       <Link href="/" passHref>
         <Anchor>Ziyad Edher</Anchor>
       </Link>
     </div>
 
-    <div className="flex flex-row pt-2 space-x-2">
+    <div className="flex flex-row space-x-2 pt-2">
       <IconLink
         href="https://twitter.com/ziyadedher"
         label="Twitter"

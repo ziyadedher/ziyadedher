@@ -82,7 +82,9 @@ export const HIT_LIST: HitListItem[] = [
     bugBountySpecialSourceUrl:
       "https://hackerone.com/coinbase/policy_versions?type=team&change=3663055",
   },
-].sort((a, b) => a.companyName.localeCompare(b.companyName));
+].sort((a: HitListItem, b: HitListItem) =>
+  a.companyName.localeCompare(b.companyName)
+);
 
 export default function handler(
   // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types, @typescript-eslint/no-unused-vars -- Next.js API
