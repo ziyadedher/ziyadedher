@@ -3961,7 +3961,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/events@npm:^3.0.0":
+"@types/events@npm:3.0.0":
   version: 3.0.0
   resolution: "@types/events@npm:3.0.0"
   checksum: 9a424c2da210957d5636e0763e8c9fc3aaeee35bf411284ddec62a56a6abe31de9c7c2e713dabdd8a76ff98b47db2bd52f61310be6609641d6234cc842ecbbe3
@@ -8564,7 +8564,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"events@npm:^3.0.0, events@npm:^3.3.0":
+"events@npm:3.3.0, events@npm:^3.0.0":
   version: 3.3.0
   resolution: "events@npm:3.3.0"
   checksum: f6f487ad2198aa41d878fa31452f1a3c00958f46e9019286ff4787c84aac329332ab45c9cdc8c445928fc6d7ded294b9e005a7fce9426488518017831b272780
@@ -11158,7 +11158,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-environment-jsdom@npm:^28.1.0":
+"jest-environment-jsdom@npm:28.1.0":
   version: 28.1.0
   resolution: "jest-environment-jsdom@npm:28.1.0"
   dependencies:
@@ -14408,7 +14408,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"random-js@npm:^2.1.0":
+"random-js@npm:2.1.0":
   version: 2.1.0
   resolution: "random-js@npm:2.1.0"
   checksum: cdee38c303aafe441bd7809810b9dff9f6fdd9f356775bbd7e138943c0bc782a5f0ab473d3fac9d58da759d3976c1eef421d8a3f76f56301c805cc11bc496a11
@@ -16129,7 +16129,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"string_decoder@npm:^1.0.0, string_decoder@npm:^1.1.1, string_decoder@npm:^1.3.0":
+"string_decoder@npm:1.3.0, string_decoder@npm:^1.0.0, string_decoder@npm:^1.1.1":
   version: 1.3.0
   resolution: "string_decoder@npm:1.3.0"
   dependencies:
@@ -18093,7 +18093,7 @@ __metadata:
     "@testing-library/react-hooks": 8.0.0
     "@types/babel__core": 7.1.19
     "@types/eslint": 8.4.2
-    "@types/events": ^3.0.0
+    "@types/events": 3.0.0
     "@types/gtag.js": 0.0.10
     "@types/jest": 27.5.0
     "@types/mdx-js__react": 1.5.5
@@ -18124,9 +18124,9 @@ __metadata:
     eslint-plugin-react: 7.29.4
     eslint-plugin-react-hooks: 4.5.0
     eslint-plugin-tailwindcss: 3.5.0
-    events: ^3.3.0
+    events: 3.3.0
     jest: 28.1.0
-    jest-environment-jsdom: ^28.1.0
+    jest-environment-jsdom: 28.1.0
     next: 12.1.6
     node-notifier: 10.0.1
     onnxruntime-web: 1.11.0
@@ -18134,14 +18134,14 @@ __metadata:
     plaiceholder: 2.3.0
     postcss: 8.4.13
     prettier: 2.6.2
-    random-js: ^2.1.0
+    random-js: 2.1.0
     react: 18.1.0
     react-console-emulator: 5.0.1
     react-dom: 18.1.0
     regenerator-runtime: 0.13.9
     sharp: 0.30.4
     source-map-support: 0.5.21
-    string_decoder: ^1.3.0
+    string_decoder: 1.3.0
     tailwindcss: 3.0.24
     ts-jest: 28.0.1
     ts-node: 10.7.0
