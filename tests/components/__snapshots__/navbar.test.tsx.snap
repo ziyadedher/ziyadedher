@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        class="flex flex-grow justify-center space-x-4 w-full"
+        class="flex w-full grow justify-center space-x-4"
       >
         <a
           class="group"
@@ -33,7 +33,7 @@ Object {
   </body>,
   "container": <div>
     <nav
-      class="flex flex-grow justify-center space-x-4 w-full"
+      class="flex w-full grow justify-center space-x-4"
     >
       <a
         class="group"
@@ -117,7 +117,7 @@ Object {
   "baseElement": <body>
     <div>
       <nav
-        class="flex flex-grow justify-center space-x-4 w-full"
+        class="flex w-full grow justify-center space-x-4"
       >
         <a
           class="group"
@@ -144,7 +144,7 @@ Object {
   </body>,
   "container": <div>
     <nav
-      class="flex flex-grow justify-center space-x-4 w-full"
+      class="flex w-full grow justify-center space-x-4"
     >
       <a
         class="group"

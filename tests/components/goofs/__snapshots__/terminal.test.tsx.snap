@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="!w-full !h-full !text-sm !bg-black !rounded-xl"
+        class="!h-full !w-full !rounded-xl !bg-black !text-sm"
         name="react-console-emulator"
         style="min-height: 300px; max-width: 100%; max-height: 100%; border-radius: 5px; overflow: auto; cursor: text; background-color: rgb(33, 33, 33); background-size: cover;"
       >
@@ -44,7 +44,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="!w-full !h-full !text-sm !bg-black !rounded-xl"
+      class="!h-full !w-full !rounded-xl !bg-black !text-sm"
       name="react-console-emulator"
       style="min-height: 300px; max-width: 100%; max-height: 100%; border-radius: 5px; overflow: auto; cursor: text; background-color: rgb(33, 33, 33); background-size: cover;"
     >
