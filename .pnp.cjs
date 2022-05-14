@@ -108,7 +108,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:28.0.2"],\
             ["ts-node", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:10.7.0"],\
             ["typescript", "patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=7ad353"],\
-            ["vercel", "npm:24.2.2"]\
+            ["vercel", "npm:24.2.3"]\
           ],\
           "linkType": "SOFT"\
         }]\
@@ -23371,10 +23371,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["vercel", [\
-        ["npm:24.2.2", {\
-          "packageLocation": "./.yarn/unplugged/vercel-npm-24.2.2-d665ffcf82/node_modules/vercel/",\
+        ["npm:24.2.3", {\
+          "packageLocation": "./.yarn/unplugged/vercel-npm-24.2.3-8ce489e554/node_modules/vercel/",\
           "packageDependencies": [\
-            ["vercel", "npm:24.2.2"],\
+            ["vercel", "npm:24.2.3"],\
             ["@vercel/build-utils", "npm:3.0.1"],\
             ["@vercel/go", "npm:1.4.2"],\
             ["@vercel/node", "npm:1.15.2"],\
@@ -24112,7 +24112,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["ts-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:28.0.2"],\
             ["ts-node", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:10.7.0"],\
             ["typescript", "patch:typescript@npm%3A4.6.4#~builtin<compat/typescript>::version=4.6.4&hash=7ad353"],\
-            ["vercel", "npm:24.2.2"]\
+            ["vercel", "npm:24.2.3"]\
           ],\
           "linkType": "SOFT"\
         }]\
