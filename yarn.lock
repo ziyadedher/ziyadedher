@@ -15789,9 +15789,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:0.30.5":
-  version: 0.30.5
-  resolution: "sharp@npm:0.30.5"
+"sharp@npm:0.30.6":
+  version: 0.30.6
+  resolution: "sharp@npm:0.30.6"
   dependencies:
     color: ^4.2.3
     detect-libc: ^2.0.1
@@ -15802,7 +15802,7 @@ __metadata:
     simple-get: ^4.0.1
     tar-fs: ^2.1.1
     tunnel-agent: ^0.6.0
-  checksum: e2b6238770ae1498815c14b2711de9398176a8e1ea1131ef583edc4a1c421f55fd9fe52ffc996ea4a259bdfed2f5d68a076a6ddc85499c229025efbe8ccf0b56
+  checksum: 2560b5769d78ee660d767e59f6fa56531c448d16383f9700e4ecb8016382104c1bb42991bdd4ea741c0f4d934ea5246c5d602fc5f39062bcc1c2c8786421fd5a
   languageName: node
   linkType: hard
 
@@ -18443,7 +18443,7 @@ __metadata:
     react-console-emulator: 5.0.1
     react-dom: 18.1.0
     regenerator-runtime: 0.13.9
-    sharp: 0.30.5
+    sharp: 0.30.6
     source-map-support: 0.5.21
     string_decoder: 1.3.0
     tailwindcss: 3.0.24

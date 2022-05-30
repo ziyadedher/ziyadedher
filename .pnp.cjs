@@ -101,7 +101,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-console-emulator", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.0.1"],\
             ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:18.1.0"],\
             ["regenerator-runtime", "npm:0.13.9"],\
-            ["sharp", "npm:0.30.5"],\
+            ["sharp", "npm:0.30.6"],\
             ["source-map-support", "npm:0.5.21"],\
             ["string_decoder", "npm:1.3.0"],\
             ["tailwindcss", "virtual:84f8abea7570347e17b2d00b69287df55d6bf80366ee1aaad3fc6b6ad874e10ae7db469a011473d3b73ed6cec8ff3d7e4def48938e163bdd14133e2e1f3a6fcb#npm:3.0.24"],\
@@ -5113,7 +5113,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/next", null],\
             ["@types/sharp", "npm:0.30.2"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.6"],\
-            ["sharp", "npm:0.30.5"]\
+            ["sharp", "npm:0.30.6"]\
           ],\
           "packagePeers": [\
             "@types/next",\
@@ -19941,7 +19941,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-size", "npm:1.0.0"],\
             ["node-cache", "npm:5.1.2"],\
             ["node-fetch", "virtual:6e3d43d40d2d429d00aeccb83a438e2825e86179019062cd73406525de0aea0dedca00f63c49c0495026d723d2a0865ec386cad0a5ae52a6142e0c8782a6781b#npm:2.6.7"],\
-            ["sharp", "npm:0.30.5"]\
+            ["sharp", "npm:0.30.6"]\
           ],\
           "packagePeers": [\
             "@types/sharp",\
@@ -21920,10 +21920,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sharp", [\
-        ["npm:0.30.5", {\
-          "packageLocation": "./.yarn/unplugged/sharp-npm-0.30.5-36f03eb11a/node_modules/sharp/",\
+        ["npm:0.30.6", {\
+          "packageLocation": "./.yarn/unplugged/sharp-npm-0.30.6-4067fc2ceb/node_modules/sharp/",\
           "packageDependencies": [\
-            ["sharp", "npm:0.30.5"],\
+            ["sharp", "npm:0.30.6"],\
             ["color", "npm:4.2.3"],\
             ["detect-libc", "npm:2.0.1"],\
             ["node-addon-api", "npm:5.0.0"],\
@@ -25003,7 +25003,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-console-emulator", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.0.1"],\
             ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:18.1.0"],\
             ["regenerator-runtime", "npm:0.13.9"],\
-            ["sharp", "npm:0.30.5"],\
+            ["sharp", "npm:0.30.6"],\
             ["source-map-support", "npm:0.5.21"],\
             ["string_decoder", "npm:1.3.0"],\
             ["tailwindcss", "virtual:84f8abea7570347e17b2d00b69287df55d6bf80366ee1aaad3fc6b6ad874e10ae7db469a011473d3b73ed6cec8ff3d7e4def48938e163bdd14133e2e1f3a6fcb#npm:3.0.24"],\
