@@ -57,7 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:8.4.2"],\
             ["@types/events", "npm:3.0.0"],\
             ["@types/gtag.js", "npm:0.0.10"],\
-            ["@types/jest", "npm:27.5.1"],\
+            ["@types/jest", "npm:27.5.2"],\
             ["@types/mdx-js__react", "npm:1.5.5"],\
             ["@types/node", "npm:17.0.31"],\
             ["@types/prettier", "npm:2.6.3"],\
@@ -7762,6 +7762,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["pretty-format", "npm:27.5.1"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:27.5.2", {\
+          "packageLocation": "./.yarn/cache/@types-jest-npm-27.5.2-f8ba570ba6-7e11c6826a.zip/node_modules/@types/jest/",\
+          "packageDependencies": [\
+            ["@types/jest", "npm:27.5.2"],\
+            ["jest-matcher-utils", "npm:27.5.1"],\
+            ["pretty-format", "npm:27.5.1"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@types/jsdom", [\
@@ -13831,7 +13840,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["eslint-plugin-jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:26.4.6"],\
             ["@types/eslint", "npm:8.4.2"],\
-            ["@types/jest", "npm:27.5.1"],\
+            ["@types/jest", "npm:27.5.2"],\
             ["@types/typescript-eslint__eslint-plugin", null],\
             ["@typescript-eslint/eslint-plugin", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.27.0"],\
             ["@typescript-eslint/utils", "virtual:43f19c6eaa562370f4affbbab6d1332e494205012135668df82831cb5012d0cdf72022acc13ed867d759aeb0b85c888a95320af2d7a7aa8ff862a521059c46d8#npm:5.26.0"],\
@@ -24053,7 +24062,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/babel-jest", null],\
             ["@types/babel__core", "npm:7.1.19"],\
             ["@types/esbuild", null],\
-            ["@types/jest", "npm:27.5.1"],\
+            ["@types/jest", "npm:27.5.2"],\
             ["@types/typescript", null],\
             ["babel-jest", null],\
             ["bs-logger", "npm:0.2.6"],\
@@ -25719,7 +25728,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/eslint", "npm:8.4.2"],\
             ["@types/events", "npm:3.0.0"],\
             ["@types/gtag.js", "npm:0.0.10"],\
-            ["@types/jest", "npm:27.5.1"],\
+            ["@types/jest", "npm:27.5.2"],\
             ["@types/mdx-js__react", "npm:1.5.5"],\
             ["@types/node", "npm:17.0.31"],\
             ["@types/prettier", "npm:2.6.3"],\
