@@ -98,7 +98,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.6.2"],\
             ["random-js", "npm:2.1.0"],\
             ["react", "npm:18.1.0"],\
-            ["react-console-emulator", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.0.1"],\
+            ["react-console-emulator", "npm:5.0.2"],\
             ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:18.1.0"],\
             ["regenerator-runtime", "npm:0.13.9"],\
             ["sharp", "npm:0.30.6"],\
@@ -21378,32 +21378,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["react-console-emulator", [\
-        ["npm:5.0.1", {\
-          "packageLocation": "./.yarn/cache/react-console-emulator-npm-5.0.1-7189cd8a80-9e03a9e756.zip/node_modules/react-console-emulator/",\
+        ["npm:5.0.2", {\
+          "packageLocation": "./.yarn/cache/react-console-emulator-npm-5.0.2-7c24fe5b1d-3bad419639.zip/node_modules/react-console-emulator/",\
           "packageDependencies": [\
-            ["react-console-emulator", "npm:5.0.1"]\
-          ],\
-          "linkType": "SOFT"\
-        }],\
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.0.1", {\
-          "packageLocation": "./.yarn/__virtual__/react-console-emulator-virtual-6446503df1/0/cache/react-console-emulator-npm-5.0.1-7189cd8a80-9e03a9e756.zip/node_modules/react-console-emulator/",\
-          "packageDependencies": [\
-            ["react-console-emulator", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.0.1"],\
-            ["@types/react", "npm:18.0.10"],\
-            ["@types/react-dom", "npm:18.0.5"],\
+            ["react-console-emulator", "npm:5.0.2"],\
             ["defaults", "npm:1.0.3"],\
             ["prop-types", "npm:15.8.1"],\
-            ["react", "npm:18.1.0"],\
-            ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:18.1.0"],\
             ["react-fast-compare", "npm:3.2.0"],\
             ["react-inner-html", "npm:1.0.1"],\
-            ["react-innertext", "virtual:6446503df1f05ae4bd94b30f555fa2b038d01958a4b29215a3f281d0800e19ff7a614b29be5be2f404984a01e0b3178168dd100ef926f8207444ed95c5f45c91#npm:1.1.5"]\
-          ],\
-          "packagePeers": [\
-            "@types/react-dom",\
-            "@types/react",\
-            "react-dom",\
-            "react"\
+            ["react-innertext", "virtual:7c24fe5b1d0a75240fed27cceadc25479fa5abef049b6ce1fff616ff44244e6cd8450136dd1df6aeae58c31491e5ec07f93e417dff9a79ca7cf601eb4f7795ee#npm:1.1.5"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -21551,12 +21534,12 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:6446503df1f05ae4bd94b30f555fa2b038d01958a4b29215a3f281d0800e19ff7a614b29be5be2f404984a01e0b3178168dd100ef926f8207444ed95c5f45c91#npm:1.1.5", {\
-          "packageLocation": "./.yarn/__virtual__/react-innertext-virtual-b69540a951/0/cache/react-innertext-npm-1.1.5-50613b71c6-01c9c8a5a4.zip/node_modules/react-innertext/",\
+        ["virtual:7c24fe5b1d0a75240fed27cceadc25479fa5abef049b6ce1fff616ff44244e6cd8450136dd1df6aeae58c31491e5ec07f93e417dff9a79ca7cf601eb4f7795ee#npm:1.1.5", {\
+          "packageLocation": "./.yarn/__virtual__/react-innertext-virtual-56728983d2/0/cache/react-innertext-npm-1.1.5-50613b71c6-01c9c8a5a4.zip/node_modules/react-innertext/",\
           "packageDependencies": [\
-            ["react-innertext", "virtual:6446503df1f05ae4bd94b30f555fa2b038d01958a4b29215a3f281d0800e19ff7a614b29be5be2f404984a01e0b3178168dd100ef926f8207444ed95c5f45c91#npm:1.1.5"],\
-            ["@types/react", "npm:18.0.10"],\
-            ["react", "npm:18.1.0"]\
+            ["react-innertext", "virtual:7c24fe5b1d0a75240fed27cceadc25479fa5abef049b6ce1fff616ff44244e6cd8450136dd1df6aeae58c31491e5ec07f93e417dff9a79ca7cf601eb4f7795ee#npm:1.1.5"],\
+            ["@types/react", null],\
+            ["react", null]\
           ],\
           "packagePeers": [\
             "@types/react",\
@@ -25769,7 +25752,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["prettier", "npm:2.6.2"],\
             ["random-js", "npm:2.1.0"],\
             ["react", "npm:18.1.0"],\
-            ["react-console-emulator", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.0.1"],\
+            ["react-console-emulator", "npm:5.0.2"],\
             ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:18.1.0"],\
             ["regenerator-runtime", "npm:0.13.9"],\
             ["sharp", "npm:0.30.6"],\
