@@ -15318,19 +15318,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-console-emulator@npm:5.0.1":
-  version: 5.0.1
-  resolution: "react-console-emulator@npm:5.0.1"
+"react-console-emulator@npm:5.0.2":
+  version: 5.0.2
+  resolution: "react-console-emulator@npm:5.0.2"
   dependencies:
     defaults: ^1.0.3
-    prop-types: ^15.7.2
+    prop-types: ^15.8.1
     react-fast-compare: ^3.2.0
     react-inner-html: ^1.0.1
     react-innertext: ^1.1.5
-  peerDependencies:
-    react: ^16.3.0
-    react-dom: ^16.3.0
-  checksum: 9e03a9e756dac1e731bd219ae4b3059db85d6dc573e8263592d5000188886c6fbb24a7a6bb33deb82c008b1dc3720f2f1191f1931b69933d1055fcddaff54ba9
+  checksum: 3bad4196394062d28fb28a0d4791e4e5cf725e555063a7949705f2abad2e45b81f16416281cd2e14de6cc2c9c4c454c25a37c67bffa633f2919433e22ffc2424
   languageName: node
   linkType: hard
 
@@ -19116,7 +19113,7 @@ __metadata:
     prettier: 2.6.2
     random-js: 2.1.0
     react: 18.1.0
-    react-console-emulator: 5.0.1
+    react-console-emulator: 5.0.2
     react-dom: 18.1.0
     regenerator-runtime: 0.13.9
     sharp: 0.30.6
