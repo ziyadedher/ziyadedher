@@ -4247,12 +4247,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/sharp@npm:0.30.2":
-  version: 0.30.2
-  resolution: "@types/sharp@npm:0.30.2"
+"@types/sharp@npm:0.30.3":
+  version: 0.30.3
+  resolution: "@types/sharp@npm:0.30.3"
   dependencies:
     "@types/node": "*"
-  checksum: dc6b332c309e1eb62e98b62f92829c4b06c3adb474c1ee8b504eb95e6d43be8804b8d541874d0769160595fdf46f7a7a0fe544a3659482ad0a19ac700944f3a4
+  checksum: 11254424dcd754817ea9993e1c5b302c004807784a144824436116061aff5b0e6d8f950b9cf6e42bc3b64b11fff6e0c2fe5ace4f5cb105797afb99ffb627c7ad
   languageName: node
   linkType: hard
 
@@ -19088,7 +19088,7 @@ __metadata:
     "@types/prettier": 2.6.3
     "@types/react": 18.0.12
     "@types/react-dom": 18.0.5
-    "@types/sharp": 0.30.2
+    "@types/sharp": 0.30.3
     "@types/source-map-support": 0.5.4
     "@types/testing-library__jest-dom": 5.14.3
     "@typescript-eslint/eslint-plugin": 5.27.1
