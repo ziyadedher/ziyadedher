@@ -8891,6 +8891,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"eslint-plugin-tailwindcss@npm:3.5.2":
+  version: 3.5.2
+  resolution: "eslint-plugin-tailwindcss@npm:3.5.2"
+  dependencies:
+    fast-glob: ^3.2.5
+    postcss: ^8.4.4
+    tailwindcss: ^3.0.7
+  checksum: bf6fffbc3db4e8f125394e066eb9391c736326d81aa5731bee564d865af8a73b68366a51bcc4fdd9a9331ebe72184b4bf3ed186c571451ba16caef538b325602
+  languageName: node
+  linkType: hard
+
 "eslint-scope@npm:5.1.1, eslint-scope@npm:^5.1.1":
   version: 5.1.1
   resolution: "eslint-scope@npm:5.1.1"
@@ -19140,7 +19151,7 @@ __metadata:
     eslint-plugin-node: 11.1.0
     eslint-plugin-react: 7.30.0
     eslint-plugin-react-hooks: 4.5.0
-    eslint-plugin-tailwindcss: 3.5.0
+    eslint-plugin-tailwindcss: 3.5.2
     events: 3.3.0
     jest: 28.1.1
     jest-environment-jsdom: 28.1.1
