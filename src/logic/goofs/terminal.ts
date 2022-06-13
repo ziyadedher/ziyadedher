@@ -5,6 +5,7 @@ enum Directory {
   HACKS = "/hacks/",
   LOG4SHELL = "/hacks/log4shell/",
   DARKARTS = "/hacks/darkarts/",
+  ETHHACK = "/hacks/ethhack/",
 }
 
 const cd = (goToUrl: (url: string) => void, dir?: string): string => {
