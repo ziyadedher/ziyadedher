@@ -4,7 +4,7 @@ import "tailwindcss/tailwind.css";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
-import GTag, { pageview } from "../lib/gtag";
+import GTag, { pageview } from "../utils/gtag";
 
 import type { AppProps } from "next/app";
 import type { ReactElement } from "react";

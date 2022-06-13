@@ -8,7 +8,7 @@ import {
 } from "phosphor-react";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
-import { getStorageURI } from "../../../lib/storage";
+import { getStorageURI } from "../../../utils/storage";
 import {
   generateImageData,
   getModel,

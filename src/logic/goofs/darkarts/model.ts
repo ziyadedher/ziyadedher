@@ -1,7 +1,7 @@
 import { InferenceSession, Tensor, env } from "onnxruntime-web";
 import { MersenneTwister19937, Random } from "random-js";
 
-import { getStorageURI } from "../../../lib/storage";
+import { getStorageURI } from "../../../utils/storage";
 
 const LayerKeys = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as const;
 type LayerKey = typeof LayerKeys[number];

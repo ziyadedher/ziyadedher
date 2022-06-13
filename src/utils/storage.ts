@@ -7,4 +7,4 @@ const getStorageURI = (filePath: string): string =>
     ? `https://storage.ziyadedher.com/${filePath}`
     : `/${filePath}`;
 
-export { shouldUseProductionStorage, getStorageURI };
+export { getStorageURI };

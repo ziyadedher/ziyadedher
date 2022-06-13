@@ -5,7 +5,7 @@ import Image from "next/image";
 import TextLink from "../components/links/text";
 import { NavbarPage } from "../components/navbar";
 import PageContainer from "../components/page_container";
-import { getStorageURI } from "../lib/storage";
+import { getStorageURI } from "../utils/storage";
 import { getImageWithBlur } from "../logic/image_with_blur";
 
 import type { ImageWithBlur } from "../logic/image_with_blur";
