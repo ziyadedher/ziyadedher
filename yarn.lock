@@ -12685,6 +12685,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"monaco-editor@npm:^0.33.0":
+  version: 0.33.0
+  resolution: "monaco-editor@npm:0.33.0"
+  checksum: f88fd1c9be0d6845436aa92ee7f7bcc49f9e9bf452f73bb5efbbe52e50678d1c2aec4d612a943310f5e2282c1d9fcc41b792b65a5b9008e6054908e7e10311ea
+  languageName: node
+  linkType: hard
+
 "move-concurrently@npm:^1.0.1":
   version: 1.0.1
   resolution: "move-concurrently@npm:1.0.1"
@@ -18160,6 +18167,7 @@ __metadata:
     events: 3.3.0
     jest: 28.1.0
     jest-environment-jsdom: 28.1.0
+    monaco-editor: ^0.33.0
     next: 12.1.6
     node-notifier: 10.0.1
     onnxruntime-web: 1.11.0

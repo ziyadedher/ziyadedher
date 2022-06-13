@@ -90,6 +90,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["events", "npm:3.3.0"],\
             ["jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:28.1.0"],\
             ["jest-environment-jsdom", "npm:28.1.0"],\
+            ["monaco-editor", "npm:0.33.0"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.6"],\
             ["node-notifier", "npm:10.0.1"],\
             ["onnxruntime-web", "npm:1.11.0"],\
@@ -3924,7 +3925,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@monaco-editor/loader", "virtual:0620d34c4fd073cd9fa2f0ab9bf920b0b969d0c2d6c981a1271dcb25af9c5f60d7d473834f679a84acc3fb96e12ff8f087e8fd203e8eb59eeb84588b00e0dc11#npm:1.3.1"],\
             ["@types/monaco-editor", null],\
-            ["monaco-editor", null],\
+            ["monaco-editor", "npm:0.33.0"],\
             ["state-local", "npm:1.0.7"]\
           ],\
           "packagePeers": [\
@@ -3950,7 +3951,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/monaco-editor", null],\
             ["@types/react", "npm:18.0.9"],\
             ["@types/react-dom", "npm:18.0.3"],\
-            ["monaco-editor", null],\
+            ["monaco-editor", "npm:0.33.0"],\
             ["prop-types", "npm:15.8.1"],\
             ["react", "npm:18.1.0"],\
             ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:18.1.0"]\
@@ -17524,6 +17525,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["monaco-editor", [\
+        ["npm:0.33.0", {\
+          "packageLocation": "./.yarn/cache/monaco-editor-npm-0.33.0-a149b0897f-f88fd1c9be.zip/node_modules/monaco-editor/",\
+          "packageDependencies": [\
+            ["monaco-editor", "npm:0.33.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["move-concurrently", [\
         ["npm:1.0.1", {\
           "packageLocation": "./.yarn/cache/move-concurrently-npm-1.0.1-e1e3c7e2cf-4ea3296c15.zip/node_modules/move-concurrently/",\
@@ -24024,6 +24034,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["events", "npm:3.3.0"],\
             ["jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:28.1.0"],\
             ["jest-environment-jsdom", "npm:28.1.0"],\
+            ["monaco-editor", "npm:0.33.0"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.6"],\
             ["node-notifier", "npm:10.0.1"],\
             ["onnxruntime-web", "npm:1.11.0"],\

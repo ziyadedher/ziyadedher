@@ -87,7 +87,7 @@ const Index: NextPage = () => (
       navbarPage={null}
       pageStyle={PageStyle.HACKER}
     >
-      <div className="flex w-full flex-1 flex-col items-center gap-2 px-6 text-center text-sm font-light xl:mx-0">
+      <div className="flex w-full flex-col items-center gap-2 px-6 text-center text-sm font-light xl:mx-0">
         <h1 className="text-xl">Log4Shell Public Bug Bounty Specials</h1>
         <p className="max-w-xl text-sm">
           Log4Shell (
@@ -99,7 +99,7 @@ const Index: NextPage = () => (
           demonstrate that they are still vulnerable to Log4Shell.
         </p>
 
-        <div className="my-8 flex max-w-full flex-1 flex-col overflow-x-auto text-left">
+        <div className="my-8 flex max-w-full flex-col overflow-x-auto text-left">
           <table className="table-auto">
             <thead className="border-b border-green-500">
               <tr>
