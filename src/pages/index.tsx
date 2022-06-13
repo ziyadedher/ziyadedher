@@ -114,7 +114,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             or something instead.
           </p>
         </div>
-        <div className="hidden max-w-md flex-none overflow-hidden rounded-3xl shadow-inner xl:flex">
+        <div className="hidden max-w-md overflow-hidden rounded-3xl shadow-inner xl:flex">
           <Image
             alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
             src={imageBlur.ziyadedher.url}
