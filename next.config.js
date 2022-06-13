@@ -14,44 +14,7 @@ const CONFIG = {
   experimental: {},
 
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type, @typescript-eslint/require-await -- exception for Next.js headers.
-  headers: async () => [
-    {
-      source: "/:page*",
-      headers: [
-        {
-          key: "X-Robots-Tag",
-          value: "noindex",
-        },
-      ],
-    },
-    {
-      source: "/",
-      headers: [
-        {
-          key: "X-Robots-Tag",
-          value: "all",
-        },
-      ],
-    },
-    {
-      source: "/hacks/log4shell",
-      headers: [
-        {
-          key: "X-Robots-Tag",
-          value: "all",
-        },
-      ],
-    },
-    {
-      source: "/hacks/darkarts",
-      headers: [
-        {
-          key: "X-Robots-Tag",
-          value: "all",
-        },
-      ],
-    },
-  ],
+  headers: async () => [],
 
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type, @typescript-eslint/require-await -- exception for Next.js redirects.
   redirects: async () => [
