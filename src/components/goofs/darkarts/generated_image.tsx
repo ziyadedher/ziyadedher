@@ -8,11 +8,11 @@ import {
 } from "phosphor-react";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
-import { getStorageURI } from "../../../utils/storage";
 import {
   generateImageData,
   getModel,
 } from "../../../logic/goofs/darkarts/model";
+import { getStorageURI } from "../../../utils/storage";
 
 import type {
   Model,
