@@ -1,7 +1,7 @@
 import { Head, Html, Main, NextScript } from "next/document";
 import React from "react";
 
-import { getStorageURI } from "../lib/storage";
+import { getStorageURI } from "../utils/storage";
 
 // eslint-disable-next-line @typescript-eslint/no-shadow -- Next.js pattern.
 const Document: React.FunctionComponent = () => (
