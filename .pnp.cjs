@@ -39,7 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@heroicons/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.0.6"],\
             ["@jest/types", "npm:28.1.1"],\
             ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.1"],\
-            ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.4"],\
+            ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.5"],\
             ["@next/env", "npm:12.1.6"],\
             ["@next/eslint-plugin-next", "npm:12.1.6"],\
             ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
@@ -4981,17 +4981,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@monaco-editor/loader", [\
-        ["npm:1.3.1", {\
-          "packageLocation": "./.yarn/cache/@monaco-editor-loader-npm-1.3.1-2dc61e5626-4772210d4e.zip/node_modules/@monaco-editor/loader/",\
+        ["npm:1.3.2", {\
+          "packageLocation": "./.yarn/cache/@monaco-editor-loader-npm-1.3.2-a1ecf5411f-7a1b65052b.zip/node_modules/@monaco-editor/loader/",\
           "packageDependencies": [\
-            ["@monaco-editor/loader", "npm:1.3.1"]\
+            ["@monaco-editor/loader", "npm:1.3.2"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:0620d34c4fd073cd9fa2f0ab9bf920b0b969d0c2d6c981a1271dcb25af9c5f60d7d473834f679a84acc3fb96e12ff8f087e8fd203e8eb59eeb84588b00e0dc11#npm:1.3.1", {\
-          "packageLocation": "./.yarn/__virtual__/@monaco-editor-loader-virtual-9592dd1735/0/cache/@monaco-editor-loader-npm-1.3.1-2dc61e5626-4772210d4e.zip/node_modules/@monaco-editor/loader/",\
+        ["virtual:3dc432b0b10bf7a2b9616025307f67a8dda55fe0cd1a6598ecfdda5bf732e54ad86e1b79bf9e7dbdf183c1301785d4d04df8506d90dee6b0aea48df23643e366#npm:1.3.2", {\
+          "packageLocation": "./.yarn/__virtual__/@monaco-editor-loader-virtual-db4c277cc0/0/cache/@monaco-editor-loader-npm-1.3.2-a1ecf5411f-7a1b65052b.zip/node_modules/@monaco-editor/loader/",\
           "packageDependencies": [\
-            ["@monaco-editor/loader", "virtual:0620d34c4fd073cd9fa2f0ab9bf920b0b969d0c2d6c981a1271dcb25af9c5f60d7d473834f679a84acc3fb96e12ff8f087e8fd203e8eb59eeb84588b00e0dc11#npm:1.3.1"],\
+            ["@monaco-editor/loader", "virtual:3dc432b0b10bf7a2b9616025307f67a8dda55fe0cd1a6598ecfdda5bf732e54ad86e1b79bf9e7dbdf183c1301785d4d04df8506d90dee6b0aea48df23643e366#npm:1.3.2"],\
             ["@types/monaco-editor", null],\
             ["monaco-editor", "npm:0.33.0"],\
             ["state-local", "npm:1.0.7"]\
@@ -5004,18 +5004,18 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@monaco-editor/react", [\
-        ["npm:4.4.4", {\
-          "packageLocation": "./.yarn/cache/@monaco-editor-react-npm-4.4.4-83523a8082-82f63dd9f5.zip/node_modules/@monaco-editor/react/",\
+        ["npm:4.4.5", {\
+          "packageLocation": "./.yarn/cache/@monaco-editor-react-npm-4.4.5-7f5d04fc43-7a9568e3c6.zip/node_modules/@monaco-editor/react/",\
           "packageDependencies": [\
-            ["@monaco-editor/react", "npm:4.4.4"]\
+            ["@monaco-editor/react", "npm:4.4.5"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.4", {\
-          "packageLocation": "./.yarn/__virtual__/@monaco-editor-react-virtual-0620d34c4f/0/cache/@monaco-editor-react-npm-4.4.4-83523a8082-82f63dd9f5.zip/node_modules/@monaco-editor/react/",\
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.5", {\
+          "packageLocation": "./.yarn/__virtual__/@monaco-editor-react-virtual-3dc432b0b1/0/cache/@monaco-editor-react-npm-4.4.5-7f5d04fc43-7a9568e3c6.zip/node_modules/@monaco-editor/react/",\
           "packageDependencies": [\
-            ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.4"],\
-            ["@monaco-editor/loader", "virtual:0620d34c4fd073cd9fa2f0ab9bf920b0b969d0c2d6c981a1271dcb25af9c5f60d7d473834f679a84acc3fb96e12ff8f087e8fd203e8eb59eeb84588b00e0dc11#npm:1.3.1"],\
+            ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.5"],\
+            ["@monaco-editor/loader", "virtual:3dc432b0b10bf7a2b9616025307f67a8dda55fe0cd1a6598ecfdda5bf732e54ad86e1b79bf9e7dbdf183c1301785d4d04df8506d90dee6b0aea48df23643e366#npm:1.3.2"],\
             ["@types/monaco-editor", null],\
             ["@types/react", "npm:18.0.12"],\
             ["@types/react-dom", "npm:18.0.5"],\
@@ -25951,7 +25951,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@heroicons/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.0.6"],\
             ["@jest/types", "npm:28.1.1"],\
             ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.1"],\
-            ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.4"],\
+            ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.5"],\
             ["@next/env", "npm:12.1.6"],\
             ["@next/eslint-plugin-next", "npm:12.1.6"],\
             ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
