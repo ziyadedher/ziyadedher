@@ -10,9 +10,9 @@ import { act, render } from "@testing-library/react";
 import AnimatedHackerText from "../../../src/components/text/animated_hacker_text";
 
 describe("animated hacker text", () => {
-  test("does not render text at the start", () => {
+  test("renders text at the start", () => {
     const result = render(<AnimatedHackerText text="long-hacker-text" />);
-    expect(result.queryByText("long-hacker-text")).not.toBeInTheDocument();
+    expect(result.queryByText("long-hacker-text")).toBeInTheDocument();
   });
 
   test("eventually renders text after delay", () => {
@@ -24,7 +24,7 @@ describe("animated hacker text", () => {
     const result = render(
       <AnimatedHackerText text="long-hacker-text" delay={500} tickDelay={10} />
     );
-    expect(result.queryByText("long-hacker-text")).not.toBeInTheDocument();
+    expect(result.queryByText("long-hacker-text")).toBeInTheDocument();
 
     mockPerformanceNow.mockReturnValue(400);
     act(() => {

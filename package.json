@@ -18,11 +18,13 @@
   },
   "dependencies": {
     "@headlessui/react": "1.6.4",
+    "@monaco-editor/react": "^4.4.4",
     "@plaiceholder/next": "2.3.0",
     "@tailwindcss/forms": "0.5.2",
     "classnames": "2.3.1",
     "events": "3.3.0",
     "jest-environment-jsdom": "28.1.1",
+    "monaco-editor": "^0.33.0",
     "next": "12.1.6",
     "onnxruntime-web": "1.11.0",
     "phosphor-react": "1.4.1",
@@ -93,7 +95,7 @@
     "source-map-support": "0.5.21",
     "ts-jest": "28.0.5",
     "ts-node": "10.8.1",
-    "typescript": "4.7.3",
+    "typescript": "^4.7.3",
     "vercel": "25.1.0"
   },
   "dependenciesMeta": {
