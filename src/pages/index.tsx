@@ -28,7 +28,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
     </Head>
 
     <PageContainer hasHeader hasNavbar navbarPage={NavbarPage.HOME}>
-      <div className="mx-auto flex max-w-5xl flex-row justify-center gap-8 py-8">
+      <div className="mx-auto flex max-w-5xl grow-0 flex-row justify-center gap-8 py-8">
         <div className="prose flex flex-1 flex-col text-sm font-light">
           <p className="text-3xl">yo</p>
           <p>
@@ -114,7 +114,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             or something instead.
           </p>
         </div>
-        <div className="hidden max-w-md flex-none overflow-hidden rounded-3xl shadow-inner xl:flex">
+        <div className="hidden h-min max-w-md overflow-hidden rounded-3xl shadow-inner xl:flex">
           <Image
             alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
             src={imageBlur.ziyadedher.url}

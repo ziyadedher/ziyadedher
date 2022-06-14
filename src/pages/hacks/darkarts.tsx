@@ -180,10 +180,8 @@ const getDefaultLayerValues = <T,>(value: T): LayerValues<T> => {
 };
 
 const Darkarts: NextPage = () => {
-  const [seed, setSeed] = useState(Math.round(Math.random() * 20 - 10));
-  const [distortionSeed, setDistortionSeed] = useState(
-    Math.round(Math.random() * 20 - 10)
-  );
+  const [seed, setSeed] = useState(0);
+  const [distortionSeed, setDistortionSeed] = useState(0);
   const [distortionStrength, setDistortionStrength] = useState(0);
   const [layerInputSeeds, setLayerInputSeeds] = useReducer<
     LayerValuesReducer<number>
@@ -201,6 +199,11 @@ const Darkarts: NextPage = () => {
     layerValuesReducer,
     getDefaultLayerValues(false)
   );
+
+  useEffect(() => {
+    setSeed(Math.round(Math.random() * 20 - 10));
+    setDistortionSeed(Math.round(Math.random() * 20 - 10));
+  }, []);
 
   useEffect(() => {
     LayerKeys.forEach((key) => {

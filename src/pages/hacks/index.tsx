@@ -23,7 +23,7 @@ const Index: NextPage = () => (
       navbarPage={NavbarPage.HACKS}
       pageStyle={PageStyle.HACKER}
     >
-      <div className="flex flex-col items-center">
+      <div className="flex w-full flex-col items-center">
         <p className="mb-8 font-mono text-sm">
           <AnimatedHackerText delay={1000} text="It's time to hack." />
         </p>
