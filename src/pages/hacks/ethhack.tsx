@@ -1,13 +1,28 @@
 import MonacoEditor, { useMonaco } from "@monaco-editor/react";
 import Head from "next/head";
-import React, { useEffect } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
+import Button, { ButtonStyle } from "../../components/buttons/button";
 import PageContainer, { PageStyle } from "../../components/page_container";
 
 import type { NextPage } from "next";
 
-const Editor: React.FunctionComponent = () => {
+interface EditorProps {
+  readonly onCodeChange: (code: string) => void;
+}
+
+const Editor: React.FunctionComponent<EditorProps> = ({ onCodeChange }) => {
   const monaco = useMonaco();
+
+  const handleCodeChange = useCallback(
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars -- this is just for Monaco.
+    (code: string | undefined, _: unknown): void => {
+      if (typeof code !== "undefined") {
+        onCodeChange(code);
+      }
+    },
+    [onCodeChange]
+  );
 
   useEffect(() => {
     if (monaco !== null) {
@@ -15,14 +30,47 @@ const Editor: React.FunctionComponent = () => {
       if (typeof model === "undefined") {
         throw new Error("no monaco model found");
       }
-      monaco.editor.setModelLanguage(model, "typescript");
+      monaco.editor.setModelLanguage(model, "javascript");
       monaco.editor.setTheme("vs-dark");
     }
   }, [monaco]);
 
   return (
-    <div className="h-full py-4">
-      <MonacoEditor />
+    <div className="flex grow">
+      <MonacoEditor onChange={handleCodeChange} />
+    </div>
+  );
+};
+
+interface ExecutorProps {
+  readonly code: string;
+}
+
+const Executor: React.FunctionComponent<ExecutorProps> = ({ code }) => {
+  const handleExecute = useCallback(() => {
+    eval(code);
+  }, [code]);
+
+  return (
+    <div className="flex flex-col">
+      <div className="flex flex-row">
+        <Button buttonStyle={ButtonStyle.SECONDARY} onClick={handleExecute}>
+          Execute
+        </Button>
+      </div>
+    </div>
+  );
+};
+
+const EditorPanel: React.FunctionComponent = () => {
+  const [code, setCode] = useState("");
+
+  const handleCodeChange = setCode;
+
+  return (
+    <div className="flex grow flex-row">
+      <Editor onCodeChange={handleCodeChange} />
+      <Executor code={code} />
     </div>
   );
 };
@@ -44,7 +92,7 @@ const EthHack: NextPage = () => (
       pageStyle={PageStyle.HACKER}
     >
       <div className="flex w-full flex-col">
-        <Editor />
+        <EditorPanel />
       </div>
     </PageContainer>
   </>
