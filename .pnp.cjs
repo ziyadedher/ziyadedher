@@ -59,6 +59,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/events", "npm:3.0.0"],\
             ["@types/gtag.js", "npm:0.0.10"],\
             ["@types/jest", "npm:27.5.2"],\
+            ["@types/matter-js", "npm:0.17.7"],\
             ["@types/mdx-js__react", "npm:1.5.5"],\
             ["@types/node", "npm:17.0.31"],\
             ["@types/prettier", "npm:2.6.3"],\
@@ -90,6 +91,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["events", "npm:3.3.0"],\
             ["jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:28.1.1"],\
             ["jest-environment-jsdom", "npm:28.1.1"],\
+            ["matter-js", "npm:0.18.0"],\
             ["monaco-editor", "npm:0.33.0"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.6"],\
             ["node-notifier", "npm:10.0.1"],\
@@ -7992,6 +7994,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-long-npm-4.0.2-e7bdc00dd4-d16cde7240.zip/node_modules/@types/long/",\
           "packageDependencies": [\
             ["@types/long", "npm:4.0.2"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@types/matter-js", [\
+        ["npm:0.17.7", {\
+          "packageLocation": "./.yarn/cache/@types-matter-js-npm-0.17.7-df9640dea1-dcff81d11d.zip/node_modules/@types/matter-js/",\
+          "packageDependencies": [\
+            ["@types/matter-js", "npm:0.17.7"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -18741,6 +18752,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["matter-js", [\
+        ["npm:0.18.0", {\
+          "packageLocation": "./.yarn/cache/matter-js-npm-0.18.0-dc1be3b396-c7f6303481.zip/node_modules/matter-js/",\
+          "packageDependencies": [\
+            ["matter-js", "npm:0.18.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["md5.js", [\
         ["npm:1.3.5", {\
           "packageLocation": "./.yarn/cache/md5.js-npm-1.3.5-130901125a-098494d885.zip/node_modules/md5.js/",\
@@ -25971,6 +25991,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/events", "npm:3.0.0"],\
             ["@types/gtag.js", "npm:0.0.10"],\
             ["@types/jest", "npm:27.5.2"],\
+            ["@types/matter-js", "npm:0.17.7"],\
             ["@types/mdx-js__react", "npm:1.5.5"],\
             ["@types/node", "npm:17.0.31"],\
             ["@types/prettier", "npm:2.6.3"],\
@@ -26002,6 +26023,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["events", "npm:3.3.0"],\
             ["jest", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:28.1.1"],\
             ["jest-environment-jsdom", "npm:28.1.1"],\
+            ["matter-js", "npm:0.18.0"],\
             ["monaco-editor", "npm:0.33.0"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.6"],\
             ["node-notifier", "npm:10.0.1"],\
