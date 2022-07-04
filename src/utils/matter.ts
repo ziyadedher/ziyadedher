@@ -1,85 +1,76 @@
 import { Engine, Render, Runner } from "matter-js";
 import { useCallback, useEffect, useMemo, useState } from "react";
 
-interface UseMatter {
+interface Matter {
   readonly engine: Engine;
-  readonly render: Render | null;
+  readonly render: Render;
   readonly runner: Runner;
-  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- HTMLElement
-  readonly canvasRef: (newElement: HTMLElement | null) => void;
 }
 
-const useMatter = ({
-  isDebug = false,
-}: {
-  readonly isDebug?: boolean;
-} = {}): UseMatter => {
-  const [element, setElement] = useState<HTMLElement | null>(null);
-  const canvasRef = useCallback(
-    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- HTMLElement
-    (newElement: HTMLElement | null): void => {
-      if (newElement !== null) {
-        setElement(newElement);
-      }
-    },
-    []
-  );
-
-  const engine = useMemo(() => Engine.create({ gravity: { x: 0, y: 0 } }), []);
-
+const useMatter = (
+  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- HTMLElement
+  canvas: HTMLElement,
+  {
+    width,
+    height,
+    isDebug = false,
+    isWireframe = isDebug,
+  }: {
+    readonly width?: number;
+    readonly height?: number;
+    readonly isDebug?: boolean;
+    readonly isWireframe?: boolean;
+  } = {}
+): Matter | null => {
   // This keeps track of what elements we've rendered a "canvas" in to avoid re-rendering.
-  const [renders, setRenders] = useState<ReadonlyMap<HTMLElement, Render>>(
+  const [matters, setMatters] = useState<ReadonlyMap<HTMLElement, Matter>>(
     new Map()
   );
-  /**
-   * Using `useState` and `useEffect` here because
-   * 1. React Strict Mode causes multiple renders to happen for each component (to test for side-effects)
-   * 2. When Render.create is called, it creates a "canvas" in the DOM
-   * 3. `useMemo` will run immediately in the rendering loop
-   * 4. `useEffect` will run after the rendering loop
-   */
-  const [render, setRender] = useState<Render | null>(null);
+
   useEffect(() => {
-    if (element !== null) {
-      const newRender =
-        renders.get(element) ??
-        Render.create({
-          element,
-          engine,
-          options: {
-            wireframes: isDebug,
-            showSleeping: isDebug,
-            showDebug: isDebug,
-            showBroadphase: isDebug,
-            showBounds: isDebug,
-            showVelocity: isDebug,
-            showCollisions: isDebug,
-            showSeparations: isDebug,
-            showAxes: isDebug,
-            showPositions: isDebug,
-            showAngleIndicator: isDebug,
-            showIds: isDebug,
-            showVertexNumbers: isDebug,
-            showConvexHulls: isDebug,
-            showInternalEdges: isDebug,
-          },
-        });
-      if (!renders.has(element)) {
-        setRenders(new Map(renders).set(element, newRender));
-      }
-      setRender(newRender);
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Engine
+    const createRenderer = (engine: Engine): Render =>
+      Render.create({
+        element: canvas,
+        engine,
+        options: {
+          wireframes: isWireframe,
+          showSleeping: isDebug,
+          showDebug: isDebug,
+          showBroadphase: isDebug,
+          showBounds: isDebug,
+          showVelocity: isDebug,
+          showCollisions: isDebug,
+          showSeparations: isDebug,
+          showAxes: isDebug,
+          showPositions: isDebug,
+          showAngleIndicator: isDebug,
+          showIds: isDebug,
+          showVertexNumbers: isDebug,
+          showConvexHulls: isDebug,
+          showInternalEdges: isDebug,
+          width,
+          height,
+        },
+      });
+
+    const matter = matters.get(canvas) ?? null;
+    if (matter !== null) {
+      const newMatters = new Map(matters);
+      newMatters["delete"](canvas);
+
+      Render.stop(matter.render);
     }
-  }, [renders, element, engine, isDebug]);
+    Runner.create();
+    Engine.create({
+      positionIterations: 12,
+      velocityIterations: 8,
+      gravity: { x: 0, y: 0 },
+    });
+  }, [canvas, width, height, isDebug, isWireframe]);
 
-  const runner = useMemo(() => Runner.create(), []);
-
-  return {
-    engine,
-    render,
-    runner,
-    canvasRef,
-  };
+  return matters.get(canvas) ?? null;
 };
 
-// eslint-disable-next-line import/prefer-default-export -- only export for now.
+export type { Matter };
 export { useMatter };
