@@ -1,5 +1,7 @@
 import { Engine, Render, Runner } from "matter-js";
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
+
+import type React from "react";
 
 interface Matter {
   readonly engine: Engine;
@@ -7,69 +9,113 @@ interface Matter {
   readonly runner: Runner;
 }
 
+interface RenderOptions {
+  readonly windowDimensions: {
+    readonly width: number;
+    readonly height: number;
+  } | null;
+  readonly isDebug?: boolean;
+  readonly isWireframe?: boolean;
+}
+
 const useMatter = (
-  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- HTMLElement
-  canvas: HTMLElement,
-  {
-    width,
-    height,
-    isDebug = false,
-    isWireframe = isDebug,
-  }: {
-    readonly width?: number;
-    readonly height?: number;
-    readonly isDebug?: boolean;
-    readonly isWireframe?: boolean;
-  } = {}
+  id: string,
+  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Engine
+  setupWorld: (engine: Engine) => void,
+  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- HTMLCanvasElement
+  renderCanvas: React.RefObject<HTMLCanvasElement>,
+  renderOptions: RenderOptions
 ): Matter | null => {
-  // This keeps track of what elements we've rendered a "canvas" in to avoid re-rendering.
-  const [matters, setMatters] = useState<ReadonlyMap<HTMLElement, Matter>>(
-    new Map()
-  );
-
-  useEffect(() => {
-    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Engine
-    const createRenderer = (engine: Engine): Render =>
-      Render.create({
-        element: canvas,
-        engine,
-        options: {
-          wireframes: isWireframe,
-          showSleeping: isDebug,
-          showDebug: isDebug,
-          showBroadphase: isDebug,
-          showBounds: isDebug,
-          showVelocity: isDebug,
-          showCollisions: isDebug,
-          showSeparations: isDebug,
-          showAxes: isDebug,
-          showPositions: isDebug,
-          showAngleIndicator: isDebug,
-          showIds: isDebug,
-          showVertexNumbers: isDebug,
-          showConvexHulls: isDebug,
-          showInternalEdges: isDebug,
-          width,
-          height,
-        },
-      });
-
-    const matter = matters.get(canvas) ?? null;
-    if (matter !== null) {
-      const newMatters = new Map(matters);
-      newMatters["delete"](canvas);
-
-      Render.stop(matter.render);
-    }
-    Runner.create();
-    Engine.create({
+  const createEngine = useCallback(() => {
+    const engine = Engine.create({
       positionIterations: 12,
       velocityIterations: 8,
       gravity: { x: 0, y: 0 },
     });
-  }, [canvas, width, height, isDebug, isWireframe]);
+    setupWorld(engine);
+    return engine;
+  }, [setupWorld]);
 
-  return matters.get(canvas) ?? null;
+  const createRender = useCallback(
+    (
+      // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- HTMLCanvasElement
+      canvas: HTMLCanvasElement,
+      // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Engine
+      engine: Engine,
+      options: RenderOptions
+    ): Render => {
+      const render = Render.create({
+        canvas,
+        engine,
+        options: {
+          wireframes: options.isWireframe,
+          showSleeping: options.isDebug,
+          showDebug: options.isDebug,
+          showBroadphase: options.isDebug,
+          showBounds: options.isDebug,
+          showVelocity: options.isDebug,
+          showCollisions: options.isDebug,
+          showSeparations: options.isDebug,
+          showAxes: options.isDebug,
+          showPositions: options.isDebug,
+          showAngleIndicator: options.isDebug,
+          showIds: options.isDebug,
+          showVertexNumbers: options.isDebug,
+          showConvexHulls: options.isDebug,
+          showInternalEdges: options.isDebug,
+          width: options.windowDimensions?.width,
+          height: options.windowDimensions?.height,
+        },
+      });
+      Render.run(render);
+      return render;
+    },
+    []
+  );
+
+  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Engine
+  const createRunner = useCallback((engine: Engine) => {
+    const runner = Runner.create();
+    Runner.run(runner, engine);
+    return runner;
+  }, []);
+
+  const [matter, setMatter] = useState<Matter | null>(null);
+
+  useEffect(() => {
+    const canvas = renderCanvas.current;
+    if (canvas === null) {
+      return;
+    }
+
+    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter
+    setMatter((curMatter) => {
+      if (curMatter === null) {
+        const engine = createEngine();
+        return {
+          engine,
+          render: createRender(canvas, engine, renderOptions),
+          runner: createRunner(engine),
+        };
+      }
+
+      Render.stop(curMatter.render);
+      return {
+        engine: curMatter.engine,
+        render: createRender(canvas, curMatter.engine, renderOptions),
+        runner: curMatter.runner,
+      };
+    });
+  }, [
+    id,
+    renderCanvas,
+    renderOptions,
+    createEngine,
+    createRender,
+    createRunner,
+  ]);
+
+  return matter;
 };
 
 export type { Matter };

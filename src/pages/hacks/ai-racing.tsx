@@ -3,41 +3,35 @@ import {
   Composite as MatterComposite,
   Events as MatterEvents,
   Render as MatterRender,
-  Runner as MatterRunner,
 } from "matter-js";
 import Head from "next/head";
-import React, { useEffect, useRef } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 
 import PageContainer, { PageStyle } from "../../components/page_container";
 import { createPlayer, updatePlayer } from "../../logic/goofs/ai-racing/player";
 import { useMatter } from "../../utils/matter";
 import { useWindowDimensions } from "../../utils/window";
 
+import type { Body as MatterBody, Engine as MatterEngine } from "matter-js";
 import type { NextPage } from "next";
 
 const Game: React.FunctionComponent = () => {
   const windowDimensions = useWindowDimensions();
-  const canvasRef = useRef<HTMLDivElement>(null);
+  const canvasRef = useRef<HTMLCanvasElement>(null);
+  const [playerBody, setPlayerBody] = useState<MatterBody | null>(null);
 
-  const matter = useMatter(
-    canvasRef.current,
-    {
-      width: windowDimensions?.width,
-      height: windowDimensions?.height,
-      isDebug: false,
-      isWireframe: true,
-    },
-    (matter) => {}
-  );
   const keysDown = useRef(new Set<string>());
-
   const forcePlayer = useRef({ x: 0, y: 0 });
+  const steering = useRef(0);
 
-  useEffect(() => {
-    if (matter.render === null) {
-      return;
-    }
-
+  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Engine
+  const setupWorld = useCallback((engine: MatterEngine) => {
     const boxA = MatterBodies.rectangle(400, 200, 80, 80, {
       frictionAir: 0.1,
     });
@@ -47,22 +41,23 @@ const Game: React.FunctionComponent = () => {
     const ground = MatterBodies.rectangle(400, 610, 810, 60, {
       isStatic: true,
     });
-    MatterComposite.add(matter.engine.world, [boxA, boxB, carA, carB, ground]);
+    MatterComposite.add(engine.world, [boxA, boxB, carA, carB, ground]);
 
     const player = createPlayer();
-    MatterComposite.add(matter.engine.world, [player]);
+    MatterComposite.add(engine.world, [player]);
 
-    MatterEvents.on(matter.engine, "beforeUpdate", () => {
-      let steering = 0;
+    MatterEvents.on(engine, "beforeUpdate", () => {
+      const lastDelta = engine.timing.lastDelta * 0.001;
+      let steeringDelta = 0;
       let isBrake = false;
       let isGas = false;
       new Set(keysDown.current).forEach((k) => {
         switch (k) {
           case "ArrowLeft":
-            steering -= 1;
+            steeringDelta -= 4 * lastDelta;
             break;
           case "ArrowRight":
-            steering += 1;
+            steeringDelta += 4 * lastDelta;
             break;
           case "ArrowUp":
             isGas = true;
@@ -77,27 +72,58 @@ const Game: React.FunctionComponent = () => {
         }
       });
 
+      if (steeringDelta === 0) {
+        steering.current =
+          Math.sign(steering.current) *
+          Math.min(Math.abs(steering.current) - 0.01, 0);
+      } else {
+        steering.current = Math.min(
+          1,
+          Math.max(-1, steering.current + steeringDelta)
+        );
+      }
+
       forcePlayer.current = updatePlayer(
-        matter.engine.timing.lastDelta * 0.001,
+        lastDelta,
         player,
         {
           isGas,
           isBrake,
-          steering,
+          steering: steering.current,
         },
         forcePlayer.current
       );
     });
 
-    MatterEvents.on(matter.engine, "afterUpdate", () => {
-      if (matter.render !== null) {
-        MatterRender.lookAt(matter.render, [player], { x: 300, y: 300 }, true);
-      }
-    });
+    setPlayerBody(player);
+  }, []);
 
-    MatterRender.run(matter.render);
-    MatterRunner.run(matter.runner, matter.engine);
-  }, [matter]);
+  const renderOptions = useMemo(
+    () => ({
+      windowDimensions,
+      isDebug: false,
+      isWireframe: true,
+    }),
+    [windowDimensions]
+  );
+  const matter = useMatter("ai-racing", setupWorld, canvasRef, renderOptions);
+
+  useEffect(() => {
+    if (matter === null) {
+      return;
+    }
+
+    if (playerBody !== null) {
+      MatterEvents.on(matter.engine, "afterUpdate", () => {
+        MatterRender.lookAt(
+          matter.render,
+          [playerBody],
+          { x: 500, y: 500 },
+          true
+        );
+      });
+    }
+  }, [matter, playerBody]);
 
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.KeyboardEvent
@@ -111,8 +137,9 @@ const Game: React.FunctionComponent = () => {
   }, []);
 
   return (
-    <div ref={canvasRef} className="h-full w-full">
-      {matter.render === null ? <p>Loading...</p> : null}
+    <div className="h-full w-full overflow-hidden">
+      <canvas ref={canvasRef} />
+      {matter === null ? <p>Loading...</p> : null}
     </div>
   );
 };

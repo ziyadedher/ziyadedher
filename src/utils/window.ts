@@ -22,6 +22,9 @@ const useWindowDimensions = (): WindowDimensions | null => {
       setWindowDimensions(getWindowDimensions());
     };
 
+    // Calling it to initialize the dimensions.
+    handleResize();
+
     window.addEventListener("resize", handleResize);
     return (): void => {
       window.removeEventListener("resize", handleResize);
