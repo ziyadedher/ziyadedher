@@ -75,7 +75,6 @@ const updatePlayer = (
       : { x: 0, y: 0 },
     axleWeightRear * tireGripRear
   );
-  console.log(tractionForcePlayer);
   const brakingForcePlayer =
     controls.isBrake && velocityPlayer.y < 0
       ? MatterVector.mult(MatterVector.neg(orientationPlayer), CAR_BRAKE_FORCE)
