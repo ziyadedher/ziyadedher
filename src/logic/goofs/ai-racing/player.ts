@@ -5,7 +5,7 @@ import {
 } from "matter-js";
 
 const GRAVITY = 9.81;
-const CAR_MASS = 1200.0;
+const CAR_MASS = 1500.0;
 const CAR_LENGTH = 4.0;
 const CAR_CG_TO_REAR_AXLE_LENGTH = 1.25;
 const CAR_CG_TO_FRONT_AXLE_LENGTH = 1.25;
@@ -16,15 +16,15 @@ const CAR_AXLE_WEIGHT_RATIO_FRONT =
 const CAR_AXLE_WEIGHT_RATIO_REAR =
   CAR_CG_TO_FRONT_AXLE_LENGTH / CAR_WHEEL_BASE_LENGTH;
 const CAR_CG_HEIGHT = 0.55;
-const CAR_ENGINE_FORCE = 8000.0;
+const CAR_ENGINE_FORCE = 20000.0;
 const CAR_BRAKE_FORCE = 12000.0;
-const CAR_TIRE_GRIP = 1.5;
+const CAR_TIRE_GRIP = 2.5;
 const CAR_MAX_STEER = 0.4;
-const CAR_WEIGHT_TRANSFER = 0.2;
+const CAR_WEIGHT_TRANSFER = 0.8;
 const CAR_CORNER_STIFFNESS_FRONT = 0.45;
-const CAR_CORNER_STIFFNESS_REAR = 0.5;
-const CAR_AIR_RESISTANCE = 25;
-const CAR_ROLLING_RESISTANCE = 50 * CAR_AIR_RESISTANCE;
+const CAR_CORNER_STIFFNESS_REAR = 0.4;
+const CAR_AIR_RESISTANCE = 15;
+const CAR_ROLLING_RESISTANCE = 100 * CAR_AIR_RESISTANCE;
 
 const clamp = (x: number, min: number, max: number): number =>
   Math.min(max, Math.max(x, min));
@@ -69,9 +69,13 @@ const updatePlayer = (
     CAR_WEIGHT_TRANSFER * (CAR_CG_HEIGHT / CAR_LENGTH) * forcePlayer.y;
 
   // Traction and braking
-  const tractionForcePlayer = controls.isGas
-    ? MatterVector.mult(orientationPlayer, CAR_ENGINE_FORCE)
-    : { x: 0, y: 0 };
+  const tractionForcePlayer = clampVectorMagnitude(
+    controls.isGas
+      ? MatterVector.mult(orientationPlayer, CAR_ENGINE_FORCE)
+      : { x: 0, y: 0 },
+    axleWeightRear * tireGripRear
+  );
+  console.log(tractionForcePlayer);
   const brakingForcePlayer =
     controls.isBrake && velocityPlayer.y < 0
       ? MatterVector.mult(MatterVector.neg(orientationPlayer), CAR_BRAKE_FORCE)
