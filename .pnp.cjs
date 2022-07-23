@@ -42,7 +42,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.5"],\
             ["@next/env", "npm:12.1.6"],\
             ["@next/eslint-plugin-next", "npm:12.1.6"],\
-            ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
+            ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
             ["@storybook/addon-actions", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.5.9"],\
             ["@storybook/addon-docs", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.5.9"],\
             ["@storybook/addon-essentials", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.5.9"],\
@@ -5433,17 +5433,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@plaiceholder/next", [\
-        ["npm:2.3.0", {\
-          "packageLocation": "./.yarn/cache/@plaiceholder-next-npm-2.3.0-36b084670c-301e50b6e9.zip/node_modules/@plaiceholder/next/",\
+        ["npm:2.4.0", {\
+          "packageLocation": "./.yarn/cache/@plaiceholder-next-npm-2.4.0-cf092510d9-4b54695b20.zip/node_modules/@plaiceholder/next/",\
           "packageDependencies": [\
-            ["@plaiceholder/next", "npm:2.3.0"]\
+            ["@plaiceholder/next", "npm:2.4.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0", {\
-          "packageLocation": "./.yarn/__virtual__/@plaiceholder-next-virtual-5514f10983/0/cache/@plaiceholder-next-npm-2.3.0-36b084670c-301e50b6e9.zip/node_modules/@plaiceholder/next/",\
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0", {\
+          "packageLocation": "./.yarn/__virtual__/@plaiceholder-next-virtual-f1d4cf1dcf/0/cache/@plaiceholder-next-npm-2.4.0-cf092510d9-4b54695b20.zip/node_modules/@plaiceholder/next/",\
           "packageDependencies": [\
-            ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
+            ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
             ["@types/next", null],\
             ["@types/sharp", "npm:0.30.4"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.6"],\
@@ -26218,7 +26218,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.5"],\
             ["@next/env", "npm:12.1.6"],\
             ["@next/eslint-plugin-next", "npm:12.1.6"],\
-            ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
+            ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
             ["@storybook/addon-actions", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.5.9"],\
             ["@storybook/addon-docs", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.5.9"],\
             ["@storybook/addon-essentials", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.5.9"],\
