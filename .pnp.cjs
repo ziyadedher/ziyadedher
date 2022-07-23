@@ -38,7 +38,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@headlessui/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.6.4"],\
             ["@heroicons/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.0.6"],\
             ["@jest/types", "npm:28.1.1"],\
-            ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.1"],\
+            ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.2"],\
             ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.5"],\
             ["@next/env", "npm:12.1.6"],\
             ["@next/eslint-plugin-next", "npm:12.1.6"],\
@@ -5117,17 +5117,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["npm:2.1.1", {\
-          "packageLocation": "./.yarn/cache/@mdx-js-react-npm-2.1.1-9ddd2e5958-e6f1f0a3a7.zip/node_modules/@mdx-js/react/",\
+        ["npm:2.1.2", {\
+          "packageLocation": "./.yarn/cache/@mdx-js-react-npm-2.1.2-d399dcf3c9-c1114c6834.zip/node_modules/@mdx-js/react/",\
           "packageDependencies": [\
-            ["@mdx-js/react", "npm:2.1.1"]\
+            ["@mdx-js/react", "npm:2.1.2"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.1", {\
-          "packageLocation": "./.yarn/__virtual__/@mdx-js-react-virtual-0232d7b693/0/cache/@mdx-js-react-npm-2.1.1-9ddd2e5958-e6f1f0a3a7.zip/node_modules/@mdx-js/react/",\
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.2", {\
+          "packageLocation": "./.yarn/__virtual__/@mdx-js-react-virtual-df1a486212/0/cache/@mdx-js-react-npm-2.1.2-d399dcf3c9-c1114c6834.zip/node_modules/@mdx-js/react/",\
           "packageDependencies": [\
-            ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.1"],\
+            ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.2"],\
             ["@types/mdx", "npm:2.0.2"],\
             ["@types/react", "npm:18.0.15"],\
             ["react", "npm:18.2.0"]\
@@ -26214,7 +26214,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@headlessui/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.6.4"],\
             ["@heroicons/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.0.6"],\
             ["@jest/types", "npm:28.1.1"],\
-            ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.1"],\
+            ["@mdx-js/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.1.2"],\
             ["@monaco-editor/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:4.4.5"],\
             ["@next/env", "npm:12.1.6"],\
             ["@next/eslint-plugin-next", "npm:12.1.6"],\
