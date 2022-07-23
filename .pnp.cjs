@@ -66,7 +66,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.0.5"],\
             ["@types/sharp", "npm:0.30.4"],\
             ["@types/source-map-support", "npm:0.5.4"],\
-            ["@types/testing-library__jest-dom", "npm:5.14.3"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
             ["@typescript-eslint/eslint-plugin", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.30.7"],\
             ["@typescript-eslint/parser", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.30.7"],\
             ["@yarnpkg/sdks", "npm:3.0.0-rc.9"],\
@@ -8293,6 +8293,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.3-0aa35d2c00-203443d0e7.zip/node_modules/@types/testing-library__jest-dom/",\
           "packageDependencies": [\
             ["@types/testing-library__jest-dom", "npm:5.14.3"],\
+            ["@types/jest", "npm:27.5.1"]\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["npm:5.14.5", {\
+          "packageLocation": "./.yarn/cache/@types-testing-library__jest-dom-npm-5.14.5-251c4c9d75-dcb0541675.zip/node_modules/@types/testing-library__jest-dom/",\
+          "packageDependencies": [\
+            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
             ["@types/jest", "npm:27.5.1"]\
           ],\
           "linkType": "HARD"\
@@ -26053,7 +26061,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/react-dom", "npm:18.0.5"],\
             ["@types/sharp", "npm:0.30.4"],\
             ["@types/source-map-support", "npm:0.5.4"],\
-            ["@types/testing-library__jest-dom", "npm:5.14.3"],\
+            ["@types/testing-library__jest-dom", "npm:5.14.5"],\
             ["@typescript-eslint/eslint-plugin", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.30.7"],\
             ["@typescript-eslint/parser", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.30.7"],\
             ["@yarnpkg/sdks", "npm:3.0.0-rc.9"],\
