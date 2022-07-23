@@ -97,7 +97,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
             ["postcss", "npm:8.4.14"],\
-            ["prettier", "npm:2.6.2"],\
+            ["prettier", "npm:2.7.1"],\
             ["random-js", "npm:2.1.0"],\
             ["react", "npm:18.1.0"],\
             ["react-console-emulator", "npm:5.0.2"],\
@@ -21136,10 +21136,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["npm:2.6.2", {\
-          "packageLocation": "./.yarn/cache/prettier-npm-2.6.2-05918420da-48d08dde8e.zip/node_modules/prettier/",\
+        ["npm:2.7.1", {\
+          "packageLocation": "./.yarn/cache/prettier-npm-2.7.1-d1f40f5e1a-55a4409182.zip/node_modules/prettier/",\
           "packageDependencies": [\
-            ["prettier", "npm:2.6.2"]\
+            ["prettier", "npm:2.7.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -26066,7 +26066,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
             ["postcss", "npm:8.4.14"],\
-            ["prettier", "npm:2.6.2"],\
+            ["prettier", "npm:2.7.1"],\
             ["random-js", "npm:2.1.0"],\
             ["react", "npm:18.1.0"],\
             ["react-console-emulator", "npm:5.0.2"],\
