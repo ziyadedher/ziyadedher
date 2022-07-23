@@ -14492,24 +14492,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"onnxruntime-common@npm:~1.11.0":
-  version: 1.11.0
-  resolution: "onnxruntime-common@npm:1.11.0"
-  checksum: 7b5e03fcb35a73b6651a49b4128007754af1422195de51a1bb99ca3048a31177f858de3f0c841480d3560c7cd19c261a37826750fa060a389f51e8d39bea63ab
+"onnxruntime-common@npm:~1.12.0":
+  version: 1.12.0
+  resolution: "onnxruntime-common@npm:1.12.0"
+  checksum: d9ba77b4f6bb66d5d8442c862d999bd956cf0c5f0b20efc2a93f1fe29e79412c09370b508d138dc183e407d5547d79074351a84b5330c3e00b69d669cf59c778
   languageName: node
   linkType: hard
 
-"onnxruntime-web@npm:1.11.0":
-  version: 1.11.0
-  resolution: "onnxruntime-web@npm:1.11.0"
+"onnxruntime-web@npm:1.12.0":
+  version: 1.12.0
+  resolution: "onnxruntime-web@npm:1.12.0"
   dependencies:
     flatbuffers: ^1.12.0
     guid-typescript: ^1.0.9
     long: ^4.0.0
     onnx-proto: ^4.0.4
-    onnxruntime-common: ~1.11.0
+    onnxruntime-common: ~1.12.0
     platform: ^1.3.6
-  checksum: b03ff8acb3dca739a81fdbd1703b325ccd5f77ce4a6b33e161742597ad3049028ab141d4d840d475b9e6ee9506bacf95f74a1b63c2f48be0ff8f5ec8819ade41
+  checksum: e4fc71e4a9c2f6a5400bb4a8dfa942786fc6f91476a3b0954759a288d453cf8b5f41553d23f0fbb702cc47504a49aa65c90b97310162325199e6caae2a15ae3b
   languageName: node
   linkType: hard
 
@@ -19634,7 +19634,7 @@ __metadata:
     monaco-editor: 0.33.0
     next: 12.1.6
     node-notifier: 10.0.1
-    onnxruntime-web: 1.11.0
+    onnxruntime-web: 1.12.0
     phosphor-react: 1.4.1
     plaiceholder: 2.3.0
     postcss: 8.4.14
