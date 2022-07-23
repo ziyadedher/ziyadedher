@@ -103,7 +103,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-console-emulator", "npm:5.0.2"],\
             ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:18.2.0"],\
             ["regenerator-runtime", "npm:0.13.9"],\
-            ["sharp", "npm:0.30.6"],\
+            ["sharp", "npm:0.30.7"],\
             ["source-map-support", "npm:0.5.21"],\
             ["string_decoder", "npm:1.3.0"],\
             ["tailwindcss", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:3.1.6"],\
@@ -5447,7 +5447,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/next", null],\
             ["@types/sharp", "npm:0.30.4"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.1.6"],\
-            ["sharp", "npm:0.30.6"]\
+            ["sharp", "npm:0.30.7"]\
           ],\
           "packagePeers": [\
             "@types/next",\
@@ -20972,7 +20972,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["image-size", "npm:1.0.0"],\
             ["node-cache", "npm:5.1.2"],\
             ["node-fetch", "virtual:6e3d43d40d2d429d00aeccb83a438e2825e86179019062cd73406525de0aea0dedca00f63c49c0495026d723d2a0865ec386cad0a5ae52a6142e0c8782a6781b#npm:2.6.7"],\
-            ["sharp", "npm:0.30.6"]\
+            ["sharp", "npm:0.30.7"]\
           ],\
           "packagePeers": [\
             "@types/sharp",\
@@ -21278,10 +21278,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["prebuild-install", [\
-        ["npm:7.1.0", {\
-          "packageLocation": "./.yarn/cache/prebuild-install-npm-7.1.0-b3cb7113d3-204f2d89c6.zip/node_modules/prebuild-install/",\
+        ["npm:7.1.1", {\
+          "packageLocation": "./.yarn/cache/prebuild-install-npm-7.1.1-cb9fc9d341-dbf96d0146.zip/node_modules/prebuild-install/",\
           "packageDependencies": [\
-            ["prebuild-install", "npm:7.1.0"],\
+            ["prebuild-install", "npm:7.1.1"],\
             ["detect-libc", "npm:2.0.1"],\
             ["expand-template", "npm:2.0.3"],\
             ["github-from-package", "npm:0.0.0"],\
@@ -21289,7 +21289,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["mkdirp-classic", "npm:0.5.3"],\
             ["napi-build-utils", "npm:1.0.2"],\
             ["node-abi", "npm:3.22.0"],\
-            ["npmlog", "npm:4.1.2"],\
             ["pump", "npm:3.0.0"],\
             ["rc", "npm:1.2.8"],\
             ["simple-get", "npm:4.0.1"],\
@@ -23076,15 +23075,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["sharp", [\
-        ["npm:0.30.6", {\
-          "packageLocation": "./.yarn/unplugged/sharp-npm-0.30.6-4067fc2ceb/node_modules/sharp/",\
+        ["npm:0.30.7", {\
+          "packageLocation": "./.yarn/unplugged/sharp-npm-0.30.7-6db6fef43e/node_modules/sharp/",\
           "packageDependencies": [\
-            ["sharp", "npm:0.30.6"],\
+            ["sharp", "npm:0.30.7"],\
             ["color", "npm:4.2.3"],\
             ["detect-libc", "npm:2.0.1"],\
             ["node-addon-api", "npm:5.0.0"],\
             ["node-gyp", "npm:9.0.0"],\
-            ["prebuild-install", "npm:7.1.0"],\
+            ["prebuild-install", "npm:7.1.1"],\
             ["semver", "npm:7.3.7"],\
             ["simple-get", "npm:4.0.1"],\
             ["tar-fs", "npm:2.1.1"],\
@@ -26279,7 +26278,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-console-emulator", "npm:5.0.2"],\
             ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:18.2.0"],\
             ["regenerator-runtime", "npm:0.13.9"],\
-            ["sharp", "npm:0.30.6"],\
+            ["sharp", "npm:0.30.7"],\
             ["source-map-support", "npm:0.5.21"],\
             ["string_decoder", "npm:1.3.0"],\
             ["tailwindcss", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:3.1.6"],\
