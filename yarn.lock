@@ -15100,17 +15100,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plaiceholder@npm:2.3.0":
-  version: 2.3.0
-  resolution: "plaiceholder@npm:2.3.0"
+"plaiceholder@npm:2.4.0":
+  version: 2.4.0
+  resolution: "plaiceholder@npm:2.4.0"
   dependencies:
     blurhash: 1.1.4
     image-size: 1.0.0
     node-cache: 5.1.2
     node-fetch: 2.6.7
   peerDependencies:
-    sharp: ">= 0.26.2"
-  checksum: d039f91d2c117dcd93343b7bcee780c62f9ba8fa4b74143e42c58629267f9297624c91166813fcc78e26a5424b8a373701a222b5b92fab331e378f26607a6b75
+    sharp: ">= 0.30.6"
+  checksum: 47198039b904ba9d1393b36cf44060027a63a662a5acf7ef733a8d974a7c64af11aafdb692949cad63e2d28973611a686532a39eee1884fed8cf4c44d52b19d0
   languageName: node
   linkType: hard
 
@@ -19636,7 +19636,7 @@ __metadata:
     node-notifier: 10.0.1
     onnxruntime-web: 1.12.0
     phosphor-react: 1.4.1
-    plaiceholder: 2.3.0
+    plaiceholder: 2.4.0
     postcss: 8.4.14
     prettier: 2.7.1
     random-js: 2.1.0
