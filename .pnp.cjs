@@ -53,7 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.4"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:13.3.0"],\
-            ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.0.0"],\
+            ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.0.1"],\
             ["@types/babel__core", "npm:7.1.19"],\
             ["@types/eslint", "npm:8.4.3"],\
             ["@types/events", "npm:3.0.0"],\
@@ -7783,24 +7783,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@testing-library/react-hooks", [\
-        ["npm:8.0.0", {\
-          "packageLocation": "./.yarn/cache/@testing-library-react-hooks-npm-8.0.0-8655cd286d-f45bd06601.zip/node_modules/@testing-library/react-hooks/",\
+        ["npm:8.0.1", {\
+          "packageLocation": "./.yarn/cache/@testing-library-react-hooks-npm-8.0.1-e0c7be6ffb-7fe44352e9.zip/node_modules/@testing-library/react-hooks/",\
           "packageDependencies": [\
-            ["@testing-library/react-hooks", "npm:8.0.0"]\
+            ["@testing-library/react-hooks", "npm:8.0.1"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.0.0", {\
-          "packageLocation": "./.yarn/__virtual__/@testing-library-react-hooks-virtual-313ca9986c/0/cache/@testing-library-react-hooks-npm-8.0.0-8655cd286d-f45bd06601.zip/node_modules/@testing-library/react-hooks/",\
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.0.1", {\
+          "packageLocation": "./.yarn/__virtual__/@testing-library-react-hooks-virtual-3c560752ab/0/cache/@testing-library-react-hooks-npm-8.0.1-e0c7be6ffb-7fe44352e9.zip/node_modules/@testing-library/react-hooks/",\
           "packageDependencies": [\
-            ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.0.0"],\
+            ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.0.1"],\
             ["@babel/runtime", "npm:7.18.3"],\
             ["@types/react", "npm:18.0.15"],\
             ["@types/react-dom", "npm:18.0.5"],\
             ["@types/react-test-renderer", null],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:18.2.0"],\
-            ["react-error-boundary", "virtual:313ca9986c6306725e664fbeaeaa2d07f76670d0815cdbadb849aaeaaa5af5b2045244bcb8aaf70ec3dc71ec30af664ffdc2700bdbeff7fa86a1982d46275bb4#npm:3.1.4"],\
+            ["react-error-boundary", "virtual:3c560752abcf116d9684f7a5f0b8b2e3c68660b09b5a107db09dd5178a4599f7660a86e1b0e4b1dcaa727f04b9590a9515bc40e0084e09577c65fc30167680b9#npm:3.1.4"],\
             ["react-test-renderer", null]\
           ],\
           "packagePeers": [\
@@ -21952,10 +21952,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:313ca9986c6306725e664fbeaeaa2d07f76670d0815cdbadb849aaeaaa5af5b2045244bcb8aaf70ec3dc71ec30af664ffdc2700bdbeff7fa86a1982d46275bb4#npm:3.1.4", {\
-          "packageLocation": "./.yarn/__virtual__/react-error-boundary-virtual-2fced88179/0/cache/react-error-boundary-npm-3.1.4-2310dba89e-f36270a5d7.zip/node_modules/react-error-boundary/",\
+        ["virtual:3c560752abcf116d9684f7a5f0b8b2e3c68660b09b5a107db09dd5178a4599f7660a86e1b0e4b1dcaa727f04b9590a9515bc40e0084e09577c65fc30167680b9#npm:3.1.4", {\
+          "packageLocation": "./.yarn/__virtual__/react-error-boundary-virtual-4a630e0132/0/cache/react-error-boundary-npm-3.1.4-2310dba89e-f36270a5d7.zip/node_modules/react-error-boundary/",\
           "packageDependencies": [\
-            ["react-error-boundary", "virtual:313ca9986c6306725e664fbeaeaa2d07f76670d0815cdbadb849aaeaaa5af5b2045244bcb8aaf70ec3dc71ec30af664ffdc2700bdbeff7fa86a1982d46275bb4#npm:3.1.4"],\
+            ["react-error-boundary", "virtual:3c560752abcf116d9684f7a5f0b8b2e3c68660b09b5a107db09dd5178a4599f7660a86e1b0e4b1dcaa727f04b9590a9515bc40e0084e09577c65fc30167680b9#npm:3.1.4"],\
             ["@babel/runtime", "npm:7.18.3"],\
             ["@types/react", "npm:18.0.15"],\
             ["react", "npm:18.2.0"]\
@@ -26229,7 +26229,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.4"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:13.3.0"],\
-            ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.0.0"],\
+            ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.0.1"],\
             ["@types/babel__core", "npm:7.1.19"],\
             ["@types/eslint", "npm:8.4.3"],\
             ["@types/events", "npm:3.0.0"],\
