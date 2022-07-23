@@ -4447,7 +4447,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/webpack-env@npm:^1.16.0":
+"@types/webpack-env@npm:^1.16.0, @types/webpack-env@npm:^1.17.0":
   version: 1.17.0
   resolution: "@types/webpack-env@npm:1.17.0"
   checksum: 9ad4d208c4429c9427191d1f4c92e4c43e530384c17a6bc298acb89003fc47fcde1d8372e50acefa3061e9100e57fd9d616e96def875afd06c0c2afe508f298e
@@ -7098,14 +7098,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:6.5.6":
-  version: 6.5.6
-  resolution: "chromatic@npm:6.5.6"
+"chromatic@npm:6.7.1":
+  version: 6.7.1
+  resolution: "chromatic@npm:6.7.1"
+  dependencies:
+    "@types/webpack-env": ^1.17.0
   bin:
     chroma: bin/main.cjs
     chromatic: bin/main.cjs
     chromatic-cli: bin/main.cjs
-  checksum: dbfe276683add0420e559c1dc42e5c10d9dcd8c3b53fb4a1d36de684077a455d472c5e64427d83ccb88f3b73643aabc4979bd1b38339c42784c73e3659377fc2
+  checksum: 271272cc2a34a25b8f4e4e9d3fab1d84dce8b30e606e625005e693d961f807d2428dc24fe68c32cf679a7d33fe6a8678d3fa0e1b91cbeea8eb39ce0670c18a74
   languageName: node
   linkType: hard
 
@@ -19371,7 +19373,7 @@ __metadata:
     "@ziyadedher/eslint-config": 3.1.1
     autoprefixer: 10.4.7
     babel-loader: 8.2.5
-    chromatic: 6.5.6
+    chromatic: 6.7.1
     classnames: 2.3.1
     codecov: 3.8.3
     eslint: 8.17.0
