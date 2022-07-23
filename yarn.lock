@@ -13725,7 +13725,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"monaco-editor@npm:^0.33.0":
+"monaco-editor@npm:0.33.0":
   version: 0.33.0
   resolution: "monaco-editor@npm:0.33.0"
   checksum: f88fd1c9be0d6845436aa92ee7f7bcc49f9e9bf452f73bb5efbbe52e50678d1c2aec4d612a943310f5e2282c1d9fcc41b792b65a5b9008e6054908e7e10311ea
@@ -18375,7 +18375,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^4.7.3":
+"typescript@npm:4.7.3":
   version: 4.7.3
   resolution: "typescript@npm:4.7.3"
   bin:
@@ -18405,7 +18405,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@^4.7.3#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.7.3#~builtin<compat/typescript>":
   version: 4.7.3
   resolution: "typescript@patch:typescript@npm%3A4.7.3#~builtin<compat/typescript>::version=4.7.3&hash=f456af"
   bin:
@@ -19602,7 +19602,7 @@ __metadata:
     events: 3.3.0
     jest: 28.1.1
     jest-environment-jsdom: 28.1.1
-    monaco-editor: ^0.33.0
+    monaco-editor: 0.33.0
     next: 12.1.6
     node-notifier: 10.0.1
     onnxruntime-web: 1.11.0
@@ -19621,7 +19621,7 @@ __metadata:
     tailwindcss: 3.1.6
     ts-jest: 28.0.5
     ts-node: 10.8.1
-    typescript: ^4.7.3
+    typescript: 4.7.3
     vercel: 25.1.0
   dependenciesMeta:
     open@7.4.2:
