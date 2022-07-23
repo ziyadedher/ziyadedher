@@ -50,7 +50,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/addon-postcss", "npm:2.0.0"],\
             ["@storybook/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.5.9"],\
             ["@tailwindcss/forms", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.2"],\
-            ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.2"],\
+            ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.4"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:13.3.0"],\
             ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.0.0"],\
@@ -7695,17 +7695,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@tailwindcss/typography", [\
-        ["npm:0.5.2", {\
-          "packageLocation": "./.yarn/cache/@tailwindcss-typography-npm-0.5.2-2bf38a38ad-f6c27e32c9.zip/node_modules/@tailwindcss/typography/",\
+        ["npm:0.5.4", {\
+          "packageLocation": "./.yarn/cache/@tailwindcss-typography-npm-0.5.4-70117c9446-016f27266e.zip/node_modules/@tailwindcss/typography/",\
           "packageDependencies": [\
-            ["@tailwindcss/typography", "npm:0.5.2"]\
+            ["@tailwindcss/typography", "npm:0.5.4"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.2", {\
-          "packageLocation": "./.yarn/__virtual__/@tailwindcss-typography-virtual-ca058ba233/0/cache/@tailwindcss-typography-npm-0.5.2-2bf38a38ad-f6c27e32c9.zip/node_modules/@tailwindcss/typography/",\
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.4", {\
+          "packageLocation": "./.yarn/__virtual__/@tailwindcss-typography-virtual-95874fc86b/0/cache/@tailwindcss-typography-npm-0.5.4-70117c9446-016f27266e.zip/node_modules/@tailwindcss/typography/",\
           "packageDependencies": [\
-            ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.2"],\
+            ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.4"],\
             ["@types/tailwindcss", null],\
             ["lodash.castarray", "npm:4.4.0"],\
             ["lodash.isplainobject", "npm:4.0.6"],\
@@ -26226,7 +26226,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@storybook/addon-postcss", "npm:2.0.0"],\
             ["@storybook/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:6.5.9"],\
             ["@tailwindcss/forms", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.2"],\
-            ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.2"],\
+            ["@tailwindcss/typography", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:0.5.4"],\
             ["@testing-library/jest-dom", "npm:5.16.4"],\
             ["@testing-library/react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:13.3.0"],\
             ["@testing-library/react-hooks", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.0.0"],\
