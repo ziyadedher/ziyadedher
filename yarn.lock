@@ -1701,7 +1701,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:7.18.9":
+"@babel/runtime@npm:7.18.9, @babel/runtime@npm:^7.18.9":
   version: 7.18.9
   resolution: "@babel/runtime@npm:7.18.9"
   dependencies:
@@ -6320,6 +6320,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"axe-core@npm:^4.4.3":
+  version: 4.4.3
+  resolution: "axe-core@npm:4.4.3"
+  checksum: c3ea000d9ace3ba0bc747c8feafc24b0de62a0f7d93021d0f77b19c73fca15341843510f6170da563d51535d6cfb7a46c5fc0ea36170549dbb44b170208450a2
+  languageName: node
+  linkType: hard
+
 "axobject-query@npm:^2.2.0":
   version: 2.2.0
   resolution: "axobject-query@npm:2.2.0"
@@ -8124,7 +8131,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"damerau-levenshtein@npm:^1.0.7":
+"damerau-levenshtein@npm:^1.0.7, damerau-levenshtein@npm:^1.0.8":
   version: 1.0.8
   resolution: "damerau-levenshtein@npm:1.0.8"
   checksum: d240b7757544460ae0586a341a53110ab0a61126570ef2d8c731e3eab3f0cb6e488e2609e6a69b46727635de49be20b071688698744417ff1b6c1d7ccd03e0de
@@ -9133,6 +9140,29 @@ __metadata:
   peerDependencies:
     eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
   checksum: 311ab993ed982d0cc7cb0ba02fbc4b36c4a94e9434f31e97f13c4d67e8ecb8aec36baecfd759ff70498846e7e11d7a197eb04c39ad64934baf3354712fd0bc9d
+  languageName: node
+  linkType: hard
+
+"eslint-plugin-jsx-a11y@npm:6.6.1":
+  version: 6.6.1
+  resolution: "eslint-plugin-jsx-a11y@npm:6.6.1"
+  dependencies:
+    "@babel/runtime": ^7.18.9
+    aria-query: ^4.2.2
+    array-includes: ^3.1.5
+    ast-types-flow: ^0.0.7
+    axe-core: ^4.4.3
+    axobject-query: ^2.2.0
+    damerau-levenshtein: ^1.0.8
+    emoji-regex: ^9.2.2
+    has: ^1.0.3
+    jsx-ast-utils: ^3.3.2
+    language-tags: ^1.0.5
+    minimatch: ^3.1.2
+    semver: ^6.3.0
+  peerDependencies:
+    eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
+  checksum: baae7377f0e25a0cc9b34dc333a3dc6ead9ee8365e445451eff554c3ca267a0a6cb88127fe90395c578ab1b92cfed246aef7dc8d2b48b603389e10181799e144
   languageName: node
   linkType: hard
 
@@ -12769,6 +12799,16 @@ __metadata:
     array-includes: ^3.1.4
     object.assign: ^4.1.2
   checksum: e3c0667e8979c70600fb0456b19f0ec194994c953678ac2772a819d8d5740df2ed751e49e4f1db7869bf63251585a93b18acd42ef02269fe41cb23941d0d4950
+  languageName: node
+  linkType: hard
+
+"jsx-ast-utils@npm:^3.3.2":
+  version: 3.3.2
+  resolution: "jsx-ast-utils@npm:3.3.2"
+  dependencies:
+    array-includes: ^3.1.5
+    object.assign: ^4.1.2
+  checksum: 61d4596d44480afc03ae0a7ebb272aa6603dc4c3645805dea0fc8d9f0693542cd0959f3ba7c0c9b16c13dd5a900c7c4310108bada273132a8355efe3fed22064
   languageName: node
   linkType: hard
 
@@ -19583,7 +19623,7 @@ __metadata:
     eslint-plugin-eslint-comments: 3.2.0
     eslint-plugin-import: 2.26.0
     eslint-plugin-jest: 26.6.0
-    eslint-plugin-jsx-a11y: 6.5.1
+    eslint-plugin-jsx-a11y: 6.6.1
     eslint-plugin-node: 11.1.0
     eslint-plugin-react: 7.30.1
     eslint-plugin-react-hooks: 4.6.0
