@@ -95,7 +95,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-notifier", "npm:10.0.1"],\
             ["onnxruntime-web", "npm:1.12.0"],\
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
-            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
+            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
             ["postcss", "npm:8.4.14"],\
             ["prettier", "npm:2.7.1"],\
             ["random-js", "npm:2.1.0"],\
@@ -20967,17 +20967,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["plaiceholder", [\
-        ["npm:2.3.0", {\
-          "packageLocation": "./.yarn/cache/plaiceholder-npm-2.3.0-ed45fdfb24-d039f91d2c.zip/node_modules/plaiceholder/",\
+        ["npm:2.4.0", {\
+          "packageLocation": "./.yarn/cache/plaiceholder-npm-2.4.0-85e6af3f24-47198039b9.zip/node_modules/plaiceholder/",\
           "packageDependencies": [\
-            ["plaiceholder", "npm:2.3.0"]\
+            ["plaiceholder", "npm:2.4.0"]\
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0", {\
-          "packageLocation": "./.yarn/__virtual__/plaiceholder-virtual-581d3f418a/0/cache/plaiceholder-npm-2.3.0-ed45fdfb24-d039f91d2c.zip/node_modules/plaiceholder/",\
+        ["virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0", {\
+          "packageLocation": "./.yarn/__virtual__/plaiceholder-virtual-cfde9e8edd/0/cache/plaiceholder-npm-2.4.0-85e6af3f24-47198039b9.zip/node_modules/plaiceholder/",\
           "packageDependencies": [\
-            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
+            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
             ["@types/sharp", "npm:0.30.4"],\
             ["blurhash", "npm:1.1.4"],\
             ["image-size", "npm:1.0.0"],\
@@ -26275,7 +26275,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["node-notifier", "npm:10.0.1"],\
             ["onnxruntime-web", "npm:1.12.0"],\
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
-            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.3.0"],\
+            ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
             ["postcss", "npm:8.4.14"],\
             ["prettier", "npm:2.7.1"],\
             ["random-js", "npm:2.1.0"],\
