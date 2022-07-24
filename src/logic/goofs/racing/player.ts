@@ -18,6 +18,7 @@ const CAR_AXLE_WEIGHT_RATIO_REAR =
 const CAR_CG_HEIGHT = 0.55;
 const CAR_ENGINE_FORCE = 20000.0;
 const CAR_BRAKE_FORCE = 12000.0;
+const CAR_REVERSE_MULTIPLIER = 0.5;
 const CAR_TIRE_GRIP = 1.5;
 const CAR_MAX_STEER = 0.4;
 const CAR_WEIGHT_TRANSFER = 0.5;
@@ -29,6 +30,7 @@ const CAR_MAGIC_MODIFIER = 1.5;
 
 const clamp = (x: number, min: number, max: number): number =>
   Math.min(max, Math.max(x, min));
+
 // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Vector
 const clampVectorMagnitude = (vec: MatterVector, max: number): MatterVector =>
   MatterVector.mult(
@@ -41,6 +43,7 @@ const createPlayer = (): MatterBody =>
     label: "player",
     frictionAir: 0,
     mass: CAR_MASS,
+    chamfer: { radius: 5 },
   });
 
 const updatePlayer = (
@@ -48,7 +51,8 @@ const updatePlayer = (
   // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Body
   player: MatterBody,
   controls: {
-    readonly isGas: boolean;
+    readonly isForward: boolean;
+    readonly isReverse: boolean;
     readonly isBrake: boolean;
     readonly steering: number;
   },
@@ -71,8 +75,13 @@ const updatePlayer = (
 
   // Traction and braking
   const tractionForcePlayer = clampVectorMagnitude(
-    controls.isGas
+    controls.isForward
       ? MatterVector.mult(orientationPlayer, CAR_ENGINE_FORCE)
+      : controls.isReverse
+      ? MatterVector.mult(
+          MatterVector.neg(orientationPlayer),
+          CAR_ENGINE_FORCE * CAR_REVERSE_MULTIPLIER
+        )
       : { x: 0, y: 0 },
     axleWeightRear * tireGripRear
   );
@@ -153,13 +162,17 @@ const updatePlayer = (
     Math.cos(steeringAngle) *
       frictionForcePlayerFront.x *
       CAR_CG_TO_FRONT_AXLE_LENGTH;
-  let newAngularAccelerationPlayer = -angularTorque / (CAR_MAGIC_MODIFIER * player.inertia);
+  let newAngularAccelerationPlayer =
+    -angularTorque / (CAR_MAGIC_MODIFIER * player.inertia);
   MatterBody.setAngularVelocity(
     player,
     newAngularAccelerationPlayer * lastDelta
   );
 
-  if (MatterVector.magnitude(velocityPlayer) < 0.1 && !controls.isGas) {
+  if (
+    MatterVector.magnitude(velocityPlayer) < 1e-1 &&
+    MatterVector.magnitude(velocityDeltaPlayer) < 1e-1
+  ) {
     newForcePlayer = { x: 0, y: 0 };
     MatterBody.setVelocity(player, { x: 0, y: 0 });
     newAngularAccelerationPlayer = 0;
