@@ -44,8 +44,9 @@ const Game: React.FunctionComponent = () => {
     MatterEvents.on(engine, "beforeUpdate", () => {
       const lastDelta = engine.timing.lastDelta * 0.001;
       let steeringDelta = 0;
+      let isForward = false;
+      let isReverse = false;
       let isBrake = false;
-      let isGas = false;
       keysRef.current.forEach((k) => {
         switch (k) {
           case "ArrowLeft":
@@ -55,10 +56,10 @@ const Game: React.FunctionComponent = () => {
             steeringDelta += 4 * lastDelta;
             break;
           case "ArrowUp":
-            isGas = true;
+            isForward = true;
             break;
           case "ArrowDown":
-            isBrake = true;
+            isReverse = true;
             break;
           case "Space":
             isBrake = true;
@@ -82,7 +83,8 @@ const Game: React.FunctionComponent = () => {
         lastDelta,
         player,
         {
-          isGas,
+          isForward,
+          isReverse,
           isBrake,
           steering: steering.current,
         },
@@ -96,7 +98,7 @@ const Game: React.FunctionComponent = () => {
   const renderOptions = useMemo(
     () => ({
       windowDimensions,
-      isDebug: false,
+      isDebug: true,
       isWireframe: true,
     }),
     [windowDimensions]
