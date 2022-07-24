@@ -18,7 +18,7 @@ const CAR_AXLE_WEIGHT_RATIO_REAR =
 const CAR_CG_HEIGHT = 0.55;
 const CAR_ENGINE_FORCE = 20000.0;
 const CAR_BRAKE_FORCE = 12000.0;
-const CAR_TIRE_GRIP = 2.5;
+const CAR_TIRE_GRIP = 0.5;
 const CAR_MAX_STEER = 0.4;
 const CAR_WEIGHT_TRANSFER = 0.5;
 const CAR_CORNER_STIFFNESS_FRONT = 0.55;
@@ -75,10 +75,12 @@ const updatePlayer = (
       : { x: 0, y: 0 },
     axleWeightRear * tireGripRear
   );
-  const brakingForcePlayer =
+  const brakingForcePlayer = clampVectorMagnitude(
     controls.isBrake && velocityPlayer.y < 0
       ? MatterVector.mult(MatterVector.neg(orientationPlayer), CAR_BRAKE_FORCE)
-      : { x: 0, y: 0 };
+      : { x: 0, y: 0 },
+    (axleWeightRear * tireGripRear + axleWeightFront * tireGripRear) / 2
+  );
 
   // Drag and resistance
   const dragForcePlayer = MatterVector.mult(
@@ -107,25 +109,25 @@ const updatePlayer = (
     velocityPlayer.x - yawSpeedRear,
     Math.abs(velocityPlayer.y)
   );
-  const frictionForcePlayerFront = MatterVector.mult(
-    clampVectorMagnitude(
+  const frictionForcePlayerFront = clampVectorMagnitude(
+    MatterVector.mult(
       MatterVector.mult(
         MatterVector.perp(orientationPlayer),
         -CAR_CORNER_STIFFNESS_FRONT * slipAngleFront
       ),
-      tireGripFront
+      axleWeightFront
     ),
-    axleWeightFront
+    axleWeightFront * tireGripFront
   );
-  const frictionForcePlayerRear = MatterVector.mult(
-    clampVectorMagnitude(
+  const frictionForcePlayerRear = clampVectorMagnitude(
+    MatterVector.mult(
       MatterVector.mult(
         MatterVector.perp(orientationPlayer),
         -CAR_CORNER_STIFFNESS_REAR * slipAngleRear
       ),
-      tireGripRear
+      axleWeightRear
     ),
-    axleWeightRear
+    axleWeightRear * tireGripRear
   );
 
   const latForcePlayer = MatterVector.add(
