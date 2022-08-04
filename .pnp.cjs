@@ -93,7 +93,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["monaco-editor", "npm:0.34.0"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.2.3"],\
             ["node-notifier", "npm:10.0.1"],\
-            ["onnxruntime-web", "npm:1.12.0"],\
+            ["onnxruntime-web", "npm:1.12.1"],\
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
             ["postcss", "npm:8.4.14"],\
@@ -20043,24 +20043,24 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["onnxruntime-common", [\
-        ["npm:1.12.0", {\
-          "packageLocation": "./.yarn/cache/onnxruntime-common-npm-1.12.0-a8caa80168-d9ba77b4f6.zip/node_modules/onnxruntime-common/",\
+        ["npm:1.12.1", {\
+          "packageLocation": "./.yarn/cache/onnxruntime-common-npm-1.12.1-1e55136b10-548eaef127.zip/node_modules/onnxruntime-common/",\
           "packageDependencies": [\
-            ["onnxruntime-common", "npm:1.12.0"]\
+            ["onnxruntime-common", "npm:1.12.1"]\
           ],\
           "linkType": "HARD"\
         }]\
       ]],\
       ["onnxruntime-web", [\
-        ["npm:1.12.0", {\
-          "packageLocation": "./.yarn/cache/onnxruntime-web-npm-1.12.0-4a6492c1f0-e4fc71e4a9.zip/node_modules/onnxruntime-web/",\
+        ["npm:1.12.1", {\
+          "packageLocation": "./.yarn/cache/onnxruntime-web-npm-1.12.1-95bbab3979-5ff7feaeed.zip/node_modules/onnxruntime-web/",\
           "packageDependencies": [\
-            ["onnxruntime-web", "npm:1.12.0"],\
+            ["onnxruntime-web", "npm:1.12.1"],\
             ["flatbuffers", "npm:1.12.0"],\
             ["guid-typescript", "npm:1.0.9"],\
             ["long", "npm:4.0.0"],\
             ["onnx-proto", "npm:4.0.4"],\
-            ["onnxruntime-common", "npm:1.12.0"],\
+            ["onnxruntime-common", "npm:1.12.1"],\
             ["platform", "npm:1.3.6"]\
           ],\
           "linkType": "HARD"\
@@ -25848,7 +25848,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["monaco-editor", "npm:0.34.0"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.2.3"],\
             ["node-notifier", "npm:10.0.1"],\
-            ["onnxruntime-web", "npm:1.12.0"],\
+            ["onnxruntime-web", "npm:1.12.1"],\
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
             ["postcss", "npm:8.4.14"],\
