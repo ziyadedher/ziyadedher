@@ -64,7 +64,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", "npm:2.7.0"],\
             ["@types/react", "npm:18.0.16"],\
             ["@types/react-dom", "npm:18.0.6"],\
-            ["@types/sharp", "npm:0.30.4"],\
+            ["@types/sharp", "npm:0.30.5"],\
             ["@types/source-map-support", "npm:0.5.4"],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
             ["@typescript-eslint/eslint-plugin", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.32.0"],\
@@ -5425,7 +5425,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["@plaiceholder/next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
             ["@types/next", null],\
-            ["@types/sharp", "npm:0.30.4"],\
+            ["@types/sharp", "npm:0.30.5"],\
             ["next", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:12.2.3"],\
             ["sharp", "npm:0.30.7"]\
           ],\
@@ -8301,10 +8301,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/sharp", [\
-        ["npm:0.30.4", {\
-          "packageLocation": "./.yarn/cache/@types-sharp-npm-0.30.4-a8626c5794-3ebeaf55aa.zip/node_modules/@types/sharp/",\
+        ["npm:0.30.5", {\
+          "packageLocation": "./.yarn/cache/@types-sharp-npm-0.30.5-d42c010179-8aa458d4c4.zip/node_modules/@types/sharp/",\
           "packageDependencies": [\
-            ["@types/sharp", "npm:0.30.4"],\
+            ["@types/sharp", "npm:0.30.5"],\
             ["@types/node", "npm:18.6.3"]\
           ],\
           "linkType": "HARD"\
@@ -20744,7 +20744,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/__virtual__/plaiceholder-virtual-cfde9e8edd/0/cache/plaiceholder-npm-2.4.0-85e6af3f24-47198039b9.zip/node_modules/plaiceholder/",\
           "packageDependencies": [\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
-            ["@types/sharp", "npm:0.30.4"],\
+            ["@types/sharp", "npm:0.30.5"],\
             ["blurhash", "npm:1.1.4"],\
             ["image-size", "npm:1.0.0"],\
             ["node-cache", "npm:5.1.2"],\
@@ -25950,7 +25950,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/prettier", "npm:2.7.0"],\
             ["@types/react", "npm:18.0.16"],\
             ["@types/react-dom", "npm:18.0.6"],\
-            ["@types/sharp", "npm:0.30.4"],\
+            ["@types/sharp", "npm:0.30.5"],\
             ["@types/source-map-support", "npm:0.5.4"],\
             ["@types/testing-library__jest-dom", "npm:5.14.5"],\
             ["@typescript-eslint/eslint-plugin", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:5.32.0"],\
