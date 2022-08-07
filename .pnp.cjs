@@ -96,7 +96,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["onnxruntime-web", "npm:1.12.1"],\
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
-            ["postcss", "npm:8.4.14"],\
+            ["postcss", "npm:8.4.16"],\
             ["prettier", "npm:2.7.1"],\
             ["random-js", "npm:2.1.0"],\
             ["react", "npm:18.2.0"],\
@@ -10372,7 +10372,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fraction.js", "npm:4.2.0"],\
             ["normalize-range", "npm:0.1.2"],\
             ["picocolors", "npm:1.0.0"],\
-            ["postcss", "npm:8.4.14"],\
+            ["postcss", "npm:8.4.16"],\
             ["postcss-value-parser", "npm:4.2.0"]\
           ],\
           "packagePeers": [\
@@ -20805,6 +20805,16 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["source-map-js", "npm:1.0.2"]\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["npm:8.4.16", {\
+          "packageLocation": "./.yarn/cache/postcss-npm-8.4.16-7367383579-10eee25efd.zip/node_modules/postcss/",\
+          "packageDependencies": [\
+            ["postcss", "npm:8.4.16"],\
+            ["nanoid", "npm:3.3.4"],\
+            ["picocolors", "npm:1.0.0"],\
+            ["source-map-js", "npm:1.0.2"]\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["postcss-flexbugs-fixes", [\
@@ -20840,6 +20850,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "postcss"\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:14.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/postcss-import-virtual-e49ca1d13d/0/cache/postcss-import-npm-14.1.0-fa5b457156-cd45d406e9.zip/node_modules/postcss-import/",\
+          "packageDependencies": [\
+            ["postcss-import", "virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:14.1.0"],\
+            ["@types/postcss", null],\
+            ["postcss", "npm:8.4.16"],\
+            ["postcss-value-parser", "npm:4.2.0"],\
+            ["read-cache", "npm:1.0.0"],\
+            ["resolve", "patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"]\
+          ],\
+          "packagePeers": [\
+            "@types/postcss",\
+            "postcss"\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["postcss-js", [\
@@ -20857,6 +20883,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/postcss", null],\
             ["camelcase-css", "npm:2.0.1"],\
             ["postcss", "npm:8.4.14"]\
+          ],\
+          "packagePeers": [\
+            "@types/postcss",\
+            "postcss"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:4.0.0", {\
+          "packageLocation": "./.yarn/__virtual__/postcss-js-virtual-324de6ef5e/0/cache/postcss-js-npm-4.0.0-b053712bf0-14be8a5867.zip/node_modules/postcss-js/",\
+          "packageDependencies": [\
+            ["postcss-js", "virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:4.0.0"],\
+            ["@types/postcss", null],\
+            ["camelcase-css", "npm:2.0.1"],\
+            ["postcss", "npm:8.4.16"]\
           ],\
           "packagePeers": [\
             "@types/postcss",\
@@ -20881,6 +20921,25 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/ts-node", null],\
             ["lilconfig", "npm:2.0.6"],\
             ["postcss", "npm:8.4.14"],\
+            ["ts-node", null],\
+            ["yaml", "npm:1.10.2"]\
+          ],\
+          "packagePeers": [\
+            "@types/postcss",\
+            "@types/ts-node",\
+            "postcss",\
+            "ts-node"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:3.1.4", {\
+          "packageLocation": "./.yarn/__virtual__/postcss-load-config-virtual-a678668a17/0/cache/postcss-load-config-npm-3.1.4-1cb8a7e276-1c589504c2.zip/node_modules/postcss-load-config/",\
+          "packageDependencies": [\
+            ["postcss-load-config", "virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:3.1.4"],\
+            ["@types/postcss", null],\
+            ["@types/ts-node", null],\
+            ["lilconfig", "npm:2.0.6"],\
+            ["postcss", "npm:8.4.16"],\
             ["ts-node", null],\
             ["yaml", "npm:1.10.2"]\
           ],\
@@ -21005,6 +21064,20 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["postcss-nested", "virtual:6d3937734c78d89f8695f65c234bef78e02826c25ecfcd80169c9d3b03de3b48a21addfaa2adda752c0603f85ac735fb10d6be9797f363940d0dbaef20765187#npm:5.0.6"],\
             ["@types/postcss", null],\
             ["postcss", "npm:8.4.14"],\
+            ["postcss-selector-parser", "npm:6.0.10"]\
+          ],\
+          "packagePeers": [\
+            "@types/postcss",\
+            "postcss"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:5.0.6", {\
+          "packageLocation": "./.yarn/__virtual__/postcss-nested-virtual-763f395bcf/0/cache/postcss-nested-npm-5.0.6-d408d3cd6e-dbcbfd11e5.zip/node_modules/postcss-nested/",\
+          "packageDependencies": [\
+            ["postcss-nested", "virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:5.0.6"],\
+            ["@types/postcss", null],\
+            ["postcss", "npm:8.4.16"],\
             ["postcss-selector-parser", "npm:6.0.10"]\
           ],\
           "packagePeers": [\
@@ -23656,11 +23729,11 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["normalize-path", "npm:3.0.0"],\
             ["object-hash", "npm:3.0.0"],\
             ["picocolors", "npm:1.0.0"],\
-            ["postcss", "npm:8.4.14"],\
-            ["postcss-import", "virtual:6d3937734c78d89f8695f65c234bef78e02826c25ecfcd80169c9d3b03de3b48a21addfaa2adda752c0603f85ac735fb10d6be9797f363940d0dbaef20765187#npm:14.1.0"],\
-            ["postcss-js", "virtual:6d3937734c78d89f8695f65c234bef78e02826c25ecfcd80169c9d3b03de3b48a21addfaa2adda752c0603f85ac735fb10d6be9797f363940d0dbaef20765187#npm:4.0.0"],\
-            ["postcss-load-config", "virtual:6d3937734c78d89f8695f65c234bef78e02826c25ecfcd80169c9d3b03de3b48a21addfaa2adda752c0603f85ac735fb10d6be9797f363940d0dbaef20765187#npm:3.1.4"],\
-            ["postcss-nested", "virtual:6d3937734c78d89f8695f65c234bef78e02826c25ecfcd80169c9d3b03de3b48a21addfaa2adda752c0603f85ac735fb10d6be9797f363940d0dbaef20765187#npm:5.0.6"],\
+            ["postcss", "npm:8.4.16"],\
+            ["postcss-import", "virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:14.1.0"],\
+            ["postcss-js", "virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:4.0.0"],\
+            ["postcss-load-config", "virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:3.1.4"],\
+            ["postcss-nested", "virtual:edae3c1f0bd5e1be848a35b31b78750497676d82fabf66c5cab6f71c1d68cf7c35feedd060672bf6868ecbd70b71e8b40fa70385c62e39b43937627945b565fe#npm:5.0.6"],\
             ["postcss-selector-parser", "npm:6.0.10"],\
             ["postcss-value-parser", "npm:4.2.0"],\
             ["quick-lru", "npm:5.1.1"],\
@@ -25899,7 +25972,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["onnxruntime-web", "npm:1.12.1"],\
             ["phosphor-react", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:1.4.1"],\
             ["plaiceholder", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:2.4.0"],\
-            ["postcss", "npm:8.4.14"],\
+            ["postcss", "npm:8.4.16"],\
             ["prettier", "npm:2.7.1"],\
             ["random-js", "npm:2.1.0"],\
             ["react", "npm:18.2.0"],\

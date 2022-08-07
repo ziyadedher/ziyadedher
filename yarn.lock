@@ -15010,6 +15010,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"postcss@npm:8.4.16":
+  version: 8.4.16
+  resolution: "postcss@npm:8.4.16"
+  dependencies:
+    nanoid: ^3.3.4
+    picocolors: ^1.0.0
+    source-map-js: ^1.0.2
+  checksum: 10eee25efd77868036403858577da0cefaf2e0905feeaba5770d5438ccdddba3d01cba8063e96b8aac4c6daa0ed413dd5ae0554a433a3c4db38df1d134cffc1f
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^7.0.14, postcss@npm:^7.0.26, postcss@npm:^7.0.32, postcss@npm:^7.0.35, postcss@npm:^7.0.36, postcss@npm:^7.0.5, postcss@npm:^7.0.6":
   version: 7.0.39
   resolution: "postcss@npm:7.0.39"
@@ -19217,7 +19228,7 @@ __metadata:
     onnxruntime-web: 1.12.1
     phosphor-react: 1.4.1
     plaiceholder: 2.4.0
-    postcss: 8.4.14
+    postcss: 8.4.16
     prettier: 2.7.1
     random-js: 2.1.0
     react: 18.2.0
