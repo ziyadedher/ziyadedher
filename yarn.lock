@@ -4753,10 +4753,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/go@npm:2.0.16":
-  version: 2.0.16
-  resolution: "@vercel/go@npm:2.0.16"
-  checksum: 412243c76b470310558870e86479bfca84506b6854c8303c4312046ef7255110499570432756660089484a8aab03d1e2cecaa028aaef418b12aa13dd6e6bcc3c
+"@vercel/go@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@vercel/go@npm:2.1.0"
+  checksum: 589193f847ac327e69a04eaee8259b234f9a0af429d7d26c681a467cb939c14e171280a33f94bde361e7d51c0921dfac580d659d81494cfc58953ae4324a925b
   languageName: node
   linkType: hard
 
@@ -4767,10 +4767,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/next@npm:3.1.16":
-  version: 3.1.16
-  resolution: "@vercel/next@npm:3.1.16"
-  checksum: e028e55d868f75e024a5f2093c09e6989662f99c53c9ba6d4e420d603ec8c3971b5a9daf6629cbd2fd235c9c31850d601005be41d45295c3ec4e2ff32c42af9e
+"@vercel/next@npm:3.1.17":
+  version: 3.1.17
+  resolution: "@vercel/next@npm:3.1.17"
+  checksum: 2123316bdb70e21c7af36198e11d4026112d41d05779b4e0119c040c25cc9fb8c3b836d9f21a539836d6dd31e8aef3bd846332e60a9b80e3f5191f0ec050bdc4
   languageName: node
   linkType: hard
 
@@ -18425,14 +18425,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vercel@npm:27.3.8":
-  version: 27.3.8
-  resolution: "vercel@npm:27.3.8"
+"vercel@npm:27.4.0":
+  version: 27.4.0
+  resolution: "vercel@npm:27.4.0"
   dependencies:
     "@vercel/build-utils": 5.3.0
-    "@vercel/go": 2.0.16
+    "@vercel/go": 2.1.0
     "@vercel/hydrogen": 0.0.13
-    "@vercel/next": 3.1.16
+    "@vercel/next": 3.1.17
     "@vercel/node": 2.5.7
     "@vercel/python": 3.1.8
     "@vercel/redwood": 1.0.17
@@ -18443,7 +18443,7 @@ __metadata:
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: c7776e702702a142a95330a83c625564d753bdd78eec99b8917f95e391f1e8e18f38ddd337e59c70d8e9cf83f18ea3c715903e5987bcae7755e408f8f1cd8488
+  checksum: 5d67037729b30208945ac6d95185d06ac759160a449213baade985dd08fc37ae914597c9c39f57555a8dedd0dc6144527862d0aec568003bcb5a11342be7bb37
   languageName: node
   linkType: hard
 
@@ -19116,7 +19116,7 @@ __metadata:
     ts-jest: 28.0.7
     ts-node: 10.9.1
     typescript: 4.7.4
-    vercel: 27.3.8
+    vercel: 27.4.0
   dependenciesMeta:
     open@7.4.2:
       unplugged: true
