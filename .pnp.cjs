@@ -73,7 +73,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ziyadedher/eslint-config", "npm:3.1.1"],\
             ["autoprefixer", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:10.4.8"],\
             ["babel-loader", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.2.5"],\
-            ["chromatic", "npm:6.7.3"],\
+            ["chromatic", "npm:6.7.4"],\
             ["classnames", "npm:2.3.1"],\
             ["codecov", "npm:3.8.3"],\
             ["eslint", "npm:8.21.0"],\
@@ -11575,10 +11575,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["chromatic", [\
-        ["npm:6.7.3", {\
-          "packageLocation": "./.yarn/cache/chromatic-npm-6.7.3-a75d426803-4e1cc61f42.zip/node_modules/chromatic/",\
+        ["npm:6.7.4", {\
+          "packageLocation": "./.yarn/cache/chromatic-npm-6.7.4-dfce6a03e4-87240eee64.zip/node_modules/chromatic/",\
           "packageDependencies": [\
-            ["chromatic", "npm:6.7.3"],\
+            ["chromatic", "npm:6.7.4"],\
             ["@discoveryjs/json-ext", "npm:0.5.7"],\
             ["@types/webpack-env", "npm:1.17.0"]\
           ],\
@@ -25743,7 +25743,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@ziyadedher/eslint-config", "npm:3.1.1"],\
             ["autoprefixer", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:10.4.8"],\
             ["babel-loader", "virtual:30db39058585b734b789f6f3fa634454f8381a894509a740a3ef3e5d9c2c38d8a398a69e8cfeb11fba238623cc1a08e69a1a4373741945642c2026ceda691401#npm:8.2.5"],\
-            ["chromatic", "npm:6.7.3"],\
+            ["chromatic", "npm:6.7.4"],\
             ["classnames", "npm:2.3.1"],\
             ["codecov", "npm:3.8.3"],\
             ["eslint", "npm:8.21.0"],\
