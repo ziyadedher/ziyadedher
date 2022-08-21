@@ -28,8 +28,6 @@ const useMatter = (
 ): Matter | null => {
   const createEngine = useCallback(() => {
     const engine = Engine.create({
-      positionIterations: 12,
-      velocityIterations: 8,
       gravity: { x: 0, y: 0 },
     });
     setupWorld(engine);

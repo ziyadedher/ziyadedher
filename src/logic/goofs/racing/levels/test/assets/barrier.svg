@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="135.71432"
+   height="79.205139"
+   viewBox="0 0 135.71432 79.205139"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="walls.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="level.svg"
+   inkscape:export-xdpi="512"
+   inkscape:export-ydpi="512"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="4.0563388"
+     inkscape:cx="63.234364"
+     inkscape:cy="173.92532"
+     inkscape:window-width="3840"
+     inkscape:window-height="2160"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid7790" />
+    <sodipodi:guide
+       position="150.50001,355.10473"
+       orientation="1,0"
+       id="guide8134"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="150.50001,110.10473"
+       orientation="0,-1"
+       id="guide8136"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect8403"
+       is_visible="true"
+       lpeversion="1"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-49.499985,-190.8996)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 50,235.001 c 0,-18.33333 0,-46.66667 25.00107,-43.33309 25.00107,3.33359 75.00007,38.33289 96.66645,56.66575 21.66639,18.33286 14.99986,19.9995 -10.00043,20.83292 C 136.6668,270 93.334333,270 71.667166,265.83375 50,261.6675 50,253.33433 50,235.001 Z"
+       id="path8401"
+       inkscape:path-effect="#path-effect8403"
+       inkscape:original-d="m 50,245 c 10e-4,-28.33233 10e-4,-56.66567 0,-85 50.002,35.0017 100.001,70.001 150,105 -6.6658,1.6677 -13.33233,3.33433 -20,5 -43.3332,10e-4 -86.665667,10e-4 -130,0 10e-4,-8.3325 10e-4,-16.66567 0,-25 z" />
+  </g>
+</svg>

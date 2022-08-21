@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="370"
+   height="370"
+   viewBox="0 0 370 370"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="walls.svg"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
+   inkscape:export-filename="level.svg"
+   inkscape:export-xdpi="512"
+   inkscape:export-ydpi="512"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="4.0563388"
+     inkscape:cx="63.234364"
+     inkscape:cy="173.92532"
+     inkscape:window-width="3840"
+     inkscape:window-height="2160"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showguides="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid7790" />
+    <sodipodi:guide
+       position="185,470"
+       orientation="1,0"
+       id="guide8134"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="185,225"
+       orientation="0,-1"
+       id="guide8136"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-15,-15)">
+    <rect
+       style="fill:#ffeeaa;stroke-width:34.585;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none"
+       id="rect8935"
+       width="45"
+       height="370"
+       x="15"
+       y="15" />
+    <rect
+       style="fill:#ffeeaa;stroke-width:34.5849;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none"
+       id="rect8935-9"
+       width="370"
+       height="45"
+       x="15"
+       y="15" />
+    <rect
+       style="fill:#ffeeaa;stroke-width:34.5849;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none"
+       id="rect8935-9-1"
+       width="370"
+       height="45"
+       x="15"
+       y="340" />
+    <rect
+       style="fill:#ffeeaa;stroke-width:34.585;stroke-linecap:round;stroke-linejoin:miter;stroke-dasharray:none"
+       id="rect8935-5"
+       width="45"
+       height="370"
+       x="340"
+       y="15" />
+  </g>
+</svg>

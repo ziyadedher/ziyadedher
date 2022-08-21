@@ -11,18 +11,26 @@ import React, {
   useState,
 } from "react";
 
-import { createPlayer, updatePlayer } from "../../../logic/goofs/racing/player";
+import {
+  updatePlayer,
+  initPlayerState,
+  handlePlayerCollisionStart,
+  handlePlayerCollisionEnd,
+} from "../../../logic/goofs/racing/player";
 import { createWorld } from "../../../logic/goofs/racing/world";
 import { useKeys } from "../../../utils/keys";
 import { useMatter } from "../../../utils/matter";
 import { useWindowDimensions } from "../../../utils/window";
 
 import type { Body as MatterBody, Engine as MatterEngine } from "matter-js";
+import { clamp } from "lodash";
 
 const Game: React.FunctionComponent = () => {
   const windowDimensions = useWindowDimensions();
   const canvasRef = useRef<HTMLCanvasElement>(null);
+
   const [playerBody, setPlayerBody] = useState<MatterBody | null>(null);
+  const [zoom, setZoom] = useState(1);
 
   const keys = useKeys();
   const keysRef = useRef(keys);
@@ -30,16 +38,14 @@ const Game: React.FunctionComponent = () => {
     keysRef.current = keys;
   }, [keys]);
 
-  const forcePlayer = useRef({ x: 0, y: 0 });
+  const playerState = useRef(initPlayerState());
   const steering = useRef(0);
 
   // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Engine
   const setupWorld = useCallback((engine: MatterEngine) => {
-    const world = createWorld();
-    MatterComposite.add(engine.world, world);
-
-    const player = createPlayer();
-    MatterComposite.add(engine.world, [player]);
+    const { player, level } = createWorld();
+    MatterComposite.add(engine.world, level);
+    MatterComposite.add(engine.world, player);
 
     MatterEvents.on(engine, "beforeUpdate", () => {
       const lastDelta = engine.timing.lastDelta * 0.001;
@@ -47,6 +53,7 @@ const Game: React.FunctionComponent = () => {
       let isForward = false;
       let isReverse = false;
       let isBrake = false;
+      let newIsZooming = false;
       keysRef.current.forEach((k) => {
         switch (k) {
           case "ArrowLeft":
@@ -64,6 +71,14 @@ const Game: React.FunctionComponent = () => {
           case "Space":
             isBrake = true;
             break;
+          case "Minus":
+            setZoom((value) => clamp(value - 0.01 * value ** 2, 0.5, 5));
+            newIsZooming = true;
+            break;
+          case "Equal":
+            setZoom((value) => clamp(value + 0.01 * value ** 2, 0.5, 5));
+            newIsZooming = true;
+            break;
           default:
         }
       });
@@ -79,17 +94,19 @@ const Game: React.FunctionComponent = () => {
         );
       }
 
-      forcePlayer.current = updatePlayer(
-        lastDelta,
-        player,
-        {
-          isForward,
-          isReverse,
-          isBrake,
-          steering: steering.current,
-        },
-        forcePlayer.current
-      );
+      playerState.current = updatePlayer(lastDelta, playerState.current, {
+        isForward,
+        isReverse,
+        isBrake,
+        steering: steering.current,
+      });
+    });
+
+    MatterEvents.on(engine, "collisionStart", (e) => {
+      playerState.current = handlePlayerCollisionStart(playerState.current, e);
+    });
+    MatterEvents.on(engine, "collisionEnd", (e) => {
+      playerState.current = handlePlayerCollisionEnd(playerState.current, e);
     });
 
     setPlayerBody(player);
@@ -98,8 +115,8 @@ const Game: React.FunctionComponent = () => {
   const renderOptions = useMemo(
     () => ({
       windowDimensions,
-      isDebug: true,
-      isWireframe: true,
+      isDebug: false,
+      isWireframe: false,
     }),
     [windowDimensions]
   );
@@ -111,16 +128,20 @@ const Game: React.FunctionComponent = () => {
     }
 
     if (playerBody !== null) {
+      playerState.current = {
+        ...playerState.current,
+        player: playerBody,
+      };
       MatterEvents.on(matter.engine, "afterUpdate", () => {
         MatterRender.lookAt(
           matter.render,
           [playerBody],
-          { x: 500, y: 500 },
+          { x: 500 / zoom, y: 500 / zoom },
           true
         );
       });
     }
-  }, [matter, playerBody]);
+  }, [matter, playerBody, zoom]);
 
   return (
     <div className="h-full w-full overflow-hidden">
