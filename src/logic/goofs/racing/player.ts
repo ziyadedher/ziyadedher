@@ -3,6 +3,12 @@ import {
   Body as MatterBody,
   Vector as MatterVector,
 } from "matter-js";
+import { clamp } from "lodash";
+
+import type {
+  Engine as MatterEngine,
+  IEventCollision as IMatterEventCollision,
+} from "matter-js";
 
 const GRAVITY = 9.81;
 const CAR_MASS = 1500.0;
@@ -17,19 +23,16 @@ const CAR_AXLE_WEIGHT_RATIO_REAR =
   CAR_CG_TO_FRONT_AXLE_LENGTH / CAR_WHEEL_BASE_LENGTH;
 const CAR_CG_HEIGHT = 0.55;
 const CAR_ENGINE_FORCE = 20000.0;
-const CAR_BRAKE_FORCE = 12000.0;
+const CAR_BRAKE_FORCE = 8000.0;
 const CAR_REVERSE_MULTIPLIER = 0.5;
 const CAR_TIRE_GRIP = 1.5;
-const CAR_MAX_STEER = 0.4;
-const CAR_WEIGHT_TRANSFER = 0.5;
-const CAR_CORNER_STIFFNESS_FRONT = 0.55;
-const CAR_CORNER_STIFFNESS_REAR = 0.5;
+const CAR_MAX_STEER = 0.5;
+const CAR_WEIGHT_TRANSFER = 1;
+const CAR_CORNER_STIFFNESS_FRONT = 0.2;
+const CAR_CORNER_STIFFNESS_REAR = 0.25;
 const CAR_AIR_RESISTANCE = 15;
 const CAR_ROLLING_RESISTANCE = 100 * CAR_AIR_RESISTANCE;
-const CAR_MAGIC_MODIFIER = 1.5;
-
-const clamp = (x: number, min: number, max: number): number =>
-  Math.min(max, Math.max(x, min));
+const CAR_MAGIC_MODIFIER = 1;
 
 // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Vector
 const clampVectorMagnitude = (vec: MatterVector, max: number): MatterVector =>
@@ -38,49 +41,73 @@ const clampVectorMagnitude = (vec: MatterVector, max: number): MatterVector =>
     clamp(MatterVector.magnitude(vec), 0, max)
   );
 
+interface PlayerState {
+  readonly player: MatterBody | null;
+  readonly currentForce: MatterVector;
+  readonly gripModifier: number;
+}
+
+const initPlayerState = (): PlayerState => ({
+  player: null,
+  currentForce: { x: 0, y: 0 },
+  gripModifier: 1,
+});
+
 const createPlayer = (): MatterBody =>
-  MatterBodies.rectangle(100, 500, 20, CAR_LENGTH * 10, {
+  MatterBodies.rectangle(0, 100, 20, CAR_LENGTH * 10, {
     label: "player",
-    frictionAir: 0,
     mass: CAR_MASS,
     chamfer: { radius: 5 },
+    frictionAir: 0,
+    render: {
+      // Pastel Red
+      fillStyle: "#FF6961",
+    },
   });
 
 const updatePlayer = (
   lastDelta: number,
   // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Body
-  player: MatterBody,
+  playerState: PlayerState,
   controls: {
     readonly isForward: boolean;
     readonly isReverse: boolean;
     readonly isBrake: boolean;
     readonly steering: number;
-  },
-  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Matter.Vector
-  forcePlayer: MatterVector
-): MatterVector => {
+  }
+): PlayerState => {
+  const { player } = playerState;
+  if (player === null) {
+    return playerState;
+  }
+
   const orientationPlayer = { x: 0, y: -1 };
   const velocityPlayer = MatterVector.rotate(player.velocity, -player.angle);
   const angularVelocityPlayer = player.angularVelocity;
 
   // Grip and weight shift
-  const tireGripFront = CAR_TIRE_GRIP;
-  const tireGripRear = CAR_TIRE_GRIP;
+  const tireGripFront = CAR_TIRE_GRIP * playerState.gripModifier;
+  const tireGripRear = CAR_TIRE_GRIP * playerState.gripModifier;
   const axleWeightFront =
     CAR_AXLE_WEIGHT_RATIO_FRONT * player.mass * GRAVITY -
-    CAR_WEIGHT_TRANSFER * (CAR_CG_HEIGHT / CAR_LENGTH) * forcePlayer.y;
+    CAR_WEIGHT_TRANSFER *
+      (CAR_CG_HEIGHT / CAR_LENGTH) *
+      playerState.currentForce.y;
   const axleWeightRear =
     CAR_AXLE_WEIGHT_RATIO_REAR * player.mass * GRAVITY +
-    CAR_WEIGHT_TRANSFER * (CAR_CG_HEIGHT / CAR_LENGTH) * forcePlayer.y;
+    CAR_WEIGHT_TRANSFER *
+      (CAR_CG_HEIGHT / CAR_LENGTH) *
+      playerState.currentForce.y;
 
   // Traction and braking
+  const engineForce = CAR_ENGINE_FORCE * clamp(player.speed / 10, 0.25, 1);
   const tractionForcePlayer = clampVectorMagnitude(
     controls.isForward
-      ? MatterVector.mult(orientationPlayer, CAR_ENGINE_FORCE)
+      ? MatterVector.mult(orientationPlayer, engineForce)
       : controls.isReverse
       ? MatterVector.mult(
           MatterVector.neg(orientationPlayer),
-          CAR_ENGINE_FORCE * CAR_REVERSE_MULTIPLIER
+          engineForce * CAR_REVERSE_MULTIPLIER
         )
       : { x: 0, y: 0 },
     axleWeightRear * tireGripRear
@@ -171,7 +198,7 @@ const updatePlayer = (
 
   if (
     MatterVector.magnitude(velocityPlayer) < 1e-1 &&
-    MatterVector.magnitude(velocityDeltaPlayer) < 1e-1
+    MatterVector.magnitude(velocityDeltaPlayer) < 1e-2
   ) {
     newForcePlayer = { x: 0, y: 0 };
     MatterBody.setVelocity(player, { x: 0, y: 0 });
@@ -179,7 +206,51 @@ const updatePlayer = (
     MatterBody.setAngularVelocity(player, 0);
   }
 
-  return newForcePlayer;
+  return {
+    ...playerState,
+    currentForce: newForcePlayer,
+  };
 };
 
-export { createPlayer, updatePlayer };
+const getPlayerCollisionLabels = (
+  event: IMatterEventCollision<MatterEngine>
+): string[] =>
+  event.pairs.flatMap((pair) =>
+    pair.bodyA.label === "player"
+      ? [pair.bodyB.label]
+      : pair.bodyB.label === "player"
+      ? [pair.bodyA.label]
+      : []
+  );
+
+const handlePlayerCollisionStart = (
+  playerState: PlayerState,
+  event: IMatterEventCollision<MatterEngine>
+): PlayerState => {
+  const newPlayerState = { ...playerState, gripModifier: 1 };
+  const collisionLabels = getPlayerCollisionLabels(event);
+  if (collisionLabels.some((label) => label.endsWith("-sand"))) {
+    newPlayerState.gripModifier = 0.25;
+  }
+  return newPlayerState;
+};
+
+const handlePlayerCollisionEnd = (
+  playerState: PlayerState,
+  event: IMatterEventCollision<MatterEngine>
+): PlayerState => {
+  const newPlayerState = { ...playerState, gripModifier: 1 };
+  const collisionLabels = getPlayerCollisionLabels(event);
+  if (collisionLabels.some((label) => label.endsWith("-sand"))) {
+    newPlayerState.gripModifier = 1;
+  }
+  return newPlayerState;
+};
+
+export {
+  initPlayerState,
+  createPlayer,
+  updatePlayer,
+  handlePlayerCollisionStart,
+  handlePlayerCollisionEnd,
+};
