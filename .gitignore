@@ -1,4 +1,4 @@
-# yarn pnp zero-install
+# yarn pnp
 .pnp.*
 .yarn/*
 !.yarn/patches
