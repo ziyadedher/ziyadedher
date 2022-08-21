@@ -15,7 +15,6 @@ const TextLink: React.FunctionComponent<TextLinkProps> = ({
   isExternal = false,
   children,
 }) => (
-  // eslint-disable-next-line tailwindcss/no-custom-classname -- not-prose is in alpha.
   <span className="not-prose underline transition-all hover:opacity-70">
     <Link href={href} passHref>
       <Anchor shouldOpenInNewPage={isExternal}>{children}</Anchor>
