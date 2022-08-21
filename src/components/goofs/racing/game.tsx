@@ -1,3 +1,4 @@
+import { clamp } from "lodash";
 import {
   Composite as MatterComposite,
   Events as MatterEvents,
@@ -12,10 +13,10 @@ import React, {
 } from "react";
 
 import {
-  updatePlayer,
-  initPlayerState,
-  handlePlayerCollisionStart,
   handlePlayerCollisionEnd,
+  handlePlayerCollisionStart,
+  initPlayerState,
+  updatePlayer,
 } from "../../../logic/goofs/racing/player";
 import { createWorld } from "../../../logic/goofs/racing/world";
 import { useKeys } from "../../../utils/keys";
@@ -23,7 +24,6 @@ import { useMatter } from "../../../utils/matter";
 import { useWindowDimensions } from "../../../utils/window";
 
 import type { Body as MatterBody, Engine as MatterEngine } from "matter-js";
-import { clamp } from "lodash";
 
 const Game: React.FunctionComponent = () => {
   const windowDimensions = useWindowDimensions();
@@ -53,7 +53,6 @@ const Game: React.FunctionComponent = () => {
       let isForward = false;
       let isReverse = false;
       let isBrake = false;
-      let newIsZooming = false;
       keysRef.current.forEach((k) => {
         switch (k) {
           case "ArrowLeft":
@@ -73,11 +72,9 @@ const Game: React.FunctionComponent = () => {
             break;
           case "Minus":
             setZoom((value) => clamp(value - 0.01 * value ** 2, 0.5, 5));
-            newIsZooming = true;
             break;
           case "Equal":
             setZoom((value) => clamp(value + 0.01 * value ** 2, 0.5, 5));
-            newIsZooming = true;
             break;
           default:
         }
