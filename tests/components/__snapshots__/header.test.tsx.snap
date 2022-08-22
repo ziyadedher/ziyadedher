@@ -9,7 +9,7 @@ Object {
         class="flex flex-col items-center text-center"
       >
         <div
-          class="text-2xl font-light uppercase transition-all hover:opacity-70"
+          class="text-lg font-light lowercase transition-all hover:opacity-70"
         >
           <a
             class="group"
@@ -33,9 +33,9 @@ Object {
             >
               <svg
                 fill="currentColor"
-                height="24"
+                height="20"
                 viewBox="0 0 256 256"
-                width="24"
+                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
@@ -66,9 +66,9 @@ Object {
             >
               <svg
                 fill="currentColor"
-                height="24"
+                height="20"
                 viewBox="0 0 256 256"
-                width="24"
+                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
@@ -138,9 +138,9 @@ Object {
             >
               <svg
                 fill="currentColor"
-                height="24"
+                height="20"
                 viewBox="0 0 256 256"
-                width="24"
+                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
@@ -203,9 +203,9 @@ Object {
             >
               <svg
                 fill="currentColor"
-                height="24"
+                height="20"
                 viewBox="0 0 256 256"
-                width="24"
+                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
@@ -262,9 +262,9 @@ Object {
             >
               <svg
                 fill="currentColor"
-                height="24"
+                height="20"
                 viewBox="0 0 256 256"
-                width="24"
+                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
@@ -320,9 +320,9 @@ Object {
             >
               <svg
                 fill="currentColor"
-                height="24"
+                height="20"
                 viewBox="0 0 256 256"
-                width="24"
+                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
@@ -374,9 +374,9 @@ Object {
             >
               <svg
                 fill="currentColor"
-                height="24"
+                height="20"
                 viewBox="0 0 256 256"
-                width="24"
+                width="20"
                 xmlns="http://www.w3.org/2000/svg"
               >
                 <rect
@@ -423,7 +423,7 @@ Object {
       class="flex flex-col items-center text-center"
     >
       <div
-        class="text-2xl font-light uppercase transition-all hover:opacity-70"
+        class="text-lg font-light lowercase transition-all hover:opacity-70"
       >
         <a
           class="group"
@@ -447,9 +447,9 @@ Object {
           >
             <svg
               fill="currentColor"
-              height="24"
+              height="20"
               viewBox="0 0 256 256"
-              width="24"
+              width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
@@ -480,9 +480,9 @@ Object {
           >
             <svg
               fill="currentColor"
-              height="24"
+              height="20"
               viewBox="0 0 256 256"
-              width="24"
+              width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
@@ -552,9 +552,9 @@ Object {
           >
             <svg
               fill="currentColor"
-              height="24"
+              height="20"
               viewBox="0 0 256 256"
-              width="24"
+              width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
@@ -617,9 +617,9 @@ Object {
           >
             <svg
               fill="currentColor"
-              height="24"
+              height="20"
               viewBox="0 0 256 256"
-              width="24"
+              width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
@@ -676,9 +676,9 @@ Object {
           >
             <svg
               fill="currentColor"
-              height="24"
+              height="20"
               viewBox="0 0 256 256"
-              width="24"
+              width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
@@ -734,9 +734,9 @@ Object {
           >
             <svg
               fill="currentColor"
-              height="24"
+              height="20"
               viewBox="0 0 256 256"
-              width="24"
+              width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
@@ -788,9 +788,9 @@ Object {
           >
             <svg
               fill="currentColor"
-              height="24"
+              height="20"
               viewBox="0 0 256 256"
-              width="24"
+              width="20"
               xmlns="http://www.w3.org/2000/svg"
             >
               <rect
