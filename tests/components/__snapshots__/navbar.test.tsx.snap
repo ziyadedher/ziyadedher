@@ -20,6 +20,16 @@ Object {
         </a>
         <a
           class="group"
+          href="/blog"
+        >
+          <span
+            class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-100"
+          >
+            Blog
+          </span>
+        </a>
+        <a
+          class="group"
           href="/hacks"
         >
           <span
@@ -43,6 +53,16 @@ Object {
           class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-100"
         >
           Home
+        </span>
+      </a>
+      <a
+        class="group"
+        href="/blog"
+      >
+        <span
+          class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-100"
+        >
+          Blog
         </span>
       </a>
       <a
@@ -131,6 +151,16 @@ Object {
         </a>
         <a
           class="group"
+          href="/blog"
+        >
+          <span
+            class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-100"
+          >
+            Blog
+          </span>
+        </a>
+        <a
+          class="group"
           href="/hacks"
         >
           <span
@@ -154,6 +184,16 @@ Object {
           class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-70"
         >
           Home
+        </span>
+      </a>
+      <a
+        class="group"
+        href="/blog"
+      >
+        <span
+          class="uppercase font-light text-sm group-hover:opacity-50 transition-all opacity-100"
+        >
+          Blog
         </span>
       </a>
       <a
