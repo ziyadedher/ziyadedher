@@ -3,15 +3,18 @@ import Head from "next/head";
 import { NavbarPage } from "../../components/navbar";
 import PageContainer, { PageStyle } from "../../components/page_container";
 
-import { METADATA as SecurityDotTxtMetadata } from "./security.txt";
-
 import type { BlogPostMetadata } from "../../components/blog_post";
 import type { NextPage } from "next";
 import TextLink from "../../components/links/text";
 
-const ENTRIES: readonly BlogPostMetadata[] = [SecurityDotTxtMetadata].sort(
-  (a, b) => b.publishedAt.getTime() - a.publishedAt.getTime()
-);
+const ENTRIES: readonly BlogPostMetadata[] = [
+  {
+    title: "Nothing here yet...",
+    url: "https://ziyadedher.com",
+    description: "Stay tuned!",
+    publishedAt: new Date("2022-08-21T18:38:00-0700"),
+  },
+].sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
 
 const Index: NextPage = () => (
   <>
