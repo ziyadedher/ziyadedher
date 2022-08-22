@@ -30,13 +30,17 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
     <PageContainer hasHeader hasNavbar navbarPage={NavbarPage.HOME}>
       <div className="mx-auto flex max-w-5xl grow-0 flex-row justify-center gap-8 py-8">
         <div className="prose flex flex-1 flex-col text-sm font-light">
-          <p className="text-3xl">yo</p>
+          <p className="text-3xl">waddup nerd</p>
           <p>
             My name is Ziyad Edher (زياد إضهير), I&apos;m a software engineer
-            and I like breaking things.
+            and I like breaking things.{" "}
+            <TextLink href="https://twitter.com/ziyadedher">
+              Follow me on Twitter
+            </TextLink>{" "}
+            for sick memes and sicker shitposts.
           </p>
           <p>
-            Right now, I&apos;m doing security work at{" "}
+            I&apos;m do product security at{" "}
             <TextLink href="https://asana.com?noredirect" isExternal>
               Asana
             </TextLink>
@@ -62,28 +66,27 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             >
               Spotify
             </TextLink>
-            ), good software engineering, cryptocurrencies, and doing stuff in
-            nature. Hit me up if you wanna talk about that stuff or anything
-            else, it&apos;s not like I have anything better to do.
+            ), good software engineering, Ethereum, and talking with folks about
+            things they're passionate about.
           </p>
           <p className="mb-1">Some maybe cool things I did in the past:</p>
           <ul className="mt-0">
             <li>
-              Building ML and data infrastructure at{" "}
+              Built ML and data infrastructure at{" "}
               <TextLink href="https://www.citadelsecurities.com/" isExternal>
                 Citadel Securities
               </TextLink>
               .
             </li>
             <li>
-              Designing software that protects{" "}
+              Designed software that protects{" "}
               <TextLink href="https://asana.com?noredirect" isExternal>
                 Asana
               </TextLink>{" "}
               users against scammers and bots.
             </li>
             <li>
-              Interning at{" "}
+              Interned at{" "}
               <TextLink href="https://google.com" isExternal>
                 Google
               </TextLink>{" "}
@@ -98,7 +101,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
               .
             </li>
             <li>
-              Teaching cars how to drive at{" "}
+              Taught cars how to drive at{" "}
               <TextLink href="https://www.autodrive.utoronto.ca/" isExternal>
                 aUToronto
               </TextLink>
@@ -106,12 +109,12 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             </li>
           </ul>
           <p>
-            There used to be more content here but I got bored of keeping it up
-            to date so go{" "}
-            <TextLink href="https://twitter.com/ziyadedher">
-              follow me on Twitter
+            If you're a meganerd, here's my{" "}
+            <TextLink href="https://storage.ziyadedher.com/pgp.asc" isExternal>
+              PGP key
             </TextLink>{" "}
-            or something instead.
+            (fingerprint: CB5D A985 9769 0CC1). You can probably find some
+            places to verify this if you don&apos;t wanna trust GCP.
           </p>
         </div>
         <div className="hidden h-min max-w-md overflow-hidden rounded-3xl shadow-inner xl:flex">
