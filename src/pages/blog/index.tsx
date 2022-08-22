@@ -1,11 +1,11 @@
 import Head from "next/head";
 
+import TextLink from "../../components/links/text";
 import { NavbarPage } from "../../components/navbar";
 import PageContainer, { PageStyle } from "../../components/page_container";
 
 import type { BlogPostMetadata } from "../../components/blog_post";
 import type { NextPage } from "next";
-import TextLink from "../../components/links/text";
 
 const ENTRIES: readonly BlogPostMetadata[] = [
   {
@@ -14,6 +14,7 @@ const ENTRIES: readonly BlogPostMetadata[] = [
     description: "Stay tuned!",
     publishedAt: new Date("2022-08-21T18:38:00-0700"),
   },
+  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Date
 ].sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
 
 const Index: NextPage = () => (
@@ -33,7 +34,7 @@ const Index: NextPage = () => (
       pageStyle={PageStyle.LIGHT}
     >
       <div className="mx-auto flex w-full max-w-sm flex-col gap-12 pt-8 font-light">
-        <div className="flex flex-col gap-4 text-center self-center">
+        <div className="flex flex-col gap-4 self-center text-center">
           <h1 className="text-4xl">Ziyad&apos;s Blog</h1>
           <h2 className="text-lg text-gray-600">
             I write things sometimes about technology, security, software
@@ -50,7 +51,7 @@ const Index: NextPage = () => (
                     <TextLink href={metadata.url}>
                       <h3 className="text-lg">{metadata.title}</h3>
                     </TextLink>
-                    <h4 className="text-gray-500 text-sm">
+                    <h4 className="text-sm text-gray-500">
                       {metadata.publishedAt.toDateString()}
                     </h4>
                   </div>
