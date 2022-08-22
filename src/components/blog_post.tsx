@@ -47,7 +47,7 @@ const BlogPost: React.FunctionComponent<BlogPostProps> = ({
       navbarPage={NavbarPage.BLOG}
       pageStyle={PageStyle.LIGHT}
     >
-      <div className="prose mx-auto flex max-w-5xl flex-row justify-center gap-8 py-8 font-light lg:prose-xl">
+      <div className="prose mx-auto flex max-w-5xl flex-col items-center py-8 font-light">
         {children}
       </div>
     </PageContainer>
