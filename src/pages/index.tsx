@@ -67,7 +67,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
               Spotify
             </TextLink>
             ), good software engineering, Ethereum, and talking with folks about
-            things they're passionate about.
+            things they&apos;re passionate about.
           </p>
           <p className="mb-1">Some maybe cool things I did in the past:</p>
           <ul className="mt-0">
@@ -109,7 +109,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             </li>
           </ul>
           <p>
-            If you're a meganerd, here's my{" "}
+            If you&apos;re a meganerd, here&apos;s my{" "}
             <TextLink href="https://storage.ziyadedher.com/pgp.asc" isExternal>
               PGP key
             </TextLink>{" "}
