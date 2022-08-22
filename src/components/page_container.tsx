@@ -8,6 +8,7 @@ import type { NavbarPage } from "./navbar";
 
 enum PageStyle {
   LIGHT = "",
+  DARK = "dark",
   HACKER = "text-green-500 bg-gray-900",
 }
 interface PageContainerProps {
@@ -27,7 +28,7 @@ const PageContainer: React.FunctionComponent<PageContainerProps> = ({
   pageStyle = PageStyle.LIGHT,
 }) => (
   <div className={cx("flex flex-col min-h-screen items-center", pageStyle)}>
-    <div className="flex w-full grow flex-col items-center">
+    <div className="flex w-full grow flex-col items-center dark:bg-gray-900 dark:text-gray-300">
       <div className="my-8 flex flex-col space-y-4">
         {hasHeader ? <Header /> : null}
         {hasNavbar ? <Navbar currentPage={navbarPage} /> : null}

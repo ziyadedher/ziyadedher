@@ -6,6 +6,7 @@ import Anchor from "../logic/anchor";
 
 enum NavbarPage {
   HOME = "/",
+  BLOG = "/blog",
   HACKS = "/hacks",
 }
 
@@ -49,6 +50,12 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({
       linkName="Home"
       linkUrl={NavbarPage.HOME}
       isCurrentPage={currentPage === NavbarPage.HOME}
+    />
+    <NavbarPageEntry
+      page={NavbarPage.BLOG}
+      linkName="Blog"
+      linkUrl={NavbarPage.BLOG}
+      isCurrentPage={currentPage === NavbarPage.BLOG}
     />
     <NavbarPageEntry
       page={NavbarPage.HACKS}
