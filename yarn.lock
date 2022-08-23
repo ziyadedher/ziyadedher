@@ -4814,10 +4814,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/go@npm:2.2.0":
-  version: 2.2.0
-  resolution: "@vercel/go@npm:2.2.0"
-  checksum: 03840a878c7174fcd3fdecd2af519519bdf7d128e7c7b7cec03eecba3abe5192c265d24071aa77b602546cc7b7e69c60195c91b6692a6df8da6a3363daf33594
+"@vercel/go@npm:2.2.1":
+  version: 2.2.1
+  resolution: "@vercel/go@npm:2.2.1"
+  checksum: b74865d39c735dc203a18be59d85b743e7ef6a024998d64ea82a1e0ccd3521cd0387a6189319d85c758270722f702b74dbf7d35be9d84dc890cd2173aa570849
   languageName: node
   linkType: hard
 
@@ -18437,12 +18437,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vercel@npm:28.1.1":
-  version: 28.1.1
-  resolution: "vercel@npm:28.1.1"
+"vercel@npm:28.1.2":
+  version: 28.1.2
+  resolution: "vercel@npm:28.1.2"
   dependencies:
     "@vercel/build-utils": 5.3.1
-    "@vercel/go": 2.2.0
+    "@vercel/go": 2.2.1
     "@vercel/hydrogen": 0.0.14
     "@vercel/next": 3.1.20
     "@vercel/node": 2.5.8
@@ -18455,7 +18455,7 @@ __metadata:
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: a24f32b69847ac10789714b67b26de1f25388b767ef499a73a827860d58e2df3c68c571a9860e72b889f2153b6f6d5d240bb7cb1c167ec86d5f2b4530558ace9
+  checksum: 9b642312ae81f9f7e2848f2d5ef28b680325ccfa7b37376608879666062d82e93f7d5e3baacc1fe7a42d78a339dce90dd6288f7e6336c697e6c6a3335bb7851d
   languageName: node
   linkType: hard
 
@@ -19127,7 +19127,7 @@ __metadata:
     ts-jest: 28.0.8
     ts-node: 10.9.1
     typescript: 4.7.4
-    vercel: 28.1.1
+    vercel: 28.1.2
   languageName: unknown
   linkType: soft
 
