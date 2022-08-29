@@ -6260,10 +6260,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"blurhash@npm:1.1.4":
-  version: 1.1.4
-  resolution: "blurhash@npm:1.1.4"
-  checksum: 99a521ff35076f9182cd1c4d458a7aeac43cc101f13cc79f9cfdb8e6c97da6e33963496a1f5c950168b79001d0f17c97d0d57e75703363c3c4c31f97b28008f8
+"blurhash@npm:1.1.5":
+  version: 1.1.5
+  resolution: "blurhash@npm:1.1.5"
+  checksum: 8a647024948552e7250d4f123a0dc2a56941be476811c1c999b182cde01e6e15cc6938a8c523f1a2fea8c0dc12c1fffc1cf2001b86683e196bed03e88e176af2
   languageName: node
   linkType: hard
 
@@ -8309,7 +8309,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"encoding@npm:^0.1.13":
+"encoding@npm:0.1.13, encoding@npm:^0.1.13":
   version: 0.1.13
   resolution: "encoding@npm:0.1.13"
   dependencies:
@@ -10936,14 +10936,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"image-size@npm:1.0.0":
-  version: 1.0.0
-  resolution: "image-size@npm:1.0.0"
+"image-size@npm:1.0.2":
+  version: 1.0.2
+  resolution: "image-size@npm:1.0.2"
   dependencies:
     queue: 6.0.2
   bin:
     image-size: bin/image-size.js
-  checksum: 2d9d1edc43c0fa8effd27c44cd2d1b02ecc963219e78a76ac80b9d363f69c5aa19990cc23a323959ea510742ff07667e231f0852fd57eba5dc5b55432b58106d
+  checksum: 01745fdb47f87cecf538e69c63f9adc5bfab30a345345c2de91105f3afbd1bfcfba1256af02bf3323077b33b0004469a837e077bf0cbb9c907e9c1e9e7547585
   languageName: node
   linkType: hard
 
@@ -14619,17 +14619,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"plaiceholder@npm:2.4.0":
-  version: 2.4.0
-  resolution: "plaiceholder@npm:2.4.0"
+"plaiceholder@npm:2.5.0":
+  version: 2.5.0
+  resolution: "plaiceholder@npm:2.5.0"
   dependencies:
-    blurhash: 1.1.4
-    image-size: 1.0.0
+    blurhash: 1.1.5
+    encoding: 0.1.13
+    image-size: 1.0.2
     node-cache: 5.1.2
     node-fetch: 2.6.7
   peerDependencies:
     sharp: ">= 0.30.6"
-  checksum: 47198039b904ba9d1393b36cf44060027a63a662a5acf7ef733a8d974a7c64af11aafdb692949cad63e2d28973611a686532a39eee1884fed8cf4c44d52b19d0
+  checksum: 8fde0744094abdf1db33fba647669836a0a7069f150524a75b104f1c76e7c61766a85e1eb693430c0bf291709f9becf596a8ab483d240ce22a668e6ab5c5e64e
   languageName: node
   linkType: hard
 
@@ -19029,7 +19030,7 @@ __metadata:
     node-notifier: 10.0.1
     onnxruntime-web: 1.12.1
     phosphor-react: 1.4.1
-    plaiceholder: 2.4.0
+    plaiceholder: 2.5.0
     postcss: 8.4.16
     prettier: 2.7.1
     random-js: 2.1.0
