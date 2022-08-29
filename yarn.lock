@@ -2426,13 +2426,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@plaiceholder/next@npm:2.4.0":
-  version: 2.4.0
-  resolution: "@plaiceholder/next@npm:2.4.0"
+"@plaiceholder/next@npm:2.5.0":
+  version: 2.5.0
+  resolution: "@plaiceholder/next@npm:2.5.0"
   peerDependencies:
     next: ">= 10.0.0"
     sharp: ">= 0.30.6"
-  checksum: 4b54695b20181a42a7fb41a9a2b7f7d7a2aba7aa4bf04a6da81c3bd866fdb90cc15791c464f9921caf313cd8b858ff0e206e177291e9efc011ce52bb2e6b03d4
+  checksum: a10ffc75d5190638a7a2e5b0372a675f00a4b7afc49080fc258590e48771a4521558199a7a16bd2738d4873249450a26d398c1fec7dae3b521061af95a4ea693
   languageName: node
   linkType: hard
 
@@ -18976,7 +18976,7 @@ __metadata:
     "@monaco-editor/react": 4.4.5
     "@next/env": 12.2.5
     "@next/eslint-plugin-next": 12.2.5
-    "@plaiceholder/next": 2.4.0
+    "@plaiceholder/next": 2.5.0
     "@storybook/addon-actions": 6.5.10
     "@storybook/addon-docs": 6.5.10
     "@storybook/addon-essentials": 6.5.10
