@@ -3753,16 +3753,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tailwindcss/typography@npm:0.5.4":
-  version: 0.5.4
-  resolution: "@tailwindcss/typography@npm:0.5.4"
+"@tailwindcss/typography@npm:0.5.6":
+  version: 0.5.6
+  resolution: "@tailwindcss/typography@npm:0.5.6"
   dependencies:
     lodash.castarray: ^4.4.0
     lodash.isplainobject: ^4.0.6
     lodash.merge: ^4.6.2
+    postcss-selector-parser: 6.0.10
   peerDependencies:
     tailwindcss: "*"
-  checksum: 016f27266e07fd9966ab785c4182e5ad97c06a2198ff8df739cac90a544ee9c7ac2ac968a4fe9280a1378c3ac8943a315a9f09e70085f21f2839ebc080c88fd8
+  checksum: 57f382935682511422d7ec5859749c117045a166461b82aab29af2e9ac345c754f8f8494274fdb0d2375cdfb87052330073b070fc6a5113a0bbed5ae685b5a2d
   languageName: node
   linkType: hard
 
@@ -14858,7 +14859,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-selector-parser@npm:^6.0.0, postcss-selector-parser@npm:^6.0.10, postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.6":
+"postcss-selector-parser@npm:6.0.10, postcss-selector-parser@npm:^6.0.0, postcss-selector-parser@npm:^6.0.10, postcss-selector-parser@npm:^6.0.2, postcss-selector-parser@npm:^6.0.6":
   version: 6.0.10
   resolution: "postcss-selector-parser@npm:6.0.10"
   dependencies:
@@ -19058,7 +19059,7 @@ __metadata:
     "@storybook/addon-postcss": 2.0.0
     "@storybook/react": 6.5.10
     "@tailwindcss/forms": 0.5.2
-    "@tailwindcss/typography": 0.5.4
+    "@tailwindcss/typography": 0.5.6
     "@testing-library/jest-dom": 5.16.5
     "@testing-library/react": 13.3.0
     "@testing-library/react-hooks": 8.0.1
