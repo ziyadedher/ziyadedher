@@ -74,7 +74,7 @@
     "@ziyadedher/eslint-config": "3.1.1",
     "autoprefixer": "10.4.8",
     "babel-loader": "8.2.5",
-    "chromatic": "6.8.1",
+    "chromatic": "6.9.0",
     "codecov": "3.8.3",
     "eslint": "8.23.0",
     "eslint-import-resolver-node": "0.3.6",
