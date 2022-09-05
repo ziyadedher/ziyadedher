@@ -115,7 +115,7 @@ const SecurityDotTxt: NextPage<SecurityDotTxtProps> = ({
       <p>
         Only 737 of the top 10,000 sites
         <sup>2</sup> have a security.txt &mdash; 7.37%. The top 1,000 and 100
-        predictably have better progressively more adoption at 13.2% and 28%
+        predictably have progressively more adoption at 13.2% and 28%
         respectively.
       </p>
       <div className="mx-auto my-8 grid grid-cols-3">
@@ -244,8 +244,8 @@ const SecurityDotTxt: NextPage<SecurityDotTxtProps> = ({
         security.txt registry) for sites with security.txt files. Once I find
         one I launch some automated web vulnerability scanner and just forward
         the report to the security contact with a note that says &ldquo;You can
-        send the bounty money to ziyad.edher@gmail.com&rdquo;. Something ought
-        to stick.
+        send the bounty money to paypal@example.org&rdquo;. Something ought to
+        stick.
       </p>
       <p>
         That totally happens. And it&apos;s can be annoying. But there&apos;s a
