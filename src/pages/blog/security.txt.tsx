@@ -13,8 +13,9 @@ import type { GetStaticProps, NextPage } from "next";
 const METADATA: BlogPostMetadata = {
   url: "/blog/security.txt",
   title: "State of the Security.txt",
-  description: "We have RFC9116, where is all the security.txt?",
-  publishedAt: new Date("2022-09-05"),
+  description:
+    "We have RFC9116, where is the security.txt? An analysis and overview of our experience deploying it to a site with millions of daily active users.",
+  publishedAt: new Date("2022-09-05 09:00 PST"),
 };
 
 interface TopNBreakdownChartProps {
@@ -136,8 +137,8 @@ const SecurityDotTxt: NextPage<SecurityDotTxtProps> = ({
             datasets: [
               {
                 data: [216, 512],
-                backgroundColor: ["#60a5fa", "#94a3b8"],
-                hoverBackgroundColor: ["#93c5fd", "#cbd5e1"],
+                backgroundColor: ["#60a5fa", "#d6d3d1"],
+                hoverBackgroundColor: ["#93c5fd", "#e7e5e4"],
               },
             ],
           }}
@@ -308,6 +309,65 @@ const SecurityDotTxt: NextPage<SecurityDotTxtProps> = ({
         the reporter).
       </p>
       <p>
+        <b>Less than 7.5% of reports reach the security team.</b>
+      </p>
+      <div className="mx-auto grid grid-cols-2 my-8 w-2/3">
+        <Chart
+          type="doughnut"
+          data={{
+            labels: ["Escalated", "Not Escalated"],
+            datasets: [
+              {
+                data: [35, 414 + 96 - 35],
+                backgroundColor: ["#f87171", "#d6d3d1"],
+                hoverBackgroundColor: ["#fca5a5", "#e7e5e4"],
+              },
+            ],
+          }}
+          options={{
+            indexAxis: "y",
+            plugins: {
+              legend: {
+                display: false,
+              },
+              title: {
+                display: true,
+                text: "Past year",
+              },
+            },
+          }}
+        />
+        <Chart
+          type="doughnut"
+          data={{
+            labels: ["Escalated", "Not Escalated"],
+            datasets: [
+              {
+                data: [14, 157 + 30 - 14],
+                backgroundColor: ["#f87171", "#d6d3d1"],
+                hoverBackgroundColor: ["#fca5a5", "#e7e5e4"],
+              },
+            ],
+          }}
+          options={{
+            indexAxis: "y",
+            plugins: {
+              legend: {
+                display: false,
+              },
+              title: {
+                display: true,
+                text: "Since deploying security.txt",
+              },
+            },
+          }}
+        />
+      </div>
+      <p>
+        To me, this says that our vulnerability reporting and intake process is
+        going pretty well.
+      </p>
+      <p>
         That said, if you&apos;re interested in helping us improve all this and
         more as part of a growing, collaborative, and well-supported team,
         we&apos;re hiring a{" "}
@@ -320,9 +380,10 @@ const SecurityDotTxt: NextPage<SecurityDotTxtProps> = ({
 
     <section>
       <h3>Conclusion</h3>
-      Your organization should probably have a security.txt. I&apos;d be curious
-      to here from you if you tried but ended up removing your security.txt. DM
-      me on{" "}
+      Your organization should probably have a security.txt. If it&apos;s too
+      much effort to maintain then that might be indicative of underinvestment
+      in vulnerability management. I&apos;d be curious to here from you if you
+      tried but ended up removing your security.txt. DM me on{" "}
       <TextLink href="https://twitter.com/ziyadedher" isExternal>
         Twitter
       </TextLink>{" "}
