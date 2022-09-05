@@ -311,7 +311,7 @@ const SecurityDotTxt: NextPage<SecurityDotTxtProps> = ({
       <p>
         <b>Less than 7.5% of reports reach the security team.</b>
       </p>
-      <div className="mx-auto grid grid-cols-2 my-8 w-2/3">
+      <div className="mx-auto my-8 grid w-2/3 grid-cols-2">
         <Chart
           type="doughnut"
           data={{
