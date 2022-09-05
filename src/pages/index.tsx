@@ -1,7 +1,7 @@
 import Head from "next/head";
-// eslint-disable-next-line @typescript-eslint/no-shadow -- Next.js Image
-import Image from "next/image";
 
+// eslint-disable-next-line @typescript-eslint/no-shadow -- custom Image
+import Image from "../components/image";
 import TextLink from "../components/links/text";
 import { NavbarPage } from "../components/navbar";
 import PageContainer from "../components/page_container";
@@ -12,12 +12,12 @@ import type { ImageWithBlur } from "../logic/image_with_blur";
 import type { GetStaticProps, NextPage } from "next";
 
 interface IndexProps {
-  readonly imageBlur: {
+  readonly images: {
     readonly ziyadedher: ImageWithBlur;
   };
 }
 
-const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
+const Index: NextPage<IndexProps> = ({ images }: IndexProps) => (
   <>
     <Head>
       <title>Ziyad Edher | Software Engineer</title>
@@ -120,11 +120,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
         <div className="hidden h-min max-w-md overflow-hidden rounded-3xl shadow-inner xl:flex">
           <Image
             alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
-            src={imageBlur.ziyadedher.url}
-            width={imageBlur.ziyadedher.width}
-            height={imageBlur.ziyadedher.height}
-            placeholder="blur"
-            blurDataURL={imageBlur.ziyadedher.blurData}
+            image={images.ziyadedher}
           />
         </div>
       </div>
@@ -132,20 +128,13 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
   </>
 );
 
-const getStaticProps: GetStaticProps<IndexProps> = async () => {
-  const ziyadedherImageWithBlur = await getImageWithBlur(
-    getStorageURI("ziyadedher.jpg"),
-    40
-  );
-
-  return {
-    props: {
-      imageBlur: {
-        ziyadedher: ziyadedherImageWithBlur,
-      },
+const getStaticProps: GetStaticProps<IndexProps> = async () => ({
+  props: {
+    images: {
+      ziyadedher: await getImageWithBlur(getStorageURI("ziyadedher.jpg"), 40),
     },
-  };
-};
+  },
+});
 
 export { getStaticProps };
 export default Index;
