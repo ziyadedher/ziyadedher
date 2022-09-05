@@ -40,7 +40,7 @@ const Index: NextPage<IndexProps> = ({ imageBlur }: IndexProps) => (
             for sick memes and sicker shitposts.
           </p>
           <p>
-            I&apos;m do product security at{" "}
+            I do product security at{" "}
             <TextLink href="https://asana.com?noredirect" isExternal>
               Asana
             </TextLink>
