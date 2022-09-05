@@ -8,6 +8,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "next-sitemap",
     "start": "next start",
     "deploy": "vercel deploy",
     "lint": "eslint 'src/**' 'tests/**' 'stories/**'",
@@ -27,6 +28,7 @@
     "jest-environment-jsdom": "28.1.3",
     "monaco-editor": "0.34.0",
     "next": "12.2.5",
+    "next-sitemap": "^3.1.21",
     "onnxruntime-web": "1.12.1",
     "phosphor-react": "1.4.1",
     "plaiceholder": "2.5.0",
