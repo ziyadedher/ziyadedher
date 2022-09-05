@@ -59,11 +59,11 @@ const BlogPost: React.FunctionComponent<BlogPostProps> = ({
     >
       <article className="prose mx-auto flex max-w-2xl flex-col py-8">
         <section className="text-center">
-          <h1 className="mb-8 text-5xl font-normal">{title}</h1>
-          <h2 className="mb-2 text-xl font-light">{description}</h2>
-          <h3 className="mb-4 text-sm font-light text-gray-600">
+          <h3 className="text-sm font-light text-gray-600">
             {publishedAt.toDateString()}
           </h3>
+          <h1 className="text-5xl font-normal">{title}</h1>
+          <h2 className="text-xl font-light">{description}</h2>
           {typeof coverImage === "undefined" ? null : (
             <div className="mb-8">
               <Image alt={coverImage.alt} image={coverImage} />
