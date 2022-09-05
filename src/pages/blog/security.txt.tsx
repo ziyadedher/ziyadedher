@@ -398,6 +398,20 @@ const SecurityDotTxt: NextPage<SecurityDotTxtProps> = ({
         <TextLink href="https://twitter.com/ziyadedher" isExternal>
           Twitter
         </TextLink>
+        . The code I used to generate the adoption data is{" "}
+        <TextLink
+          href="https://github.com/ziyadedher/writing/tree/main/security.txt"
+          isExternal
+        >
+          on GitHub
+        </TextLink>
+        . The code for this blog post is also{" "}
+        <TextLink
+          href="https://github.com/ziyadedher/ziyadedher/tree/main/src/pages/blog/security.txt.tsx"
+          isExternal
+        >
+          on GitHub
+        </TextLink>
         .
       </p>
       <p className="font-bold">Footnotes</p>
