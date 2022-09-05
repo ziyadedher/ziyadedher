@@ -26,5 +26,4 @@ const CONFIG = {
   ],
 };
 
-// eslint-disable-next-line @typescript-eslint/no-unsafe-assignment -- exception for configuration files.
 module.exports = withPlaiceholder(CONFIG);

@@ -1620,6 +1620,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@corex/deepmerge@npm:^4.0.29":
+  version: 4.0.29
+  resolution: "@corex/deepmerge@npm:4.0.29"
+  checksum: 78626fd29cb9cbd2953ce5a06f963132c9b4837bb76397982d255131533b61c3ef447f0d295f300aa6b2c3ead182a6fe2e4763181e06a2124df28c08205de1d2
+  languageName: node
+  linkType: hard
+
 "@cspotcode/source-map-support@npm:^0.8.0":
   version: 0.8.1
   resolution: "@cspotcode/source-map-support@npm:0.8.1"
@@ -13614,6 +13621,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-sitemap@npm:^3.1.21":
+  version: 3.1.21
+  resolution: "next-sitemap@npm:3.1.21"
+  dependencies:
+    "@corex/deepmerge": ^4.0.29
+    minimist: ^1.2.6
+  peerDependencies:
+    "@next/env": "*"
+    next: "*"
+  bin:
+    next-sitemap: bin/next-sitemap.mjs
+    next-sitemap-cjs: bin/next-sitemap.cjs
+  checksum: 2ddd7ac8246f1265e4609d9689de72a3e57e49a7df00efedef9f2f8fdc94c9b9c06a94c321887cd11c0f079218d0e35c0d6885e3f2bea94bdf3b0e0cf08f6cd9
+  languageName: node
+  linkType: hard
+
 "next@npm:12.2.5":
   version: 12.2.5
   resolution: "next@npm:12.2.5"
@@ -19168,6 +19191,7 @@ __metadata:
     jest-environment-jsdom: 28.1.3
     monaco-editor: 0.34.0
     next: 12.2.5
+    next-sitemap: ^3.1.21
     node-notifier: 10.0.1
     onnxruntime-web: 1.12.1
     phosphor-react: 1.4.1
