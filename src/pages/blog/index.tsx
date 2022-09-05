@@ -4,16 +4,13 @@ import TextLink from "../../components/links/text";
 import { NavbarPage } from "../../components/navbar";
 import PageContainer, { PageStyle } from "../../components/page_container";
 
+import { METADATA as SecurityDotTxtMetadata } from "./security.txt";
+
 import type { BlogPostMetadata } from "../../components/blog_post";
 import type { NextPage } from "next";
 
 const ENTRIES: readonly BlogPostMetadata[] = [
-  {
-    title: "Nothing here yet...",
-    url: "https://ziyadedher.com",
-    description: "Stay tuned!",
-    publishedAt: new Date("2022-08-21T18:38:00-0700"),
-  },
+  SecurityDotTxtMetadata,
   // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Date
 ].sort((a, b) => b.publishedAt.getTime() - a.publishedAt.getTime());
 
@@ -46,15 +43,13 @@ const Index: NextPage = () => (
             {/* eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Date */}
             {ENTRIES.map((metadata) => (
               <li key={metadata.url}>
-                <div className="flex flex-col gap-2">
-                  <div>
-                    <TextLink href={metadata.url}>
-                      <h3 className="text-lg">{metadata.title}</h3>
-                    </TextLink>
-                    <h4 className="text-sm text-gray-500">
-                      {metadata.publishedAt.toDateString()}
-                    </h4>
-                  </div>
+                <div className="flex flex-col gap-1">
+                  <h4 className="text-xs text-gray-500">
+                    {metadata.publishedAt.toDateString()}
+                  </h4>
+                  <TextLink href={metadata.url}>
+                    <h3 className="text-lg">{metadata.title}</h3>
+                  </TextLink>
                   <p className="text-sm">{metadata.description}</p>
                 </div>
               </li>
