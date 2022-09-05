@@ -29,7 +29,7 @@ const PageContainer: React.FunctionComponent<PageContainerProps> = ({
 }) => (
   <div className={cx("flex flex-col min-h-screen items-center", pageStyle)}>
     <div className="flex w-full grow flex-col items-center dark:bg-gray-900 dark:text-gray-300">
-      <div className="my-8 flex flex-col space-y-4">
+      <div className="mt-4 mb-8 flex flex-col space-y-4">
         {hasHeader ? <Header /> : null}
         {hasNavbar ? <Navbar currentPage={navbarPage} /> : null}
       </div>
