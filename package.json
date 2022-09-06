@@ -18,7 +18,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
-    "@headlessui/react": "1.6.6",
+    "@headlessui/react": "1.7.0",
     "@monaco-editor/react": "4.4.5",
     "@plaiceholder/next": "2.5.0",
     "@tailwindcss/forms": "0.5.3",
