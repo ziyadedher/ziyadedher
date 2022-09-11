@@ -1,10 +1,12 @@
 // eslint-disable-next-line import/no-unassigned-import, node/file-extension-in-import -- Tailwind CSS exception.
 import "tailwindcss/tailwind.css";
 
+import Head from "next/head";
 import { useRouter } from "next/router";
 import { useEffect } from "react";
 
 import GTag, { pageview } from "../utils/gtag";
+import { getStorageURI } from "../utils/storage";
 
 import type { AppProps } from "next/app";
 import type { ReactElement } from "react";
@@ -24,6 +26,14 @@ const App = ({ Component, pageProps }: AppProps): ReactElement => {
 
   return (
     <>
+      <Head>
+        <meta charSet="utf-8" />
+        <link
+          rel="shortcut icon"
+          type="image/png"
+          href={getStorageURI("brain.png")}
+        />
+      </Head>
       <GTag />
       {/* eslint-disable-next-line react/jsx-props-no-spreading -- Next.js pattern. */}
       <Component {...pageProps} />
