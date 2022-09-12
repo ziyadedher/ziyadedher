@@ -19092,9 +19092,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vercel@npm:28.2.4":
-  version: 28.2.4
-  resolution: "vercel@npm:28.2.4"
+"vercel@npm:28.2.5":
+  version: 28.2.5
+  resolution: "vercel@npm:28.2.5"
   dependencies:
     "@vercel/build-utils": 5.4.2
     "@vercel/go": 2.2.5
@@ -19110,7 +19110,7 @@ __metadata:
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: fd0c5e90a0ba6c65c42d5b68225e8b84796754dca2caef80e62f6f674ae75382e5995639045b240a2ccce8f7a285485466b1315086904d086730de41a238ec21
+  checksum: 51daef57efac6c358d1378c535a40d77e310f152d519199c92c9f165512b8ba351fce908637c38a44a332e4432c77e6714364cbe04881866e2b29929e5d25f56
   languageName: node
   linkType: hard
 
@@ -19804,7 +19804,7 @@ __metadata:
     ts-jest: 28.0.8
     ts-node: 10.9.1
     typescript: 4.8.3
-    vercel: 28.2.4
+    vercel: 28.2.5
   languageName: unknown
   linkType: soft
 
