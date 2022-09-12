@@ -38,7 +38,7 @@ const OttawexitBanner: React.FunctionComponent = () => {
   }, []);
 
   return (
-    <div className="flex w-full h-full flex-col items-center">
+    <div className="flex h-full w-full flex-col items-center">
       <Canvas>
         <PerspectiveCamera makeDefault fov={1.25} />
 
@@ -162,8 +162,8 @@ const ActionSection: React.FunctionComponent<ActionSectionProps> = ({
   title,
   children,
 }) => (
-  <div className="flex flex-col gap-8 backdrop-blur-xl p-8 rounded-2xl backdrop-brightness-50">
-    <h3 className="text-base font-bold text-center">{title}</h3>
+  <div className="flex flex-col gap-8 rounded-2xl p-8 backdrop-blur-xl backdrop-brightness-50">
+    <h3 className="text-center text-base font-bold">{title}</h3>
     <div className="flex flex-col gap-4 text-sm">{children}</div>
   </div>
 );
@@ -473,7 +473,7 @@ const Ottawexit: NextPage<OttawexitProps> = ({ images }: OttawexitProps) => (
       <meta property="og:site_name" content="Ottawexit Portal" />
       <meta property="twitter:card" content="summary" />
     </Head>
-    <div className="h-screen items-center justify-center text-white overflow-y-auto">
+    <div className="h-screen items-center justify-center overflow-y-auto text-white">
       <div className="absolute inset-0 -z-10">
         <Image
           alt="Gregory 'Jreg' Guevara wearing a clown wig with white makeup and the word 'Society' drawn on his forehead in red lipstick"
@@ -482,8 +482,8 @@ const Ottawexit: NextPage<OttawexitProps> = ({ images }: OttawexitProps) => (
         />
       </div>
 
-      <div className="w-full min-h-full flex flex-col items-center gap-16 justify-between py-16">
-        <div className="w-full h-16 sm:h-24 md:h-32 lg:h-48 xl:h-64">
+      <div className="flex min-h-full w-full flex-col items-center justify-between gap-16 py-16">
+        <div className="h-16 w-full sm:h-24 md:h-32 lg:h-48 xl:h-64">
           <OttawexitBanner />
         </div>
 
@@ -496,7 +496,7 @@ const Ottawexit: NextPage<OttawexitProps> = ({ images }: OttawexitProps) => (
           <OttawallSection />
         </div>
 
-        <div className="flex flex-col gap-2 backdrop-blur-xl p-8 rounded-2xl backdrop-brightness-50">
+        <div className="flex flex-col gap-2 rounded-2xl p-8 backdrop-blur-xl backdrop-brightness-50">
           <h3 className="text-center text-xs font-bold">
             Ottawa National Anthem
           </h3>
