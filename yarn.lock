@@ -2716,12 +2716,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/fiber@npm:8.7.4":
-  version: 8.7.4
-  resolution: "@react-three/fiber@npm:8.7.4"
+"@react-three/fiber@npm:8.8.1":
+  version: 8.8.1
+  resolution: "@react-three/fiber@npm:8.8.1"
   dependencies:
     "@babel/runtime": ^7.17.8
     "@types/react-reconciler": ^0.26.7
+    its-fine: ^1.0.0
     react-reconciler: ^0.27.0
     react-use-measure: ^2.1.1
     scheduler: ^0.21.0
@@ -2746,7 +2747,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 6e44f27d859b8d9538787ea51e955d8ca9d29050b0dbc8a103c076903ad38dc50edc1cecd70beabe940995deed7e2424b9ed8d70067b7d6f6dc79d9033790b8e
+  checksum: 8f2a0b5d284ea14af6db1c0f9eaf77d52c4c84cd8eb878872e5dbd733760f5f58704ed6dddbf82a4734ae4e1fd70de742e9f9815c677f9d9bfce445b178c47d3
   languageName: node
   linkType: hard
 
@@ -4507,6 +4508,15 @@ __metadata:
   dependencies:
     "@types/react": "*"
   checksum: 4122d2b08580f775d0aeae9bd10b68248f894096ed14c0ebbc143ef712e21b159e89d0c628bd95dd3329947fc1ee94a0cb1d2d32b32b1d5d225e70030e91e58f
+  languageName: node
+  linkType: hard
+
+"@types/react-reconciler@npm:^0.28.0":
+  version: 0.28.0
+  resolution: "@types/react-reconciler@npm:0.28.0"
+  dependencies:
+    "@types/react": "*"
+  checksum: d7b3f870a9c2c0f6f9c27e3fedd4cb495bd377312d856ee846475152e8a817b032e47f8d349ec2a51a95be5c674a288288173ef658e469369d6fec1f77159cbb
   languageName: node
   linkType: hard
 
@@ -12192,6 +12202,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"its-fine@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "its-fine@npm:1.0.0"
+  dependencies:
+    "@types/react-reconciler": ^0.28.0
+  peerDependencies:
+    react: ">=18.0"
+  checksum: eadb9bc0b9d1c951f0a91a7b19589d4e42fd828bb11c4d5d283398fbe11e2108416e8ccf5155034f90e40df5d1a4d243986fbdf82cdc5f8878c6ce45dd3c0da0
+  languageName: node
+  linkType: hard
+
 "jest-changed-files@npm:^28.1.3":
   version: 28.1.3
   resolution: "jest-changed-files@npm:28.1.3"
@@ -19782,7 +19803,7 @@ __metadata:
     "@next/eslint-plugin-next": 12.3.1
     "@plaiceholder/next": 2.5.0
     "@react-three/drei": 9.32.0
-    "@react-three/fiber": 8.7.4
+    "@react-three/fiber": 8.8.1
     "@storybook/addon-actions": 6.5.12
     "@storybook/addon-docs": 6.5.12
     "@storybook/addon-essentials": 6.5.12
