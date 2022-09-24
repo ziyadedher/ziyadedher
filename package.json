@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@headlessui/react": "1.7.2",
-    "@monaco-editor/react": "4.4.5",
+    "@monaco-editor/react": "4.4.6",
     "@plaiceholder/next": "2.5.0",
     "@react-three/drei": "9.32.0",
     "@react-three/fiber": "8.8.2",
