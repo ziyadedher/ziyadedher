@@ -15593,9 +15593,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"primereact@npm:8.6.0":
-  version: 8.6.0
-  resolution: "primereact@npm:8.6.0"
+"primereact@npm:8.6.1":
+  version: 8.6.1
+  resolution: "primereact@npm:8.6.1"
   dependencies:
     "@types/react-transition-group": ^4.4.1
     react-transition-group: ^4.4.1
@@ -15607,7 +15607,7 @@ __metadata:
   peerDependenciesMeta:
     "@types/react":
       optional: true
-  checksum: ef53d71034d7a9484dab0894161feda8e8b063e6b8426134fea0a71a36855ee70137bfa603dd674c78d004d6f79109a8fd58a9e7637c222d3a2ae82202267dc8
+  checksum: 77819edc9a4e64692c5aa4b5ff823c5bec4443c9c4a206bdc44fd60924e7e4378cbb0474d9edf8838037882d77031ead0c62fbebebc47b1b5d88596bcd8ed55b
   languageName: node
   linkType: hard
 
@@ -19881,7 +19881,7 @@ __metadata:
     postcss: 8.4.16
     prettier: 2.7.1
     primeicons: 5.0.0
-    primereact: 8.6.0
+    primereact: 8.6.1
     random-js: 2.1.0
     react: 18.2.0
     react-console-emulator: 5.0.2
