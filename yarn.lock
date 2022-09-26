@@ -2691,9 +2691,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.32.1":
-  version: 9.32.1
-  resolution: "@react-three/drei@npm:9.32.1"
+"@react-three/drei@npm:9.32.3":
+  version: 9.32.3
+  resolution: "@react-three/drei@npm:9.32.3"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
@@ -2709,7 +2709,7 @@ __metadata:
     stats.js: ^0.17.0
     suspend-react: ^0.0.8
     three-mesh-bvh: ^0.5.15
-    three-stdlib: ^2.16.2
+    three-stdlib: 2.17.0
     troika-three-text: ^0.46.4
     utility-types: ^3.10.0
     zustand: ^3.5.13
@@ -2721,7 +2721,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 02eaec690179d8d29aec1d5573faf1b24571923e6efd8f7a2d4417aa5d4cad1260d058ac42a91dd36beb9834b7ed17e4e844574854c99483d0ffdc5d5254bd7c
+  checksum: 3242dfe13696c1acd53d2f1c402010c3df59e5be113a63f067b5e8de14f88b7910e5f79c28cf93da3cd7e23ea2dab549cca627b0885902d052293ef1ce139028
   languageName: node
   linkType: hard
 
@@ -18030,9 +18030,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-stdlib@npm:^2.16.2":
-  version: 2.16.2
-  resolution: "three-stdlib@npm:2.16.2"
+"three-stdlib@npm:2.17.0":
+  version: 2.17.0
+  resolution: "three-stdlib@npm:2.17.0"
   dependencies:
     "@babel/runtime": ^7.16.7
     "@types/offscreencanvas": ^2019.6.4
@@ -18047,7 +18047,7 @@ __metadata:
     zstddec: ^0.0.2
   peerDependencies:
     three: ">=0.122.0"
-  checksum: acf5a962c5a795c89171fd7f04fdb9895bca67ad1b59d17e51a5218881dcbf919074a0da30e5ffd99a16d89f2bc819c8ffb42512fa318a6c6dbe1b387bf059c4
+  checksum: 10000c4f4d12da0ea7a5a26966daba7ea36f0940375cc9ad28520336830bf2ade3090bde63fdc6ae5e38fd97ed2610113fa0c76df192fcfa67f8e8158a79a3ab
   languageName: node
   linkType: hard
 
@@ -19755,7 +19755,7 @@ __metadata:
     "@next/env": 12.3.1
     "@next/eslint-plugin-next": 12.3.1
     "@plaiceholder/next": 2.5.0
-    "@react-three/drei": 9.32.1
+    "@react-three/drei": 9.32.3
     "@react-three/fiber": 8.8.3
     "@storybook/addon-actions": 6.5.12
     "@storybook/addon-docs": 6.5.12
