@@ -83,7 +83,7 @@
     "@ziyadedher/eslint-config": "3.1.1",
     "autoprefixer": "10.4.12",
     "babel-loader": "8.2.5",
-    "chromatic": "6.10.0",
+    "chromatic": "6.10.1",
     "codecov": "3.8.3",
     "eslint": "8.24.0",
     "eslint-import-resolver-node": "0.3.6",
