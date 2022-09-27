@@ -46,7 +46,7 @@
     "three": "0.144.0"
   },
   "devDependencies": {
-    "@babel/core": "7.19.1",
+    "@babel/core": "7.19.3",
     "@babel/runtime": "7.19.0",
     "@heroicons/react": "2.0.11",
     "@jest/types": "28.1.3",
