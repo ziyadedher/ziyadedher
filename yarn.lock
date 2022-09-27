@@ -2725,13 +2725,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/fiber@npm:8.8.3":
-  version: 8.8.3
-  resolution: "@react-three/fiber@npm:8.8.3"
+"@react-three/fiber@npm:8.8.4":
+  version: 8.8.4
+  resolution: "@react-three/fiber@npm:8.8.4"
   dependencies:
     "@babel/runtime": ^7.17.8
     "@types/react-reconciler": ^0.26.7
-    its-fine: ^1.0.1
+    its-fine: ^1.0.2
     react-reconciler: ^0.27.0
     react-use-measure: ^2.1.1
     scheduler: ^0.21.0
@@ -2756,7 +2756,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 62aa01b98b127172a9af83a591817dc51df1b76d87d71103b051c58e87a33a4b6f73a83e64cfc212247e029480770abc6d6dfb45d23046db745b25a5d2ce0d1f
+  checksum: 0545ec50b90c8f984132b6836e742547c4f9faa6c15629e023435f5a51d1b1f6601d032b4b684d9d12ad1bc861971a0657d77b541fec89a355e32b6b7065e042
   languageName: node
   linkType: hard
 
@@ -12144,14 +12144,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"its-fine@npm:^1.0.1":
-  version: 1.0.1
-  resolution: "its-fine@npm:1.0.1"
+"its-fine@npm:^1.0.2":
+  version: 1.0.2
+  resolution: "its-fine@npm:1.0.2"
   dependencies:
     "@types/react-reconciler": ^0.28.0
   peerDependencies:
     react: ">=18.0"
-  checksum: 249a1811c7faab8ccf2c5cc9ca6322975acf2a82c2b829c80a5da8225be0aabc103aed413a8ff1ed42d620de8616627cbc5f902f7ec0c9579d1281496f0d6e14
+  checksum: 0381672ba2d08741610756cb8ecbae0105fdfea694afb500ea18d75f7dea2e54fd3bf4d7284e6ffabace9e11abee94185f64c32b5b014c36d392d8eddb28b102
   languageName: node
   linkType: hard
 
@@ -19756,7 +19756,7 @@ __metadata:
     "@next/eslint-plugin-next": 12.3.1
     "@plaiceholder/next": 2.5.0
     "@react-three/drei": 9.32.3
-    "@react-three/fiber": 8.8.3
+    "@react-three/fiber": 8.8.4
     "@storybook/addon-actions": 6.5.12
     "@storybook/addon-docs": 6.5.12
     "@storybook/addon-essentials": 6.5.12
