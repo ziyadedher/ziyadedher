@@ -2725,9 +2725,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/fiber@npm:8.8.8":
-  version: 8.8.8
-  resolution: "@react-three/fiber@npm:8.8.8"
+"@react-three/fiber@npm:8.8.9":
+  version: 8.8.9
+  resolution: "@react-three/fiber@npm:8.8.9"
   dependencies:
     "@babel/runtime": ^7.17.8
     "@types/react-reconciler": ^0.26.7
@@ -2756,7 +2756,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 043432debcc2031e32790b9defff9cbae5952804dc191ab577ef0acf08d3d2f62e862d05174e9bd8456141494017b9816a21c807f11f80b65ccf8dd343b2aae5
+  checksum: 2576dbf78202b49cb1fddb160427a102b64b6164535d5f87881fde929cd787747997d65ba223b85e0b1addee21a90a58003f00d9da9cd46c7cf7a61d08e8c99e
   languageName: node
   linkType: hard
 
@@ -19828,7 +19828,7 @@ __metadata:
     "@next/eslint-plugin-next": 12.3.1
     "@plaiceholder/next": 2.5.0
     "@react-three/drei": 9.32.11
-    "@react-three/fiber": 8.8.8
+    "@react-three/fiber": 8.8.9
     "@storybook/addon-actions": 6.5.12
     "@storybook/addon-docs": 6.5.12
     "@storybook/addon-essentials": 6.5.12
