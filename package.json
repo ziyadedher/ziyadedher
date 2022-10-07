@@ -21,7 +21,7 @@
     "@headlessui/react": "1.7.3",
     "@monaco-editor/react": "4.4.6",
     "@plaiceholder/next": "2.5.0",
-    "@react-three/drei": "9.34.1",
+    "@react-three/drei": "9.34.2",
     "@react-three/fiber": "8.8.9",
     "@tailwindcss/forms": "0.5.3",
     "chart.js": "3.9.1",
