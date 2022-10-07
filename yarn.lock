@@ -2682,9 +2682,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.34.1":
-  version: 9.34.1
-  resolution: "@react-three/drei@npm:9.34.1"
+"@react-three/drei@npm:9.34.2":
+  version: 9.34.2
+  resolution: "@react-three/drei@npm:9.34.2"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
@@ -2712,7 +2712,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 24a33deb536782e4d27645de4f8cc68067e8c1d4c9342920d2c26cbe50dcfe833c0a0960f007a08c591b0a9efa2267a355d0aac314f858509b4380a981d645b5
+  checksum: 2d6b7e5f9669f940862dae72bb6412b062b1778368df480ea20f7dd9b9c4fa4422342c34beba70c94355c0716594c5df76288aac3ff1257f5486a38f74ad2773
   languageName: node
   linkType: hard
 
@@ -19818,7 +19818,7 @@ __metadata:
     "@next/env": 12.3.1
     "@next/eslint-plugin-next": 12.3.1
     "@plaiceholder/next": 2.5.0
-    "@react-three/drei": 9.34.1
+    "@react-three/drei": 9.34.2
     "@react-three/fiber": 8.8.9
     "@storybook/addon-actions": 6.5.12
     "@storybook/addon-docs": 6.5.12
