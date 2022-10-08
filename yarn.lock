@@ -14099,9 +14099,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:3.1.23":
-  version: 3.1.23
-  resolution: "next-sitemap@npm:3.1.23"
+"next-sitemap@npm:3.1.24":
+  version: 3.1.24
+  resolution: "next-sitemap@npm:3.1.24"
   dependencies:
     "@corex/deepmerge": ^4.0.29
     minimist: ^1.2.6
@@ -14111,7 +14111,7 @@ __metadata:
   bin:
     next-sitemap: bin/next-sitemap.mjs
     next-sitemap-cjs: bin/next-sitemap.cjs
-  checksum: 35dafaaf28ab24e9d40a9382b0fa44c0c9abbf5040d057b57ba969c20de4634e414651888b8999c39291161a397a32c11ae9f281702c3a3a3e45b4ffdf384e2a
+  checksum: 0f26eb5a155cd192ac686b640f76871ac8c27b067906a2ef3889289f658d1141a50b3693fdf4cb5fc663f0670f9170551c1f52f8bab86e2409a9379c41ea733a
   languageName: node
   linkType: hard
 
@@ -19880,7 +19880,7 @@ __metadata:
     jest-environment-jsdom: 28.1.3
     monaco-editor: 0.34.0
     next: 12.3.1
-    next-sitemap: 3.1.23
+    next-sitemap: 3.1.24
     node-notifier: 10.0.1
     onnxruntime-web: 1.12.1
     phosphor-react: 1.4.1
