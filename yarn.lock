@@ -13892,10 +13892,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"monaco-editor@npm:0.34.0":
-  version: 0.34.0
-  resolution: "monaco-editor@npm:0.34.0"
-  checksum: 10a28c1fe07268a23106ec9b743339af603e00c3ce646de72bf74f77e3d44065536f1a11f1a86ed459dfd9cb891261e6c7974377fc511eb65f354d6ddc89275b
+"monaco-editor@npm:0.34.1":
+  version: 0.34.1
+  resolution: "monaco-editor@npm:0.34.1"
+  checksum: 4c6b35d7c566ec414b758cdd45dfb08d6fe46e2e8fdeed88b619a52c47592ce6df476d9490a58e5d450339c4a93f09d500adc9c017a348179277b98aa6009fa4
   languageName: node
   linkType: hard
 
@@ -19801,7 +19801,7 @@ __metadata:
     events: 3.3.0
     jest: 28.1.3
     jest-environment-jsdom: 28.1.3
-    monaco-editor: 0.34.0
+    monaco-editor: 0.34.1
     next: 12.3.1
     next-sitemap: 3.1.25
     node-notifier: 10.0.1
