@@ -79,7 +79,7 @@
     "@types/three": "0.144.0",
     "@typescript-eslint/eslint-plugin": "5.40.1",
     "@typescript-eslint/parser": "5.40.1",
-    "@yarnpkg/sdks": "3.0.0-rc.25",
+    "@yarnpkg/sdks": "3.0.0-rc.26",
     "@ziyadedher/eslint-config": "3.1.1",
     "autoprefixer": "10.4.12",
     "babel-loader": "8.2.5",
