@@ -7303,9 +7303,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chromatic@npm:6.10.2":
-  version: 6.10.2
-  resolution: "chromatic@npm:6.10.2"
+"chromatic@npm:6.10.4":
+  version: 6.10.4
+  resolution: "chromatic@npm:6.10.4"
   dependencies:
     "@discoveryjs/json-ext": ^0.5.7
     "@types/webpack-env": ^1.17.0
@@ -7313,7 +7313,7 @@ __metadata:
     chroma: bin/main.cjs
     chromatic: bin/main.cjs
     chromatic-cli: bin/main.cjs
-  checksum: 186c4c1c497ca1b6dcbcb37a6edd76f6e98b7385451d562912ba1f248a0b0729ec70bcfbd22010857b8fb606357247f48335293802d4c64a0a86237f4ce3edc7
+  checksum: 9cfecb174b94be31ae832c4a579bba9f54fe0894e7c5c6c8a531c3213b54d83577eeb2e89249cefba44b73d42d2d0f75213349b56c04f28ca907df23ec53c46a
   languageName: node
   linkType: hard
 
@@ -19847,7 +19847,7 @@ __metadata:
     autoprefixer: 10.4.12
     babel-loader: 8.2.5
     chart.js: 3.9.1
-    chromatic: 6.10.2
+    chromatic: 6.10.4
     classnames: 2.3.2
     codecov: 3.8.3
     eslint: 8.25.0
