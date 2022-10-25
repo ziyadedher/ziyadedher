@@ -14756,24 +14756,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"onnxruntime-common@npm:~1.12.1":
-  version: 1.12.1
-  resolution: "onnxruntime-common@npm:1.12.1"
-  checksum: 548eaef1274b8c958568f6e9eced72af90c2e1b3a490f65ac45c2b861188c93b4be55e23019b8b2b59053a73d49494e5fcf3dd2660a8bfdb7dfe8b35d82b46de
+"onnxruntime-common@npm:~1.13.1":
+  version: 1.13.1
+  resolution: "onnxruntime-common@npm:1.13.1"
+  checksum: d13adab2271241226da1a8e742ba7ba843165f736bde9ab8308193566002b0fdac4a9dd8a245defbc69f8969538d3787d378ca043c0e5eddd1a9edaeef39d2b7
   languageName: node
   linkType: hard
 
-"onnxruntime-web@npm:1.12.1":
-  version: 1.12.1
-  resolution: "onnxruntime-web@npm:1.12.1"
+"onnxruntime-web@npm:1.13.1":
+  version: 1.13.1
+  resolution: "onnxruntime-web@npm:1.13.1"
   dependencies:
     flatbuffers: ^1.12.0
     guid-typescript: ^1.0.9
     long: ^4.0.0
     onnx-proto: ^4.0.4
-    onnxruntime-common: ~1.12.1
+    onnxruntime-common: ~1.13.1
     platform: ^1.3.6
-  checksum: 5ff7feaeedc9a8a6d44c846bce53d59a0503168ee0fb238a59e2b894a07cc85f83eb7621af250c8300dfc64ae699d3fd8ff86cd6d62a72ab6987c959deab7a30
+  checksum: 05d58b8f60ce9996cdc48da7bb828776895b9e375a276d626b8990d964b7d1ad968099a7771c08bf710e2ba6d3a68d1a0b15186f1c34953089d3af0bef79f8ae
   languageName: node
   linkType: hard
 
@@ -20036,7 +20036,7 @@ __metadata:
     next: 12.3.1
     next-sitemap: 3.1.29
     node-notifier: 10.0.1
-    onnxruntime-web: 1.12.1
+    onnxruntime-web: 1.13.1
     phosphor-react: 1.4.1
     plaiceholder: 2.5.0
     postcss: 8.4.18
