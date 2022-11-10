@@ -18099,9 +18099,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:3.2.2":
-  version: 3.2.2
-  resolution: "tailwindcss@npm:3.2.2"
+"tailwindcss@npm:3.2.3":
+  version: 3.2.3
+  resolution: "tailwindcss@npm:3.2.3"
   dependencies:
     arg: ^5.0.2
     chokidar: ^3.5.3
@@ -18131,7 +18131,7 @@ __metadata:
   bin:
     tailwind: lib/cli.js
     tailwindcss: lib/cli.js
-  checksum: 4f29f9d7bed74f70cd90281c4068e20903cbe79949987aae7c6cf197df9c852caa0d9884c19547f55eac09c2468dfe30c25bc8e75482e2654e24ee40d74078f9
+  checksum: 5a31815c69d3ecfb6ed4882942d6e0dc3b79e5dbbadd758ccebe99d66d403b29d80b7b73dec0a81ee21ada4ec8e9d467dd1bc14b559726c5a19425030f29aea9
   languageName: node
   linkType: hard
 
@@ -20171,7 +20171,7 @@ __metadata:
     sharp: 0.31.2
     source-map-support: 0.5.21
     string_decoder: 1.3.0
-    tailwindcss: 3.2.2
+    tailwindcss: 3.2.3
     three: 0.146.0
     ts-jest: 28.0.8
     ts-node: 10.9.1
