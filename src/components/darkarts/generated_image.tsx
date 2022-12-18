@@ -8,16 +8,10 @@ import {
 } from "phosphor-react";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
-import {
-  generateImageData,
-  getModel,
-} from "../../../logic/goofs/darkarts/model";
-import { getStorageURI } from "../../../utils/storage";
+import { generateImageData, getModel } from "../../logic/darkarts/model";
+import { getStorageURI } from "../../utils/storage";
 
-import type {
-  Model,
-  ModelParameters,
-} from "../../../logic/goofs/darkarts/model";
+import type { Model, ModelParameters } from "../../logic/darkarts/model";
 
 enum ModelStatus {
   READY_TO_LOAD = 0,
@@ -211,7 +205,7 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
           "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
         )
       ).then(
-        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- includes ONNX type.
+        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- ONNX type.
         (loadedModel) => {
           setModel(loadedModel);
           setModelStatus(ModelStatus.READY);

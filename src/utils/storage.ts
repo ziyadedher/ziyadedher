@@ -7,5 +7,9 @@ const getStorageURI = (filePath: string): string =>
     ? `https://storage.ziyadedher.com/${filePath}`
     : `/${filePath}`;
 
-// eslint-disable-next-line import/prefer-default-export -- single export for now.
-export { getStorageURI };
+const getPrivateStorageURI = (filePath: string): string =>
+  shouldUseProductionStorage()
+    ? `https://private.storage.ziyadedher.com/${filePath}`
+    : `/_private/${filePath}`;
+
+export { getStorageURI, getPrivateStorageURI };

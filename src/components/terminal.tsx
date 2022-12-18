@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React from "react";
 import ConsoleEmulator from "react-console-emulator";
 
-import { cd, echo, exec, ls } from "../../logic/goofs/terminal";
+import { cd, echo, exec, ls } from "../../logic/terminal";
 
 import type { NextRouter } from "next/router";
 import type { TerminalProps as ConsoleEmulatorProps } from "react-console-emulator";

@@ -1,10 +1,4 @@
-import {
-  Directory,
-  cd,
-  echo,
-  exec,
-  ls,
-} from "../../../src/logic/goofs/terminal";
+import { Directory, cd, echo, exec, ls } from "../../../src/logic/terminal";
 import { listEnumValues } from "../../../src/utils/enum";
 
 describe("terminal", () => {

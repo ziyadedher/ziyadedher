@@ -6,7 +6,7 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import Terminal from "../../../src/components/goofs/terminal";
+import Terminal from "../../../src/components/terminal";
 
 describe("terminal", () => {
   test("renders children", () => {

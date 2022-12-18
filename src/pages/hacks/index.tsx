@@ -1,8 +1,8 @@
 import Head from "next/head";
 
-import Terminal from "../../components/goofs/terminal";
 import { NavbarPage } from "../../components/navbar";
 import PageContainer, { PageStyle } from "../../components/page_container";
+import Terminal from "../../components/terminal";
 import AnimatedHackerText from "../../components/text/animated_hacker_text";
 
 import type { NextPage } from "next";

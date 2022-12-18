@@ -3,13 +3,13 @@ import Head from "next/head";
 import { CaretRight } from "phosphor-react";
 import React, { useCallback, useEffect, useReducer, useState } from "react";
 
-import GeneratedImage from "../../components/goofs/darkarts/generated_image";
+import GeneratedImage from "../../components/darkarts/generated_image";
 import RangeSliderInput from "../../components/inputs/range_slider";
 import TextLink from "../../components/links/text";
 import PageContainer, { PageStyle } from "../../components/page_container";
-import { LayerKeys } from "../../logic/goofs/darkarts/model";
+import { LayerKeys } from "../../logic/darkarts/model";
 
-import type { LayerKey, LayerValues } from "../../logic/goofs/darkarts/model";
+import type { LayerKey, LayerValues } from "../../logic/darkarts/model";
 import type { NextPage } from "next";
 
 interface SettingItemProps {
