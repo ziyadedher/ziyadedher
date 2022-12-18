@@ -1,6 +1,7 @@
 {
   "extends": ["@ziyadedher"],
   "rules": {
+    "jest/no-jest-import": "off",
     "prefer-destructuring": [
       "error",
       {
