@@ -2674,26 +2674,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.42.2":
-  version: 9.42.2
-  resolution: "@react-three/drei@npm:9.42.2"
+"@react-three/drei@npm:9.47.1":
+  version: 9.47.1
+  resolution: "@react-three/drei@npm:9.47.1"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
     "@use-gesture/react": ^10.2.0
-    detect-gpu: ^4.0.36
+    detect-gpu: ^5.0.1
     glsl-noise: ^0.0.0
     lodash.clamp: ^4.0.3
     lodash.omit: ^4.5.0
     lodash.pick: ^4.4.0
-    meshline: ^2.0.4
+    meshline: ^3.1.6
     react-composer: ^5.0.3
     react-merge-refs: ^1.1.0
     stats.js: ^0.17.0
     suspend-react: ^0.0.8
-    three-mesh-bvh: ^0.5.15
-    three-stdlib: ^2.18.1
-    troika-three-text: ^0.46.4
+    three-mesh-bvh: ^0.5.19
+    three-stdlib: ^2.20.4
+    troika-three-text: ^0.47.1
     utility-types: ^3.10.0
     zustand: ^3.5.13
   peerDependencies:
@@ -2704,7 +2704,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 6765395eed260f8c2dc9dea2fb0fa6abd0c18cfc782c64c3182c599711ebced284cee86e587a5038903825eee7c738c99d953ab0fda816f60cdd2ed63af40892
+  checksum: df27093a3cbb3c9c589b0aca89c100b6534f7360f6341354fa60df1385186695ed15c8340c687db7f5565d1c2d4d5edf600779969f08da62ac76d623122debac
   languageName: node
   linkType: hard
 
@@ -8412,12 +8412,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-gpu@npm:^4.0.36":
-  version: 4.0.50
-  resolution: "detect-gpu@npm:4.0.50"
+"detect-gpu@npm:^5.0.1":
+  version: 5.0.3
+  resolution: "detect-gpu@npm:5.0.3"
   dependencies:
     webgl-constants: ^1.1.1
-  checksum: 08df8c89819794bb7a1913adbbaad314166d6c4db7901bee1a527cda86ff1279c5b12173ff8afc08d9d7ed7c6f1c9f7d5d6177dbf91454f3797b5b1a964d4322
+  checksum: 551c2176286e01e997d270fb5bc4243850e9bf094bef8bffc2b4464558c9e1820b5d35dab742bc09be84fc1d2548ee8a251f2919cbb99c3fe78327eb66da8051
   languageName: node
   linkType: hard
 
@@ -13758,12 +13758,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"meshline@npm:^2.0.4":
-  version: 2.0.4
-  resolution: "meshline@npm:2.0.4"
+"meshline@npm:^3.1.6":
+  version: 3.1.6
+  resolution: "meshline@npm:3.1.6"
   peerDependencies:
     three: ">=0.137"
-  checksum: c861f06336ddf2ac038fcb4ad6714bb46763f050451bdfd0b4bbb3b30c528029b2c990992e34f0574cae76a4402b538a27c93c7acc0446062500e7edba2eb180
+  checksum: 72b79908315650a57b5c97b846191ab73d1ee1551211154283a951eac7b08f9129adb6ce1b84d887b30b47617a52ff0878f9695037491c4d8350712c6655489a
   languageName: node
   linkType: hard
 
@@ -18236,7 +18236,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-mesh-bvh@npm:^0.5.15":
+"three-mesh-bvh@npm:^0.5.19":
   version: 0.5.19
   resolution: "three-mesh-bvh@npm:0.5.19"
   peerDependencies:
@@ -18245,7 +18245,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-stdlib@npm:^2.18.1":
+"three-stdlib@npm:^2.20.4":
   version: 2.20.4
   resolution: "three-stdlib@npm:2.20.4"
   dependencies:
@@ -18456,33 +18456,33 @@ __metadata:
   languageName: node
   linkType: hard
 
-"troika-three-text@npm:^0.46.4":
-  version: 0.46.4
-  resolution: "troika-three-text@npm:0.46.4"
+"troika-three-text@npm:^0.47.1":
+  version: 0.47.1
+  resolution: "troika-three-text@npm:0.47.1"
   dependencies:
     bidi-js: ^1.0.2
-    troika-three-utils: ^0.46.0
-    troika-worker-utils: ^0.46.0
+    troika-three-utils: ^0.47.0
+    troika-worker-utils: ^0.47.0
     webgl-sdf-generator: 1.1.1
   peerDependencies:
-    three: ">=0.103.0"
-  checksum: d36ca41079cf70804ab325a4f776b51fa917e4efbd80c97061e3d9180a1f8c21b2bf100bd502b6efff4aaafb1b70aef3aa73bdce6e62aabecc9faa7239c1a371
+    three: ">=0.125.0"
+  checksum: 854d74e1f53898a22d34788f29efea59d253037b6dd4c518b46c60ebb42960ce026d8ced5dde8a04143e963afbe92cdd55123fb9d9c2d1e555d1f9c31cdbe21f
   languageName: node
   linkType: hard
 
-"troika-three-utils@npm:^0.46.0":
-  version: 0.46.0
-  resolution: "troika-three-utils@npm:0.46.0"
+"troika-three-utils@npm:^0.47.0":
+  version: 0.47.0
+  resolution: "troika-three-utils@npm:0.47.0"
   peerDependencies:
-    three: ">=0.103.0"
-  checksum: 75e926bf147c902c60fd5f013a6f9f481f67d610f93c4cf25146e56e4bd36a6f8f81b00ae0b1dc2af01f6dc7a9f051a334d415228b8a5a44d423be85f24de337
+    three: ">=0.125.0"
+  checksum: 2541865d957317c9ceaf386025776ad431ad58ad4bea80782a4607f712f1ad13fe727cc83ac0e6063e9dedc2a7c2dfea8ca385fcdd5b8562bf777a6f87ed75f1
   languageName: node
   linkType: hard
 
-"troika-worker-utils@npm:^0.46.0":
-  version: 0.46.0
-  resolution: "troika-worker-utils@npm:0.46.0"
-  checksum: 5fe6c17e34f2b840c83d87e7092891bf62f12cf5804ee4d97a9bbc11e4f1d85f81894a758322187d4fa40c76b359088a1aeb0e69e26b7f391f7d2834ef0fa33f
+"troika-worker-utils@npm:^0.47.0":
+  version: 0.47.0
+  resolution: "troika-worker-utils@npm:0.47.0"
+  checksum: 9fa14a58feba121a80576131eafdfe02c095e2695c071250b6517ea4e40c4f0600be2a9f41da34fb24f6870091f528124d6e47f948c85fdf585dc97f4245d720
   languageName: node
   linkType: hard
 
@@ -19997,7 +19997,7 @@ __metadata:
     "@next/env": 12.3.4
     "@next/eslint-plugin-next": 12.3.4
     "@plaiceholder/next": 2.5.0
-    "@react-three/drei": 9.42.2
+    "@react-three/drei": 9.47.1
     "@react-three/fiber": 8.9.1
     "@storybook/addon-actions": 6.5.14
     "@storybook/addon-docs": 6.5.14
