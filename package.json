@@ -24,7 +24,7 @@
     "@react-three/drei": "9.47.1",
     "@react-three/fiber": "8.9.1",
     "@tailwindcss/forms": "0.5.3",
-    "chart.js": "3.9.1",
+    "chart.js": "4.1.1",
     "classnames": "2.3.2",
     "events": "3.3.0",
     "jest-environment-jsdom": "28.1.3",

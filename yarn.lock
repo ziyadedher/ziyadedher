@@ -2171,6 +2171,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kurkle/color@npm:^0.3.0":
+  version: 0.3.1
+  resolution: "@kurkle/color@npm:0.3.1"
+  checksum: e6be5c081bf5acfd4a1803dcd5a0733caf450e73148d5f02dc536b1ff0c60c959c23472a26c9c3c6c78ada04fb6a53c9202db9b2de8ea56f6eeec381f9cc3a1a
+  languageName: node
+  linkType: hard
+
 "@mapbox/node-pre-gyp@npm:^1.0.5":
   version: 1.0.10
   resolution: "@mapbox/node-pre-gyp@npm:1.0.10"
@@ -7456,10 +7463,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chart.js@npm:3.9.1":
-  version: 3.9.1
-  resolution: "chart.js@npm:3.9.1"
-  checksum: 9ab0c0ac01215af0b3f020f2e313030fd6e347b48ed17d5484ee9c4e8ead45e78ae71bea16c397621c386b409ce0b14bf17f9f6c2492cd15b56c0f433efdfff6
+"chart.js@npm:4.1.1":
+  version: 4.1.1
+  resolution: "chart.js@npm:4.1.1"
+  dependencies:
+    "@kurkle/color": ^0.3.0
+  checksum: e195abc7b1271a0d4f616b90ac56465b639bffef8e965d26bf1fd65050011bf359fdc25e43dac1576420c1173dc1430c576fd0f953ae8b62bf257ec571424882
   languageName: node
   linkType: hard
 
@@ -20523,7 +20532,7 @@ __metadata:
     "@ziyadedher/eslint-config": 3.1.1
     autoprefixer: 10.4.13
     babel-loader: 8.3.0
-    chart.js: 3.9.1
+    chart.js: 4.1.1
     chromatic: 6.14.0
     classnames: 2.3.2
     codecov: 3.8.3
