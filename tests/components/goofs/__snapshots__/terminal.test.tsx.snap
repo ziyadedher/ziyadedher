@@ -6,12 +6,12 @@ exports[`terminal renders children 1`] = `
   "baseElement": <body>
     <div>
       <div
-        class="!h-full !w-full !rounded-xl !bg-black !text-sm"
+        class="!h-full !w-full !rounded-xl !bg-black"
         name="react-console-emulator"
         style="min-height: 300px; max-width: 100%; max-height: 100%; border-radius: 5px; overflow: auto; cursor: text; background-color: rgb(33, 33, 33); background-size: cover;"
       >
         <div
-          class="!text-green-300"
+          class="!text-green-300 !text-lg"
           name="react-console-emulator__content"
           style="padding: 20px; height: 100%; font-size: 15px; color: rgb(255, 255, 255); font-family: monospace;"
         >
@@ -25,7 +25,7 @@ exports[`terminal renders children 1`] = `
             style="display: inline-flex; width: 100%;"
           >
             <span
-              class="!pr-0.5 !-mt-0.5"
+              class="!pr-1 !-mt-1.5"
               name="react-console-emulator__promptLabel"
               style="padding-top: 3px; color: rgb(238, 156, 52);"
             >
@@ -44,12 +44,12 @@ exports[`terminal renders children 1`] = `
   </body>,
   "container": <div>
     <div
-      class="!h-full !w-full !rounded-xl !bg-black !text-sm"
+      class="!h-full !w-full !rounded-xl !bg-black"
       name="react-console-emulator"
       style="min-height: 300px; max-width: 100%; max-height: 100%; border-radius: 5px; overflow: auto; cursor: text; background-color: rgb(33, 33, 33); background-size: cover;"
     >
       <div
-        class="!text-green-300"
+        class="!text-green-300 !text-lg"
         name="react-console-emulator__content"
         style="padding: 20px; height: 100%; font-size: 15px; color: rgb(255, 255, 255); font-family: monospace;"
       >
@@ -63,7 +63,7 @@ exports[`terminal renders children 1`] = `
           style="display: inline-flex; width: 100%;"
         >
           <span
-            class="!pr-0.5 !-mt-0.5"
+            class="!pr-1 !-mt-1.5"
             name="react-console-emulator__promptLabel"
             style="padding-top: 3px; color: rgb(238, 156, 52);"
           >
