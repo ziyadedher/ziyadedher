@@ -23,7 +23,7 @@ const NavbarPageEntry: React.FunctionComponent<NavbarPageEntryProps> = ({
   linkUrl,
   isCurrentPage,
 }: NavbarPageEntryProps) => (
-  <Link key={page} href={linkUrl} passHref>
+  <Link key={page} href={linkUrl} passHref legacyBehavior>
     <Anchor>
       <span
         className={cx(
