@@ -12,7 +12,7 @@ const cd = (goToUrl: (url: string) => void, dir?: string): string => {
     return "no directory was given";
   }
 
-  const dirWithSlashes = `/${dir}/`;
+  const dirWithSlashes = dir.startsWith("/") ? `${dir}/` : `/hacks/${dir}/`;
   const normalizedDir = dirWithSlashes.replace(/\/+/gu, "/");
   const maybeEnumDir = asEnum(Directory, normalizedDir);
 

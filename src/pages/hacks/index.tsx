@@ -24,11 +24,19 @@ const Index: NextPage = () => (
       pageStyle={PageStyle.HACKER}
     >
       <div className="flex w-full flex-col items-center">
-        <p className="mb-8 font-mono text-sm">
-          <AnimatedHackerText delay={1000} text="It's time to hack." />
-        </p>
+        <div className="m-8 flex flex-col items-center gap-4">
+          <h1 className="font-mono text-3xl">
+            <AnimatedHackerText delay={1000} text="😎 it's time to hack 😎" />
+          </h1>
+          <p className="font-mono text-sm">
+            <AnimatedHackerText
+              delay={2000}
+              text="Use the terminal below to get started."
+            />
+          </p>
+        </div>
 
-        <div className="h-96 w-full max-w-2xl px-4">
+        <div className="h-full w-full p-8">
           <Terminal />
         </div>
       </div>
