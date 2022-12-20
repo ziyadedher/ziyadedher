@@ -48,9 +48,9 @@ const Terminal: React.FunctionComponent = () => {
       promptLabel={PROMPT_LABEL}
       errorText={ERROR_TEXT}
       // eslint-disable-next-line react/forbid-component-props -- component built-in.
-      className="!h-full !w-full !rounded-xl !bg-black !text-sm"
-      contentClassName="!text-green-300"
-      promptLabelClassName="!pr-0.5 !-mt-0.5"
+      className="!h-full !w-full !rounded-xl !bg-black"
+      contentClassName="!text-green-300 !text-lg"
+      promptLabelClassName="!pr-1 !-mt-1.5"
     />
   );
 };
