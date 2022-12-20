@@ -45,21 +45,21 @@ const TableRow: React.FunctionComponent<TableRowProps> = ({
   <tr className={isOdd ? "bg-gray-900" : "bg-gray-900"}>
     <TableRowItem>
       <span className="text-blue-600 transition-all hover:opacity-50">
-        <Link href={item.companyUrl} passHref>
+        <Link href={item.companyUrl} passHref legacyBehavior>
           <Anchor shouldOpenInNewPage>{item.companyName}</Anchor>
         </Link>
       </span>
     </TableRowItem>
     <TableRowItem>
       <span className="text-blue-600 transition-all hover:opacity-50">
-        <Link href={item.bugBountyUrl} passHref>
+        <Link href={item.bugBountyUrl} passHref legacyBehavior>
           <Anchor shouldOpenInNewPage>{item.bugBountyProvider}</Anchor>
         </Link>
       </span>
     </TableRowItem>
     <TableRowItem>
       <span className="text-blue-600 transition-all hover:opacity-50">
-        <Link href={item.bugBountySpecialSourceUrl} passHref>
+        <Link href={item.bugBountySpecialSourceUrl} passHref legacyBehavior>
           <Anchor>${item.bugBountySpecialAmount.toLocaleString()}</Anchor>
         </Link>
       </span>
@@ -91,7 +91,11 @@ const Index: NextPage = () => (
         <h1 className="text-xl">Log4Shell Public Bug Bounty Specials</h1>
         <p className="max-w-xl text-sm">
           Log4Shell (
-          <Link href="https://nvd.nist.gov/vuln/detail/CVE-2021-44228" passHref>
+          <Link
+            href="https://nvd.nist.gov/vuln/detail/CVE-2021-44228"
+            passHref
+            legacyBehavior
+          >
             <Anchor shouldOpenInNewPage>CVE-2021-44228</Anchor>
           </Link>
           ) is an RCE 0day in Log4j, a popular Java logging framework. Many
@@ -122,7 +126,7 @@ const Index: NextPage = () => (
         </div>
 
         <h2 className="opacity-60 transition-all hover:opacity-90 active:opacity-100">
-          <Link href="/api/hacks/log4shell" passHref>
+          <Link href="/api/hacks/log4shell" passHref legacyBehavior>
             <Anchor shouldOpenInNewPage>
               Click here for the data in the table as JSON.
             </Anchor>

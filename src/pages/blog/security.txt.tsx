@@ -15,7 +15,7 @@ const METADATA: BlogPostMetadata = {
   title: "State of the Security.txt",
   description:
     "We have RFC9116, where is the security.txt? An analysis and overview of our experience deploying it to a site with millions of daily active users.",
-  publishedAt: new Date("2022-09-05 09:00 PST"),
+  publishedAt: new Date(2022, 8, 5), // 2022-09-05
 };
 
 interface TopNBreakdownChartProps {
