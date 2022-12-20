@@ -27,12 +27,14 @@ describe("animated hacker text", () => {
     expect(result.queryByText("long-hacker-text")).toBeInTheDocument();
 
     mockPerformanceNow.mockReturnValue(400);
+    // eslint-disable-next-line @typescript-eslint/no-floating-promises -- testing library act
     act(() => {
       jest.advanceTimersToNextTimer();
     });
     expect(result.queryByText("long-hacker-text")).not.toBeInTheDocument();
 
     mockPerformanceNow.mockReturnValue(500);
+    // eslint-disable-next-line @typescript-eslint/no-floating-promises -- testing library act
     act(() => {
       jest.advanceTimersToNextTimer();
     });
