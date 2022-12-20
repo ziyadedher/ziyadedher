@@ -16,7 +16,7 @@ const TextLink: React.FunctionComponent<TextLinkProps> = ({
   children,
 }) => (
   <span className="not-prose underline transition-all hover:opacity-70">
-    <Link href={href} passHref>
+    <Link href={href} passHref legacyBehavior>
       <Anchor shouldOpenInNewPage={isExternal}>{children}</Anchor>
     </Link>
   </span>

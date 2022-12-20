@@ -17,7 +17,7 @@ import IconLink from "./links/icon";
 const Header: React.FunctionComponent = () => (
   <header className="flex flex-col items-center text-center">
     <div className="text-lg font-light lowercase transition-all hover:opacity-70">
-      <Link href="/" passHref>
+      <Link href="/" passHref legacyBehavior>
         <Anchor>Ziyad Edher</Anchor>
       </Link>
     </div>
