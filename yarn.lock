@@ -14514,6 +14514,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"next-router-mock@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "next-router-mock@npm:0.8.0"
+  peerDependencies:
+    next: ">=10.0.0"
+    react: ">=17.0.0"
+  checksum: b0fe784feafba7f84179dd9d0787f3b0c6f23a959ec995a49b074f163bcc261819c220567f370621fee1f132e6e28e1f514e38ccca0c39d68725f740e654c092
+  languageName: node
+  linkType: hard
+
 "next-sitemap@npm:3.1.43":
   version: 3.1.43
   resolution: "next-sitemap@npm:3.1.43"
@@ -20430,6 +20440,7 @@ __metadata:
     jest-environment-jsdom: 29.3.1
     monaco-editor: 0.34.1
     next: ^13.0.7
+    next-router-mock: ^0.8.0
     next-sitemap: 3.1.43
     node-notifier: 10.0.1
     onnxruntime-web: 1.13.1
