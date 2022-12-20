@@ -2,6 +2,7 @@
   "extends": ["@ziyadedher"],
   "rules": {
     "jest/no-jest-import": "off",
+    "@typescript-eslint/dot-notation": "off",
     "prefer-destructuring": [
       "error",
       {
