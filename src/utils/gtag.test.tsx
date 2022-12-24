@@ -6,7 +6,7 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import GTag, { pageview } from "../../src/utils/gtag";
+import GTag, { pageview } from "./gtag";
 
 describe("gtag", () => {
   describe("component", () => {

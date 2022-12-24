@@ -1,5 +1,6 @@
 module.exports = {
-  stories: ["../stories/**/*.stories.mdx", "../stories/**/*.stories.@(ts|tsx)"],
+  stories: ["../stories", "../src"],
+
   addons: [
     "@storybook/addon-links",
     "@storybook/addon-essentials",
@@ -12,4 +13,13 @@ module.exports = {
       },
     },
   ],
+
+  framework: {
+    name: "@storybook/nextjs",
+    options: {},
+  },
+
+  docs: {
+    docsPage: "off",
+  },
 };

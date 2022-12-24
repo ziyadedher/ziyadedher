@@ -1,6 +1,6 @@
 import { getPlaiceholder } from "plaiceholder";
 
-import { getImageWithBlur } from "../../src/logic/image_with_blur";
+import { getImageWithBlur } from "./image_with_blur";
 
 jest.mock("plaiceholder");
 

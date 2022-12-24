@@ -3,8 +3,7 @@ import React from "react";
 
 // eslint-disable-next-line @typescript-eslint/no-shadow -- custom Image
 import Image from "./image";
-import { NavbarPage } from "./navbar";
-import PageContainer, { PageStyle } from "./page_container";
+import PageContainer from "./page_container";
 
 import type { ImageWithBlur } from "../logic/image_with_blur";
 
@@ -54,8 +53,8 @@ const BlogPost: React.FunctionComponent<BlogPostProps> = ({
     <PageContainer
       hasHeader
       hasNavbar
-      navbarPage={NavbarPage.BLOG}
-      pageStyle={PageStyle.LIGHT}
+      navbarPage="blog"
+      pageStyle="light"
     >
       <article className="prose mx-auto flex max-w-2xl flex-col py-8">
         <section className="text-center">

@@ -25,6 +25,10 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "**/*.stories.ts",
+    "**/*.stories.tsx",
+    "**/*.tests.ts",
+    "**/*.tests.tsx",
     "./*.config.js",
     "./*.config.ts"
   ],

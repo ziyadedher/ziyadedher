@@ -4,11 +4,7 @@ import React from "react";
 
 import Anchor from "../logic/anchor";
 
-enum NavbarPage {
-  HOME = "/",
-  BLOG = "/blog",
-  HACKS = "/hacks",
-}
+type NavbarPage = "home" | "blog" | "hacks";
 
 interface NavbarPageEntryProps {
   readonly page: NavbarPage;
@@ -46,25 +42,25 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({
 }: NavbarProps) => (
   <nav className="flex w-full grow justify-center space-x-4">
     <NavbarPageEntry
-      page={NavbarPage.HOME}
+      page="home"
       linkName="Home"
-      linkUrl={NavbarPage.HOME}
-      isCurrentPage={currentPage === NavbarPage.HOME}
+      linkUrl="/"
+      isCurrentPage={currentPage === "home"}
     />
     <NavbarPageEntry
-      page={NavbarPage.BLOG}
+      page="blog"
       linkName="Blog"
-      linkUrl={NavbarPage.BLOG}
-      isCurrentPage={currentPage === NavbarPage.BLOG}
+      linkUrl="/blog"
+      isCurrentPage={currentPage === "blog"}
     />
     <NavbarPageEntry
-      page={NavbarPage.HACKS}
+      page="hacks"
       linkName="Hacks"
-      linkUrl={NavbarPage.HACKS}
-      isCurrentPage={currentPage === NavbarPage.HACKS}
+      linkUrl="/hacks"
+      isCurrentPage={currentPage === "hacks"}
     />
   </nav>
 );
 
+export type { NavbarPage };
 export default Navbar;
-export { NavbarPage };

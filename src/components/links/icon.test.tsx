@@ -7,7 +7,7 @@ import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import { PhosphorLogo } from "phosphor-react";
 
-import IconLink from "../../../src/components/links/icon";
+import IconLink from "./icon";
 
 describe("icon link", () => {
   test("renders link child", () => {

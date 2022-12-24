@@ -6,7 +6,7 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import TextLink from "../../../src/components/links/text";
+import TextLink from "./text";
 
 describe("text link", () => {
   test("renders link text", () => {

@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import React from "react";
 
-import PageContainer, { PageStyle } from "../../components/page_container";
+import PageContainer from "../../components/page_container";
 import Anchor from "../../logic/anchor";
 import { HIT_LIST } from "../api/hacks/log4shell";
 
@@ -85,7 +85,7 @@ const Index: NextPage = () => (
       hasNavbar
       hasHeader
       navbarPage={null}
-      pageStyle={PageStyle.HACKER}
+      pageStyle="hacker"
     >
       <div className="flex w-full flex-col items-center gap-2 px-6 text-center text-sm font-light xl:mx-0">
         <h1 className="text-xl">Log4Shell Public Bug Bounty Specials</h1>

@@ -6,7 +6,7 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import PageContainer from "../../src/components/page_container";
+import PageContainer from "./page_container";
 
 describe("page container", () => {
   test("renders children", () => {

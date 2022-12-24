@@ -6,7 +6,7 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import Anchor from "../../src/logic/anchor";
+import Anchor from "./anchor";
 
 /**
  * Generally, we would test user-visible functionality using React Testing Library.

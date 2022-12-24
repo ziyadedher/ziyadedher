@@ -1,4 +1,4 @@
-import { asEnum, listEnumValues } from "../../src/utils/enum";
+import { asEnum, listEnumValues } from "./enum";
 
 enum MyEnum {
   A = "a",

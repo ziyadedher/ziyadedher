@@ -1,8 +1,7 @@
 import Head from "next/head";
 
 import Terminal from "../../components/goofs/terminal";
-import { NavbarPage } from "../../components/navbar";
-import PageContainer, { PageStyle } from "../../components/page_container";
+import PageContainer from "../../components/page_container";
 import AnimatedHackerText from "../../components/text/animated_hacker_text";
 
 import type { NextPage } from "next";
@@ -20,8 +19,8 @@ const Index: NextPage = () => (
     <PageContainer
       hasHeader
       hasNavbar
-      navbarPage={NavbarPage.HACKS}
-      pageStyle={PageStyle.HACKER}
+      navbarPage="hacks"
+      pageStyle="hacker"
     >
       <div className="flex w-full flex-col items-center">
         <div className="m-8 flex flex-col items-center gap-4">

@@ -6,7 +6,7 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import Header from "../../src/components/header";
+import Header from "./header";
 
 describe("header", () => {
   test("renders", () => {

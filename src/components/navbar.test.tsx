@@ -6,16 +6,16 @@
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 
-import Navbar, { NavbarPage } from "../../src/components/navbar";
+import Navbar from "./navbar";
 
 describe("navbar", () => {
   test("renders when current page is HOME", () => {
-    const result = render(<Navbar currentPage={NavbarPage.HOME} />);
+    const result = render(<Navbar currentPage="home" />);
     expect(result).toMatchSnapshot();
   });
 
   test("renders when current page is HACKS", () => {
-    const result = render(<Navbar currentPage={NavbarPage.HACKS} />);
+    const result = render(<Navbar currentPage="hacks" />);
     expect(result).toMatchSnapshot();
   });
 });

@@ -6,7 +6,7 @@ import React, { useCallback, useEffect, useReducer, useState } from "react";
 import GeneratedImage from "../../components/goofs/darkarts/generated_image";
 import RangeSliderInput from "../../components/inputs/range_slider";
 import TextLink from "../../components/links/text";
-import PageContainer, { PageStyle } from "../../components/page_container";
+import PageContainer from "../../components/page_container";
 import { LayerKeys } from "../../logic/goofs/darkarts/model";
 
 import type { LayerKey, LayerValues } from "../../logic/goofs/darkarts/model";
@@ -349,7 +349,7 @@ const Darkarts: NextPage = () => {
         hasHeader
         hasNavbar
         navbarPage={null}
-        pageStyle={PageStyle.HACKER}
+        pageStyle="hacker"
       >
         <div className="my-8 mx-auto flex max-w-3xl flex-col gap-16">
           <div className="flex flex-col gap-4">

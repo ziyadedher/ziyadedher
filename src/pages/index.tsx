@@ -3,7 +3,6 @@ import Head from "next/head";
 // eslint-disable-next-line @typescript-eslint/no-shadow -- custom Image
 import Image from "../components/image";
 import TextLink from "../components/links/text";
-import { NavbarPage } from "../components/navbar";
 import PageContainer from "../components/page_container";
 import { getImageWithBlur } from "../logic/image_with_blur";
 import { getStorageURI } from "../utils/storage";
@@ -27,7 +26,7 @@ const Index: NextPage<IndexProps> = ({ images }: IndexProps) => (
       />
     </Head>
 
-    <PageContainer hasHeader hasNavbar navbarPage={NavbarPage.HOME}>
+    <PageContainer hasHeader hasNavbar navbarPage="home" pageStyle="light">
       <div className="mx-auto flex max-w-5xl grow-0 flex-row justify-center gap-8 py-8">
         <div className="prose flex flex-1 flex-col text-sm font-light">
           <p className="text-3xl">waddup nerd</p>

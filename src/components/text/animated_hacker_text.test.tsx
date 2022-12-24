@@ -7,7 +7,7 @@ import "@testing-library/jest-dom";
 
 import { act, render } from "@testing-library/react";
 
-import AnimatedHackerText from "../../../src/components/text/animated_hacker_text";
+import AnimatedHackerText from "./animated_hacker_text";
 
 describe("animated hacker text", () => {
   test("renders text at the start", () => {

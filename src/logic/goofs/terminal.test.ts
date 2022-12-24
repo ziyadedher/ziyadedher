@@ -4,8 +4,8 @@ import {
   echo,
   exec,
   ls,
-} from "../../../src/logic/goofs/terminal";
-import { listEnumValues } from "../../../src/utils/enum";
+} from "./terminal";
+import { listEnumValues } from "../../utils/enum";
 
 describe("terminal", () => {
   describe("commands", () => {

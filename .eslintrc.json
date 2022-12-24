@@ -1,5 +1,8 @@
 {
-  "extends": ["@ziyadedher"],
+  "extends": [
+    "@ziyadedher",
+    "plugin:storybook/recommended"
+  ],
   "rules": {
     "jest/no-jest-import": "off",
     "@typescript-eslint/dot-notation": "off",

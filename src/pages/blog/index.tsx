@@ -1,8 +1,7 @@
 import Head from "next/head";
 
 import TextLink from "../../components/links/text";
-import { NavbarPage } from "../../components/navbar";
-import PageContainer, { PageStyle } from "../../components/page_container";
+import PageContainer from "../../components/page_container";
 
 import { METADATA as SecurityDotTxtMetadata } from "./security.txt";
 
@@ -27,8 +26,8 @@ const Index: NextPage = () => (
     <PageContainer
       hasHeader
       hasNavbar
-      navbarPage={NavbarPage.BLOG}
-      pageStyle={PageStyle.LIGHT}
+      navbarPage="blog"
+      pageStyle="light"
     >
       <div className="mx-auto flex w-full max-w-sm flex-col gap-12 pt-8 font-light">
         <div className="flex flex-col gap-4 self-center text-center">
