@@ -2,7 +2,7 @@ import React from "react";
 
 import TextLink from "../../components/links/text";
 
-import { METADATA as SecurityDotTxtMetadata } from "./security.txt/page";
+import SecurityDotTxtMetadata from "./security.txt/metadata";
 
 import type { BlogPostMetadata } from "../../components/blog";
 
