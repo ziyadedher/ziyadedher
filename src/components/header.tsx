@@ -1,3 +1,5 @@
+"use client";
+
 import Link from "next/link";
 import {
   FacebookLogo,
@@ -10,16 +12,12 @@ import {
 } from "phosphor-react";
 import React from "react";
 
-import Anchor from "../logic/anchor";
-
 import IconLink from "./links/icon";
 
 const Header: React.FunctionComponent = () => (
   <header className="flex flex-col items-center text-center">
     <div className="text-lg font-light lowercase transition-all hover:opacity-70">
-      <Link href="/" passHref legacyBehavior>
-        <Anchor>Ziyad Edher</Anchor>
-      </Link>
+      <Link href="/">Ziyad Edher</Link>
     </div>
 
     <div className="flex flex-row space-x-2 pt-2">

@@ -2,13 +2,7 @@ import cx from "classnames";
 import Link from "next/link";
 import React from "react";
 
-import Anchor from "../logic/anchor";
-
-enum NavbarPage {
-  HOME = "/",
-  BLOG = "/blog",
-  HACKS = "/hacks",
-}
+type NavbarPage = "blog" | "hacks" | "home";
 
 interface NavbarPageEntryProps {
   readonly page: NavbarPage;
@@ -23,17 +17,15 @@ const NavbarPageEntry: React.FunctionComponent<NavbarPageEntryProps> = ({
   linkUrl,
   isCurrentPage,
 }: NavbarPageEntryProps) => (
-  <Link key={page} href={linkUrl} passHref legacyBehavior>
-    <Anchor>
-      <span
-        className={cx(
-          "uppercase font-light text-sm group-hover:opacity-50 transition-all",
-          isCurrentPage === true ? "opacity-70" : "opacity-100"
-        )}
-      >
-        {linkName}
-      </span>
-    </Anchor>
+  <Link key={page} href={linkUrl}>
+    <span
+      className={cx(
+        "uppercase font-light text-sm group-hover:opacity-50 transition-all",
+        isCurrentPage === true ? "opacity-70" : "opacity-100"
+      )}
+    >
+      {linkName}
+    </span>
   </Link>
 );
 
@@ -46,25 +38,25 @@ const Navbar: React.FunctionComponent<NavbarProps> = ({
 }: NavbarProps) => (
   <nav className="flex w-full grow justify-center space-x-4">
     <NavbarPageEntry
-      page={NavbarPage.HOME}
+      page="home"
       linkName="Home"
-      linkUrl={NavbarPage.HOME}
-      isCurrentPage={currentPage === NavbarPage.HOME}
+      linkUrl="/"
+      isCurrentPage={currentPage === "home"}
     />
     <NavbarPageEntry
-      page={NavbarPage.BLOG}
+      page="blog"
       linkName="Blog"
-      linkUrl={NavbarPage.BLOG}
-      isCurrentPage={currentPage === NavbarPage.BLOG}
+      linkUrl="/blog"
+      isCurrentPage={currentPage === "blog"}
     />
     <NavbarPageEntry
-      page={NavbarPage.HACKS}
+      page="hacks"
       linkName="Hacks"
-      linkUrl={NavbarPage.HACKS}
-      isCurrentPage={currentPage === NavbarPage.HACKS}
+      linkUrl="/hacks"
+      isCurrentPage={currentPage === "hacks"}
     />
   </nav>
 );
 
+export type { NavbarPage };
 export default Navbar;
-export { NavbarPage };

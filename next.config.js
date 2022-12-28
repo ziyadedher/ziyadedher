@@ -7,11 +7,14 @@ const { withPlaiceholder } = require("@plaiceholder/next");
 /** @type {import('next').NextConfig} */
 const CONFIG = {
   reactStrictMode: true,
-  swcMinify: false, // SWC minification breaks ONNX WASM
+
   images: {
     domains: ["storage.ziyadedher.com"],
   },
-  experimental: {},
+
+  experimental: {
+    appDir: true,
+  },
 
   // eslint-disable-next-line @typescript-eslint/explicit-function-return-type, @typescript-eslint/require-await -- exception for Next.js headers.
   headers: async () => [],
