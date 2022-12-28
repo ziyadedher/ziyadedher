@@ -2,7 +2,7 @@ import React from "react";
 
 // eslint-disable-next-line @typescript-eslint/no-shadow -- custom Image
 import Image from "../components/image";
-import TextLink from "../components/links/text";
+import { TextLink } from "../components/links";
 import PageContainer from "../components/page_container";
 import { getImageWithBlur } from "../logic/image_with_blur";
 import { getStorageURI } from "../utils/storage";

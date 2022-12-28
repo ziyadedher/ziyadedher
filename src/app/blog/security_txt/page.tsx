@@ -2,7 +2,7 @@ import React from "react";
 
 import { BlogPost } from "../../../components/blog";
 import Chart from "../../../components/chart";
-import TextLink from "../../../components/links/text";
+import { TextLink } from "../../../components/links";
 import { getImageWithBlur } from "../../../logic/image_with_blur";
 import { getStorageURI } from "../../../utils/storage";
 

@@ -1,6 +1,6 @@
 import React from "react";
 
-import TextLink from "../../components/links/text";
+import { TextLink } from "../../components/links";
 
 import SecurityDotTxtMetadata from "./security_txt/metadata";
 
@@ -22,7 +22,6 @@ const Page: React.FunctionComponent = () => (
     </div>
     <div>
       <ul className="flex flex-col gap-8">
-        {}
         {/* eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Date */}
         {ENTRIES.map((metadata) => (
           <li key={metadata.url}>

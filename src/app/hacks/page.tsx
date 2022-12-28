@@ -1,7 +1,7 @@
 import React from "react";
 
 import Terminal from "../../components/goofs/terminal";
-import AnimatedHackerText from "../../components/text/animated_hacker_text";
+import { AnimatedHackerText } from "../../components/text";
 
 const Page: React.FunctionComponent = () => (
   <div className="flex w-full flex-col items-center">
