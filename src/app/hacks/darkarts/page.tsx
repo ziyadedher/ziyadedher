@@ -5,8 +5,8 @@ import { CaretRight } from "phosphor-react";
 import React, { useCallback, useEffect, useReducer, useState } from "react";
 
 import GeneratedImage from "../../../components/goofs/darkarts/generated_image";
-import RangeSliderInput from "../../../components/inputs/range_slider";
-import TextLink from "../../../components/links/text";
+import { RangeSliderInput } from "../../../components/inputs";
+import { TextLink } from "../../../components/links";
 import { LayerKeys } from "../../../logic/goofs/darkarts/model";
 
 import type {
