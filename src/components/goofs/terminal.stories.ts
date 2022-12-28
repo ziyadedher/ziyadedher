@@ -6,6 +6,11 @@ type Story = StoryObj<typeof Terminal>;
 
 const Metadata: Meta = {
   component: Terminal,
+  parameters: {
+    nextjs: {
+      appDirectory: true,
+    },
+  },
 };
 
 const Base: Story = {};
