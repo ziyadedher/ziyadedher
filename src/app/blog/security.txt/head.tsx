@@ -5,7 +5,7 @@ import DefaultHeadTags from "../../../components/default_head_tags";
 import { getImageWithBlur } from "../../../logic/image_with_blur";
 import { getStorageURI } from "../../../utils/storage";
 
-import { METADATA } from "./page";
+import METADATA from "./metadata";
 
 // @ts-expect-error -- Async Server Component
 const Head: React.FunctionComponent = async () => (
