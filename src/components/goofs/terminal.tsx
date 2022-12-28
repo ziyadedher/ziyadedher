@@ -1,10 +1,11 @@
-import { useRouter } from "next/router";
-import React from "react";
+"use client";
+
+import { useRouter } from "next/navigation";
+import React, { useCallback } from "react";
 import ConsoleEmulator from "react-console-emulator";
 
 import { cd, echo, exec, ls } from "../../logic/goofs/terminal";
 
-import type { NextRouter } from "next/router";
 import type { TerminalProps as ConsoleEmulatorProps } from "react-console-emulator";
 
 const WELCOME_MESSAGE = "Welcome, `help` to start.";
@@ -15,12 +16,11 @@ const ERROR_TEXT = "command not found: [command]";
 
 type CommandsType = Pick<ConsoleEmulatorProps, "commands">["commands"];
 
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Next.js router.
-const getCommands = (router: NextRouter): CommandsType => ({
+const getCommands = (route: (url: string) => void): CommandsType => ({
   cd: {
     description: "change directory",
     usage: "cd <directory>",
-    fn: cd.bind(null, async (url: string) => await router.push(url)),
+    fn: cd.bind(null, route),
   },
   echo: {
     description: "write arguments to the terminal",
@@ -41,9 +41,17 @@ const getCommands = (router: NextRouter): CommandsType => ({
 
 const Terminal: React.FunctionComponent = () => {
   const router = useRouter();
+
+  const route = useCallback(
+    (url: string) => {
+      router.push(url);
+    },
+    [router]
+  );
+
   return (
     <ConsoleEmulator
-      commands={getCommands(router)}
+      commands={getCommands(route)}
       welcomeMessage={WELCOME_MESSAGE}
       promptLabel={PROMPT_LABEL}
       errorText={ERROR_TEXT}

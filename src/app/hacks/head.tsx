@@ -1,6 +1,6 @@
 import React from "react";
 
-import DefaultHeadTags from "../components/default_head_tags";
+import DefaultHeadTags from "../../components/default_head_tags";
 
 const Head: React.FunctionComponent = () => (
   <>

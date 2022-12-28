@@ -5,14 +5,6 @@ import { getGoogleAnalyticsMeasurementId } from "./env";
 
 const GA_TRACKING_ID = getGoogleAnalyticsMeasurementId();
 
-// https://developers.google.com/analytics/devguides/collection/gtagjs/pages
-const pageview = (url: string): void => {
-  window.gtag("config", GA_TRACKING_ID, {
-    // eslint-disable-next-line @typescript-eslint/naming-convention, camelcase -- gtag convention.
-    page_path: url,
-  });
-};
-
 const GTag: React.FunctionComponent = () => (
   <>
     <Script
@@ -36,6 +28,14 @@ const GTag: React.FunctionComponent = () => (
     />
   </>
 );
+
+// https://developers.google.com/analytics/devguides/collection/gtagjs/pages
+const pageview = (url: string): void => {
+  window.gtag("config", GA_TRACKING_ID, {
+    // eslint-disable-next-line @typescript-eslint/naming-convention, camelcase -- gtag convention.
+    page_path: url,
+  });
+};
 
 export default GTag;
 export { pageview };

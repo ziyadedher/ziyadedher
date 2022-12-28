@@ -1,14 +1,12 @@
-import { Chart } from "primereact/chart";
 import React from "react";
 
-import BlogPost from "../../components/blog_post";
-import TextLink from "../../components/links/text";
-import { getImageWithBlur } from "../../logic/image_with_blur";
-import { getStorageURI } from "../../utils/storage";
+import { BlogPost } from "../../../components/blog";
+import Chart from "../../../components/chart";
+import TextLink from "../../../components/links/text";
+import { getImageWithBlur } from "../../../logic/image_with_blur";
+import { getStorageURI } from "../../../utils/storage";
 
-import type { BlogPostMetadata } from "../../components/blog_post";
-import type { ImageWithBlur } from "../../logic/image_with_blur";
-import type { GetStaticProps, NextPage } from "next";
+import type { BlogPostMetadata } from "../../../components/blog";
 
 const METADATA: BlogPostMetadata = {
   url: "/blog/security.txt",
@@ -53,28 +51,16 @@ const TopNBreakdownChart: React.FunctionComponent<TopNBreakdownChartProps> = ({
   />
 );
 
-interface SecurityDotTxtProps {
-  readonly images: {
-    readonly cover: ImageWithBlur;
-  };
-}
-
-/*
- * https://findsecuritycontacts.com/
- * https://krebsonsecurity.com/2021/09/does-your-organization-have-a-security-txt-file/
- *
- * HackerOne autogen
- * Louvre language
- */
-
-const SecurityDotTxt: NextPage<SecurityDotTxtProps> = ({
-  images,
-}: SecurityDotTxtProps) => (
+// @ts-expect-error -- Async Server Component
+const Page: React.FunctionComponent = async () => (
   <BlogPost
     metadata={METADATA}
     coverImage={{
       alt: "hand-drawn cartoon of a stick figure walking away sadly from a sign that reads, in all caps, 'absolutely no unauthorized hacking'",
-      ...images.cover,
+      ...(await getImageWithBlur(
+        getStorageURI("blog/security.txt/cover.png"),
+        60
+      )),
     }}
   >
     <section>
@@ -436,16 +422,5 @@ const SecurityDotTxt: NextPage<SecurityDotTxtProps> = ({
   </BlogPost>
 );
 
-const getStaticProps: GetStaticProps<SecurityDotTxtProps> = async () => ({
-  props: {
-    images: {
-      cover: await getImageWithBlur(
-        getStorageURI("blog/security.txt/cover.png"),
-        60
-      ),
-    },
-  },
-});
-
-export { getStaticProps, METADATA };
-export default SecurityDotTxt;
+export { METADATA };
+export default Page;

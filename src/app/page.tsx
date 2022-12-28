@@ -8,7 +8,7 @@ import { getImageWithBlur } from "../logic/image_with_blur";
 import { getStorageURI } from "../utils/storage";
 
 // @ts-expect-error -- Async Server Component
-const Index: React.FunctionComponent = async () => (
+const Page: React.FunctionComponent = async () => (
   <PageContainer hasHeader hasNavbar navbarPage="home" pageStyle="light">
     <div className="mx-auto flex max-w-5xl grow-0 flex-row justify-center gap-8 py-8">
       <div className="prose flex flex-1 flex-col text-sm font-light">
@@ -109,4 +109,4 @@ const Index: React.FunctionComponent = async () => (
   </PageContainer>
 );
 
-export default Index;
+export default Page;
