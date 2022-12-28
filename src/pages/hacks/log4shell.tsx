@@ -59,8 +59,8 @@ const TableRow: React.FunctionComponent<TableRowProps> = ({
     </TableRowItem>
     <TableRowItem>
       <span className="text-blue-600 transition-all hover:opacity-50">
-        <Link href={item.bugBountySpecialSourceUrl} passHref legacyBehavior>
-          <Anchor>${item.bugBountySpecialAmount.toLocaleString()}</Anchor>
+        <Link href={item.bugBountySpecialSourceUrl}>
+          ${item.bugBountySpecialAmount.toLocaleString()}
         </Link>
       </span>
     </TableRowItem>
@@ -81,12 +81,7 @@ const Index: NextPage = () => (
       />
     </Head>
 
-    <PageContainer
-      hasNavbar
-      hasHeader
-      navbarPage={null}
-      pageStyle="hacker"
-    >
+    <PageContainer hasNavbar hasHeader navbarPage={null} pageStyle="hacker">
       <div className="flex w-full flex-col items-center gap-2 px-6 text-center text-sm font-light xl:mx-0">
         <h1 className="text-xl">Log4Shell Public Bug Bounty Specials</h1>
         <p className="max-w-xl text-sm">

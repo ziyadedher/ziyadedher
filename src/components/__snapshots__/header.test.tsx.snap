@@ -12,7 +12,6 @@ exports[`header renders 1`] = `
           class="text-lg font-light lowercase transition-all hover:opacity-70"
         >
           <a
-            class="group"
             href="/"
           >
             Ziyad Edher
@@ -426,7 +425,6 @@ exports[`header renders 1`] = `
         class="text-lg font-light lowercase transition-all hover:opacity-70"
       >
         <a
-          class="group"
           href="/"
         >
           Ziyad Edher

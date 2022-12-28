@@ -2,8 +2,6 @@ import cx from "classnames";
 import Link from "next/link";
 import React from "react";
 
-import Anchor from "../logic/anchor";
-
 type NavbarPage = "blog" | "hacks" | "home";
 
 interface NavbarPageEntryProps {
@@ -19,17 +17,15 @@ const NavbarPageEntry: React.FunctionComponent<NavbarPageEntryProps> = ({
   linkUrl,
   isCurrentPage,
 }: NavbarPageEntryProps) => (
-  <Link key={page} href={linkUrl} passHref legacyBehavior>
-    <Anchor>
-      <span
-        className={cx(
-          "uppercase font-light text-sm group-hover:opacity-50 transition-all",
-          isCurrentPage === true ? "opacity-70" : "opacity-100"
-        )}
-      >
-        {linkName}
-      </span>
-    </Anchor>
+  <Link key={page} href={linkUrl}>
+    <span
+      className={cx(
+        "uppercase font-light text-sm group-hover:opacity-50 transition-all",
+        isCurrentPage === true ? "opacity-70" : "opacity-100"
+      )}
+    >
+      {linkName}
+    </span>
   </Link>
 );
 
