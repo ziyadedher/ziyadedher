@@ -19,8 +19,8 @@ const Metadata: Meta<typeof AnimatedHackerText> = {
 const Base: Story = {
   args: {
     text: "Hello, world!",
-    delay: 1000,
-    tickDelay: 10,
+    delay: 0,
+    tickDelay: 0,
   },
 };
 
