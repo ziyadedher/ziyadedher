@@ -1,7 +1,7 @@
 import type { BlogPostMetadata } from "../../../components/blog";
 
 const METADATA: BlogPostMetadata = {
-  url: "/blog/security.txt",
+  url: "/blog/security_txt",
   title: "State of the Security.txt",
   description:
     "We have RFC9116, where is the security.txt? An analysis and overview of our experience deploying it to a site with millions of daily active users.",
