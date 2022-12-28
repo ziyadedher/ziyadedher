@@ -1,3 +1,5 @@
+import React from "react";
+
 // eslint-disable-next-line @typescript-eslint/no-shadow -- custom Image
 import Image from "../components/image";
 import TextLink from "../components/links/text";
@@ -5,9 +7,8 @@ import PageContainer from "../components/page_container";
 import { getImageWithBlur } from "../logic/image_with_blur";
 import { getStorageURI } from "../utils/storage";
 
-import type { NextPage } from "next";
-
-const Index: NextPage = async () => (
+// @ts-expect-error -- Async Server Component
+const Index: React.FunctionComponent = async () => (
   <PageContainer hasHeader hasNavbar navbarPage="home" pageStyle="light">
     <div className="mx-auto flex max-w-5xl grow-0 flex-row justify-center gap-8 py-8">
       <div className="prose flex flex-1 flex-col text-sm font-light">
