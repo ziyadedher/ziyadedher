@@ -1,8 +1,19 @@
 {
-  "extends": ["@ziyadedher"],
+  "extends": ["@ziyadedher", "plugin:storybook/recommended"],
   "rules": {
     "jest/no-jest-import": "off",
     "@typescript-eslint/dot-notation": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.test.ts",
+          "**/*.test.tsx",
+          "**/*.stories.ts",
+          "**/*.stories.tsx"
+        ]
+      }
+    ],
     "prefer-destructuring": [
       "error",
       {

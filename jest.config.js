@@ -21,7 +21,11 @@ const CONFIG = {
   coveragePathIgnorePatterns: [
     "/node_modules/",
     // eslint-disable-next-line no-useless-escape -- this arg expects a RegExp.
+    `src/app/.*\.tsx`,
+    // eslint-disable-next-line no-useless-escape -- this arg expects a RegExp.
     `src/pages/.*\.tsx`,
+    // eslint-disable-next-line no-useless-escape -- this arg expects a RegExp.
+    `src/api/pages/.*\.ts`,
     // eslint-disable-next-line no-useless-escape -- this arg expects a RegExp.
     `src/types/.*\.d\.ts`,
   ],
