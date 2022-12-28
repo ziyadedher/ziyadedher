@@ -1,11 +1,6 @@
-import {
-  Directory,
-  cd,
-  echo,
-  exec,
-  ls,
-} from "./terminal";
 import { listEnumValues } from "../../utils/enum";
+
+import { Directory, cd, echo, exec, ls } from "./terminal";
 
 describe("terminal", () => {
   describe("commands", () => {

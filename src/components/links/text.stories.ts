@@ -1,24 +1,24 @@
-import Text from "./text";
+import TextLink from "./text";
 
 import type { Meta, StoryObj } from "@storybook/react";
 
-type Story = StoryObj<typeof Text>;
+type Story = StoryObj<typeof TextLink>;
 
-const Metadata: Meta<typeof Text> = {
-  component: Text,
+const Metadata: Meta<typeof TextLink> = {
+  component: TextLink,
   argTypes: {
     children: {
       type: "string",
-    }
-  }
+    },
+  },
 };
 
 const Base: Story = {
   args: {
     href: "https://example.org",
     isExternal: true,
-    children: "Visit example.org"
-  }
+    children: "Visit example.org",
+  },
 };
 
 export { Base };

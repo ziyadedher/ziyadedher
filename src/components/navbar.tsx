@@ -4,7 +4,7 @@ import React from "react";
 
 import Anchor from "../logic/anchor";
 
-type NavbarPage = "home" | "blog" | "hacks";
+type NavbarPage = "blog" | "hacks" | "home";
 
 interface NavbarPageEntryProps {
   readonly page: NavbarPage;

@@ -6,18 +6,20 @@ import Navbar from "./navbar";
 
 import type { NavbarPage } from "./navbar";
 
-type PageStyle = "light" | "dark" | "hacker";
+type PageStyle = "dark" | "hacker" | "light";
 
 const getPageStyle = (pageStyle: PageStyle): string => {
   switch (pageStyle) {
     case "light":
-      return ""
+      return "";
     case "dark":
-      return "dark"
+      return "dark";
     case "hacker":
-      return "text-green-500 bg-gray-900"
+      return "text-green-500 bg-gray-900";
+    default:
+      return "";
   }
-}
+};
 interface PageContainerProps {
   readonly children: React.ReactNode;
   readonly hasHeader?: boolean;
@@ -34,7 +36,12 @@ const PageContainer: React.FunctionComponent<PageContainerProps> = ({
   navbarPage = null,
   pageStyle = "light",
 }) => (
-  <div className={cx("flex flex-col min-h-screen items-center", getPageStyle(pageStyle))}>
+  <div
+    className={cx(
+      "flex flex-col min-h-screen items-center",
+      getPageStyle(pageStyle)
+    )}
+  >
     <div className="flex w-full grow flex-col items-center dark:bg-gray-900 dark:text-gray-300">
       <div className="mt-4 mb-8 flex flex-col space-y-4">
         {hasHeader ? <Header /> : null}

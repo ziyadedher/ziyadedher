@@ -43,6 +43,7 @@ const Base: Story = {
     children: IconName.PHOSPHOR,
   },
 
+  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
   render: ({ href, label, isExternal, children }) => (
     <IconLink href={href} label={label} isExternal={isExternal}>
       {children}

@@ -12,9 +12,9 @@ const Metadata: Meta<typeof PageContainer> = {
       options: ["home", "blog", "hacks"],
     },
     pageStyle: {
-      control: {type: "radio" },
+      control: { type: "radio" },
       options: ["light", "dark", "hacker"],
-    }
+    },
   },
 };
 
@@ -23,9 +23,9 @@ const Base: Story = {
     hasNavbar: true,
     hasHeader: true,
     navbarPage: "home",
-    pageStyle: "light"
-  }
-}
+    pageStyle: "light",
+  },
+};
 
 export { Base };
 export default Metadata;

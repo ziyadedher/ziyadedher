@@ -11,7 +11,7 @@
     "postbuild": "next-sitemap",
     "start": "next start",
     "deploy": "vercel deploy",
-    "lint": "eslint 'src/**' 'tests/**' 'stories/**'",
+    "lint": "eslint 'src/**'",
     "test": "jest --silent",
     "test:watch": "jest --watch --notify",
     "storybook": "storybook dev -p 6006",
