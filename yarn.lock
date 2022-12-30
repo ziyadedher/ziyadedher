@@ -4999,12 +4999,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/three@npm:0.146.0":
-  version: 0.146.0
-  resolution: "@types/three@npm:0.146.0"
+"@types/three@npm:0.147.0":
+  version: 0.147.0
+  resolution: "@types/three@npm:0.147.0"
   dependencies:
     "@types/webxr": "*"
-  checksum: f8ea5ba032f6aaa1cb5ad7dfbbd13851e8cba04365bc7fa9a5320ea7e9a2538ea5f2426391f690f0465347ade15cc145d5dc84b1730d8cceea89f746231f667c
+  checksum: 34c1e2a7a46921c4b88248ebe846957934e7daf78d0c7eda74266e3274d65694324c7cab379a22d05f34dd2d9a314b84a87640952b776404725d49478c7030ec
   languageName: node
   linkType: hard
 
@@ -18575,7 +18575,7 @@ __metadata:
     "@types/sharp": 0.31.0
     "@types/source-map-support": 0.5.6
     "@types/testing-library__jest-dom": 5.14.5
-    "@types/three": 0.146.0
+    "@types/three": 0.147.0
     "@typescript-eslint/eslint-plugin": 5.47.1
     "@typescript-eslint/parser": 5.47.1
     "@yarnpkg/sdks": 3.0.0-rc.34
