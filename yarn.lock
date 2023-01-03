@@ -2589,14 +2589,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.50.3":
-  version: 9.50.3
-  resolution: "@react-three/drei@npm:9.50.3"
+"@react-three/drei@npm:9.50.4":
+  version: 9.50.4
+  resolution: "@react-three/drei@npm:9.50.4"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
     "@use-gesture/react": ^10.2.0
-    detect-gpu: ^5.0.1
+    detect-gpu: ^5.0.5
     glsl-noise: ^0.0.0
     lodash.clamp: ^4.0.3
     lodash.omit: ^4.5.0
@@ -2606,7 +2606,7 @@ __metadata:
     react-merge-refs: ^1.1.0
     stats.js: ^0.17.0
     suspend-react: ^0.0.8
-    three-mesh-bvh: ^0.5.19
+    three-mesh-bvh: ^0.5.21
     three-stdlib: ^2.20.4
     troika-three-text: ^0.47.1
     utility-types: ^3.10.0
@@ -2619,7 +2619,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: a1ffafc9e9ce958e132650a27a4ffd0a04de30117558e2bcded9494fabc7328d40415e6b9c7c2e658beb71c01561157c7334333758248b8cd5d9db966063d95a
+  checksum: 6470a96350038ef0af75f6762039fcc15bb5b348e45f5199de60a37fdf9aa642943d8dc1610d8b20b9ca1178b31c8ec1e9a6c703251f330b69e515075204eb81
   languageName: node
   linkType: hard
 
@@ -7750,7 +7750,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-gpu@npm:^5.0.1":
+"detect-gpu@npm:^5.0.5":
   version: 5.0.5
   resolution: "detect-gpu@npm:5.0.5"
   dependencies:
@@ -16638,12 +16638,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-mesh-bvh@npm:^0.5.19":
-  version: 0.5.20
-  resolution: "three-mesh-bvh@npm:0.5.20"
+"three-mesh-bvh@npm:^0.5.21":
+  version: 0.5.21
+  resolution: "three-mesh-bvh@npm:0.5.21"
   peerDependencies:
     three: ">= 0.123.0"
-  checksum: e6566aacf36172775da8017c9d23c76bcd0f74b8f3407e0800c8fe869a73fbd74d8fb25023a4da7e30d989e9a72b8cb8de7ba4d99ec9505c35adf762b81045fa
+  checksum: f2984f0e5f29c47d329c9c6b6ac0fd777e604e6c65e68cf64a5f242bc4dbf31c8bcb56d19c849f1cb36a43ca0ec5f93df2c18dc970d9df6ee90d3320d9fdf1cf
   languageName: node
   linkType: hard
 
@@ -18057,7 +18057,7 @@ __metadata:
     "@next/env": 13.1.1
     "@next/eslint-plugin-next": 13.1.1
     "@plaiceholder/next": 2.5.0
-    "@react-three/drei": 9.50.3
+    "@react-three/drei": 9.50.4
     "@react-three/fiber": 8.9.2
     "@storybook/addon-docs": 7.0.0-beta.19
     "@storybook/addon-essentials": 7.0.0-beta.19
