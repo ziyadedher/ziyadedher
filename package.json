@@ -46,7 +46,7 @@
     "three": "0.148.0"
   },
   "devDependencies": {
-    "@babel/core": "7.20.7",
+    "@babel/core": "7.20.12",
     "@babel/preset-react": "^7.18.6",
     "@babel/runtime": "7.20.7",
     "@heroicons/react": "2.0.13",
