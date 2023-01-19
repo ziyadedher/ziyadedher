@@ -5208,10 +5208,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/next@npm:3.3.16":
-  version: 3.3.16
-  resolution: "@vercel/next@npm:3.3.16"
-  checksum: 8c12d7ea7193ea7313f81c52fb84404ccf4f10c973f6b184552e88b93e5799cca5474bf9896b6305998a08c9d31ec0a6ba95f10b95c7751cde0e6cf026e26a89
+"@vercel/next@npm:3.3.17":
+  version: 3.3.17
+  resolution: "@vercel/next@npm:3.3.17"
+  checksum: 2ec0f158edf95895d4ab186fbcac34b7e499882fba99717254d0a6c3de3cf1bc088de592bda4a94a4fbedeea28ca4093f7476e8c9275717bdd3d4e41002040ab
   languageName: node
   linkType: hard
 
@@ -5280,12 +5280,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/remix@npm:1.2.6":
-  version: 1.2.6
-  resolution: "@vercel/remix@npm:1.2.6"
+"@vercel/remix@npm:1.2.7":
+  version: 1.2.7
+  resolution: "@vercel/remix@npm:1.2.7"
   dependencies:
     "@vercel/nft": 0.22.5
-  checksum: 1e9dcd9382835c597df457c6d441518844027d971a2b1bf9b020b06ce2a1df0ae09221a7a87d1fc3bafe8764d07138c5ebfb55ff6729dc7f4ce3e9dbc8736eb6
+  checksum: 84425d7bf8ff89977aacb9314b80076317a1bb5072af1996c0e8976e03b4ad9807589a5c596cc824b5223772235433f1b89e4566c51f32a5b3497559017ec838
   languageName: node
   linkType: hard
 
@@ -17495,24 +17495,24 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vercel@npm:28.12.7":
-  version: 28.12.7
-  resolution: "vercel@npm:28.12.7"
+"vercel@npm:28.12.8":
+  version: 28.12.8
+  resolution: "vercel@npm:28.12.8"
   dependencies:
     "@vercel/build-utils": 5.9.0
     "@vercel/go": 2.2.30
     "@vercel/hydrogen": 0.0.44
-    "@vercel/next": 3.3.16
+    "@vercel/next": 3.3.17
     "@vercel/node": 2.8.14
     "@vercel/python": 3.1.40
     "@vercel/redwood": 1.0.51
-    "@vercel/remix": 1.2.6
+    "@vercel/remix": 1.2.7
     "@vercel/ruby": 1.3.56
     "@vercel/static-build": 1.1.7
   bin:
     vc: dist/index.js
     vercel: dist/index.js
-  checksum: aeb89b1986153268a1a2490b44b54ed9bfaa2e17a8c43a89eb33dd0b793de62925e702c88bdd0c19f2edaf16996c8f919017f2844134029599b2cbfc42beb07a
+  checksum: 6628e84bae734bdd4eda41f10fabb0e576668d80d8aa4f1e070235167e91b6b366c82a1e76f50684737d9a38c0ef31c2fefe5f414e234047b99cae157c8eb7c6
   languageName: node
   linkType: hard
 
@@ -18045,7 +18045,7 @@ __metadata:
     ts-node: 10.9.1
     typescript: 4.9.4
     util: ^0.12.5
-    vercel: 28.12.7
+    vercel: 28.12.8
     webpack: ^5.75.0
   languageName: unknown
   linkType: soft
