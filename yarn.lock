@@ -4575,13 +4575,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/jest@npm:*, @types/jest@npm:29.2.6":
+"@types/jest@npm:*":
   version: 29.2.6
   resolution: "@types/jest@npm:29.2.6"
   dependencies:
     expect: ^29.0.0
     pretty-format: ^29.0.0
   checksum: 90190ac830334af1470d255853f9621fe657e5030b4d96773fc1f884833cd303c76580b00c1b86dc38a8db94f1c7141d462190437a10af31852b8845a57c48ba
+  languageName: node
+  linkType: hard
+
+"@types/jest@npm:29.4.0":
+  version: 29.4.0
+  resolution: "@types/jest@npm:29.4.0"
+  dependencies:
+    expect: ^29.0.0
+    pretty-format: ^29.0.0
+  checksum: 23760282362a252e6690314584d83a47512d4cd61663e957ed3398ecf98195fe931c45606ee2f9def12f8ed7d8aa102d492ec42d26facdaf8b78094a31e6568e
   languageName: node
   linkType: hard
 
@@ -18199,7 +18209,7 @@ __metadata:
     "@types/eslint": 8.4.10
     "@types/events": 3.0.0
     "@types/gtag.js": 0.0.12
-    "@types/jest": 29.2.6
+    "@types/jest": 29.4.0
     "@types/mdx-js__react": 1.5.5
     "@types/node": 18.11.18
     "@types/prettier": 2.7.2
