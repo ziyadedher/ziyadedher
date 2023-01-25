@@ -2672,27 +2672,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.54.2":
-  version: 9.54.2
-  resolution: "@react-three/drei@npm:9.54.2"
+"@react-three/drei@npm:9.56.1":
+  version: 9.56.1
+  resolution: "@react-three/drei@npm:9.56.1"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
     "@use-gesture/react": ^10.2.0
     camera-controls: ^1.38.0
-    detect-gpu: ^5.0.5
+    detect-gpu: ^5.0.8
     glsl-noise: ^0.0.0
     lodash.clamp: ^4.0.3
     lodash.omit: ^4.5.0
     lodash.pick: ^4.4.0
-    maath: ^0.5.1
+    maath: ^0.5.2
     meshline: ^3.1.6
     react-composer: ^5.0.3
     react-merge-refs: ^1.1.0
     stats.js: ^0.17.0
     suspend-react: ^0.0.8
-    three-mesh-bvh: ^0.5.21
-    three-stdlib: ^2.20.4
+    three-mesh-bvh: ^0.5.22
+    three-stdlib: ^2.21.6
     troika-three-text: ^0.47.1
     utility-types: ^3.10.0
     zustand: ^3.5.13
@@ -2704,7 +2704,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: b5da5644a3f1ba3b7191e774cd9c3625c376e04f611f739af6fd86a332be44ff91b90f8c23826d1ae203f63f2f04523d23ff952d52f836e34018915163e3a461
+  checksum: f8aedf4ead7d42a47a303351a6511e63a659e2396b0cbeda56fc611575faad936b8f38127e0addc7dfd37a4ddb6a407c02547459470921217144b63b97a3f4a9
   languageName: node
   linkType: hard
 
@@ -8049,7 +8049,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-gpu@npm:^5.0.5":
+"detect-gpu@npm:^5.0.8":
   version: 5.0.8
   resolution: "detect-gpu@npm:5.0.8"
   dependencies:
@@ -12780,7 +12780,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"maath@npm:^0.5.1":
+"maath@npm:^0.5.2":
   version: 0.5.2
   resolution: "maath@npm:0.5.2"
   peerDependencies:
@@ -16829,7 +16829,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-mesh-bvh@npm:^0.5.21":
+"three-mesh-bvh@npm:^0.5.22":
   version: 0.5.22
   resolution: "three-mesh-bvh@npm:0.5.22"
   peerDependencies:
@@ -16838,9 +16838,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-stdlib@npm:^2.20.4":
-  version: 2.21.5
-  resolution: "three-stdlib@npm:2.21.5"
+"three-stdlib@npm:^2.21.6":
+  version: 2.21.6
+  resolution: "three-stdlib@npm:2.21.6"
   dependencies:
     "@babel/runtime": ^7.16.7
     "@types/offscreencanvas": ^2019.6.4
@@ -16855,7 +16855,7 @@ __metadata:
     zstddec: ^0.0.2
   peerDependencies:
     three: ">=0.122.0"
-  checksum: 1d757032edd10a7cb16419c5fec2df18d0b1b78b2efef89c901bd45a46b923b4627a86fcb92f7826dcbe83071d3f0e0a10ba364bf48e458b58d5569cd0675e7f
+  checksum: e074d475757813078e70d3568fc6deb6db6cee9d7c788155a6babd2e05c4488df11bdd44e76af73e144447c919292c5d67f65514fd6c524bf71c2808279871b4
   languageName: node
   linkType: hard
 
@@ -18192,7 +18192,7 @@ __metadata:
     "@next/env": 13.1.5
     "@next/eslint-plugin-next": 13.1.5
     "@plaiceholder/next": 2.5.0
-    "@react-three/drei": 9.54.2
+    "@react-three/drei": 9.56.1
     "@react-three/fiber": 8.10.1
     "@storybook/addon-docs": 7.0.0-beta.33
     "@storybook/addon-essentials": 7.0.0-beta.33
