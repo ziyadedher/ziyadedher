@@ -2681,13 +2681,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.56.5":
-  version: 9.56.5
-  resolution: "@react-three/drei@npm:9.56.5"
+"@react-three/drei@npm:9.56.8":
+  version: 9.56.8
+  resolution: "@react-three/drei@npm:9.56.8"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
-    "@use-gesture/react": ^10.2.0
+    "@use-gesture/react": ^10.2.24
     camera-controls: ^2.0.0
     detect-gpu: ^5.0.8
     glsl-noise: ^0.0.0
@@ -2713,7 +2713,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 3381fd3c80c1170f917fa24e7fc6451f06c2239dffc89e54753e9027ebd20ee63bf342c5615c333a0e00b4da22e08f738320d9da6a3a9cb21d69cd81210a1f45
+  checksum: 38b2dcada18f421fda4162166a0e8e62ebb2fa6f70c65dfc64f63fd08f27d7513f41e331e9fa2afeee31d396eff3338eddbd70827c8991d78e487ab9b1fb15fe
   languageName: node
   linkType: hard
 
@@ -5261,21 +5261,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@use-gesture/core@npm:10.2.23":
-  version: 10.2.23
-  resolution: "@use-gesture/core@npm:10.2.23"
-  checksum: 2516eb82ee3355b40f1e4eb6fb218082f8196486245a6794d10e13a3698b7d3a7501c57a1e8f61c9958105ee80255b266618242fdc80056f7ab6d62ae1ef2169
+"@use-gesture/core@npm:10.2.24":
+  version: 10.2.24
+  resolution: "@use-gesture/core@npm:10.2.24"
+  checksum: 92c2cedde03ca5a209f0f2abc120d834601bfa1631d61983ae6eede99bcf680ff229d006394f10dd3825f4da838c3cd0156f67a3b586ec031e52d3b3ec618bef
   languageName: node
   linkType: hard
 
-"@use-gesture/react@npm:^10.2.0":
-  version: 10.2.23
-  resolution: "@use-gesture/react@npm:10.2.23"
+"@use-gesture/react@npm:^10.2.24":
+  version: 10.2.24
+  resolution: "@use-gesture/react@npm:10.2.24"
   dependencies:
-    "@use-gesture/core": 10.2.23
+    "@use-gesture/core": 10.2.24
   peerDependencies:
     react: ">= 16.8.0"
-  checksum: 44127907ecc5b87296d14cd0cc86b6031d87ee11ae98df33810e4d986aa58290ec48624010776eeb50c13f2ad62b3439a549c02fba4cef5913b6c8b21b72222e
+  checksum: f8e651aa2e32f78af369b43366ae186aa8beb5b2684308da4262395663559a0eefb0124964db948d9636fe8fe5bfc870937f398dcb8f2cfe738a0c4a37d555c4
   languageName: node
   linkType: hard
 
@@ -18240,7 +18240,7 @@ __metadata:
     "@next/env": 13.1.6
     "@next/eslint-plugin-next": 13.1.6
     "@plaiceholder/next": 2.5.0
-    "@react-three/drei": 9.56.5
+    "@react-three/drei": 9.56.8
     "@react-three/fiber": 8.10.1
     "@storybook/addon-docs": 7.0.0-beta.36
     "@storybook/addon-essentials": 7.0.0-beta.36
