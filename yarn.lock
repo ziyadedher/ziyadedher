@@ -2599,15 +2599,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.56.11":
-  version: 9.56.11
-  resolution: "@react-three/drei@npm:9.56.11"
+"@react-three/drei@npm:9.56.12":
+  version: 9.56.12
+  resolution: "@react-three/drei@npm:9.56.12"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
     "@use-gesture/react": ^10.2.24
-    camera-controls: ^2.0.0
-    detect-gpu: ^5.0.8
+    camera-controls: ^2.0.1
+    detect-gpu: ^5.0.9
     glsl-noise: ^0.0.0
     lodash.clamp: ^4.0.3
     lodash.omit: ^4.5.0
@@ -2619,7 +2619,7 @@ __metadata:
     stats.js: ^0.17.0
     suspend-react: ^0.0.8
     three-mesh-bvh: ^0.5.22
-    three-stdlib: ^2.21.6
+    three-stdlib: ^2.21.8
     troika-three-text: ^0.47.1
     utility-types: ^3.10.0
     zustand: ^3.5.13
@@ -2631,7 +2631,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 5eb1a1e8b5936c8046d0ac1142878ef1a9ed37463bd815e9401de9d64dfa2d823859e76286c2f3e5203ef4c52855b214a904cb60ce3f0701e98b833d676a5b97
+  checksum: 8254fda96eec1e0284e03256258fcc9d7fe18d3341909f1ef138633a309fe89f5cb08fe5e36ab8c727834c3e426f5293008db7da2bba58d90e3c477cb06011e6
   languageName: node
   linkType: hard
 
@@ -6955,7 +6955,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"camera-controls@npm:^2.0.0":
+"camera-controls@npm:^2.0.1":
   version: 2.0.1
   resolution: "camera-controls@npm:2.0.1"
   peerDependencies:
@@ -7985,7 +7985,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-gpu@npm:^5.0.8":
+"detect-gpu@npm:^5.0.9":
   version: 5.0.9
   resolution: "detect-gpu@npm:5.0.9"
   dependencies:
@@ -16686,9 +16686,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three-stdlib@npm:^2.21.6":
-  version: 2.21.6
-  resolution: "three-stdlib@npm:2.21.6"
+"three-stdlib@npm:^2.21.8":
+  version: 2.21.8
+  resolution: "three-stdlib@npm:2.21.8"
   dependencies:
     "@babel/runtime": ^7.16.7
     "@types/offscreencanvas": ^2019.6.4
@@ -16703,7 +16703,7 @@ __metadata:
     zstddec: ^0.0.2
   peerDependencies:
     three: ">=0.122.0"
-  checksum: e074d475757813078e70d3568fc6deb6db6cee9d7c788155a6babd2e05c4488df11bdd44e76af73e144447c919292c5d67f65514fd6c524bf71c2808279871b4
+  checksum: b83d1d72ce0249a69bdd11f005f06cd09a07e497867f5c539ea73cf941450cdccc11186f23f44278d2ac516244b3943d1f0e89e8406965d0bfb8427961c8133a
   languageName: node
   linkType: hard
 
@@ -18020,7 +18020,7 @@ __metadata:
     "@next/env": 13.1.6
     "@next/eslint-plugin-next": 13.1.6
     "@plaiceholder/next": 2.5.0
-    "@react-three/drei": 9.56.11
+    "@react-three/drei": 9.56.12
     "@react-three/fiber": 8.10.1
     "@storybook/addon-docs": 7.0.0-beta.38
     "@storybook/addon-essentials": 7.0.0-beta.38
