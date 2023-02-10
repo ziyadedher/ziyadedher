@@ -2673,15 +2673,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.56.21":
-  version: 9.56.21
-  resolution: "@react-three/drei@npm:9.56.21"
+"@react-three/drei@npm:9.56.22":
+  version: 9.56.22
+  resolution: "@react-three/drei@npm:9.56.22"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ^9.3.1
     "@use-gesture/react": ^10.2.24
-    camera-controls: ^2.0.1
-    detect-gpu: ^5.0.9
+    camera-controls: ^2.1.0
+    detect-gpu: ^5.0.10
     glsl-noise: ^0.0.0
     lodash.clamp: ^4.0.3
     lodash.omit: ^4.5.0
@@ -2705,7 +2705,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: 2bcba9f1aa000dde242a8539401d7231b313cb46b9a909676ad075e981492528b8f3d1260d9eb08f5163675a2995cf921067bcc3c235604e2f4b536405a113f0
+  checksum: 227a22f71af560f4985e8b612b46571e2eee01055768686cb0af34d8e4d2cd12b098022af2ccc3050eeedece6b78e96aa827efa09214012a0646b2479d7854fc
   languageName: node
   linkType: hard
 
@@ -6935,12 +6935,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"camera-controls@npm:^2.0.1":
-  version: 2.1.0
-  resolution: "camera-controls@npm:2.1.0"
+"camera-controls@npm:^2.1.0":
+  version: 2.2.1
+  resolution: "camera-controls@npm:2.2.1"
   peerDependencies:
     three: ">=0.126.1"
-  checksum: d5f62a983e07c53cc64e6ff897997ca3d8ffa84fea721cee96d2646e7fc95574b9a1ddb0464332872f8677baa41eac84aedd59f91fe43876a86903fd1679eee5
+  checksum: ca5068b69d0a08d6a26d1b9653553947f7d9ded57e4604bca1421913666858f704c3e4fbe22f3a73b07baa96e0bb134daad7e930831a38ad3b84af4414694ecf
   languageName: node
   linkType: hard
 
@@ -7894,7 +7894,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-gpu@npm:^5.0.9":
+"detect-gpu@npm:^5.0.10":
   version: 5.0.10
   resolution: "detect-gpu@npm:5.0.10"
   dependencies:
@@ -17559,7 +17559,7 @@ __metadata:
     "@next/env": 13.1.6
     "@next/eslint-plugin-next": 13.1.6
     "@plaiceholder/next": 2.5.0
-    "@react-three/drei": 9.56.21
+    "@react-three/drei": 9.56.22
     "@react-three/fiber": 8.11.0
     "@storybook/addon-docs": 7.0.0-beta.45
     "@storybook/addon-essentials": 7.0.0-beta.45
