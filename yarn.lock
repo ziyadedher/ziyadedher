@@ -2593,6 +2593,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/env@npm:13.2.0":
+  version: 13.2.0
+  resolution: "@next/env@npm:13.2.0"
+  checksum: 2b3fb5ae14bcb39c447f6a75f166a54cbb5ddc0a6c2034138ee3cfa8c30a933008d3ece24a172bc979f6571e7e28b995ea91770fc1363223b8220eacec4c65a2
+  languageName: node
+  linkType: hard
+
 "@next/eslint-plugin-next@npm:12.1.6":
   version: 12.1.6
   resolution: "@next/eslint-plugin-next@npm:12.1.6"
@@ -2602,12 +2609,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@next/eslint-plugin-next@npm:13.1.6":
-  version: 13.1.6
-  resolution: "@next/eslint-plugin-next@npm:13.1.6"
+"@next/eslint-plugin-next@npm:13.2.0":
+  version: 13.2.0
+  resolution: "@next/eslint-plugin-next@npm:13.2.0"
   dependencies:
     glob: 7.1.7
-  checksum: 15d3b5913a56d40c7ad33c77f5285a2388a3a4b4da2eb80a3899ac4b871c7bfca74fd45f98fcac3d6a91c8dce738da2661cf71e7e3116a14d5da0d5b68939e8d
+  checksum: f4f207c1b233d43d8dac6df74465c455555e49ddd635a6a86dde4a6c21b92e7464136d26796799804b5efeb665166fa66c26442fb152445d0da2e57a17255a1b
   languageName: node
   linkType: hard
 
@@ -20579,8 +20586,8 @@ __metadata:
     "@jest/types": 29.4.3
     "@mdx-js/react": 2.3.0
     "@monaco-editor/react": 4.4.6
-    "@next/env": 13.1.6
-    "@next/eslint-plugin-next": 13.1.6
+    "@next/env": 13.2.0
+    "@next/eslint-plugin-next": 13.2.0
     "@plaiceholder/next": 2.5.0
     "@react-three/drei": 9.56.26
     "@react-three/fiber": 8.11.5
