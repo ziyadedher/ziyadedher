@@ -2973,7 +2973,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-spring/three@npm:^9.3.1":
+"@react-spring/three@npm:~9.6.1":
   version: 9.6.1
   resolution: "@react-spring/three@npm:9.6.1"
   dependencies:
@@ -2996,12 +2996,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.56.26":
-  version: 9.56.26
-  resolution: "@react-three/drei@npm:9.56.26"
+"@react-three/drei@npm:9.56.27":
+  version: 9.56.27
+  resolution: "@react-three/drei@npm:9.56.27"
   dependencies:
     "@babel/runtime": ^7.11.2
-    "@react-spring/three": ^9.3.1
+    "@react-spring/three": ~9.6.1
     "@use-gesture/react": ^10.2.24
     camera-controls: ^2.1.0
     detect-gpu: ^5.0.10
@@ -3028,7 +3028,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: e6c12ed846678b9310392ed54a4f998fd76a12c8c5302d9f3838a285774169343551f95bbef1b0638368d53a7b9f0ed903e6fe74029bb6f27d4fbb0dd994646c
+  checksum: e189e0526183d1616923d6ba5caf9a596188784c9e7e7e6ae443c2f09444e241c48d32b2caff138f47f7d92a37bbebf93547d764390e5981eba1b289b30bfc47
   languageName: node
   linkType: hard
 
@@ -20615,7 +20615,7 @@ __metadata:
     "@next/env": 13.2.1
     "@next/eslint-plugin-next": 13.2.1
     "@plaiceholder/next": 2.5.0
-    "@react-three/drei": 9.56.26
+    "@react-three/drei": 9.56.27
     "@react-three/fiber": 8.11.5
     "@storybook/addon-docs": 7.0.0-beta.53
     "@storybook/addon-essentials": 7.0.0-beta.53
