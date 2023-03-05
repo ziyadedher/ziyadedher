@@ -22,7 +22,7 @@
     "@monaco-editor/react": "4.4.6",
     "@plaiceholder/next": "2.5.0",
     "@react-three/drei": "9.57.0",
-    "@react-three/fiber": "8.11.6",
+    "@react-three/fiber": "8.11.7",
     "@tailwindcss/forms": "0.5.3",
     "chart.js": "4.2.1",
     "classnames": "2.3.2",
