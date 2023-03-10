@@ -2913,15 +2913,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/drei@npm:9.57.1":
-  version: 9.57.1
-  resolution: "@react-three/drei@npm:9.57.1"
+"@react-three/drei@npm:9.57.2":
+  version: 9.57.2
+  resolution: "@react-three/drei@npm:9.57.2"
   dependencies:
     "@babel/runtime": ^7.11.2
     "@react-spring/three": ~9.6.1
     "@use-gesture/react": ^10.2.24
-    camera-controls: ^2.1.0
-    detect-gpu: ^5.0.10
+    camera-controls: ^2.3.1
+    detect-gpu: ^5.0.14
     glsl-noise: ^0.0.0
     lodash.clamp: ^4.0.3
     lodash.omit: ^4.5.0
@@ -2945,7 +2945,7 @@ __metadata:
   peerDependenciesMeta:
     react-dom:
       optional: true
-  checksum: f1336a5734e22e94cb4d4b48b83e4213ba109d06483ab247c48d1e0bb214a65e9c6c3400e3e766910a2684dc8ce9a06c0e602f60e965645e68214df811e4662f
+  checksum: 51cfc6741ba048154a3075ba7bae298f07c671b638b6a84cbb0ebdc8e97db4de56733e903a2b48000ea5d0092b3c79077adc30a0c18cd4537f24d74c029fd9dc
   languageName: node
   linkType: hard
 
@@ -7562,7 +7562,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"camera-controls@npm:^2.1.0":
+"camera-controls@npm:^2.3.1":
   version: 2.3.1
   resolution: "camera-controls@npm:2.3.1"
   peerDependencies:
@@ -8652,7 +8652,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"detect-gpu@npm:^5.0.10":
+"detect-gpu@npm:^5.0.14":
   version: 5.0.14
   resolution: "detect-gpu@npm:5.0.14"
   dependencies:
@@ -20119,7 +20119,7 @@ __metadata:
     "@next/env": 13.2.4
     "@next/eslint-plugin-next": 13.2.4
     "@plaiceholder/next": 2.5.0
-    "@react-three/drei": 9.57.1
+    "@react-three/drei": 9.57.2
     "@react-three/fiber": 8.12.0
     "@storybook/addon-docs": 7.0.0-rc.1
     "@storybook/addon-essentials": 7.0.0-rc.1
