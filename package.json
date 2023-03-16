@@ -68,7 +68,7 @@
     "@types/eslint": "8.21.2",
     "@types/events": "3.0.0",
     "@types/gtag.js": "0.0.12",
-    "@types/jest": "29.4.2",
+    "@types/jest": "29.4.4",
     "@types/mdx-js__react": "1.5.5",
     "@types/node": "18.15.3",
     "@types/prettier": "2.7.2",
