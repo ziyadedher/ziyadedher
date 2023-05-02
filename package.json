@@ -1,7 +1,7 @@
 {
   "name": "ziyadedher",
   "private": true,
-  "packageManager": "yarn@3.5.0",
+  "packageManager": "yarn@3.5.1",
   "engines": {
     "node": ">=14.0.0"
   },
@@ -80,7 +80,7 @@
     "@types/three": "0.151.0",
     "@typescript-eslint/eslint-plugin": "5.59.2",
     "@typescript-eslint/parser": "5.59.2",
-    "@yarnpkg/sdks": "3.0.0-rc.42",
+    "@yarnpkg/sdks": "3.0.0-rc.43",
     "@ziyadedher/eslint-config": "3.1.1",
     "autoprefixer": "10.4.14",
     "babel-loader": "9.1.2",
