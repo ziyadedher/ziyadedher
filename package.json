@@ -18,7 +18,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@headlessui/react": "1.7.14",
+    "@headlessui/react": "1.7.17",
     "@monaco-editor/react": "4.5.1",
     "@plaiceholder/next": "2.5.0",
     "@react-three/drei": "9.61.4",

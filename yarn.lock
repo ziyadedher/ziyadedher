@@ -2312,15 +2312,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@headlessui/react@npm:1.7.14":
-  version: 1.7.14
-  resolution: "@headlessui/react@npm:1.7.14"
+"@headlessui/react@npm:1.7.17":
+  version: 1.7.17
+  resolution: "@headlessui/react@npm:1.7.17"
   dependencies:
     client-only: ^0.0.1
   peerDependencies:
     react: ^16 || ^17 || ^18
     react-dom: ^16 || ^17 || ^18
-  checksum: 9122114d7a618877a8da2ada000422ce82e6af47195e414076fa5cf45687709479eb30b0df414eed52079be6e5904151bc92e4acfafbdde2592c608f015c490e
+  checksum: 0cdb67747e7f606f78214dac0b48573247779e70534b4471515c094b74addda173dc6a9847d33aea9c6e6bc151016c034125328953077e32aa7947ebabed91f7
   languageName: node
   linkType: hard
 
@@ -20729,7 +20729,7 @@ __metadata:
     "@babel/core": 7.21.8
     "@babel/preset-react": ^7.18.6
     "@babel/runtime": 7.21.5
-    "@headlessui/react": 1.7.14
+    "@headlessui/react": 1.7.17
     "@heroicons/react": 2.0.18
     "@jest/types": 29.5.0
     "@mdx-js/react": 2.3.0
