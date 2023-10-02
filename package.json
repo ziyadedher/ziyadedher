@@ -60,7 +60,7 @@
     "@storybook/addon-postcss": "2.0.0",
     "@storybook/nextjs": "^7.0.0-alpha.41",
     "@storybook/react": "7.0.0-rc.10",
-    "@tailwindcss/typography": "0.5.9",
+    "@tailwindcss/typography": "0.5.10",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@testing-library/react-hooks": "8.0.1",
