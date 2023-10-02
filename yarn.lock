@@ -5360,12 +5360,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/mdx-js__react@npm:1.5.5":
-  version: 1.5.5
-  resolution: "@types/mdx-js__react@npm:1.5.5"
+"@types/mdx-js__react@npm:1.5.6":
+  version: 1.5.6
+  resolution: "@types/mdx-js__react@npm:1.5.6"
   dependencies:
     "@types/react": "*"
-  checksum: 91229e9e4d129bed0cd457459970daf8e505de9932791915cb91ad82f033b85c921c773ad16b7de629a7fa3ba97c8301784aad3b9ab6e431c3e5fc521a16a0f2
+  checksum: c4ec22a02ee30f60712bae41badfea812a741621ce9df69c46e59e12eb13172bd172f01f82bd78eefaba43500f29870b46942b8bc587b7d566b127c7948b3b41
   languageName: node
   linkType: hard
 
@@ -20768,7 +20768,7 @@ __metadata:
     "@types/events": 3.0.1
     "@types/gtag.js": 0.0.14
     "@types/jest": 29.5.1
-    "@types/mdx-js__react": 1.5.5
+    "@types/mdx-js__react": 1.5.6
     "@types/node": 18.16.14
     "@types/prettier": 2.7.2
     "@types/react": 18.2.2
