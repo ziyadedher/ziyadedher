@@ -83,7 +83,7 @@
     "@yarnpkg/sdks": "3.0.0-rc.44",
     "@ziyadedher/eslint-config": "3.1.1",
     "autoprefixer": "10.4.16",
-    "babel-loader": "9.1.2",
+    "babel-loader": "9.1.3",
     "chromatic": "6.17.4",
     "codecov": "3.8.3",
     "css-loader": "^6.7.3",
