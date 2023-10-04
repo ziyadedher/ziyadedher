@@ -3423,21 +3423,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@react-three/fiber@npm:8.13.0":
-  version: 8.13.0
-  resolution: "@react-three/fiber@npm:8.13.0"
+"@react-three/fiber@npm:8.14.4":
+  version: 8.14.4
+  resolution: "@react-three/fiber@npm:8.14.4"
   dependencies:
     "@babel/runtime": ^7.17.8
     "@types/react-reconciler": ^0.26.7
+    base64-js: ^1.5.1
     its-fine: ^1.0.6
     react-reconciler: ^0.27.0
     react-use-measure: ^2.1.1
     scheduler: ^0.21.0
-    suspend-react: ^0.0.8
+    suspend-react: ^0.1.3
     zustand: ^3.7.1
   peerDependencies:
     expo: ">=43.0"
     expo-asset: ">=8.4"
+    expo-file-system: ">=11.0"
     expo-gl: ">=11.0"
     react: ">=18.0"
     react-dom: ">=18.0"
@@ -3448,13 +3450,15 @@ __metadata:
       optional: true
     expo-asset:
       optional: true
+    expo-file-system:
+      optional: true
     expo-gl:
       optional: true
     react-dom:
       optional: true
     react-native:
       optional: true
-  checksum: 8cc64302926ffd03d9323207c2d1b09c393e5bf99521ed2d4215bf6a7a401faeadb7c44dc268453fe322f626d19980083373c5adc4200c0295a7cbf062f83c91
+  checksum: c67ec50d00a3eb2ea4ab234c2a4066508782b8881d0426e020aface9092423c1c5affc020bb183759f05bd4c8e0c7b72f03f5a2dd22973c0440cfbad197174b0
   languageName: node
   linkType: hard
 
@@ -7804,7 +7808,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"base64-js@npm:^1.3.1":
+"base64-js@npm:^1.3.1, base64-js@npm:^1.5.1":
   version: 1.5.1
   resolution: "base64-js@npm:1.5.1"
   checksum: 669632eb3745404c2f822a18fc3a0122d2f9a7a13f7fb8b5823ee19d1d2ff9ee5b52c53367176ea4ad093c332fd5ab4bd0ebae5a8e27917a4105a4cfc86b1005
@@ -19325,6 +19329,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"suspend-react@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "suspend-react@npm:0.1.3"
+  peerDependencies:
+    react: ">=17.0"
+  checksum: 280de571d33ffe825bb28fab25e81272b396c3295d91f50ac48b6a3777830035fa40909015dfaef17e34b9ad4ce15fcb4d73cc59530d4bc82490471322f7dbbe
+  languageName: node
+  linkType: hard
+
 "symbol-tree@npm:^3.2.4":
   version: 3.2.4
   resolution: "symbol-tree@npm:3.2.4"
@@ -21290,7 +21303,7 @@ __metadata:
     "@next/eslint-plugin-next": 13.3.4
     "@plaiceholder/next": 2.5.0
     "@react-three/drei": 9.61.4
-    "@react-three/fiber": 8.13.0
+    "@react-three/fiber": 8.14.4
     "@storybook/addon-docs": 7.0.0-rc.10
     "@storybook/addon-essentials": 7.0.0-rc.10
     "@storybook/addon-links": 7.0.0-rc.10
