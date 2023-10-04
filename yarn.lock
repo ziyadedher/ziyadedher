@@ -5683,10 +5683,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.16.14":
-  version: 18.16.14
-  resolution: "@types/node@npm:18.16.14"
-  checksum: c11cb3c787236414efe58240ae71854971592554d82ff9d201876ce7cafd51c37aaa001c63602d002e8238614d7331bd6d48ac4c1c0caa826799980b6846fb08
+"@types/node@npm:18.18.3":
+  version: 18.18.3
+  resolution: "@types/node@npm:18.18.3"
+  checksum: ed97a832179e0cfbb93738021fe16d0bc5c0f34bea35269c23c9dd5f0ecc8be93dbe5efd51630189a099b31786a47c1bde115508831a7245613a55c3ad1a7d6b
   languageName: node
   linkType: hard
 
@@ -21321,7 +21321,7 @@ __metadata:
     "@types/gtag.js": 0.0.14
     "@types/jest": 29.5.1
     "@types/mdx-js__react": 1.5.6
-    "@types/node": 18.16.14
+    "@types/node": 18.18.3
     "@types/prettier": 2.7.3
     "@types/react": 18.2.2
     "@types/react-dom": 18.2.3
