@@ -1938,7 +1938,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@corex/deepmerge@npm:^4.0.29":
+"@corex/deepmerge@npm:^4.0.43":
   version: 4.0.43
   resolution: "@corex/deepmerge@npm:4.0.43"
   checksum: f0103bfcfb9938ba478868fad522b018b92615ba186b0322c92aa1f57e539b87d4379d88fee3a404264a83bd4b13c384cfb07834377997d6d71cd840a880b4c4
@@ -3037,6 +3037,13 @@ __metadata:
   version: 13.3.4
   resolution: "@next/env@npm:13.3.4"
   checksum: 442a06b95814ffc483e60892bc105f4e381cbd78ae436b649d41cbb6fee87f30ce431743dedc83178a09ec00fc80dcbf154184b21ae20ffa268d1115212657af
+  languageName: node
+  linkType: hard
+
+"@next/env@npm:^13.4.3":
+  version: 13.5.4
+  resolution: "@next/env@npm:13.5.4"
+  checksum: 95ec7108bc88a01fed5389fb33e4b9eb34937908859d9f0aa87930c660f4395d90dafe10e54830faae5bc0a1b799be544c6455a2c8054499569d1e9296369076
   languageName: node
   linkType: hard
 
@@ -15066,7 +15073,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:^1.2.0, minimist@npm:^1.2.3, minimist@npm:^1.2.5, minimist@npm:^1.2.6, minimist@npm:^1.2.7":
+"minimist@npm:^1.2.0, minimist@npm:^1.2.3, minimist@npm:^1.2.5, minimist@npm:^1.2.6, minimist@npm:^1.2.8":
   version: 1.2.8
   resolution: "minimist@npm:1.2.8"
   checksum: 75a6d645fb122dad29c06a7597bddea977258957ed88d7a6df59b5cd3fe4a527e253e9bbf2e783e4b73657f9098b96a5fe96ab8a113655d4109108577ecf85b0
@@ -15317,19 +15324,20 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-sitemap@npm:3.1.55":
-  version: 3.1.55
-  resolution: "next-sitemap@npm:3.1.55"
+"next-sitemap@npm:4.2.3":
+  version: 4.2.3
+  resolution: "next-sitemap@npm:4.2.3"
   dependencies:
-    "@corex/deepmerge": ^4.0.29
-    minimist: ^1.2.7
+    "@corex/deepmerge": ^4.0.43
+    "@next/env": ^13.4.3
+    fast-glob: ^3.2.12
+    minimist: ^1.2.8
   peerDependencies:
-    "@next/env": "*"
     next: "*"
   bin:
     next-sitemap: bin/next-sitemap.mjs
     next-sitemap-cjs: bin/next-sitemap.cjs
-  checksum: 1c3a7686565203275cf3004d3ec7c8b487468454cf0ffd72a168ac395c740843daee5f670019bb14faa9055773ce6203ac52596d8cc7a48b1b12cfb1bad6a691
+  checksum: 322cbbf11b6549b7bd5acda98f60a4ef6bb6627e6cd5b4a9367aa8950edf6bcc90f47f4da74a18ecdd823f52c0f625b559b4165dbd27f292c731b222e38fa105
   languageName: node
   linkType: hard
 
@@ -21157,7 +21165,7 @@ __metadata:
     monaco-editor: 0.43.0
     next: ^13.1.1
     next-router-mock: ^0.9.0
-    next-sitemap: 3.1.55
+    next-sitemap: 4.2.3
     node-notifier: 10.0.1
     onnxruntime-web: 1.16.0
     phosphor-react: 1.4.1
