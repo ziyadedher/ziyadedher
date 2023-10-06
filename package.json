@@ -67,7 +67,7 @@
     "@types/babel__core": "7.20.2",
     "@types/eslint": "8.44.3",
     "@types/events": "3.0.1",
-    "@types/gtag.js": "0.0.14",
+    "@types/gtag.js": "0.0.15",
     "@types/jest": "29.5.5",
     "@types/mdx-js__react": "1.5.6",
     "@types/node": "18.18.3",
