@@ -5141,13 +5141,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tweenjs/tween.js@npm:~18.6.4":
-  version: 18.6.4
-  resolution: "@tweenjs/tween.js@npm:18.6.4"
-  checksum: 47208db3f6c32cde80284a852d0fca016284f90c4798eb4ebb2ebfc2e379504007bf0c031c2c33044df8a0878fd1942ebc4e0b7f5b8bcccf812b532ea1ee73eb
-  languageName: node
-  linkType: hard
-
 "@types/acorn@npm:^4.0.0":
   version: 4.0.6
   resolution: "@types/acorn@npm:4.0.6"
@@ -5870,16 +5863,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/three@npm:0.152.0":
-  version: 0.152.0
-  resolution: "@types/three@npm:0.152.0"
+"@types/three@npm:0.156.0":
+  version: 0.156.0
+  resolution: "@types/three@npm:0.156.0"
   dependencies:
-    "@tweenjs/tween.js": ~18.6.4
     "@types/stats.js": "*"
     "@types/webxr": "*"
-    fflate: ~0.6.9
-    lil-gui: ~0.17.0
-  checksum: 23182ba26bc8793755536731a9605e8fa3a8b66e91461b1da56009c5103388f92b996c39d97c3e50ca91f874fc8dd0a2b8443b4416540870ad3031eab973e6ed
+    fflate: ~0.6.10
+    meshoptimizer: ~0.18.1
+  checksum: c81b3d656c22d400a180cd54af96b3dd7c3f41b7dba71f714a623474de43c77afe92395889e60765eb86221fd79d07a4730d4c4f1b441933daf9460b6bdba47f
   languageName: node
   linkType: hard
 
@@ -11246,7 +11238,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fflate@npm:^0.6.9, fflate@npm:~0.6.9":
+"fflate@npm:^0.6.9, fflate@npm:~0.6.10":
   version: 0.6.10
   resolution: "fflate@npm:0.6.10"
   checksum: 96384bc4090987fe565c0de8204e3830f538144ec950576fea50aee1b42adbe9fc3ed5e7905dfa7979faaa20979def330dbebce548f3dcafc3e118cc9838526d
@@ -14023,13 +14015,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lil-gui@npm:~0.17.0":
-  version: 0.17.0
-  resolution: "lil-gui@npm:0.17.0"
-  checksum: a6f33e90748ea98477f1f7af6d6cbdc4a1b38ce9da86d674d73f7b0bbdc7f3e947d81edee04c32f33fb28c69a108ba04c24270a8398064ffcc56ffeabc0a916e
-  languageName: node
-  linkType: hard
-
 "lilconfig@npm:^2.0.5, lilconfig@npm:^2.0.6, lilconfig@npm:^2.1.0":
   version: 2.1.0
   resolution: "lilconfig@npm:2.1.0"
@@ -14604,6 +14589,13 @@ __metadata:
   peerDependencies:
     three: ">=0.137"
   checksum: 72b79908315650a57b5c97b846191ab73d1ee1551211154283a951eac7b08f9129adb6ce1b84d887b30b47617a52ff0878f9695037491c4d8350712c6655489a
+  languageName: node
+  linkType: hard
+
+"meshoptimizer@npm:~0.18.1":
+  version: 0.18.1
+  resolution: "meshoptimizer@npm:0.18.1"
+  checksum: 101dbed8abd4cf167cdb7a0bc13db90dd0743332c689e43b18cc5254d238f0766750752432401fa63dc7e9e32399ef68daacf48f0d89db1484042c1761c7362d
   languageName: node
   linkType: hard
 
@@ -19393,10 +19385,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"three@npm:0.152.2":
-  version: 0.152.2
-  resolution: "three@npm:0.152.2"
-  checksum: 6d2d990dbff60b99c7e58b7f1446bb4bd235c7db5dd848a671385e01ae5c72bec865265be7f5a82907ecc96186acc13177d7de1252bc9592f5c9ebaffd1da1e7
+"three@npm:0.157.0":
+  version: 0.157.0
+  resolution: "three@npm:0.157.0"
+  checksum: 444797461c9db09d8a4cad886e494c2e6dd5754f09ac7ac4af75a3bf1143ae79641388db31999edcc76c5dba9677639f09da2df8d0128396a1dd59e41226c85c
   languageName: node
   linkType: hard
 
@@ -21127,7 +21119,7 @@ __metadata:
     "@types/sharp": 0.31.1
     "@types/source-map-support": 0.5.8
     "@types/testing-library__jest-dom": 5.14.9
-    "@types/three": 0.152.0
+    "@types/three": 0.156.0
     "@typescript-eslint/eslint-plugin": 5.59.7
     "@typescript-eslint/parser": 5.59.7
     "@yarnpkg/sdks": 3.0.0-rc.53
@@ -21179,7 +21171,7 @@ __metadata:
     style-loader: ^3.3.1
     styled-jsx: ^5.1.1
     tailwindcss: 3.2.7
-    three: 0.152.2
+    three: 0.157.0
     ts-jest: 29.1.1
     ts-node: 10.9.1
     typescript: 4.9.5
