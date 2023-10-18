@@ -5427,10 +5427,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/events@npm:3.0.1":
-  version: 3.0.1
-  resolution: "@types/events@npm:3.0.1"
-  checksum: 68546116c3d00c47bacda1b475e5a01c30eb6cebfa00609725f7446d3ff4d448d8209f426117c0c7767ac97cdf494548b53c8dbd82a48336a4aac2664b9068b7
+"@types/events@npm:3.0.2":
+  version: 3.0.2
+  resolution: "@types/events@npm:3.0.2"
+  checksum: 4f163c240bbd1492b11a713d3bdd7e8c0face1b2e7fb723e071171d1b2258986533b4804f78374836f18a5ad5006872aa72011940ddcdfa95982222eb74fd197
   languageName: node
   linkType: hard
 
@@ -21362,7 +21362,7 @@ __metadata:
     "@testing-library/react-hooks": 8.0.1
     "@types/babel__core": 7.20.3
     "@types/eslint": 8.44.5
-    "@types/events": 3.0.1
+    "@types/events": 3.0.2
     "@types/gtag.js": 0.0.16
     "@types/jest": 29.5.5
     "@types/mdx-js__react": 1.5.6
