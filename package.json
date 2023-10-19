@@ -75,7 +75,7 @@
     "@types/react": "18.2.2",
     "@types/react-dom": "18.2.3",
     "@types/sharp": "0.31.1",
-    "@types/source-map-support": "0.5.8",
+    "@types/source-map-support": "0.5.9",
     "@types/testing-library__jest-dom": "5.14.9",
     "@types/three": "0.156.0",
     "@typescript-eslint/eslint-plugin": "5.62.0",
