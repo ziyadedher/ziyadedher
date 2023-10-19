@@ -5897,12 +5897,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/source-map-support@npm:0.5.8":
-  version: 0.5.8
-  resolution: "@types/source-map-support@npm:0.5.8"
+"@types/source-map-support@npm:0.5.9":
+  version: 0.5.9
+  resolution: "@types/source-map-support@npm:0.5.9"
   dependencies:
     source-map: ^0.6.0
-  checksum: 333d77b70fd793de066572aa1c7d988ac351e6591b860db8df05bdb2ad40ee2aa1a31d66c3c0d019137d72fb7b806dfc55c2b47958d1599e775e1d37dc1f736d
+  checksum: 3a2c7b48aa9b1ee4b2f6efe056ce816e04c24d746ff7b2a864bdc8defd9d6bd96996403017504c144c8708daed21c0b8bff90be6e5fae5d7047134628b69a60d
   languageName: node
   linkType: hard
 
@@ -21371,7 +21371,7 @@ __metadata:
     "@types/react": 18.2.2
     "@types/react-dom": 18.2.3
     "@types/sharp": 0.31.1
-    "@types/source-map-support": 0.5.8
+    "@types/source-map-support": 0.5.9
     "@types/testing-library__jest-dom": 5.14.9
     "@types/three": 0.156.0
     "@typescript-eslint/eslint-plugin": 5.62.0
