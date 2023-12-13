@@ -1,9 +1,7 @@
-const { withPlaiceholder } = require("@plaiceholder/next");
-
 /** @type {import('next').NextConfig} */
-const CONFIG = {
+const NEXT_CONFIG = {
   images: {
-    domains: ["storage.ziyadedher.com"],
+    remotePatterns: [{ hostname: "storage.ziyadedher.com" }],
   },
 
   headers: async () => [],
@@ -17,4 +15,4 @@ const CONFIG = {
   ],
 };
 
-module.exports = withPlaiceholder(CONFIG);
+module.exports = NEXT_CONFIG;

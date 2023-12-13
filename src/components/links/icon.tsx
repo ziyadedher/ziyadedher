@@ -10,7 +10,6 @@ interface IconLinkProps {
   readonly children: React.ReactNode;
 }
 
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
 const IconLink: React.FunctionComponent<IconLinkProps> = ({
   href,
   label,

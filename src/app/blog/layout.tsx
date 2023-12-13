@@ -1,13 +1,12 @@
-import React from "react";
+import PageContainer from "@/components/page_container";
 
-import PageContainer from "../../components/page_container";
+export const metadata = {
+  title: "Ziyad Edher's Blog",
+  description:
+    "Ziyad writes about nerd stuff: security, technology, hacking, you name it.",
+};
 
-interface LayoutProps {
-  readonly children: React.ReactNode;
-}
-
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
-const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => (
+const Layout = ({ children }: { children: React.ReactNode }) => (
   <PageContainer hasHeader hasNavbar navbarPage="blog" pageStyle="light">
     {children}
   </PageContainer>

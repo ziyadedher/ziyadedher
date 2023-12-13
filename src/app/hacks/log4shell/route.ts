@@ -1,4 +1,4 @@
-import type { NextApiRequest, NextApiResponse } from "next";
+import { NextRequest, NextResponse } from "next/server";
 
 export type ReadonlyDate = Readonly<
   Omit<
@@ -86,11 +86,6 @@ export const HIT_LIST: HitListItem[] = [
   a.companyName.localeCompare(b.companyName)
 );
 
-export default function handler(
-  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types, @typescript-eslint/no-unused-vars -- Next.js API
-  _: NextApiRequest,
-  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Next.js API
-  response: NextApiResponse<readonly HitListItem[]>
-): void {
-  response.status(200).json(HIT_LIST);
+export default function GET(_: NextRequest) {
+  return NextResponse.json(HIT_LIST, { status: 200 });
 }

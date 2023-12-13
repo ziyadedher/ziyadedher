@@ -4,9 +4,8 @@ import { useRouter } from "next/navigation";
 import React, { useCallback } from "react";
 import ConsoleEmulator from "react-console-emulator";
 
-import { cd, echo, exec, ls } from "../../logic/goofs/terminal";
-
 import type { TerminalProps as ConsoleEmulatorProps } from "react-console-emulator";
+import { cd, echo, exec, ls } from "../../logic/goofs/terminal";
 
 const WELCOME_MESSAGE = "Welcome, `help` to start.";
 
@@ -55,7 +54,6 @@ const Terminal: React.FunctionComponent = () => {
       welcomeMessage={WELCOME_MESSAGE}
       promptLabel={PROMPT_LABEL}
       errorText={ERROR_TEXT}
-      // eslint-disable-next-line react/forbid-component-props -- component built-in.
       className="!h-full !w-full !rounded-xl !bg-black"
       contentClassName="!text-green-300 !text-lg"
       promptLabelClassName="!pr-1 !-mt-1.5"

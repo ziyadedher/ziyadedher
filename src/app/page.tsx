@@ -1,14 +1,11 @@
-import React from "react";
+import Image from "next/image";
 
-// eslint-disable-next-line @typescript-eslint/no-shadow -- custom Image
-import Image from "../components/image";
-import { TextLink } from "../components/links";
-import PageContainer from "../components/page_container";
-import { getImageWithBlur } from "../logic/image_with_blur";
-import { getStorageURI } from "../utils/storage";
+import { TextLink } from "@/components/links";
+import PageContainer from "@/components/page_container";
 
-// @ts-expect-error -- Async Server Component
-const Page: React.FunctionComponent = async () => (
+import meImage from "@public/ziyadedher.jpg";
+
+const Page = () => (
   <PageContainer hasHeader hasNavbar navbarPage="home" pageStyle="light">
     <div className="mx-auto flex max-w-5xl grow-0 flex-row justify-center gap-8 py-8">
       <div className="prose flex flex-1 flex-col text-sm font-light">
@@ -101,8 +98,10 @@ const Page: React.FunctionComponent = async () => (
       </div>
       <div className="hidden h-min max-w-md overflow-hidden rounded-3xl shadow-inner xl:flex">
         <Image
+          priority
+          placeholder="blur"
           alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
-          image={await getImageWithBlur(getStorageURI("ziyadedher.jpg"), 40)}
+          src={meImage}
         />
       </div>
     </div>

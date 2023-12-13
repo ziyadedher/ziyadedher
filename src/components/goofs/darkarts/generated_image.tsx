@@ -1,11 +1,11 @@
 import classNames from "classnames";
 import {
-  CloudArrowDown,
-  Download,
-  Smiley,
-  SpinnerGap,
-  WarningOctagon,
-} from "phosphor-react";
+  PiCloudArrowDown,
+  PiDownload,
+  PiSmiley,
+  PiSpinnerGap,
+  PiWarningOctagon,
+} from "react-icons/pi";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 
 import {
@@ -146,15 +146,15 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
   const getPlaceholderIcon = useCallback(() => {
     switch (modelStatus) {
       case ModelStatus.READY_TO_LOAD:
-        return <CloudArrowDown size={64} />;
+        return <PiCloudArrowDown size={64} />;
       case ModelStatus.LOADING:
-        return <SpinnerGap size={64} />;
+        return <PiSpinnerGap size={64} />;
       case ModelStatus.READY:
-        return <Smiley size={64} />;
+        return <PiSmiley size={64} />;
       case ModelStatus.GENERATING:
-        return <SpinnerGap size={64} />;
+        return <PiSpinnerGap size={64} />;
       default:
-        return <WarningOctagon size={64} />;
+        return <PiWarningOctagon size={64} />;
     }
   }, [modelStatus]);
 
@@ -211,7 +211,6 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
           "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
         )
       ).then(
-        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- includes ONNX type.
         (loadedModel) => {
           setModel(loadedModel);
           setModelStatus(ModelStatus.READY);
@@ -277,7 +276,7 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
           )}
         >
           <span>
-            <CloudArrowDown size={16} />
+            <PiCloudArrowDown size={16} />
           </span>
           Load
         </button>
@@ -293,7 +292,7 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
           )}
         >
           <span>
-            <Smiley size={16} />
+            <PiSmiley size={16} />
           </span>
           Generate
         </button>
@@ -309,7 +308,7 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
           )}
         >
           <span>
-            <Download size={16} />
+            <PiDownload size={16} />
           </span>
           Save
         </button>

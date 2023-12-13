@@ -1,32 +1,32 @@
 "use client";
 
 import classNames from "classnames";
-import { CaretRight } from "phosphor-react";
-import React, { useCallback, useEffect, useReducer, useState } from "react";
+import { PiCaretRight } from "react-icons/pi";
+import { useCallback, useEffect, useReducer, useState } from "react";
 
-import GeneratedImage from "../../../components/goofs/darkarts/generated_image";
-import { RangeSliderInput } from "../../../components/inputs";
-import { TextLink } from "../../../components/links";
-import { LayerKeys } from "../../../logic/goofs/darkarts/model";
+import GeneratedImage from "@/components/goofs/darkarts/generated_image";
+import { RangeSliderInput } from "@/components/inputs";
+import { TextLink } from "@/components/links";
+import { LayerKeys } from "@/logic/goofs/darkarts/model";
 
-import type {
-  LayerKey,
-  LayerValues,
-} from "../../../logic/goofs/darkarts/model";
+import type { LayerKey, LayerValues } from "@/logic/goofs/darkarts/model";
 
-interface SettingItemProps {
-  readonly label: string;
-  readonly labelFor?: string;
-  readonly value?: number | string;
-  readonly children?: React.ReactNode;
-}
+export const metadata = {
+  name: "Generate AI (GAN) Faces | Ziyad Edher",
+  description:
+    "Generate AI faces online by using a GAN (generative adversarial network) that runs in your browser.",
+};
 
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
-const SettingItem: React.FunctionComponent<SettingItemProps> = ({
+const SettingItem = ({
   label,
   labelFor,
   value,
   children,
+}: {
+  label: string;
+  labelFor?: string;
+  value?: number | string;
+  children?: React.ReactNode;
 }) => (
   <div className="flex w-full flex-row items-center space-x-4">
     <label htmlFor={labelFor} className="w-24 text-xs font-bold uppercase">
@@ -39,28 +39,15 @@ const SettingItem: React.FunctionComponent<SettingItemProps> = ({
   </div>
 );
 
-interface RangeSliderInputProps {
-  readonly value: number;
-  readonly min: number;
-  readonly max: number;
-  readonly step?: number;
-  readonly onChange: React.ChangeEventHandler<HTMLInputElement>;
-}
+type RangeSliderInputProps = {
+  value: number;
+  min: number;
+  max: number;
+  step?: number;
+  onChange: React.ChangeEventHandler<HTMLInputElement>;
+};
 
-interface CollapsableLayerConfigurationProps {
-  readonly layerKey: LayerKey;
-  readonly inputSeed: RangeSliderInputProps;
-  readonly distortionSeed: RangeSliderInputProps;
-  readonly distortionStrength: RangeSliderInputProps;
-  readonly isOverriden: boolean;
-  readonly onOverridenChange: React.ChangeEventHandler<HTMLInputElement>;
-  readonly isOpen: boolean;
-  readonly onOpenChange: React.MouseEventHandler<HTMLButtonElement>;
-}
-
-const CollapsableLayerConfiguration: React.FunctionComponent<
-  CollapsableLayerConfigurationProps
-> = ({
+const CollapsableLayerConfiguration = ({
   layerKey,
   inputSeed: { onChange: handleInputSeedChange, ...inputSeed },
   distortionSeed: { onChange: handleDistortionSeedChange, ...distortionSeed },
@@ -72,7 +59,16 @@ const CollapsableLayerConfiguration: React.FunctionComponent<
   onOverridenChange: handleOverridenChange,
   isOpen,
   onOpenChange: handleOpenChange,
-}: CollapsableLayerConfigurationProps) => (
+}: {
+  layerKey: LayerKey;
+  inputSeed: RangeSliderInputProps;
+  distortionSeed: RangeSliderInputProps;
+  distortionStrength: RangeSliderInputProps;
+  isOverriden: boolean;
+  onOverridenChange: React.ChangeEventHandler<HTMLInputElement>;
+  isOpen: boolean;
+  onOpenChange: React.MouseEventHandler<HTMLButtonElement>;
+}) => (
   <div className="flex flex-col overflow-hidden rounded-lg bg-gray-800">
     <button
       type="button"
@@ -82,7 +78,7 @@ const CollapsableLayerConfiguration: React.FunctionComponent<
       <div
         className={classNames("transition-all", isOpen ? "rotate-90" : null)}
       >
-        <CaretRight size={16} />
+        <PiCaretRight size={16} />
       </div>
       <div className="flex-1 text-sm font-bold">Layer {layerKey} Settings</div>
       {isOverriden ? (
@@ -155,8 +151,8 @@ const CollapsableLayerConfiguration: React.FunctionComponent<
 );
 
 interface LayerValuesAction<T> {
-  readonly key: LayerKey;
-  readonly value: T;
+  key: LayerKey;
+  value: T;
 }
 
 type LayerValuesReducer<T> = React.Reducer<
@@ -181,7 +177,7 @@ const getDefaultLayerValues = <T,>(value: T): LayerValues<T> => {
   return map as LayerValues<T>;
 };
 
-const Page: React.FunctionComponent = () => {
+const Page = () => {
   const [seed, setSeed] = useState(0);
   const [distortionSeed, setDistortionSeed] = useState(0);
   const [distortionStrength, setDistortionStrength] = useState(0);
@@ -218,19 +214,16 @@ const Page: React.FunctionComponent = () => {
   }, [seed, layerOverriden, distortionSeed, distortionStrength]);
 
   const handleSeedChange: React.ChangeEventHandler<HTMLInputElement> =
-    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
     useCallback((e) => {
       setSeed(Number(e.target.value));
     }, []);
 
   const handleDistortionSeedChange: React.ChangeEventHandler<HTMLInputElement> =
-    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
     useCallback((e) => {
       setDistortionSeed(Number(e.target.value));
     }, []);
 
   const handleDistortionStrengthChange: React.ChangeEventHandler<HTMLInputElement> =
-    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
     useCallback((e) => {
       setDistortionStrength(Number(e.target.value));
     }, []);
@@ -239,7 +232,6 @@ const Page: React.FunctionComponent = () => {
     (layerKey: LayerKey): React.ReactElement => {
       const handleLayerInputChange: React.ChangeEventHandler<
         HTMLInputElement
-        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
       > = (e): void => {
         setLayerInputSeeds({
           key: layerKey,
@@ -252,7 +244,6 @@ const Page: React.FunctionComponent = () => {
       };
       const handleLayerDistortionChange: React.ChangeEventHandler<
         HTMLInputElement
-        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
       > = (e): void => {
         setLayerDistortionSeeds({
           key: layerKey,
@@ -265,7 +256,6 @@ const Page: React.FunctionComponent = () => {
       };
       const handleLayerDistortionStrengthChange: React.ChangeEventHandler<
         HTMLInputElement
-        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandler
       > = (e): void => {
         setLayerDistortionStrengths({
           key: layerKey,
@@ -278,7 +268,6 @@ const Page: React.FunctionComponent = () => {
       };
       const handleLayerOverridenChange: React.ChangeEventHandler<
         HTMLInputElement
-        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ChangeEventHandle
       > = (e): void => {
         setLayerOverriden({
           key: layerKey,
@@ -320,10 +309,8 @@ const Page: React.FunctionComponent = () => {
             onChange: handleLayerDistortionStrengthChange,
           }}
           isOverriden={layerOverriden[layerKey]}
-          // eslint-disable-next-line react/jsx-no-bind -- FIXME: performance issue.
           onOverridenChange={handleLayerOverridenChange}
           isOpen={layerOpen[layerKey]}
-          // eslint-disable-next-line react/jsx-no-bind -- FIXME: performance issue.
           onOpenChange={handleLayerOpenChange}
         />
       );

@@ -4,7 +4,7 @@ import { MersenneTwister19937, Random } from "random-js";
 import { getStorageURI } from "../../../utils/storage";
 
 const LayerKeys = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13] as const;
-type LayerKey = typeof LayerKeys[number];
+type LayerKey = (typeof LayerKeys)[number];
 type LayerValues<T> = Readonly<Record<LayerKey, T>>;
 
 interface Model {
@@ -28,17 +28,13 @@ class ModelError extends Error {}
 
 const getModel = async (modelPath: string): Promise<Model> => {
   env.wasm.wasmPaths = {
-    // eslint-disable-next-line @typescript-eslint/naming-convention -- ONNX convention
     "ort-wasm.wasm": getStorageURI("darkarts/onnxruntime/ort-wasm.wasm"),
-    // eslint-disable-next-line @typescript-eslint/naming-convention -- ONNX convention
     "ort-wasm-threaded.wasm": getStorageURI(
       "darkarts/onnxruntime/ort-wasm-threaded.wasm"
     ),
-    // eslint-disable-next-line @typescript-eslint/naming-convention -- ONNX convention
     "ort-wasm-simd.wasm": getStorageURI(
       "darkarts/onnxruntime/ort-wasm-simd.wasm"
     ),
-    // eslint-disable-next-line @typescript-eslint/naming-convention -- ONNX convention
     "ort-wasm-simd-threaded.wasm": getStorageURI(
       "darkarts/onnxruntime/ort-wasm-simd-threaded.wasm"
     ),
@@ -54,7 +50,6 @@ const getModel = async (modelPath: string): Promise<Model> => {
   };
 };
 
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- Random.js API
 const randn = (rand: Random): number => {
   let u = 0;
   let v = 0;
@@ -139,7 +134,6 @@ const generateInputs = ({
 };
 
 const generateImageData = async (
-  // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- ONNXRuntime API
   model: Model,
   parameters: ModelParameters
 ): Promise<ImageData> => {

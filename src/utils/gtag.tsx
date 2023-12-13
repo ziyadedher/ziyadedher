@@ -15,7 +15,6 @@ const GTag: React.FunctionComponent = () => (
       id="gtag-init"
       strategy="afterInteractive"
       dangerouslySetInnerHTML={{
-        // eslint-disable-next-line @typescript-eslint/naming-convention -- gtag needs innerHTML.
         __html: `
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -32,7 +31,6 @@ const GTag: React.FunctionComponent = () => (
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
 const pageview = (url: string): void => {
   window.gtag("config", GA_TRACKING_ID, {
-    // eslint-disable-next-line @typescript-eslint/naming-convention, camelcase -- gtag convention.
     page_path: url,
   });
 };

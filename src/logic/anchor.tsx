@@ -10,7 +10,6 @@ interface AnchorProps {
 
 const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
   (
-    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
     {
       href,
       shouldOpenInNewPage = false,
@@ -18,7 +17,6 @@ const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
       children,
       onClick: handleClick,
     },
-    // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
     ref
   ) => (
     <a
@@ -27,7 +25,6 @@ const Anchor = forwardRef<HTMLAnchorElement, AnchorProps>(
       onClick={handleClick}
       href={href}
       aria-label={label}
-      // eslint-disable-next-line react/jsx-props-no-spreading -- unforunately, there's no cleaner way to do this that I can think of.
       {...(shouldOpenInNewPage ? { target: "_blank", rel: "noreferrer" } : {})}
     >
       {children}

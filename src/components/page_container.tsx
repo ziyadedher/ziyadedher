@@ -28,7 +28,6 @@ interface PageContainerProps {
   readonly pageStyle?: PageStyle;
 }
 
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
 const PageContainer: React.FunctionComponent<PageContainerProps> = ({
   children,
   hasHeader = true,
