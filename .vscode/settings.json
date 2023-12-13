@@ -6,7 +6,7 @@
   "typescript.enablePromptUseWorkspaceTsdk": true,
   "eslint.format.enable": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "jest.jestCommandLine": "yarn jest",
   "explorer.fileNesting.enabled": true,
