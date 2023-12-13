@@ -1,22 +1,14 @@
-import React from "react";
+import { Chart } from "primereact/chart";
 
-import { BlogPost } from "../../../components/blog";
-import Chart from "../../../components/chart";
-import { TextLink } from "../../../components/links";
-import { getImageWithBlur } from "../../../logic/image_with_blur";
-import { getStorageURI } from "../../../utils/storage";
+import TextLink from "@/components/links/text";
 
-import METADATA from "./metadata";
-
-interface TopNBreakdownChartProps {
-  readonly title: string;
-  readonly data: readonly number[];
-}
-
-const TopNBreakdownChart: React.FunctionComponent<TopNBreakdownChartProps> = ({
+const TopNBreakdownChart = ({
   title,
   data,
-}: TopNBreakdownChartProps) => (
+}: {
+  title: string;
+  data: number[];
+}) => (
   <Chart
     type="doughnut"
     data={{
@@ -43,18 +35,8 @@ const TopNBreakdownChart: React.FunctionComponent<TopNBreakdownChartProps> = ({
   />
 );
 
-// @ts-expect-error -- Async Server Component
-const Page: React.FunctionComponent = async () => (
-  <BlogPost
-    metadata={METADATA}
-    coverImage={{
-      alt: "hand-drawn cartoon of a stick figure walking away sadly from a sign that reads, in all caps, 'absolutely no unauthorized hacking'",
-      ...(await getImageWithBlur(
-        getStorageURI("blog/security.txt/cover.png"),
-        60
-      )),
-    }}
-  >
+const Page = () => (
+  <>
     <section>
       <p>
         <b>Got vulnz?</b> Cool. Don&apos;t know a way to report them? Uncool.
@@ -411,7 +393,7 @@ const Page: React.FunctionComponent = async () => (
         </li>
       </ol>
     </section>
-  </BlogPost>
+  </>
 );
 
 export default Page;

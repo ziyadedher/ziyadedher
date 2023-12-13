@@ -1,10 +1,8 @@
 import cx from "classnames";
-import React from "react";
 
-import Header from "./header";
-import Navbar from "./navbar";
-
-import type { NavbarPage } from "./navbar";
+import Header from "@/components/header";
+import Navbar from "@/components/navbar";
+import type { NavbarPage } from "@/components/navbar";
 
 type PageStyle = "dark" | "hacker" | "light";
 
@@ -28,7 +26,6 @@ interface PageContainerProps {
   readonly pageStyle?: PageStyle;
 }
 
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
 const PageContainer: React.FunctionComponent<PageContainerProps> = ({
   children,
   hasHeader = true,

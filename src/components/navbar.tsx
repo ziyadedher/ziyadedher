@@ -1,22 +1,19 @@
 import cx from "classnames";
 import Link from "next/link";
-import React from "react";
 
 type NavbarPage = "blog" | "hacks" | "home";
 
-interface NavbarPageEntryProps {
-  readonly page: NavbarPage;
-  readonly linkName: string;
-  readonly linkUrl: string;
-  readonly isCurrentPage?: boolean;
-}
-
-const NavbarPageEntry: React.FunctionComponent<NavbarPageEntryProps> = ({
+const NavbarPageEntry = ({
   page,
   linkName,
   linkUrl,
   isCurrentPage,
-}: NavbarPageEntryProps) => (
+}: {
+  page: NavbarPage;
+  linkName: string;
+  linkUrl: string;
+  isCurrentPage?: boolean;
+}) => (
   <Link key={page} href={linkUrl}>
     <span
       className={cx(
@@ -30,7 +27,7 @@ const NavbarPageEntry: React.FunctionComponent<NavbarPageEntryProps> = ({
 );
 
 interface NavbarProps {
-  readonly currentPage: NavbarPage | null;
+  currentPage: NavbarPage | null;
 }
 
 const Navbar: React.FunctionComponent<NavbarProps> = ({

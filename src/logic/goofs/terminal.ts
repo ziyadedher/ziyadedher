@@ -1,4 +1,4 @@
-import { asEnum, listEnumValues } from "../../utils/enum";
+import { asEnum, listEnumValues } from "@/utils/enum";
 
 enum Directory {
   HOME = "/",
