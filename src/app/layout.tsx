@@ -1,5 +1,6 @@
 import Script from "next/script";
 import "tailwindcss/tailwind.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "Ziyad Edher | Software Engineer",
@@ -26,7 +27,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
         `}
       </Script>
     </head>
-    <body>{children}</body>
+    <body>
+      <SpeedInsights />
+      {children}
+    </body>
   </html>
 );
 
