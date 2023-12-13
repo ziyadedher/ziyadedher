@@ -1,6 +1,6 @@
 import { Chart } from "primereact/chart";
 
-import { TextLink } from "@/components/links";
+import TextLink from "@/components/links/text";
 
 const TopNBreakdownChart = ({
   title,

@@ -1,9 +1,8 @@
 import Link from "next/link";
-import React from "react";
 
 import Anchor from "@/logic/anchor";
-import type { HitListItem } from "@/app/hacks/log4shell/route";
-import { HIT_LIST } from "@/app/hacks/log4shell/route";
+import { HIT_LIST } from "@/app/hacks/log4shell/api/route";
+import type { HitListItem } from "@/app/hacks/log4shell/api/route";
 
 export const metadata = {
   title: "Log4Shell Public Bug Bounty Specials | Ziyad Edher",
@@ -90,7 +89,7 @@ const Page = () => (
     </div>
 
     <h2 className="opacity-60 transition-all hover:opacity-90 active:opacity-100">
-      <Link href="/api/hacks/log4shell" passHref legacyBehavior>
+      <Link href="api" passHref legacyBehavior>
         <Anchor shouldOpenInNewPage>
           Click here for the data in the table as JSON.
         </Anchor>

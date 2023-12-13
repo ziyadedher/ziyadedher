@@ -10,11 +10,10 @@ import {
   PiSpotifyLogo,
   PiTwitterLogo,
 } from "react-icons/pi";
-import React from "react";
 
-import IconLink from "./links/icon";
+import IconLink from "@/components/links/icon";
 
-const Header: React.FunctionComponent = () => (
+const Header = () => (
   <header className="flex flex-col items-center text-center">
     <div className="text-lg font-light lowercase transition-all hover:opacity-70">
       <Link href="/">Ziyad Edher</Link>

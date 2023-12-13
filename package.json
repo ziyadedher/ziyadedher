@@ -3,10 +3,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
     "lint": "next lint",
-    "postbuild": "next-sitemap"
+    "build": "npm run storage:download-bundle && next build",
+    "start": "next start",
+    "storage:setup": "gcloud auth login && gcloud config set project ziyadedher && gcloud auth application-default login",
+    "storage:download": "gcloud storage rsync --recursive gs://ziyadedher ./public",
+    "storage:upload": "gcloud storage rsync --recursive ./public gs://ziyadedher",
+    "storage:bundle": "npm run storage:download && rm -f ./public/assets.tar.gz && tar -zcvf ./public/assets.tar.gz ./public && npm run storage:upload",
+    "storage:download-bundle": "curl https://storage.googleapis.com/ziyadedher/assets.tar.gz --output assets.tar.gz && tar -zxvf assets.tar.gz && rm -f assets.tar.gz"
   },
   "dependencies": {
     "@heroicons/react": "^2.0.18",

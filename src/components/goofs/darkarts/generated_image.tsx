@@ -6,18 +6,11 @@ import {
   PiSpinnerGap,
   PiWarningOctagon,
 } from "react-icons/pi";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
-import {
-  generateImageData,
-  getModel,
-} from "../../../logic/goofs/darkarts/model";
-import { getStorageURI } from "../../../utils/storage";
-
-import type {
-  Model,
-  ModelParameters,
-} from "../../../logic/goofs/darkarts/model";
+import { generateImageData, getModel } from "@/logic/goofs/darkarts/model";
+import { getStorageURI } from "@/utils/storage";
+import type { Model, ModelParameters } from "@/logic/goofs/darkarts/model";
 
 enum ModelStatus {
   READY_TO_LOAD = 0,
@@ -27,13 +20,7 @@ enum ModelStatus {
   ERROR = 4,
 }
 
-interface ModelStatusTextProps {
-  readonly modelStatus: ModelStatus;
-}
-
-const ModelStatusText: React.FunctionComponent<ModelStatusTextProps> = ({
-  modelStatus,
-}: ModelStatusTextProps) => {
+const ModelStatusText = ({ modelStatus }: { modelStatus: ModelStatus }) => {
   const getModelStatusText = useCallback((): string => {
     switch (modelStatus) {
       case ModelStatus.READY_TO_LOAD:
@@ -80,13 +67,11 @@ const ModelStatusText: React.FunctionComponent<ModelStatusTextProps> = ({
   );
 };
 
-interface GeneratedImageProps {
-  readonly modelParameters: ModelParameters;
-}
-
-const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
+const GeneratedImage = ({
   modelParameters,
-}: GeneratedImageProps) => {
+}: {
+  modelParameters: ModelParameters;
+}) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const otherCanvasRef = useRef<HTMLCanvasElement>(null);
 

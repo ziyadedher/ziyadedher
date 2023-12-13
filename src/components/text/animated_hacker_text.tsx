@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ALPHABET =
   "abcdefghijklmnopqrstuvwxyz" +
@@ -9,23 +9,21 @@ const ALPHABET =
   "`-=[]\\;',./" +
   '~!@#$%^&*()_+{}|:"<>?';
 
-interface AnimatedHackerTextProps {
-  readonly text: string;
-  readonly delay?: number;
-  readonly tickDelay?: number;
-}
-
 const generateHackerText = (text: string): string =>
   Array(text.length)
     .fill(0)
     .map(() => ALPHABET[Math.floor(Math.random() * ALPHABET.length)])
     .join("");
 
-const AnimatedHackerText: React.FunctionComponent<AnimatedHackerTextProps> = ({
+const AnimatedHackerText = ({
   text,
   delay = 500,
   tickDelay = 10,
-}: AnimatedHackerTextProps) => {
+}: {
+  text: string;
+  delay?: number;
+  tickDelay?: number;
+}) => {
   const [currentText, setCurrentText] = useState(text);
 
   useEffect(() => {

@@ -5,17 +5,11 @@ import { PiCaretRight } from "react-icons/pi";
 import { useCallback, useEffect, useReducer, useState } from "react";
 
 import GeneratedImage from "@/components/goofs/darkarts/generated_image";
-import { RangeSliderInput } from "@/components/inputs";
-import { TextLink } from "@/components/links";
+import RangeSliderInput from "@/components/range_slider_input";
+import TextLink from "@/components/links/text";
 import { LayerKeys } from "@/logic/goofs/darkarts/model";
 
 import type { LayerKey, LayerValues } from "@/logic/goofs/darkarts/model";
-
-export const metadata = {
-  name: "Generate AI (GAN) Faces | Ziyad Edher",
-  description:
-    "Generate AI faces online by using a GAN (generative adversarial network) that runs in your browser.",
-};
 
 const SettingItem = ({
   label,

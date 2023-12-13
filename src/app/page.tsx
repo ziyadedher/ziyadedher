@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { TextLink } from "@/components/links";
+import TextLink from "@/components/links/text";
 import PageContainer from "@/components/page_container";
 
 import meImage from "@public/ziyadedher.jpg";

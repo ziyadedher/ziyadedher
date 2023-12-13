@@ -1,18 +1,15 @@
 import Link from "next/link";
-import React from "react";
 
-import Anchor from "../../logic/anchor";
+import Anchor from "@/logic/anchor";
 
-interface TextLinkProps {
-  readonly href: string;
-  readonly isExternal?: boolean;
-  readonly children: React.ReactNode;
-}
-
-const TextLink: React.FunctionComponent<TextLinkProps> = ({
+const TextLink = ({
   href,
   isExternal = false,
   children,
+}: {
+  href: string;
+  isExternal?: boolean;
+  children: React.ReactNode;
 }) => (
   <span className="not-prose underline transition-all hover:opacity-70">
     <Link href={href} passHref legacyBehavior>

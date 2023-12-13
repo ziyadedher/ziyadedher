@@ -1,4 +1,4 @@
-import { TextLink } from "@/components/links";
+import TextLink from "@/components/links/text";
 
 import { internalMetadata as securityDotTxtMetadata } from "@/app/blog/security_txt/layout";
 

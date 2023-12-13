@@ -1,11 +1,11 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import React, { useCallback } from "react";
+import { useCallback } from "react";
 import ConsoleEmulator from "react-console-emulator";
 
 import type { TerminalProps as ConsoleEmulatorProps } from "react-console-emulator";
-import { cd, echo, exec, ls } from "../../logic/goofs/terminal";
+import { cd, echo, exec, ls } from "@/logic/goofs/terminal";
 
 const WELCOME_MESSAGE = "Welcome, `help` to start.";
 
