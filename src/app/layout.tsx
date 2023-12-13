@@ -1,16 +1,36 @@
-// eslint-disable-next-line import/no-unassigned-import, node/file-extension-in-import -- Tailwind CSS exception.
+import Script from "next/script";
 import "tailwindcss/tailwind.css";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
-import React from "react";
+export const metadata = {
+  title: "Ziyad Edher | Software Engineer",
+  description:
+    "I build and break things in AI, cryptography, infrastructure, and security lands.",
+};
 
-interface LayoutProps {
-  readonly children: React.ReactNode;
-}
+const GA_MEASUREMENT_ID =
+  process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_MEASUREMENT_ID;
 
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
-const Layout: React.FunctionComponent<LayoutProps> = ({ children }) => (
+const Layout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
-    <body>{children}</body>
+    <head>
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+      />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', '${GA_MEASUREMENT_ID}');
+        `}
+      </Script>
+    </head>
+    <body>
+      <SpeedInsights />
+      {children}
+    </body>
   </html>
 );
 

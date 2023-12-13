@@ -1,17 +1,6 @@
 import cx from "classnames";
-import React from "react";
 
-interface RangeSliderInputProps {
-  readonly id?: string;
-  readonly value: number;
-  readonly min: number;
-  readonly max: number;
-  readonly step?: number;
-  readonly isDisabled?: boolean;
-  readonly onChange?: React.ChangeEventHandler<HTMLInputElement>;
-}
-
-const RangeSliderInput: React.FunctionComponent<RangeSliderInputProps> = ({
+const RangeSliderInput = ({
   id,
   value,
   min,
@@ -19,7 +8,15 @@ const RangeSliderInput: React.FunctionComponent<RangeSliderInputProps> = ({
   step = 1,
   isDisabled = false,
   onChange: handleChange,
-}: RangeSliderInputProps) => (
+}: {
+  id?: string;
+  value: number;
+  min: number;
+  max: number;
+  step?: number;
+  isDisabled?: boolean;
+  onChange?: React.ChangeEventHandler<HTMLInputElement>;
+}) => (
   <input
     id={id}
     type="range"

@@ -1,23 +1,16 @@
 import classNames from "classnames";
 import {
-  CloudArrowDown,
-  Download,
-  Smiley,
-  SpinnerGap,
-  WarningOctagon,
-} from "phosphor-react";
-import React, { useCallback, useEffect, useRef, useState } from "react";
+  PiCloudArrowDown,
+  PiDownload,
+  PiSmiley,
+  PiSpinnerGap,
+  PiWarningOctagon,
+} from "react-icons/pi";
+import { useCallback, useEffect, useRef, useState } from "react";
 
-import {
-  generateImageData,
-  getModel,
-} from "../../../logic/goofs/darkarts/model";
-import { getStorageURI } from "../../../utils/storage";
-
-import type {
-  Model,
-  ModelParameters,
-} from "../../../logic/goofs/darkarts/model";
+import { generateImageData, getModel } from "@/logic/goofs/darkarts/model";
+import { getStorageURI } from "@/utils/storage";
+import type { Model, ModelParameters } from "@/logic/goofs/darkarts/model";
 
 enum ModelStatus {
   READY_TO_LOAD = 0,
@@ -27,13 +20,7 @@ enum ModelStatus {
   ERROR = 4,
 }
 
-interface ModelStatusTextProps {
-  readonly modelStatus: ModelStatus;
-}
-
-const ModelStatusText: React.FunctionComponent<ModelStatusTextProps> = ({
-  modelStatus,
-}: ModelStatusTextProps) => {
+const ModelStatusText = ({ modelStatus }: { modelStatus: ModelStatus }) => {
   const getModelStatusText = useCallback((): string => {
     switch (modelStatus) {
       case ModelStatus.READY_TO_LOAD:
@@ -80,13 +67,11 @@ const ModelStatusText: React.FunctionComponent<ModelStatusTextProps> = ({
   );
 };
 
-interface GeneratedImageProps {
-  readonly modelParameters: ModelParameters;
-}
-
-const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
+const GeneratedImage = ({
   modelParameters,
-}: GeneratedImageProps) => {
+}: {
+  modelParameters: ModelParameters;
+}) => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const otherCanvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -146,15 +131,15 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
   const getPlaceholderIcon = useCallback(() => {
     switch (modelStatus) {
       case ModelStatus.READY_TO_LOAD:
-        return <CloudArrowDown size={64} />;
+        return <PiCloudArrowDown size={64} />;
       case ModelStatus.LOADING:
-        return <SpinnerGap size={64} />;
+        return <PiSpinnerGap size={64} />;
       case ModelStatus.READY:
-        return <Smiley size={64} />;
+        return <PiSmiley size={64} />;
       case ModelStatus.GENERATING:
-        return <SpinnerGap size={64} />;
+        return <PiSpinnerGap size={64} />;
       default:
-        return <WarningOctagon size={64} />;
+        return <PiWarningOctagon size={64} />;
     }
   }, [modelStatus]);
 
@@ -211,7 +196,6 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
           "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
         )
       ).then(
-        // eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- includes ONNX type.
         (loadedModel) => {
           setModel(loadedModel);
           setModelStatus(ModelStatus.READY);
@@ -277,7 +261,7 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
           )}
         >
           <span>
-            <CloudArrowDown size={16} />
+            <PiCloudArrowDown size={16} />
           </span>
           Load
         </button>
@@ -293,7 +277,7 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
           )}
         >
           <span>
-            <Smiley size={16} />
+            <PiSmiley size={16} />
           </span>
           Generate
         </button>
@@ -309,7 +293,7 @@ const GeneratedImage: React.FunctionComponent<GeneratedImageProps> = ({
           )}
         >
           <span>
-            <Download size={16} />
+            <PiDownload size={16} />
           </span>
           Save
         </button>

@@ -1,18 +1,16 @@
 import Link from "next/link";
-import React from "react";
 
-import Anchor from "../../../logic/anchor";
-import { HIT_LIST } from "../../../pages/api/hacks/log4shell";
+import Anchor from "@/logic/anchor";
+import { HIT_LIST } from "@/app/hacks/log4shell/api/route";
+import type { HitListItem } from "@/app/hacks/log4shell/api/route";
 
-import type { HitListItem } from "../../../pages/api/hacks/log4shell";
+export const metadata = {
+  title: "Log4Shell Public Bug Bounty Specials | Ziyad Edher",
+  description:
+    "List of companies with public bug bounty specials for Log4Shell (CVE-2021-44228). Log4Shell is an RCE vulnerability in the very popular Log4J logging library.",
+};
 
-interface TableHeaderItemProps {
-  readonly headerName: string;
-}
-
-const TableHeaderItem: React.FunctionComponent<TableHeaderItemProps> = ({
-  headerName,
-}: TableHeaderItemProps) => (
+const TableHeaderItem = ({ headerName }: { headerName: string }) => (
   <th
     scope="col"
     className="py-3 px-6 text-left text-xs font-medium uppercase tracking-wider"
@@ -21,24 +19,11 @@ const TableHeaderItem: React.FunctionComponent<TableHeaderItemProps> = ({
   </th>
 );
 
-interface TableRowItemProps {
-  readonly children?: React.ReactNode;
-}
+const TableRowItem = ({ children }: { children?: React.ReactNode }) => (
+  <td className="whitespace-nowrap py-4 px-6 text-sm">{children}</td>
+);
 
-// eslint-disable-next-line @typescript-eslint/prefer-readonly-parameter-types -- React.ReactNode
-const TableRowItem: React.FunctionComponent<TableRowItemProps> = ({
-  children,
-}) => <td className="whitespace-nowrap py-4 px-6 text-sm">{children}</td>;
-
-interface TableRowProps {
-  readonly item: HitListItem;
-  readonly isOdd: boolean;
-}
-
-const TableRow: React.FunctionComponent<TableRowProps> = ({
-  item,
-  isOdd,
-}: TableRowProps) => (
+const TableRow = ({ item, isOdd }: { item: HitListItem; isOdd: boolean }) => (
   <tr className={isOdd ? "bg-gray-900" : "bg-gray-900"}>
     <TableRowItem>
       <span className="text-blue-600 transition-all hover:opacity-50">
@@ -68,7 +53,7 @@ const TableRow: React.FunctionComponent<TableRowProps> = ({
   </tr>
 );
 
-const Page: React.FunctionComponent = () => (
+const Page = () => (
   <div className="flex w-full flex-col items-center gap-2 px-6 text-center text-sm font-light xl:mx-0">
     <h1 className="text-xl">Log4Shell Public Bug Bounty Specials</h1>
     <p className="max-w-xl text-sm">
@@ -104,7 +89,7 @@ const Page: React.FunctionComponent = () => (
     </div>
 
     <h2 className="opacity-60 transition-all hover:opacity-90 active:opacity-100">
-      <Link href="/api/hacks/log4shell" passHref legacyBehavior>
+      <Link href="api" passHref legacyBehavior>
         <Anchor shouldOpenInNewPage>
           Click here for the data in the table as JSON.
         </Anchor>
