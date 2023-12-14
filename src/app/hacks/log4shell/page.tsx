@@ -1,8 +1,8 @@
 import Link from "next/link";
 
 import Anchor from "@/logic/anchor";
-import { HIT_LIST } from "@/app/hacks/log4shell/api/route";
-import type { HitListItem } from "@/app/hacks/log4shell/api/route";
+import { getHitList } from "@/app/hacks/log4shell/data";
+import type { HitListItem } from "@/app/hacks/log4shell/data";
 
 export const metadata = {
   title: "Log4Shell Public Bug Bounty Specials | Ziyad Edher",
@@ -81,7 +81,7 @@ const Page = () => (
           </tr>
         </thead>
         <tbody>
-          {HIT_LIST.map((item, i) => (
+          {getHitList().map((item, i) => (
             <TableRow key={item.companyName} item={item} isOdd={i % 2 === 1} />
           ))}
         </tbody>
