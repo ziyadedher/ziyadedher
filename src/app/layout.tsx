@@ -1,5 +1,6 @@
 import Script from "next/script";
 import "tailwindcss/tailwind.css";
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
@@ -13,7 +14,10 @@ const GA_MEASUREMENT_ID =
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <html lang="en">
-    <head>
+    <body>
+      {children}
+      <Analytics />
+      <SpeedInsights />
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
       />
@@ -26,10 +30,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
           gtag('config', '${GA_MEASUREMENT_ID}');
         `}
       </Script>
-    </head>
-    <body>
-      <SpeedInsights />
-      {children}
     </body>
   </html>
 );
