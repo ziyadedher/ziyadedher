@@ -86,6 +86,5 @@ export const HIT_LIST: HitListItem[] = [
   a.companyName.localeCompare(b.companyName)
 );
 
-export default function GET(_: NextRequest) {
-  return NextResponse.json(HIT_LIST, { status: 200 });
-}
+export const GET = (_: NextRequest) =>
+  NextResponse.json(HIT_LIST, { status: 200 });
