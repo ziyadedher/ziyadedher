@@ -2,13 +2,13 @@
 
 import Link from "next/link";
 import {
-  PiFacebookLogo,
-  PiGithubLogo,
-  PiInstagramLogo,
-  PiLinkedinLogo,
-  PiMediumLogo,
-  PiSpotifyLogo,
-  PiTwitterLogo,
+  PiFacebookLogoLight,
+  PiGithubLogoLight,
+  PiInstagramLogoLight,
+  PiLinkedinLogoLight,
+  PiMediumLogoLight,
+  PiSpotifyLogoLight,
+  PiTwitterLogoLight,
 } from "react-icons/pi";
 
 import IconLink from "@/components/links/icon";
@@ -25,24 +25,24 @@ const Header = () => (
         label="Twitter"
         isExternal
       >
-        <PiTwitterLogo size={20} weight="light" />
+        <PiTwitterLogoLight size={20} />
       </IconLink>
       <IconLink
         href="https://linkedin.com/in/ziyad-edher"
         label="LinkedIn"
         isExternal
       >
-        <PiLinkedinLogo size={20} weight="light" />
+        <PiLinkedinLogoLight size={20} />
       </IconLink>
       <IconLink href="https://github.com/ziyadedher" label="GitHub" isExternal>
-        <PiGithubLogo size={20} weight="light" />
+        <PiGithubLogoLight size={20} />
       </IconLink>
       <IconLink
         href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvr"
         label="Spotify"
         isExternal
       >
-        <PiSpotifyLogo size={20} weight="light" />
+        <PiSpotifyLogoLight size={20} />
       </IconLink>
 
       <IconLink
@@ -50,21 +50,21 @@ const Header = () => (
         label="Medium"
         isExternal
       >
-        <PiMediumLogo size={20} weight="light" />
+        <PiMediumLogoLight size={20} />
       </IconLink>
       <IconLink
         href="https://facebook.com/ziyadedher"
         label="Facebook"
         isExternal
       >
-        <PiFacebookLogo size={20} weight="light" />
+        <PiFacebookLogoLight size={20} />
       </IconLink>
       <IconLink
         href="https://instagram.com/ziyad.edher"
         label="Instagram"
         isExternal
       >
-        <PiInstagramLogo size={20} weight="light" />
+        <PiInstagramLogoLight size={20} />
       </IconLink>
     </div>
   </header>
