@@ -19,9 +19,9 @@ const Page = () => (
           for sick memes and sicker shitposts.
         </p>
         <p>
-          I do product security at{" "}
-          <TextLink href="https://asana.com?noredirect" isExternal>
-            Asana
+          I am a Member of Technical Staff at{" "}
+          <TextLink href="https://anthropic.com" isExternal>
+            Anthropic
           </TextLink>
           . Check out my{" "}
           <TextLink href="https://linkedin.com/in/ziyad-edher" isExternal>
@@ -34,35 +34,55 @@ const Page = () => (
           <TextLink href="https://www.utoronto.ca/" isExternal>
             University of Toronto
           </TextLink>{" "}
-          and graduated in June 2021 from a computer science program focusing on
+          and graduated from a computer science program focusing on
           artificial intelligence and computation theory.
         </p>
-        <p>
-          I love entrepreneurship, music (check out my{" "}
-          <TextLink
-            href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
-            isExternal
-          >
-            Spotify
-          </TextLink>
-          ), good software engineering, Ethereum, and talking with folks about
-          things they&apos;re passionate about.
-        </p>
+        <p className="mb-1">Some things I like to talk about:</p>
+        <ul className="mt-0">
+          <li>
+            Good software engineering
+          </li>
+          <li>
+            Everything security-related
+          </li>
+          <li>
+            Reinforcement learning
+          </li>
+          <li>
+            Music (check out my{" "}
+            <TextLink
+              href="https://open.spotify.com/user/c9n8y6h3ssu8hg811rfqt4tvrr"
+              isExternal
+            >
+              Spotify
+            </TextLink>
+            )
+          </li>
+          <li>
+            Scrappiness and entrepreneurship
+          </li>
+          <li>
+            EVM performance (and performance in general)
+          </li>
+          <li>
+            Microcontrollers and embedded systems
+          </li>
+        </ul>
         <p className="mb-1">Some maybe cool things I did in the past:</p>
         <ul className="mt-0">
           <li>
-            Built ML and data infrastructure at{" "}
+            Lead the Product Security team at{" "}
+            <TextLink href="https://asana.com?noredirect" isExternal>
+              Asana
+            </TextLink>, primarily focussed on building great secure-by-default
+            frameworks.
+          </li>
+          <li>
+            Did performance work and built ML and data infrastructure at{" "}
             <TextLink href="https://www.citadelsecurities.com/" isExternal>
               Citadel Securities
             </TextLink>
             .
-          </li>
-          <li>
-            Designed software that protects{" "}
-            <TextLink href="https://asana.com?noredirect" isExternal>
-              Asana
-            </TextLink>{" "}
-            users against scammers and bots.
           </li>
           <li>
             Interned at{" "}
@@ -83,6 +103,13 @@ const Page = () => (
             Taught cars how to drive at{" "}
             <TextLink href="https://www.autodrive.utoronto.ca/" isExternal>
               aUToronto
+            </TextLink>
+            .
+          </li>
+          <li>
+            Investigated EVM performance in part in{" "}
+            <TextLink href="https://github.com/ziyadedher/evm-bench" isExternal>
+              evm-bench
             </TextLink>
             .
           </li>
