@@ -3,8 +3,12 @@ import "tailwindcss/tailwind.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
-const font = Noto_Sans();
-const fontArabic = Noto_Sans_Arabic();
+const font = Noto_Sans({
+  subsets: ["latin", "latin-ext"],
+});
+const fontArabic = Noto_Sans_Arabic({
+  subsets: ["arabic"],
+});
 
 export const metadata = {
   title: "ziyad's corner · Ziyad Edher",
