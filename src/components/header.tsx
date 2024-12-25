@@ -6,7 +6,6 @@ import {
   PiGithubLogoLight,
   PiInstagramLogoLight,
   PiLinkedinLogoLight,
-  PiMediumLogoLight,
   PiSpotifyLogoLight,
   PiXLogoLight,
   PiCompassRoseLight,

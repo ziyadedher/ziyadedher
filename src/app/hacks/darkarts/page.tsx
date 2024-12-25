@@ -149,11 +149,6 @@ interface LayerValuesAction<T> {
   value: T;
 }
 
-type LayerValuesReducer<T> = React.Reducer<
-  LayerValues<T>,
-  LayerValuesAction<T>
->;
-
 const layerValuesReducer = <T,>(
   state: LayerValues<T>,
   action: LayerValuesAction<T>,
