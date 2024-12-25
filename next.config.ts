@@ -1,5 +1,6 @@
-/** @type {import('next').NextConfig} */
-const NEXT_CONFIG = {
+import type { NextConfig } from "next";
+
+const NEXT_CONFIG: NextConfig = {
   images: {
     remotePatterns: [{ hostname: "storage.ziyadedher.com" }],
   },

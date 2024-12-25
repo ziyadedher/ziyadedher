@@ -1,9 +1,9 @@
 import PageContainer from "@/components/page_container";
 
 export const metadata = {
-  title: "Ziyad Edher's Blog",
+  title: "ziyad's blog · Ziyad Edher",
   description:
-    "Ziyad writes about nerd stuff: security, technology, hacking, you name it.",
+    "Personal blog of Ziyad Edher (software engineer and broad-spectrum nerd) mostly talking about technology.",
 };
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
