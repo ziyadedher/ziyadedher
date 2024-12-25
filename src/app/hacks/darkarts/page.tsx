@@ -82,7 +82,7 @@ const CollapsableLayerConfiguration = ({
     <div
       className={classNames(
         "flex flex-col space-y-2 px-4 transition-all overflow-hidden",
-        isOpen ? "py-4 max-h-48" : "max-h-0"
+        isOpen ? "py-4 max-h-48" : "max-h-0",
       )}
     >
       <SettingItem
@@ -156,7 +156,7 @@ type LayerValuesReducer<T> = React.Reducer<
 
 const layerValuesReducer = <T,>(
   state: LayerValues<T>,
-  action: LayerValuesAction<T>
+  action: LayerValuesAction<T>,
 ): LayerValues<T> => {
   const newState = { ...state };
   newState[action.key] = action.value;
@@ -176,21 +176,25 @@ const Page = () => {
   const [distortionSeed, setDistortionSeed] = useState(0);
   const [distortionStrength, setDistortionStrength] = useState(0);
   const [layerInputSeeds, setLayerInputSeeds] = useReducer<
-    LayerValuesReducer<number>
+    LayerValues<number>,
+    [LayerValuesAction<number>]
   >(layerValuesReducer, getDefaultLayerValues(0));
   const [layerDistortionSeeds, setLayerDistortionSeeds] = useReducer<
-    LayerValuesReducer<number>
+    LayerValues<number>,
+    [LayerValuesAction<number>]
   >(layerValuesReducer, getDefaultLayerValues(0));
   const [layerDistortionStrengths, setLayerDistortionStrengths] = useReducer<
-    LayerValuesReducer<number>
+    LayerValues<number>,
+    [LayerValuesAction<number>]
   >(layerValuesReducer, getDefaultLayerValues(0));
   const [layerOverriden, setLayerOverriden] = useReducer<
-    LayerValuesReducer<boolean>
+    LayerValues<boolean>,
+    [LayerValuesAction<boolean>]
   >(layerValuesReducer, getDefaultLayerValues(false));
-  const [layerOpen, setLayerOpen] = useReducer<LayerValuesReducer<boolean>>(
-    layerValuesReducer,
-    getDefaultLayerValues(false)
-  );
+  const [layerOpen, setLayerOpen] = useReducer<
+    LayerValues<boolean>,
+    [LayerValuesAction<boolean>]
+  >(layerValuesReducer, getDefaultLayerValues(false));
 
   useEffect(() => {
     setSeed(Math.round(Math.random() * 20 - 10));
@@ -315,7 +319,7 @@ const Page = () => {
       layerDistortionStrengths,
       layerOverriden,
       layerOpen,
-    ]
+    ],
   );
 
   return (
@@ -401,7 +405,7 @@ const Page = () => {
             </p>
             <div className="mt-4 flex flex-col gap-2">
               {LayerKeys.map((layerKey) =>
-                getCollapsableLayerConfiguration(layerKey)
+                getCollapsableLayerConfiguration(layerKey),
               )}
             </div>
           </div>
