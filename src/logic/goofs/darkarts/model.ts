@@ -28,16 +28,7 @@ class ModelError extends Error {}
 
 const getModel = async (modelPath: string): Promise<Model> => {
   env.wasm.wasmPaths = {
-    "ort-wasm.wasm": getStorageURI("darkarts/onnxruntime/ort-wasm.wasm"),
-    "ort-wasm-threaded.wasm": getStorageURI(
-      "darkarts/onnxruntime/ort-wasm-threaded.wasm"
-    ),
-    "ort-wasm-simd.wasm": getStorageURI(
-      "darkarts/onnxruntime/ort-wasm-simd.wasm"
-    ),
-    "ort-wasm-simd-threaded.wasm": getStorageURI(
-      "darkarts/onnxruntime/ort-wasm-simd-threaded.wasm"
-    ),
+    wasm: getStorageURI("darkarts/onnxruntime/ort-wasm-simd-threaded.wasm"),
   };
 
   const generator = await InferenceSession.create(modelPath, {
@@ -67,7 +58,7 @@ const generateInputs = ({
   const inputLatentsWeights = new Tensor(new Float32Array(14 * 1), [14, 1]);
   const intermediateLatentsDistortions = new Tensor(
     new Float32Array(14 * 512),
-    [14, 512]
+    [14, 512],
   );
 
   for (const layerKey of LayerKeys) {
@@ -81,14 +72,14 @@ const generateInputs = ({
     const intSeed0 = intSeed;
     const rand0 = new Random(MersenneTwister19937.seed(intSeed0));
     const rand0Values = new Float32Array(
-      new Array(512).fill(0).map(() => randn(rand0))
+      new Array(512).fill(0).map(() => randn(rand0)),
     );
     inputLatents.data.set(rand0Values, 2 * layerKey * 512);
 
     const intSeed1 = intSeed + 1;
     const rand1 = new Random(MersenneTwister19937.seed(intSeed1));
     const rand1Values = new Float32Array(
-      new Array(512).fill(0).map(() => randn(rand1))
+      new Array(512).fill(0).map(() => randn(rand1)),
     );
     inputLatents.data.set(rand1Values, (2 * layerKey + 1) * 512);
 
@@ -101,14 +92,14 @@ const generateInputs = ({
     const seed = intermediateLatentsDistortionSeeds[layerKey];
     if (typeof seed === "undefined") {
       throw new InputError(
-        `Undefined value in intermediateLatentsDistortionSeeds array.`
+        `Undefined value in intermediateLatentsDistortionSeeds array.`,
       );
     }
 
     const strength = intermediateLatentsDistortionStrengths[layerKey];
     if (typeof strength === "undefined") {
       throw new InputError(
-        `Undefined value in intermediateLatentsDistortionStrengths array.`
+        `Undefined value in intermediateLatentsDistortionStrengths array.`,
       );
     }
 
@@ -121,7 +112,7 @@ const generateInputs = ({
     const rand0Values = new Float32Array(
       new Array(512)
         .fill(0)
-        .map(() => strength * ((randn(rand0) + randn(rand1)) / 2))
+        .map(() => strength * ((randn(rand0) + randn(rand1)) / 2)),
     );
     intermediateLatentsDistortions.data.set(rand0Values, layerKey * 512);
   }
@@ -135,7 +126,7 @@ const generateInputs = ({
 
 const generateImageData = async (
   model: Model,
-  parameters: ModelParameters
+  parameters: ModelParameters,
 ): Promise<ImageData> => {
   if (model.generator.outputNames.length > 1) {
     throw new ModelError("Generator has more than one output.");
