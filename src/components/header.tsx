@@ -8,7 +8,9 @@ import {
   PiLinkedinLogoLight,
   PiMediumLogoLight,
   PiSpotifyLogoLight,
-  PiTwitterLogoLight,
+  PiXLogoLight,
+  PiCompassRoseLight,
+  PiYoutubeLogoLight,
 } from "react-icons/pi";
 
 import IconLink from "@/components/links/icon";
@@ -25,7 +27,7 @@ const Header = () => (
         label="Twitter"
         isExternal
       >
-        <PiTwitterLogoLight size={20} />
+        <PiXLogoLight size={20} />
       </IconLink>
       <IconLink
         href="https://linkedin.com/in/ziyad-edher"
@@ -44,14 +46,6 @@ const Header = () => (
       >
         <PiSpotifyLogoLight size={20} />
       </IconLink>
-
-      <IconLink
-        href="https://medium.com/@ziyad.edher"
-        label="Medium"
-        isExternal
-      >
-        <PiMediumLogoLight size={20} />
-      </IconLink>
       <IconLink
         href="https://facebook.com/ziyadedher"
         label="Facebook"
@@ -65,6 +59,20 @@ const Header = () => (
         isExternal
       >
         <PiInstagramLogoLight size={20} />
+      </IconLink>
+      <IconLink
+        href="https://www.lesswrong.com/users/ziyad-edher"
+        label="LessWrong"
+        isExternal
+      >
+        <PiCompassRoseLight size={20} />
+      </IconLink>
+      <IconLink
+        href="https://www.youtube.com/@ziyadedher"
+        label="YouTube"
+        isExternal
+      >
+        <PiYoutubeLogoLight size={20} />
       </IconLink>
     </div>
   </header>
