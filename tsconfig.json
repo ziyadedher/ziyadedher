@@ -28,6 +28,7 @@
     "env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "eslint.config.js",
     ".next/types/**/*.ts"
   ],
   "exclude": ["node_modules"]

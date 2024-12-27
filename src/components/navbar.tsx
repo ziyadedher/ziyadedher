@@ -18,7 +18,7 @@ const NavbarPageEntry = ({
     <span
       className={cx(
         "uppercase font-light text-sm group-hover:opacity-50 transition-all",
-        isCurrentPage === true ? "opacity-70" : "opacity-100"
+        isCurrentPage === true ? "opacity-70" : "opacity-100",
       )}
     >
       {linkName}

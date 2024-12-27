@@ -60,7 +60,7 @@ const HIT_LIST: HitListItem[] = [
       "https://hackerone.com/coinbase/policy_versions?type=team&change=3663055",
   },
 ].sort((a: HitListItem, b: HitListItem) =>
-  a.companyName.localeCompare(b.companyName)
+  a.companyName.localeCompare(b.companyName),
 );
 
 export const getHitList = () => HIT_LIST;
