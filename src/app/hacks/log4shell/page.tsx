@@ -1,7 +1,8 @@
 import Link from "next/link";
 
-import Anchor from "@/logic/anchor";
 import { getHitList } from "@/app/hacks/log4shell/data";
+import Anchor from "@/logic/anchor";
+
 import type { HitListItem } from "@/app/hacks/log4shell/data";
 
 export const metadata = {

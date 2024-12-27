@@ -4,8 +4,9 @@ import { useRouter } from "next/navigation";
 import { useCallback } from "react";
 import ConsoleEmulator from "react-console-emulator";
 
-import type { TerminalProps as ConsoleEmulatorProps } from "react-console-emulator";
 import { cd, echo, exec, ls } from "@/logic/goofs/terminal";
+
+import type { TerminalProps as ConsoleEmulatorProps } from "react-console-emulator";
 
 const WELCOME_MESSAGE = "Welcome, `help` to start.";
 

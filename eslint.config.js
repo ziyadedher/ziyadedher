@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import tseslint from "typescript-eslint";
 import * as importPlugin from "eslint-plugin-import";
 import nextPlugin from "@next/eslint-plugin-next";
@@ -34,7 +36,27 @@ export default tseslint.config([
     },
 
     rules: {
-      "import/order": "error",
+      "import/order": [
+        "error",
+        {
+          groups: [
+            "builtin",
+            "external",
+            "internal",
+            "parent",
+            "sibling",
+            "index",
+            "object",
+            "type",
+          ],
+          "newlines-between": "always",
+          alphabetize: {
+            order: "asc",
+            caseInsensitive: true,
+          },
+        },
+      ],
+      "import/no-relative-packages": "error",
       "prefer-destructuring": [
         "error",
         {

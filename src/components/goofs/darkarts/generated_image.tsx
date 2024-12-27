@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { useCallback, useEffect, useRef, useState } from "react";
 import {
   PiCloudArrowDown,
   PiDownload,
@@ -6,10 +7,10 @@ import {
   PiSpinnerGap,
   PiWarningOctagon,
 } from "react-icons/pi";
-import { useCallback, useEffect, useRef, useState } from "react";
 
 import { generateImageData, getModel } from "@/logic/goofs/darkarts/model";
 import { getStorageURI } from "@/utils/storage";
+
 import type { Model, ModelParameters } from "@/logic/goofs/darkarts/model";
 
 enum ModelStatus {
