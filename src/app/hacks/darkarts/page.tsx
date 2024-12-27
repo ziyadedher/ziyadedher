@@ -33,13 +33,13 @@ const SettingItem = ({
   </div>
 );
 
-type RangeSliderInputProps = {
+interface RangeSliderInputProps {
   value: number;
   min: number;
   max: number;
   step?: number;
   onChange: React.ChangeEventHandler<HTMLInputElement>;
-};
+}
 
 const CollapsableLayerConfiguration = ({
   layerKey,

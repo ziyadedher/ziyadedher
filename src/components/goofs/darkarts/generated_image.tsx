@@ -59,7 +59,7 @@ const ModelStatusText = ({ modelStatus }: { modelStatus: ModelStatus }) => {
     <p
       className={classNames(
         "text-center text-xs opacity-70",
-        getModelStatusClassNames()
+        getModelStatusClassNames(),
       )}
     >
       {getModelStatusText()}
@@ -178,7 +178,7 @@ const GeneratedImage = ({
       0,
       0,
       imageData.width * 4,
-      imageData.height * 4
+      imageData.height * 4,
     );
 
     context.font = "32px Comic Sans";
@@ -193,16 +193,16 @@ const GeneratedImage = ({
       setModelStatus(ModelStatus.LOADING);
       getModel(
         getStorageURI(
-          "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb"
-        )
+          "darkarts/models/onnx/stylegan2-ffhq-256x256.generator.onnx.pb",
+        ),
       ).then(
         (loadedModel) => {
           setModel(loadedModel);
           setModelStatus(ModelStatus.READY);
         },
-        (error) => {
+        (error: unknown) => {
           throw error;
-        }
+        },
       );
     }, []);
 
@@ -215,9 +215,9 @@ const GeneratedImage = ({
           () => {
             setModelStatus(ModelStatus.READY);
           },
-          (error) => {
+          (error: unknown) => {
             throw error;
-          }
+          },
         );
       }, 50);
     }, [generateImage]);
@@ -257,7 +257,7 @@ const GeneratedImage = ({
             "flex flex-row items-center justify-center gap-2 py-2 px-4 bg-gray-600 rounded-lg",
             modelStatus === ModelStatus.READY_TO_LOAD
               ? "cursor-pointer hover:bg-gray-700 active:bg-gray-800"
-              : "cursor-not-allowed opacity-50"
+              : "cursor-not-allowed opacity-50",
           )}
         >
           <span>
@@ -273,7 +273,7 @@ const GeneratedImage = ({
             "flex flex-row py-2 px-4 items-center gap-2 justify-center bg-gray-600 rounded-lg flex-1",
             isModelAvailable
               ? "cursor-pointer hover:bg-gray-700 active:bg-gray-800"
-              : "cursor-not-allowed opacity-50"
+              : "cursor-not-allowed opacity-50",
           )}
         >
           <span>
@@ -289,7 +289,7 @@ const GeneratedImage = ({
             "flex flex-row items-center justify-center gap-2 py-2 px-4 bg-gray-600 rounded-lg",
             imageData === null
               ? "cursor-not-allowed opacity-50"
-              : "cursor-pointer hover:bg-gray-700 active:bg-gray-800"
+              : "cursor-pointer hover:bg-gray-700 active:bg-gray-800",
           )}
         >
           <span>

@@ -28,7 +28,7 @@ const RangeSliderInput = ({
     onChange={handleChange}
     className={cx(
       "w-full",
-      isDisabled ? "cursor-not-allowed" : "cursor-pointer"
+      isDisabled ? "cursor-not-allowed" : "cursor-pointer",
     )}
   />
 );
