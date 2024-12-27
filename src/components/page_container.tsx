@@ -2,6 +2,7 @@ import cx from "classnames";
 
 import Header from "@/components/header";
 import Navbar from "@/components/navbar";
+
 import type { NavbarPage } from "@/components/navbar";
 
 type PageStyle = "dark" | "hacker" | "light";
