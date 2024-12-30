@@ -5,9 +5,9 @@ import { ArticleContainer } from "@/views/containers";
 import meImage from "@public/ziyadedher.jpg";
 
 const Page = () => (
-  <ArticleContainer hasHeader hasNavbar pageStyle="light" navbarPage="home">
+  <ArticleContainer hasHeader hasNavbar navbarPage="home">
     <div className="flex flex-row gap-16 py-8">
-      <article className="prose flex flex-1 flex-col text-sm font-light">
+      <article className="prose dark:prose-invert flex flex-1 flex-col text-sm font-light">
         <p className="text-2xl">waddup nerd, its ziyad</p>
         <p>
           My name is Ziyad Edher (زياد إضهير). I&apos;m a Member of Technical

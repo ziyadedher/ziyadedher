@@ -1,9 +1,9 @@
 export const metadata = {
-  title: "Generate AI (GAN) Faces | Ziyad Edher",
+  title: "dark arts · Ziyad Edher",
   description:
     "Generate AI faces online by using a GAN (generative adversarial network) that runs in your browser.",
 };
 
-const Layout = ({ children }: { children: React.ReactNode }) => <>{children}</>;
-
-export default Layout;
+export default function Layout({ children }: { children: React.ReactNode }) {
+  return <>{children}</>;
+}
