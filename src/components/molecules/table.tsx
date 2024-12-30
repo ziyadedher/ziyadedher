@@ -3,7 +3,7 @@
 import clsx from "clsx";
 import { createContext, useContext, useState } from "react";
 
-import { Link } from "./link";
+import { Link } from "@/components/atoms/link";
 
 import type React from "react";
 

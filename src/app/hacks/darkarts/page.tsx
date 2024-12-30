@@ -4,8 +4,8 @@ import classNames from "classnames";
 import { useCallback, useEffect, useReducer, useState } from "react";
 import { PiCaretRight } from "react-icons/pi";
 
+import { TextLink } from "@/components/atoms/text";
 import GeneratedImage from "@/components/goofs/darkarts/generated_image";
-import TextLink from "@/components/links/text";
 import RangeSliderInput from "@/components/range_slider_input";
 import { LayerKeys } from "@/logic/goofs/darkarts/model";
 

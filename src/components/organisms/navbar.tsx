@@ -5,8 +5,8 @@ import clsx from "clsx";
 import { LayoutGroup, motion } from "framer-motion";
 import React, { forwardRef, useId } from "react";
 
-import { TouchTarget } from "./button";
-import { Link } from "./link";
+import { TouchTarget } from "@/components/atoms/button";
+import { Link } from "@/components/atoms/link";
 
 export function Navbar({
   className,

@@ -1,14 +1,14 @@
 import Image from "next/image";
 
-import TextLink from "@/components/links/text";
-import PageContainer from "@/components/page_container";
+import { TextLink } from "@/components/atoms/text";
+import { ArticleContainer } from "@/views/containers";
 import meImage from "@public/ziyadedher.jpg";
 
 const Page = () => (
-  <PageContainer hasHeader hasNavbar navbarPage="home" pageStyle="light">
-    <div className="mx-auto flex max-w-5xl grow-0 flex-row justify-center gap-8 py-8">
-      <div className="prose flex flex-1 flex-col text-sm font-light">
-        <p className="text-3xl">waddup nerd</p>
+  <ArticleContainer hasHeader hasNavbar pageStyle="light" navbarPage="home">
+    <div className="flex flex-row gap-16 py-8">
+      <article className="prose flex flex-1 flex-col text-sm font-light">
+        <p className="text-2xl">waddup nerd, its ziyad</p>
         <p>
           My name is Ziyad Edher (زياد إضهير). I&apos;m a Member of Technical
           Staff at{" "}
@@ -103,17 +103,17 @@ const Page = () => (
           (fingerprint: CB5D A985 9769 0CC1). You can probably find some places
           to verify this if you don&apos;t wanna trust GCP.
         </p>
-      </div>
-      <div className="hidden h-min max-w-md overflow-hidden rounded-3xl shadow-inner xl:flex">
+      </article>
+      <aside className="hidden h-min max-w-md overflow-hidden rounded-3xl shadow-inner xl:flex">
         <Image
           priority
           placeholder="blur"
           alt="Photograph of Ziyad Edher in a stuffed animal store. He is holding a stuffed hedgehog plushie."
           src={meImage}
         />
-      </div>
+      </aside>
     </div>
-  </PageContainer>
+  </ArticleContainer>
 );
 
 export default Page;
