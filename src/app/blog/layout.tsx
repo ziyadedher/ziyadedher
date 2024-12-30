@@ -1,4 +1,4 @@
-import PageContainer from "@/components/page_container";
+import { PageContainer } from "@/views/containers";
 
 export const metadata = {
   title: "ziyad's blog · Ziyad Edher",

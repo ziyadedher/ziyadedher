@@ -1,6 +1,6 @@
 import clsx from "clsx";
 
-import { Button } from "./button";
+import { Button } from "@/components/atoms/button";
 
 import type React from "react";
 

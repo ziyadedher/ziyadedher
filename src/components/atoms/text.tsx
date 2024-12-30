@@ -27,7 +27,7 @@ export function TextLink({
       {...props}
       className={clsx(
         className,
-        "text-zinc-950 underline decoration-zinc-950/50 data-[hover]:decoration-zinc-950 dark:text-white dark:decoration-white/50 dark:data-[hover]:decoration-white",
+        "not-prose text-zinc-950 underline hover:opacity-70 decoration-zinc-950/50 data-[hover]:decoration-zinc-950 dark:text-white dark:decoration-white/50 dark:data-[hover]:decoration-white",
       )}
     />
   );

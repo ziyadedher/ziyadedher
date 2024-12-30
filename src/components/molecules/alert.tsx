@@ -1,7 +1,7 @@
 import * as Headless from "@headlessui/react";
 import clsx from "clsx";
 
-import { Text } from "./text";
+import { Text } from "@/components/atoms/text";
 
 import type React from "react";
 
