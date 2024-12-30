@@ -1,4 +1,4 @@
-import { PageContainer } from "@/views/containers";
+import { ArticleContainer } from "@/views/containers";
 
 export const metadata = {
   title: "ziyad's blog · Ziyad Edher",
@@ -7,9 +7,9 @@ export const metadata = {
 };
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
-  <PageContainer hasHeader hasNavbar navbarPage="blog" pageStyle="light">
+  <ArticleContainer hasHeader hasNavbar navbarPage="blog">
     {children}
-  </PageContainer>
+  </ArticleContainer>
 );
 
 export default Layout;

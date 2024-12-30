@@ -1,4 +1,4 @@
-import { PageContainer } from "@/views/containers";
+import { HacksContainer } from "@/views/containers";
 
 export const metadata = {
   title: "ziyad's hacks · Ziyad Edher",
@@ -7,9 +7,9 @@ export const metadata = {
 };
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
-  <PageContainer hasHeader hasNavbar navbarPage="hacks" pageStyle="hacker">
+  <HacksContainer hasHeader hasNavbar navbarPage="hacks">
     {children}
-  </PageContainer>
+  </HacksContainer>
 );
 
 export default Layout;
