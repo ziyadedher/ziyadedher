@@ -4,6 +4,7 @@ import tseslint from "typescript-eslint";
 import * as importPlugin from "eslint-plugin-import";
 import nextPlugin from "@next/eslint-plugin-next";
 import prettierPluginRecommended from "eslint-plugin-prettier/recommended";
+import reactHooksPlugin from "eslint-plugin-react-hooks";
 import eslint from "@eslint/js";
 import { FlatCompat } from "@eslint/eslintrc";
 
@@ -12,6 +13,7 @@ export default tseslint.config([
   tseslint.configs.recommendedTypeChecked,
   tseslint.configs.strictTypeChecked,
   tseslint.configs.stylisticTypeChecked,
+  new FlatCompat().config(reactHooksPlugin.configs.recommended),
   importPlugin.flatConfigs.recommended,
   importPlugin.flatConfigs.react,
   importPlugin.flatConfigs.typescript,
