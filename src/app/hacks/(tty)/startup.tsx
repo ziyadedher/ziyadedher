@@ -3326,7 +3326,7 @@ export default function Startup({
   }, [visibleLines, handleDone]);
 
   return (
-    <div className="leading-tight text-xs">
+    <div className="text-xs">
       {logLines
         .slice(0, visibleLines)
         .map(([timestamp, subsystem, line], index) => (

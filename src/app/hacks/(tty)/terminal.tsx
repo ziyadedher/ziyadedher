@@ -214,7 +214,7 @@ export default function Terminal({
   return (
     <div onClick={() => inputRef.current?.focus()}>
       <pre
-        className={`whitespace-pre-wrap text-white leading-tight text-xs md:text-base ${fontMono.className}`}
+        className={`whitespace-pre-wrap text-white text-xs md:text-base !leading-tight ${fontMono.className}`}
       >
         {lines.map((line, i) => {
           if (typeof line === "string" && enableSyntaxHighlight) {
