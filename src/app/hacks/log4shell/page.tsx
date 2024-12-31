@@ -5,12 +5,6 @@ import Anchor from "@/logic/anchor";
 
 import type { HitListItem } from "@/app/hacks/log4shell/data";
 
-export const metadata = {
-  title: "Log4Shell Public Bug Bounty Specials | Ziyad Edher",
-  description:
-    "List of companies with public bug bounty specials for Log4Shell (CVE-2021-44228). Log4Shell is an RCE vulnerability in the very popular Log4J logging library.",
-};
-
 const TableHeaderItem = ({ headerName }: { headerName: string }) => (
   <th
     scope="col"

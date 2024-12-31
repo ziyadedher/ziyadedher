@@ -1,9 +1,9 @@
 import { HacksContainer } from "@/views/containers";
 
 export const metadata = {
-  title: "dark arts · Ziyad Edher",
+  title: "Log4Shell Public Bug Bounty Specials | Ziyad Edher",
   description:
-    "Generate AI faces online by using a GAN (generative adversarial network) that runs in your browser.",
+    "List of companies with public bug bounty specials for Log4Shell (CVE-2021-44228). Log4Shell is an RCE vulnerability in the very popular Log4J logging library.",
 };
 
 export default function Layout({ children }: React.PropsWithChildren) {

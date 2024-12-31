@@ -16,14 +16,14 @@ export const metadata = {
     "Personal website of Ziyad Edher (software engineer and broad-spectrum nerd) showing off cool projects in security, AI, applied cryptography, and performance.",
 };
 
-const Layout = ({ children }: { children: React.ReactNode }) => (
-  <html lang="en" className={`${font.className} ${fontArabic.className}`}>
-    <body>
-      {children}
-      <Analytics />
-      <SpeedInsights />
-    </body>
-  </html>
-);
-
-export default Layout;
+export default function Layout({ children }: React.PropsWithChildren) {
+  return (
+    <html lang="en" className={`${font.className} ${fontArabic.className}`}>
+      <body>
+        {children}
+        <Analytics />
+        <SpeedInsights />
+      </body>
+    </html>
+  );
+}

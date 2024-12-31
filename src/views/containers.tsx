@@ -17,13 +17,13 @@ export function HacksContainer({
   navbarPage = null,
 }: React.PropsWithChildren<ContainerProps>) {
   return (
-    <div className="w-full min-h-svh flex flex-col items-center text-green-500 bg-slate-900">
+    <div className="w-full min-h-svh flex flex-col items-center text-emerald-500 bg-slate-900">
       <div className="my-8 flex flex-col space-y-4">
         {hasHeader ? <Header /> : null}
         {hasNavbar ? <Navbar currentPage={navbarPage} /> : null}
       </div>
 
-      <main className="flex w-full grow px-6 xl:px-0">{children}</main>
+      <main className="flex w-full grow">{children}</main>
     </div>
   );
 }
