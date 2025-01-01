@@ -1,7 +1,7 @@
 import { Fira_Code } from "next/font/google";
 import { useCallback, useEffect, useState, ReactNode, useRef } from "react";
 
-import { getAutocompleteFromDir } from "@/app/hacks/(tty)/filesystem";
+import { getAutocompleteFromDir } from "@/app/hacks/(tty)/(shell)/filesystem";
 
 const fontMono = Fira_Code({
   subsets: ["latin", "latin-ext"],

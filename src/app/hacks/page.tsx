@@ -2,8 +2,8 @@
 
 import { useCallback, useState } from "react";
 
+import Shell from "@/app/hacks/(tty)/(shell)";
 import Login from "@/app/hacks/(tty)/login";
-import Shell from "@/app/hacks/(tty)/shell";
 import Startup from "@/app/hacks/(tty)/startup";
 
 export default function Page() {
