@@ -33,7 +33,7 @@ export function Article({
         <p className="text-base opacity-85 font-serif">{subtitle}</p>
       </div>
       <Divider />
-      <div className="w-2/3 flex flex-col gap-8">{children}</div>
+      <div className="w-full lg:w-2/3 flex flex-col gap-8">{children}</div>
     </article>
   );
 }
@@ -83,13 +83,13 @@ export function Aside({ id, children }: React.PropsWithChildren<AsideProps>) {
     <>
       <span
         id={`aside-ref-${id}`}
-        className="align-super text-xs text-slate-500 font-serif"
+        className="hidden lg:inline-block align-super text-xs text-slate-500 font-serif"
       >
         {id}
       </span>
       <aside
         id={`aside-${id}`}
-        className="inline-block relative float-right clear-right mb-4 mr-[-50%] w-1/2 pl-16 text-xs text-left"
+        className="hidden lg:inline-block relative float-right clear-right mb-4 mr-[-50%] w-1/2 pl-16 text-xs text-left"
       >
         <span className="text-slate-500 font-serif">{id}.</span>{" "}
         <span className="font-serif">{children}</span>
