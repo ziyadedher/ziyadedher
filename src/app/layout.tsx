@@ -1,14 +1,8 @@
 import "tailwindcss/tailwind.css";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Noto_Sans, Noto_Sans_Arabic } from "next/font/google";
 
-const font = Noto_Sans({
-  subsets: ["latin", "latin-ext"],
-});
-const fontArabic = Noto_Sans_Arabic({
-  subsets: ["arabic"],
-});
+import * as fonts from "@/utils/fonts";
 
 export const metadata = {
   title: "ziyad's corner · Ziyad Edher",
@@ -18,7 +12,10 @@ export const metadata = {
 
 export default function Layout({ children }: React.PropsWithChildren) {
   return (
-    <html lang="en" className={`${font.className} ${fontArabic.className}`}>
+    <html
+      lang="en"
+      className={`font-sans ${fonts.sans.variable} ${fonts.serif.variable} ${fonts.monospace.variable}`}
+    >
       <body>
         {children}
         <Analytics />

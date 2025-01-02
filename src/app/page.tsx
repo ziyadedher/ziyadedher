@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { TextLink } from "@/components/atoms/text";
+import { arabic } from "@/utils/fonts";
 import { ArticleContainer } from "@/views/containers";
 import meImage from "@public/ziyadedher.jpg";
 
@@ -10,8 +11,9 @@ const Page = () => (
       <article className="prose dark:prose-invert flex flex-1 flex-col text-sm font-light">
         <p className="text-2xl">waddup nerd, its ziyad</p>
         <p>
-          My name is Ziyad Edher (زياد إضهير). I&apos;m a Member of Technical
-          Staff at{" "}
+          My name is Ziyad Edher{" "}
+          <span className={arabic.className}>(زياد إضهير)</span>. I&apos;m a
+          Member of Technical Staff at{" "}
           <TextLink href="https://anthropic.com" isExternal>
             Anthropic
           </TextLink>
