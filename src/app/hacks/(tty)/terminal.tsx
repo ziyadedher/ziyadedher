@@ -1,11 +1,6 @@
-import { Fira_Code } from "next/font/google";
 import { useCallback, useEffect, useState, ReactNode, useRef } from "react";
 
 import { getAutocompleteFromDir } from "@/app/hacks/(tty)/(shell)/filesystem";
-
-const fontMono = Fira_Code({
-  subsets: ["latin", "latin-ext"],
-});
 
 interface TerminalProps {
   lines: ReactNode[];
@@ -213,9 +208,7 @@ export default function Terminal({
 
   return (
     <div onClick={() => inputRef.current?.focus()}>
-      <pre
-        className={`whitespace-pre-wrap text-white text-xs md:text-base !leading-tight ${fontMono.className}`}
-      >
+      <pre className="whitespace-pre-wrap text-white text-xs md:text-base !leading-tight font-mono">
         {lines.map((line, i) => {
           if (typeof line === "string" && enableSyntaxHighlight) {
             const firstArg = line.split(" ")[0];
