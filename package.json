@@ -14,7 +14,7 @@
     "storage:download-bundle": "curl https://storage.googleapis.com/ziyadedher/assets.tar.gz --output assets.tar.gz && tar -zxvf assets.tar.gz && rm -f assets.tar.gz"
   },
   "dependencies": {
-    "@headlessui/react": "2.2.2",
+    "@headlessui/react": "2.2.3",
     "@heroicons/react": "2.2.0",
     "@tailwindcss/forms": "0.5.10",
     "@tailwindcss/typography": "0.5.16",
