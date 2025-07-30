@@ -26,7 +26,7 @@
     "flowbite": "2.5.2",
     "flowbite-react": "0.12.5",
     "framer-motion": "11.18.2",
-    "next": "15.2.5",
+    "next": "15.4.5",
     "onnxruntime-web": "1.22.0",
     "primereact": "10.9.6",
     "prism-react-renderer": "2.4.1",
@@ -39,7 +39,7 @@
     "zod": "3.25.76"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "15.2.5",
+    "@next/eslint-plugin-next": "15.4.5",
     "@types/node": "22.17.0",
     "@types/react": "19.1.9",
     "@types/react-dom": "19.1.7",
