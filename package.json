@@ -27,7 +27,7 @@
     "flowbite-react": "0.12.9",
     "framer-motion": "11.18.2",
     "next": "15.2.5",
-    "onnxruntime-web": "1.22.0",
+    "onnxruntime-web": "1.23.0",
     "primereact": "10.9.7",
     "prism-react-renderer": "2.4.1",
     "random-js": "2.1.0",
