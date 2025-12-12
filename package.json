@@ -25,7 +25,7 @@
     "clsx": "2.1.1",
     "flowbite": "2.5.2",
     "flowbite-react": "0.12.10",
-    "framer-motion": "11.18.2",
+    "framer-motion": "12.23.26",
     "next": "15.2.8",
     "onnxruntime-web": "1.23.2",
     "primereact": "10.9.7",
