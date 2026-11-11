@@ -16,7 +16,7 @@ export default function Page() {
           the title
         </>
       }
-      subtitle="discussion of the Linux system boot from the ground up, through the lens of my kernel ring-3 buffer messages"
+      subtitle="discussion of the Linux system boot from the ground up, through the lens of my kernel ring buffer messages"
       date={new Date(1970, 0, 1)}
     >
       <Section id="introduction">
