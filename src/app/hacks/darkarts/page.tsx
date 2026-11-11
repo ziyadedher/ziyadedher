@@ -406,7 +406,7 @@ const Page = () => {
           </div>
         </div>
 
-        <div className="order-first flex flex-col gap-y-4 md:order-none">
+        <div className="order-first flex flex-col gap-y-4 md:order-0">
           <GeneratedImage
             modelParameters={{
               inputLatentsSeeds: layerInputSeeds,
