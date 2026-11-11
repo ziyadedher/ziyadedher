@@ -7,17 +7,17 @@ import {
 
 export const sans = Noto_Sans({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-sans",
+  variable: "--font-noto-sans",
 });
 
 export const serif = Noto_Serif({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-serif",
+  variable: "--font-noto-serif",
 });
 
 export const monospace = Fira_Code({
   subsets: ["latin", "latin-ext"],
-  variable: "--font-mono",
+  variable: "--font-fira-code",
 });
 
 export const arabic = Noto_Sans_Arabic({

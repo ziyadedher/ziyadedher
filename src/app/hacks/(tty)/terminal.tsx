@@ -208,7 +208,7 @@ export default function Terminal({
 
   return (
     <div onClick={() => inputRef.current?.focus()}>
-      <pre className="whitespace-pre-wrap text-white text-xs md:text-base !leading-tight font-mono">
+      <pre className="whitespace-pre-wrap text-white text-xs md:text-base leading-tight! font-mono">
         {lines.map((line, i) => {
           if (typeof line === "string" && enableSyntaxHighlight) {
             const firstArg = line.split(" ")[0];
