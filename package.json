@@ -24,7 +24,7 @@
     "classnames": "2.5.1",
     "clsx": "2.1.1",
     "framer-motion": "11.18.2",
-    "next": "16.4.1",
+    "next": "16.4.6",
     "onnxruntime-web": "1.30.0",
     "primereact": "10.9.9",
     "prism-react-renderer": "2.4.1",
@@ -37,7 +37,7 @@
     "zod": "3.25.76"
   },
   "devDependencies": {
-    "@next/eslint-plugin-next": "15.5.25",
+    "@next/eslint-plugin-next": "15.5.29",
     "@tailwindcss/postcss": "4.3.5",
     "@types/node": "22.20.3",
     "@types/react": "19.3.0",
