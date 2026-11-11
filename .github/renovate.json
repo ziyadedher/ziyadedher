@@ -3,5 +3,12 @@
     "config:recommended",
     ":automergeMinor",
     ":maintainLockFilesWeekly"
+  ],
+  "packageRules": [
+    {
+      "description": "Major upgrades usually need migration work; only open them once approved on the Dependency Dashboard.",
+      "matchUpdateTypes": ["major"],
+      "dependencyDashboardApproval": true
+    }
   ]
 }
