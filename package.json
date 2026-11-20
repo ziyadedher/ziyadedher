@@ -23,7 +23,7 @@
     "chart.js": "4.6.1",
     "classnames": "2.5.1",
     "clsx": "2.1.1",
-    "framer-motion": "11.18.2",
+    "motion": "11.18.2",
     "next": "16.4.6",
     "onnxruntime-web": "1.31.1",
     "primereact": "10.9.9",
